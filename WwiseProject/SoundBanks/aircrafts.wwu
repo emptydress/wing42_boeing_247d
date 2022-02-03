@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DD07D135-58B9-425B-ABA9-5D8A5E6CE86A}" SchemaVersion="97">
+	<SoundBanks>
+		<WorkUnit Name="aircrafts" ID="{DD07D135-58B9-425B-ABA9-5D8A5E6CE86A}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="MyCompany_Simple_Aircraft" ID="{BBF88229-408D-46A4-A1C8-28475509EDC4}">
+					<ObjectInclusionList>
+						<ObjectRef Name="MyCompany_Simple_Aircraft" ID="{BCAD1829-A805-43ED-AF9D-2BB6EF4DDC43}" WorkUnitID="{BCAD1829-A805-43ED-AF9D-2BB6EF4DDC43}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="MyCompany_Gauge_Aircraft" ID="{6EED06D4-DA0A-4BD3-94D2-A8E59A8AC119}">
+					<ObjectInclusionList>
+						<ObjectRef Name="MyCompany_Gauge_Aircraft" ID="{D44C3E79-C437-4E97-A1BD-084266FA9193}" WorkUnitID="{D44C3E79-C437-4E97-A1BD-084266FA9193}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

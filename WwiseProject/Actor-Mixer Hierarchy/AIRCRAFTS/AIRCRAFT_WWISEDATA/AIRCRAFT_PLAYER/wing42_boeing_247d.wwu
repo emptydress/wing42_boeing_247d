@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="wing42_boeing_247d" ID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Instruments" ID="{E0D53D25-DA7A-4DC0-ABD6-6875E36BC7A4}" ShortID="33007522">
+					<ChildrenList>
+						<Folder Name="NA_Radio" ID="{806A9F84-7967-4FC4-BF35-3BC0496A43E1}" ShortID="309101863">
+							<ChildrenList>
+								<Folder Name="Hardware" ID="{0054A865-0D70-40CF-B1C2-021B93F789AB}" ShortID="612393594"/>
+								<Folder Name="Navigation" ID="{3FC603B5-B0DC-45C1-8E8D-9093B71F893C}" ShortID="298968112"/>
+								<Folder Name="Music" ID="{33406F83-44BF-4850-BE23-E4BD3AA9B60E}" ShortID="394972792"/>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

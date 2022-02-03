@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D9F9BB79-FC42-4C53-A23C-177B41F92938}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="wing42_boeing_247d" ID="{D9F9BB79-FC42-4C53-A23C-177B41F92938}" PersistMode="Standalone"/>
+	</Events>
+</WwiseDocument>
