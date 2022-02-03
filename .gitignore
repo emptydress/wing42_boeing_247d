@@ -1,0 +1,7 @@
+WwiseProject\.cache
+*\SoundbanksInfo.xml
+*\PluginInfo.xml
+WWiseProject\*.prof
+WwiseProject\*_WwiseProject.*.validationcache
+WwiseProject\*_WwiseProject.*.wsettings
+WwiseProject\**\*.akd
