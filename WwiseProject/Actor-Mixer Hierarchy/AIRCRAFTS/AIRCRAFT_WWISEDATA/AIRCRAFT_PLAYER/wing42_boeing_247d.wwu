@@ -3,17 +3,2024 @@
 	<AudioObjects>
 		<WorkUnit Name="wing42_boeing_247d" ID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Instruments" ID="{E0D53D25-DA7A-4DC0-ABD6-6875E36BC7A4}" ShortID="33007522">
+				<ActorMixer Name="3D" ID="{6349EF0C-1443-452A-8C00-E4D86CABE56C}" ShortID="446710626">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+						</Reference>
+					</ReferenceList>
 					<ChildrenList>
-						<Folder Name="NA_Radio" ID="{806A9F84-7967-4FC4-BF35-3BC0496A43E1}" ShortID="309101863">
+						<Folder Name="engines" ID="{555064BB-4ED7-43BD-8612-7F3436787AF8}" ShortID="842050559">
 							<ChildrenList>
-								<Folder Name="Hardware" ID="{0054A865-0D70-40CF-B1C2-021B93F789AB}" ShortID="612393594"/>
-								<Folder Name="Navigation" ID="{3FC603B5-B0DC-45C1-8E8D-9093B71F893C}" ShortID="298968112"/>
-								<Folder Name="Music" ID="{33406F83-44BF-4850-BE23-E4BD3AA9B60E}" ShortID="394972792"/>
+								<ActorMixer Name="engine" ID="{27EE4E95-4421-421A-AD78-38E72FCBCD91}" ShortID="290126234">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="boeing_247d_eng1" ID="{8B318EEA-B501-4D3B-888F-9F9207B27147}" ShortID="451102128">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SwitchContainer Name="eng1_combustion" ID="{0969051B-9071-41CA-BB55-01FAE5D6FC98}" ShortID="696962696">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<BlendContainer Name="eng1_combustion_inside" ID="{A5128818-CB10-4CFD-BF58-799FEF6F6AC2}" ShortID="892587783">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<BlendContainer Name="07_533rpm" ID="{7233A243-9421-4EC1-B80D-D79ACE44E8AE}" ShortID="545382120">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="07_533rpm_slices" ID="{0099321C-5F71-475A-B140-1456EB41E337}" ShortID="58875445">
+																			<PropertyList>
+																				<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																				<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="2"/>
+																				<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+																				<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="07 1RPM 6" ID="{AB00B2FC-ACB5-4CC7-8E85-938505F881FA}" ShortID="724961594">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="07 1RPM 6" ID="{9E4F1699-D8EC-4D7C-A30E-C3CB2485C328}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>07 1RPM 6.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="07 1RPM 6" ID="{9E4F1699-D8EC-4D7C-A30E-C3CB2485C328}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="07 1RPM 2" ID="{39501329-B053-4E78-BD08-34226F6DCB7E}" ShortID="821945097">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="07 1RPM 2" ID="{0CC1D1A2-9162-4B65-8DA1-1978003CBC28}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>07 1RPM 2.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="07 1RPM 2" ID="{0CC1D1A2-9162-4B65-8DA1-1978003CBC28}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="07 1RPM 5" ID="{3CD6638A-DAD0-48C0-B391-11469FE3D726}" ShortID="73196478">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="07 1RPM 5" ID="{EDA0C7DA-BF00-422E-B0CF-1911380214D7}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>07 1RPM 5.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="07 1RPM 5" ID="{EDA0C7DA-BF00-422E-B0CF-1911380214D7}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="07 1RPM 3" ID="{8112DE7C-4083-4CEA-891B-8086005C385C}" ShortID="390297813">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="07 1RPM 3" ID="{C124E5B0-23D5-48A9-9E69-6B7291CD43CE}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>07 1RPM 3.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="07 1RPM 3" ID="{C124E5B0-23D5-48A9-9E69-6B7291CD43CE}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="07 1RPM 1" ID="{3EFCACF1-EB62-436E-8775-04AA5F8AE42E}" ShortID="329665609">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="07 1RPM 1" ID="{A26A90A5-3424-4B11-96AA-24A2F94D2063}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>07 1RPM 1.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="07 1RPM 1" ID="{A26A90A5-3424-4B11-96AA-24A2F94D2063}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="07 1RPM 4" ID="{2A0DDF15-E179-4832-9261-8A1A5BB4336F}" ShortID="606166658">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="07 1RPM 4" ID="{08FBC2D4-21BB-4C87-BF18-CABC2000AE29}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>07 1RPM 4.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="07 1RPM 4" ID="{08FBC2D4-21BB-4C87-BF18-CABC2000AE29}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+																<BlendContainer Name="08_633rpm" ID="{D29D50D5-2D04-4F2F-87BA-21B4AF9FDBFC}" ShortID="222567275">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="08_633rpm_slices" ID="{4B70DBBB-30BF-43EE-8CA1-8C6647C7BD6F}" ShortID="981773505">
+																			<PropertyList>
+																				<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																				<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																				<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+																				<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="08 1rpm 2oclock 1" ID="{AF7BB9BC-7992-41B5-82CB-C890DD18D881}" ShortID="799892906">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="08 1rpm 2oclock 1" ID="{313FD8EF-636A-4873-B34D-C2F2DD11E969}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>08 1rpm 2oclock 1.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="08 1rpm 2oclock 1" ID="{313FD8EF-636A-4873-B34D-C2F2DD11E969}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="08 1rpm 2oclock 2" ID="{5D4D10D7-6318-4065-93C9-E8C10A6731FF}" ShortID="30995968">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="08 1rpm 2oclock 2" ID="{162457F3-499D-4B63-857E-9468B8619DE2}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>08 1rpm 2oclock 2.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="08 1rpm 2oclock 2" ID="{162457F3-499D-4B63-857E-9468B8619DE2}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="08 1rpm 2oclock 3" ID="{7E127466-A6D2-479B-B350-FEE514DB3C3C}" ShortID="340667164">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="08 1rpm 2oclock 3" ID="{3BD24B17-636D-4005-ACFA-0FC88B9E0C44}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>08 1rpm 2oclock 3.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="08 1rpm 2oclock 3" ID="{3BD24B17-636D-4005-ACFA-0FC88B9E0C44}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="08 1rpm 2oclock 4" ID="{78FDB434-1BAC-4B8E-ACB7-FC4EB9F8D9C1}" ShortID="267348135">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="08 1rpm 2oclock 4" ID="{9EB76B44-53A5-488D-8F62-F03E4E498FAB}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>08 1rpm 2oclock 4.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="08 1rpm 2oclock 4" ID="{9EB76B44-53A5-488D-8F62-F03E4E498FAB}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="08 1rpm 2oclock 5" ID="{FC850C7B-AC12-4D72-853F-6CF03517C93F}" ShortID="361266493">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="08 1rpm 2oclock 5" ID="{BE3FF97C-F46D-4806-8665-B5E0524346E5}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>08 1rpm 2oclock 5.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="08 1rpm 2oclock 5" ID="{BE3FF97C-F46D-4806-8665-B5E0524346E5}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="08 1rpm 2oclock 6" ID="{D0442B6A-5736-4C3A-8128-E2CF0EBB0772}" ShortID="919525416">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="08 1rpm 2oclock 6" ID="{C748AB4A-2CBE-446A-B7A8-1FE48C4D6D7F}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>08 1rpm 2oclock 6.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="08 1rpm 2oclock 6" ID="{C748AB4A-2CBE-446A-B7A8-1FE48C4D6D7F}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="08 1rpm 2oclock 7" ID="{7EFB46A6-9C1B-4A12-8BEB-B5570BC97676}" ShortID="1028900227">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="08 1rpm 2oclock 7" ID="{A08A2DF3-EEB4-4EC6-B10E-A696E2C8101C}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>08 1rpm 2oclock 7.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="08 1rpm 2oclock 7" ID="{A08A2DF3-EEB4-4EC6-B10E-A696E2C8101C}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="08 1rpm 2oclock 8" ID="{E12DEEB7-3B35-45F4-931E-4858C2223C29}" ShortID="738235229">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="08 1rpm 2oclock 8" ID="{05AC0A08-9769-47FE-82DE-F510F72B06B3}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>08 1rpm 2oclock 8.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="08 1rpm 2oclock 8" ID="{05AC0A08-9769-47FE-82DE-F510F72B06B3}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="08 1rpm 2oclock 9" ID="{7CB1A8AA-ACFC-4691-9223-1DA48FA1BE45}" ShortID="864719365">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="08 1rpm 2oclock 9" ID="{9967ED25-33C3-441A-BF47-1A6DBF450582}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>08 1rpm 2oclock 9.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="08 1rpm 2oclock 9" ID="{9967ED25-33C3-441A-BF47-1A6DBF450582}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+																<BlendContainer Name="20_813rpm" ID="{0BF882A1-2DBD-4E30-AC12-6F9368CCE905}" ShortID="988430301">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="20_813rpm_slices" ID="{D7879610-5149-4DA0-BD00-C24EFA681DFA}" ShortID="653220311">
+																			<PropertyList>
+																				<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																				<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																				<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+																				<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="20 2rpm 2oclock 1" ID="{CC4911FF-505A-4519-99C8-C5C4EA541182}" ShortID="90303120">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="20 2rpm 2oclock 1" ID="{10836422-B345-4C31-88AF-86E915EE519E}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>20 2rpm 2oclock 1.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="20 2rpm 2oclock 1" ID="{10836422-B345-4C31-88AF-86E915EE519E}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="20 2rpm 2oclock 2" ID="{8413A768-666A-4EF0-819B-5A402BA7B1F9}" ShortID="1037445450">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="20 2rpm 2oclock 2" ID="{669C5418-FD33-4B99-8091-3797DF2A7CBD}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>20 2rpm 2oclock 2.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="20 2rpm 2oclock 2" ID="{669C5418-FD33-4B99-8091-3797DF2A7CBD}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="20 2rpm 2oclock 3" ID="{C3E0F5E5-3507-4F12-81C9-9EF10FA49498}" ShortID="202285399">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="20 2rpm 2oclock 3" ID="{3062B01F-D569-4995-839E-2C39833E55CF}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>20 2rpm 2oclock 3.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="20 2rpm 2oclock 3" ID="{3062B01F-D569-4995-839E-2C39833E55CF}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="20 2rpm 2oclock 4" ID="{4E645622-B68E-4A3A-9524-9BE839FF87B7}" ShortID="352965595">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="20 2rpm 2oclock 4" ID="{2F501016-E28C-42A4-9DFE-557DA4816952}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>20 2rpm 2oclock 4.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="20 2rpm 2oclock 4" ID="{2F501016-E28C-42A4-9DFE-557DA4816952}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="20 2rpm 2oclock 5" ID="{9E5A7264-5F52-4D51-BEC4-230175FB2EB9}" ShortID="522352410">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="20 2rpm 2oclock 5" ID="{7188FED7-E011-4F18-B4C0-044CEED3E1BC}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>20 2rpm 2oclock 5.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="20 2rpm 2oclock 5" ID="{7188FED7-E011-4F18-B4C0-044CEED3E1BC}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="20 2rpm 2oclock 6" ID="{3CAE14F8-5510-485C-9EF4-4E86FBB08F49}" ShortID="992241222">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="20 2rpm 2oclock 6" ID="{6FBE3D8A-1D19-4ECC-B9FE-7DAAFF24CEAC}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>20 2rpm 2oclock 6.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="20 2rpm 2oclock 6" ID="{6FBE3D8A-1D19-4ECC-B9FE-7DAAFF24CEAC}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="20 2rpm 2oclock 7" ID="{6CA9648A-CD71-48AE-A8D6-97368D590C60}" ShortID="433132310">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="20 2rpm 2oclock 7" ID="{B4AAA57E-5B4E-468B-8896-F3B92F177661}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>20 2rpm 2oclock 7.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="20 2rpm 2oclock 7" ID="{B4AAA57E-5B4E-468B-8896-F3B92F177661}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+																<BlendContainer Name="26_1313rpm" ID="{CF64FF35-1788-4D05-B655-6DE36FE0EECE}" ShortID="191862266">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="26_1313rpm_slices" ID="{C65892C2-BCEC-49EB-85F3-A8E1CC8AA865}" ShortID="708075137">
+																			<PropertyList>
+																				<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																				<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																				<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+																				<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="26 2rpm 3oclock 1" ID="{92227FDD-9E4A-429F-A58C-12BA4CBE2438}" ShortID="349037160">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="26 2rpm 3oclock 1" ID="{C8F851A0-1DF7-46AE-9F07-E440A320919D}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>26 2rpm 3oclock 1.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="26 2rpm 3oclock 1" ID="{C8F851A0-1DF7-46AE-9F07-E440A320919D}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="26 2rpm 3oclock 2" ID="{65CE748D-2EF9-4D05-8E0D-760EC952568E}" ShortID="274171056">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="26 2rpm 3oclock 2" ID="{AF97C1CA-ED53-42E9-B599-70B7FA7E2F22}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>26 2rpm 3oclock 2.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="26 2rpm 3oclock 2" ID="{AF97C1CA-ED53-42E9-B599-70B7FA7E2F22}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="26 2rpm 3oclock 3" ID="{04CECE8A-C82B-4A94-9C36-308CCBB2EF01}" ShortID="398150998">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="26 2rpm 3oclock 3" ID="{D1F3D853-7587-44D6-BD45-459FC4C8612B}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>26 2rpm 3oclock 3.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="26 2rpm 3oclock 3" ID="{D1F3D853-7587-44D6-BD45-459FC4C8612B}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="26 2rpm 3oclock 4 " ID="{75E313C3-1280-4ABD-8A82-7F104CC80C2A}" ShortID="637470431">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="26 2rpm 3oclock 4 " ID="{B1D8A12D-87CC-4876-B693-ECB0BB3B6AD5}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>26 2rpm 3oclock 4 .wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="26 2rpm 3oclock 4 " ID="{B1D8A12D-87CC-4876-B693-ECB0BB3B6AD5}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="26 2rpm 3oclock 5 " ID="{EF342DB7-7B9D-43B8-8D11-E357D33EC960}" ShortID="964530806">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="26 2rpm 3oclock 5 " ID="{7AAE3EB0-45B9-46AF-A214-5EBBF35DAC52}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>26 2rpm 3oclock 5 .wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="26 2rpm 3oclock 5 " ID="{7AAE3EB0-45B9-46AF-A214-5EBBF35DAC52}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="26 2rpm 3oclock 6 " ID="{7C03AA6E-1225-400E-BC15-87ED5F03D13C}" ShortID="127982118">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="26 2rpm 3oclock 6 " ID="{E85E27EB-192D-404A-826D-A2EBF35B20D6}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>26 2rpm 3oclock 6 .wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="26 2rpm 3oclock 6 " ID="{E85E27EB-192D-404A-826D-A2EBF35B20D6}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="26 2rpm 3oclock 7 " ID="{BCE4FD6C-0168-4CE7-9284-A1959EE70D18}" ShortID="972943161">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="26 2rpm 3oclock 7 " ID="{C10EDFB1-CFCA-419D-977D-DB0636EAF473}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>26 2rpm 3oclock 7 .wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="26 2rpm 3oclock 7 " ID="{C10EDFB1-CFCA-419D-977D-DB0636EAF473}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="26 2rpm 3oclock 8 " ID="{0B7DD815-C8DF-4F2E-90B3-4671E062D59D}" ShortID="533263883">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="26 2rpm 3oclock 8 " ID="{ECE112F1-989A-43E5-8518-D5E7179289EA}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>26 2rpm 3oclock 8 .wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="26 2rpm 3oclock 8 " ID="{ECE112F1-989A-43E5-8518-D5E7179289EA}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="26 2rpm 3oclock 9 " ID="{CFA4C8DD-CF4B-4597-A843-3586D2FA8E5C}" ShortID="236537719">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="26 2rpm 3oclock 9 " ID="{4AACEB4D-70F6-44EC-9765-5832254B1D28}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>26 2rpm 3oclock 9 .wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="26 2rpm 3oclock 9 " ID="{4AACEB4D-70F6-44EC-9765-5832254B1D28}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="26 2rpm 3oclock 10 " ID="{C9947902-84D9-4111-B25F-9DA80A009FC0}" ShortID="632606486">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="26 2rpm 3oclock 10 " ID="{0E48D594-AAD4-42B1-89AA-B86C82CE64F9}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>26 2rpm 3oclock 10 .wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="26 2rpm 3oclock 10 " ID="{0E48D594-AAD4-42B1-89AA-B86C82CE64F9}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="26 2rpm 3oclock 11 " ID="{F8530829-17C0-4796-9ECF-8B708F34046E}" ShortID="329007132">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="26 2rpm 3oclock 11 " ID="{18118A50-9007-49EE-8472-DD24FFFE6B6C}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>26 2rpm 3oclock 11 .wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="26 2rpm 3oclock 11 " ID="{18118A50-9007-49EE-8472-DD24FFFE6B6C}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+																<BlendContainer Name="29_1420rpm" ID="{B8CA54EE-5C35-40CB-88C6-3035FF8E2A63}" ShortID="1012239781">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="29_1420rpm_slices" ID="{5692C9EF-59F2-48E0-8873-EE022173200E}" ShortID="426598066">
+																			<PropertyList>
+																				<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																				<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																				<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+																				<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="29 4rpm 2oclock 1" ID="{E07A028A-74BE-4EFE-BAE1-13064EFF3C17}" ShortID="7842015">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="29 4rpm 2oclock 1" ID="{5588AA76-24D0-4A7C-A233-FDFDDBE416E0}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>29 4rpm 2oclock 1.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="29 4rpm 2oclock 1" ID="{5588AA76-24D0-4A7C-A233-FDFDDBE416E0}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="29 4rpm 2oclock 2" ID="{BE2A17C0-AB87-4542-BB7A-D9C56B406430}" ShortID="303050121">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="29 4rpm 2oclock 2" ID="{3DAD78DC-096D-4D86-A931-607FF0B40522}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>29 4rpm 2oclock 2.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="29 4rpm 2oclock 2" ID="{3DAD78DC-096D-4D86-A931-607FF0B40522}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="29 4rpm 2oclock 3" ID="{DA697071-11D8-4434-9754-9FA8FD56A9A0}" ShortID="817235805">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="29 4rpm 2oclock 3" ID="{160D79EA-9C1A-4685-9EF7-669C5AA945C9}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>29 4rpm 2oclock 3.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="29 4rpm 2oclock 3" ID="{160D79EA-9C1A-4685-9EF7-669C5AA945C9}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="29 4rpm 2oclock 4" ID="{D913C9DE-B0C2-4DBF-B31C-0803AB67FC19}" ShortID="817565865">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="29 4rpm 2oclock 4" ID="{9181168B-356D-4C9F-AC39-F72CEA069427}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>29 4rpm 2oclock 4.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="29 4rpm 2oclock 4" ID="{9181168B-356D-4C9F-AC39-F72CEA069427}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="29 4rpm 2oclock 5" ID="{B2AD98AD-EE8E-4C53-93A6-3C88D05508CB}" ShortID="763249358">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="29 4rpm 2oclock 5" ID="{6030E410-A14D-425C-B3E5-71904B83B0AD}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>29 4rpm 2oclock 5.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="29 4rpm 2oclock 5" ID="{6030E410-A14D-425C-B3E5-71904B83B0AD}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="29 4rpm 2oclock 6" ID="{6C028445-8344-4731-8CE2-F70C5A471F9B}" ShortID="501815770">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="29 4rpm 2oclock 6" ID="{92C45048-6447-426D-BB65-FC2D1E3A26F9}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>29 4rpm 2oclock 6.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="29 4rpm 2oclock 6" ID="{92C45048-6447-426D-BB65-FC2D1E3A26F9}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+																<BlendContainer Name="31_1689rpm" ID="{FF0D3070-42F1-48B5-A767-65048AEDCCC0}" ShortID="669558279">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="31_1689rpm_slices" ID="{B2B7FFF9-3658-46A8-B267-8320AD2DCF57}" ShortID="1040875833">
+																			<PropertyList>
+																				<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																				<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																				<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+																				<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="31 5rpm 2oclock 1" ID="{DDE1EBEF-92D0-49CE-8DE8-F22306CB85D9}" ShortID="313886729">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="31 5rpm 2oclock 1" ID="{E30DD751-CF21-4555-82C6-33CCD6B79103}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>31 5rpm 2oclock 1.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="31 5rpm 2oclock 1" ID="{E30DD751-CF21-4555-82C6-33CCD6B79103}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="31 5rpm 2oclock 2" ID="{9CE14D32-CB30-4407-82FE-E6746381749D}" ShortID="604792955">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="31 5rpm 2oclock 2" ID="{24FEAE17-1CD2-492E-B3D8-0134961E6771}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>31 5rpm 2oclock 2.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="31 5rpm 2oclock 2" ID="{24FEAE17-1CD2-492E-B3D8-0134961E6771}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="31 5rpm 2oclock 3" ID="{71F698B9-FA7C-4281-B3D0-C8E3D275DA57}" ShortID="1018822172">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="31 5rpm 2oclock 3" ID="{DE6769FC-CF14-4D77-903D-E56F033BF181}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>31 5rpm 2oclock 3.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="31 5rpm 2oclock 3" ID="{DE6769FC-CF14-4D77-903D-E56F033BF181}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="31 5rpm 2oclock 4" ID="{D0E9671B-B198-432B-908F-E80E8CBECAD8}" ShortID="608718556">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="31 5rpm 2oclock 4" ID="{BDFDFA05-0EBF-4142-92BE-A441138FEAFA}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>31 5rpm 2oclock 4.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="31 5rpm 2oclock 4" ID="{BDFDFA05-0EBF-4142-92BE-A441138FEAFA}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="31 5rpm 2oclock 5" ID="{A4CDBC87-7979-4A97-81E5-688CC26EB133}" ShortID="651747518">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="31 5rpm 2oclock 5" ID="{F511452B-6D6A-47EE-8BBE-D1A008FD3697}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>31 5rpm 2oclock 5.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="31 5rpm 2oclock 5" ID="{F511452B-6D6A-47EE-8BBE-D1A008FD3697}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="31 5rpm 2oclock 6" ID="{03AA74CB-AC39-489A-98D1-DAE9B87C92CE}" ShortID="290696108">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="31 5rpm 2oclock 6" ID="{863C8843-308E-49AF-AF36-7C5AC2BFC207}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>31 5rpm 2oclock 6.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="31 5rpm 2oclock 6" ID="{863C8843-308E-49AF-AF36-7C5AC2BFC207}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="31 5rpm 2oclock 7" ID="{79413B5C-D28B-4414-8D88-2CDA2581E761}" ShortID="725626688">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="31 5rpm 2oclock 7" ID="{0C9C661F-D4A1-4220-A729-0FAFB733D7CC}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>31 5rpm 2oclock 7.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="31 5rpm 2oclock 7" ID="{0C9C661F-D4A1-4220-A729-0FAFB733D7CC}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+																<BlendContainer Name="35_1790rpm" ID="{FACB084C-8A1A-43B2-A4E1-F50C44678EDE}" ShortID="515408308">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="35_1790rpm_slices" ID="{D0F41423-EC2D-4569-AA5E-FAA647ED43E5}" ShortID="305304908">
+																			<PropertyList>
+																				<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																				<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																				<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+																				<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="35 6rpm 2oclock 1" ID="{ED01EC9A-855C-4653-8FC0-AC8D3B8FA4AA}" ShortID="722140054">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="35 6rpm 2oclock 1" ID="{A13812E4-2EA8-4909-B567-2F13B7684D76}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>35 6rpm 2oclock 1.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="35 6rpm 2oclock 1" ID="{A13812E4-2EA8-4909-B567-2F13B7684D76}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="35 6rpm 2oclock 2" ID="{5FB6CB76-F70E-4413-8C52-39BE39ACA105}" ShortID="892805585">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="35 6rpm 2oclock 2" ID="{A607D7A3-95E1-422E-8770-09DE31DF6A5D}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>35 6rpm 2oclock 2.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="35 6rpm 2oclock 2" ID="{A607D7A3-95E1-422E-8770-09DE31DF6A5D}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="35 6rpm 2oclock 3" ID="{E5F9CC81-2333-4493-9D89-E45CBB0B7453}" ShortID="190396487">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="35 6rpm 2oclock 3" ID="{5A862955-EF54-41C6-8134-8370E2E996D5}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>35 6rpm 2oclock 3.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="35 6rpm 2oclock 3" ID="{5A862955-EF54-41C6-8134-8370E2E996D5}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="35 6rpm 2oclock 4" ID="{0CA4D12A-0EBC-423C-AEE8-2F25EB005F80}" ShortID="21277055">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="35 6rpm 2oclock 4" ID="{EDF461B3-951F-4A5D-8F3F-C1ABBA5D334D}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>35 6rpm 2oclock 4.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="35 6rpm 2oclock 4" ID="{EDF461B3-951F-4A5D-8F3F-C1ABBA5D334D}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="35 6rpm 2oclock 5" ID="{063AE101-CF07-4971-8CD0-82D8D330464F}" ShortID="950369103">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="35 6rpm 2oclock 5" ID="{6616E52D-A394-4C86-847B-BB482B755C3B}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>35 6rpm 2oclock 5.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="35 6rpm 2oclock 5" ID="{6616E52D-A394-4C86-847B-BB482B755C3B}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+																<BlendContainer Name="38_2020rpm" ID="{14D3EA19-70C8-4F21-8968-2A107E0D2B89}" ShortID="974206044">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="38_2020rpm_slices" ID="{99398B78-1FC4-462D-A435-6716952B484D}" ShortID="542942773">
+																			<PropertyList>
+																				<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																				<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																				<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+																				<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="38 7rpm 2oclock 1" ID="{699E76D5-2614-4B1C-8EDF-9539684B7B6A}" ShortID="1020120945">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="38 7rpm 2oclock 1" ID="{5713CD53-013A-49E3-B830-60C77DD1C3A4}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>38 7rpm 2oclock 1.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="38 7rpm 2oclock 1" ID="{5713CD53-013A-49E3-B830-60C77DD1C3A4}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="38 7rpm 2oclock 2" ID="{D32C08B3-86E6-46E1-B917-83AA24608A9C}" ShortID="132051585">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="38 7rpm 2oclock 2" ID="{F3CA09F1-D66F-41E2-8203-FD42AD01111A}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>38 7rpm 2oclock 2.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="38 7rpm 2oclock 2" ID="{F3CA09F1-D66F-41E2-8203-FD42AD01111A}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="38 7rpm 2oclock 3" ID="{AAD60A3E-CC77-41CF-BF5F-466DBAD70D9F}" ShortID="929548762">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="38 7rpm 2oclock 3" ID="{9E6F8FEE-2D7C-40A6-98CE-9D0ADC6DBFBC}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>38 7rpm 2oclock 3.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="38 7rpm 2oclock 3" ID="{9E6F8FEE-2D7C-40A6-98CE-9D0ADC6DBFBC}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="38 7rpm 2oclock 4" ID="{D81439A1-0112-4BC2-8650-B69347DC1273}" ShortID="386322519">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="38 7rpm 2oclock 4" ID="{834BA43A-5F7A-43BD-9A2B-3A8CECA0890B}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>38 7rpm 2oclock 4.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="38 7rpm 2oclock 4" ID="{834BA43A-5F7A-43BD-9A2B-3A8CECA0890B}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="38 7rpm 2oclock 5" ID="{DEA00938-A008-4443-82D7-F606CA300E31}" ShortID="34270476">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="38 7rpm 2oclock 5" ID="{063C2822-6F89-4500-9FA6-7D4A6050553E}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>38 7rpm 2oclock 5.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="38 7rpm 2oclock 5" ID="{063C2822-6F89-4500-9FA6-7D4A6050553E}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="38 7rpm 2oclock 6" ID="{AE678A21-BCAD-48FF-A608-841F484AA505}" ShortID="582941294">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="38 7rpm 2oclock 6" ID="{45D8D778-359F-4724-BECC-E4649250886E}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>38 7rpm 2oclock 6.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="38 7rpm 2oclock 6" ID="{45D8D778-359F-4724-BECC-E4649250886E}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="38 7rpm 2oclock 7" ID="{FB1110E8-A74A-40AD-A0C7-448A85AD3678}" ShortID="889678548">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="38 7rpm 2oclock 7" ID="{E4FE684C-BEBD-4B63-B8FD-DA902CD40500}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>38 7rpm 2oclock 7.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="38 7rpm 2oclock 7" ID="{E4FE684C-BEBD-4B63-B8FD-DA902CD40500}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+																<BlendContainer Name="23_1070rpm" ID="{320EA72C-0F7E-4A30-BBEB-82F7EB48DA11}" ShortID="780661306">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="23_1070rpm_slices" ID="{EFB8F771-4504-468E-A1D3-97C70B96632F}" ShortID="730379418">
+																			<PropertyList>
+																				<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																				<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																				<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+																				<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="23_1070rpm_1" ID="{4A5B452E-7202-46DB-9DC9-601401FCE0F2}" ShortID="636113164">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="23_1070rpm_1" ID="{FBD1D556-237C-426E-8865-8FE41672FF67}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>23_1070rpm_1.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="23_1070rpm_1" ID="{FBD1D556-237C-426E-8865-8FE41672FF67}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="23_1070rpm_2" ID="{B65FF278-DE2F-4F9C-80B3-D24CF1FCC098}" ShortID="288890638">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="23_1070rpm_2" ID="{10D47055-B2F5-4FC9-B062-8870AA9913A7}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>23_1070rpm_2.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="23_1070rpm_2" ID="{10D47055-B2F5-4FC9-B062-8870AA9913A7}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="23_1070rpm_3" ID="{54DBF32E-265A-4DE5-9692-37934F78E29D}" ShortID="571808780">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="23_1070rpm_3" ID="{A5589D89-95E4-437E-90CF-48E1BF6205F1}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>23_1070rpm_3.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="23_1070rpm_3" ID="{A5589D89-95E4-437E-90CF-48E1BF6205F1}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="23_1070rpm_4" ID="{CC87391E-2501-44ED-89E4-5E8442F5F88B}" ShortID="857157282">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="23_1070rpm_4" ID="{D6DB078E-2691-4555-B7AA-AEF3AF7EDD07}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>23_1070rpm_4.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="23_1070rpm_4" ID="{D6DB078E-2691-4555-B7AA-AEF3AF7EDD07}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="23_1070rpm_5" ID="{D70EC96B-540A-4FDD-B6BD-BFAA5B49769E}" ShortID="712244939">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="23_1070rpm_5" ID="{86FA49DB-0570-4328-9A85-C63ACF1FF9B8}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>23_1070rpm_5.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="23_1070rpm_5" ID="{86FA49DB-0570-4328-9A85-C63ACF1FF9B8}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="23_1070rpm_6" ID="{81353574-1ED1-440E-A771-79FDBD99D7AB}" ShortID="566817349">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="23_1070rpm_6" ID="{278F13BB-FB8D-4503-A308-CB0DF208162F}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>23_1070rpm_6.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="23_1070rpm_6" ID="{278F13BB-FB8D-4503-A308-CB0DF208162F}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="23_1070rpm_7" ID="{B010BE78-40B5-4EA3-B30D-EE4D54E88F5D}" ShortID="434304940">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="23_1070rpm_7" ID="{0658097F-CCFF-40E5-B15B-4CCAD48FCF36}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>23_1070rpm_7.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="23_1070rpm_7" ID="{0658097F-CCFF-40E5-B15B-4CCAD48FCF36}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="23_1070rpm_8" ID="{02E49FA9-1C04-4E08-84EC-39D21D0F953E}" ShortID="464840521">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="23_1070rpm_8" ID="{20ED11E8-EC7A-4BF2-A7F9-9DD1E9EDE321}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>23_1070rpm_8.wav</AudioFile>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="23_1070rpm_8" ID="{20ED11E8-EC7A-4BF2-A7F9-9DD1E9EDE321}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+															</ChildrenList>
+														</BlendContainer>
+													</ChildrenList>
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="eng1_combustion_inside" ID="{A5128818-CB10-4CFD-BF58-799FEF6F6AC2}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+													</GroupingInfo>
+												</SwitchContainer>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
-				</Folder>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
