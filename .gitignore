@@ -1,8 +1,9 @@
-*/.cache/
-*/SoundbanksInfo.xml
-*/PluginInfo.xml
-*.prof
-*.validationcache
-*.wsettings
-*.akd
-
+**/SoundbanksInfo.xml
+**/PluginInfo.xml
+.cache/
+**/*.prof
+**/*.wsettings
+**/*.akd
+WwiseProject/.cache/
+WwiseProject/FlightSim.wrap2.validationcache
+WwiseProject/FlightSim.wrap2.wsettings

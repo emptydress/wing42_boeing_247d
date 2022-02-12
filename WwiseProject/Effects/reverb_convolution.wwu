@@ -13,7 +13,35 @@
 						<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
 						<Property Name="InputStereoWidth" Type="Real32" Value="100"/>
 						<Property Name="PreDelay" Type="Real32" Value="50"/>
-						<Property Name="WetLevel" Type="Real32" Value="-9"/>
+						<Property Name="WetLevel" Type="Real32" Value="-9">
+							<RTPCList>
+								<RTPC Name="" ID="{6827AC26-228D-4E81-9514-66BEF31BC8AD}" ShortID="323534395">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{F9D7E512-4CDD-471B-ABE6-5676409915ED}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>2.60685</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-5.46002</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ChildrenList>
 						<PluginMediaSource Name="AE_DistantBuilding_MicsFar" ID="{C522245B-F956-4C3D-BEE6-13A60C46CFFD}">
@@ -1437,7 +1465,35 @@
 						<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
 						<Property Name="InputStereoWidth" Type="Real32" Value="100"/>
 						<Property Name="PreDelay" Type="Real32" Value="50"/>
-						<Property Name="WetLevel" Type="Real32" Value="-9"/>
+						<Property Name="WetLevel" Type="Real32" Value="-9">
+							<RTPCList>
+								<RTPC Name="" ID="{9E6CDBDC-1DC6-432F-BE4F-942766A504E9}" ShortID="549836619">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{48B531F7-D75E-4540-B022-204DF21519B7}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>2.5</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-2.60667</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ChildrenList>
 						<PluginMediaSource Name="AE_DistantBuilding_MicsFar" ID="{8CF8C3E0-9350-4608-BE4B-B85308DE04DB}">

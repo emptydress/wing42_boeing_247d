@@ -1390,6 +1390,11 @@ Unit : Percent</Comment>
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="camera" ID="{18487032-3217-4A50-9BA5-B742B73D45BA}" ShortID="201068390">
+					<ChildrenList>
+						<GameParameter Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
