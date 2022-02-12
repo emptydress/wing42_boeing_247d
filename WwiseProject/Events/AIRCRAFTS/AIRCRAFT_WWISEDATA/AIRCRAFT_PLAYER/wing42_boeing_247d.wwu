@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D9F9BB79-FC42-4C53-A23C-177B41F92938}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="wing42_boeing_247d" ID="{D9F9BB79-FC42-4C53-A23C-177B41F92938}" PersistMode="Standalone"/>
+		<WorkUnit Name="wing42_boeing_247d" ID="{D9F9BB79-FC42-4C53-A23C-177B41F92938}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="engines" ID="{8CC277E3-6E7D-42FE-B0CE-5EC799D150FF}" ShortID="602948966">
+					<ChildrenList>
+						<Event Name="Play_wing42_boeing_247d_eng1_combustion" ID="{5E2EA609-DD52-410E-8FB2-78267C7D44BA}">
+							<ChildrenList>
+								<Action Name="" ID="{4B12BA95-82DE-4B60-B67E-C44A888783D3}" ShortID="410568205">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="eng1_combustion_inside" ID="{6CB8D29A-A98E-453B-A0DF-781B53FABEE0}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{65ABEA5E-5B78-45DC-B939-A2100259F22A}" ShortID="920920530">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="eng1_combustion_outside" ID="{8170A6DA-959A-47D4-8FFA-CE49305615B4}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_eng2_combustion" ID="{E4C6601A-21EF-47F5-8A4A-C095E081F142}">
+							<ChildrenList>
+								<Action Name="" ID="{A2EDB813-567B-4237-85BC-2D89DD6471FD}" ShortID="590884324">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="eng2_combustion_inside" ID="{25994289-CA2A-40C4-B209-674FCB162373}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5FBF3DC8-61BA-4012-9F35-4C09D5BB0BD7}" ShortID="427123013">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="eng2_combustion_outside" ID="{EDE163A0-A449-4571-91DC-797095ED387E}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_eng1_prop" ID="{D596B535-8264-4FAD-9672-9A48E40CF0F2}"/>
+						<Event Name="Play_wing42_boeing_247d_eng2_prop" ID="{80BB5C72-A02D-4AF6-B899-689C9F7BA97D}"/>
+						<Event Name="Play_wing42_boeing_247d_eng1_shutdown" ID="{9A7911EA-9CCC-47DD-A52D-25FD0870EC86}">
+							<ChildrenList>
+								<Action Name="" ID="{D5C17204-1441-48D5-9B52-BB4659206859}" ShortID="460168569">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="eng1_combustion" ID="{A1B245B5-9192-4612-AE33-A42FB9CE5C31}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_eng2_shutdown" ID="{E17161E6-F45F-4C16-83D6-A5641608FA1E}">
+							<ChildrenList>
+								<Action Name="" ID="{A87E9A7A-67B0-4506-8428-1ACF8A85E77E}" ShortID="702788883">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="eng2_combustion" ID="{1ECBEDB2-9714-4D92-940C-5193C588797A}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_eng1_combustion_start" ID="{20C46360-5001-4A4E-82C8-9F44B6ECD2BE}"/>
+						<Event Name="Play_wing42_boeing_247d_eng2_combustion_start" ID="{80C8B2EF-42B4-45E1-8B97-8C27FA109F91}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

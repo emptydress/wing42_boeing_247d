@@ -1,0 +1,61 @@
+
+<!--
+	************************************************************
+	@				   										   @
+	@            The Scintillating Sonic Sensations            @
+	@                                                          @
+	@                          of the                          @
+	@                     ................                     @
+	@                     .			     .                     @
+	@                     . BOEING  247D .					   @
+	@                     .              .			           @
+	@                     ````````````````                     @
+	@                       and  friends                       @
+	@				   										   @
+	@					     by  Wing42                        @
+    @                      www.wing42.com                      @
+	@				   										   @
+	@               Sound Design  by  Zak Spence               @
+	@                 emptydressmusic@gmail.com                @
+	@											               @
+	@        Copyright (c) Wing42, All rights reserved.        @
+	************************************************************
+-->
+
+<SoundInfo Version="0.1">
+  
+	<WwisePackages>
+		<MainPackage Name="wing42_boeing_247d"/>
+	</WwisePackages>
+	
+	<AcousticParameters>
+		<Parameter Name="ReverberationPreset" ShareSetOutside="rev_outdoor_aircraft"/>
+		<Parameter Name="Insulation_ExitClosed" Value="-12"/>
+		<Parameter Name="Insulation_ExitOpen" Value="0"/>
+	</AcousticParameters>
+
+
+<!--
+		@*===================================================================================================*@
+		@*====================================* The Fruit of Prometheus *====================================*@
+		@*===================================================================================================*@
+-->
+	<EngineSoundPresets>
+
+		
+		<!--====================================== Engine 1 (left?) ======================================-->
+
+
+		<Sound WwiseData="true" WwiseEvent="Combustion"  ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" RPMMin="400"  EngineIndex="1" >
+			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
+		</Sound>
+
+		<!--===================================== Engine 2 (right?) ======================================-->
+
+		<Sound WwiseEvent="Combustion" WwiseData="true" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" RPMMin="400"  EngineIndex="2" >
+			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
+		</Sound>
+
+	</EngineSoundPresets>
+
+</SoundInfo>

@@ -89,6 +89,11 @@
 														<BlendContainer Name="eng2_combustion_inside" ID="{25994289-CA2A-40C4-B209-674FCB162373}" ShortID="49678539">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>20</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Lowpass" Type="int16">
 																	<ValueList>
 																		<Value>43</Value>
@@ -169,9 +174,12 @@
 																		</RTPC>
 																	</RTPCList>
 																</Property>
-																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="25"/>
 															</PropertyList>
 															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="aircraft_player_inside_3m_spread15" ID="{F5FBB6BB-1F86-4FA7-99C5-7D1DAE906FF9}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 																</Reference>
@@ -380,38 +388,6 @@
 																					<ValueList>
 																						<Value>6</Value>
 																					</ValueList>
-																					<RTPCList>
-																						<RTPC Name="" ID="{FC4F7D18-5CDF-4DE3-A2E8-82283CEAF6FB}" ShortID="397339184">
-																							<ReferenceList>
-																								<Reference Name="ControlInput">
-																									<ObjectRef Name="SIMVAR_GENERAL_ENG_RPM" ID="{2A2495B6-0158-4F47-8261-D625910D546D}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<Curve Name="" ID="{5477FD25-5A16-4629-A8FF-1EA065EA21ED}">
-																								<PropertyList>
-																									<Property Name="Flags" Type="int32" Value="3"/>
-																								</PropertyList>
-																								<PointList>
-																									<Point>
-																										<XPos>0</XPos>
-																										<YPos>0</YPos>
-																										<Flags>5</Flags>
-																										<SegmentShape>InvertedSCurve</SegmentShape>
-																									</Point>
-																									<Point>
-																										<XPos>514</XPos>
-																										<YPos>-200</YPos>
-																										<Flags>0</Flags>
-																									</Point>
-																									<Point>
-																										<XPos>10000</XPos>
-																										<YPos>-200</YPos>
-																										<Flags>37</Flags>
-																									</Point>
-																								</PointList>
-																							</Curve>
-																						</RTPC>
-																					</RTPCList>
 																				</Property>
 																			</PropertyList>
 																			<ReferenceList>
@@ -745,9 +721,7 @@
 																			<PropertyList>
 																				<Property Name="Volume" Type="Real64">
 																					<RTPCList>
-																						<RTPC Name="" ID="{F4094609-40D9-488E-871F-B4201AF31907}" ShortID="722873812">
-																							<ReferenceList/>
-																						</RTPC>
+																						<RTPC Name="" ID="{F4094609-40D9-488E-871F-B4201AF31907}" ShortID="722873812"/>
 																					</RTPCList>
 																				</Property>
 																			</PropertyList>
@@ -2670,6 +2644,7 @@
 														<BlendContainer Name="eng2_combustion_outside" ID="{EDE163A0-A449-4571-91DC-797095ED387E}" ShortID="272228778">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 																<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
@@ -2783,6 +2758,9 @@
 																</Property>
 															</PropertyList>
 															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="aircraft_player_outside_500m" ID="{E0A12C5A-64A0-4AB4-B7B1-2E71146E9FE2}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 																</Reference>
@@ -2994,38 +2972,6 @@
 																					<ValueList>
 																						<Value>6</Value>
 																					</ValueList>
-																					<RTPCList>
-																						<RTPC Name="" ID="{A19A0393-2301-40D3-9F84-1F2BB79E29D6}" ShortID="168062365">
-																							<ReferenceList>
-																								<Reference Name="ControlInput">
-																									<ObjectRef Name="SIMVAR_GENERAL_ENG_RPM" ID="{2A2495B6-0158-4F47-8261-D625910D546D}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<Curve Name="" ID="{8B0FE8C6-C11F-4CE6-9670-5A9B242FEA5A}">
-																								<PropertyList>
-																									<Property Name="Flags" Type="int32" Value="3"/>
-																								</PropertyList>
-																								<PointList>
-																									<Point>
-																										<XPos>0</XPos>
-																										<YPos>0</YPos>
-																										<Flags>5</Flags>
-																										<SegmentShape>InvertedSCurve</SegmentShape>
-																									</Point>
-																									<Point>
-																										<XPos>514</XPos>
-																										<YPos>-200</YPos>
-																										<Flags>0</Flags>
-																									</Point>
-																									<Point>
-																										<XPos>10000</XPos>
-																										<YPos>-200</YPos>
-																										<Flags>37</Flags>
-																									</Point>
-																								</PointList>
-																							</Curve>
-																						</RTPC>
-																					</RTPCList>
 																				</Property>
 																			</PropertyList>
 																			<ReferenceList>
@@ -3359,9 +3305,7 @@
 																			<PropertyList>
 																				<Property Name="Volume" Type="Real64">
 																					<RTPCList>
-																						<RTPC Name="" ID="{2577EE6B-8016-4852-BD00-D40D9A810333}" ShortID="952453864">
-																							<ReferenceList/>
-																						</RTPC>
+																						<RTPC Name="" ID="{2577EE6B-8016-4852-BD00-D40D9A810333}" ShortID="952453864"/>
 																					</RTPCList>
 																				</Property>
 																			</PropertyList>
@@ -5170,6 +5114,9 @@
 																	</ChildrenList>
 																</BlendContainer>
 															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{628DCBCB-479F-4BF3-A4DA-F86A97CECCA1}"/>
+															</PositioningInfo>
 															<BlendTrackList>
 																<BlendTrack Name="New Blend Track" ID="{72CFC6ED-A709-4010-A1DB-4A301E165D95}" ShortID="847561909">
 																	<PropertyList>
@@ -5286,9 +5233,15 @@
 														<GroupingBehaviorList>
 															<GroupingBehavior>
 																<ItemRef Name="eng2_combustion_inside" ID="{25994289-CA2A-40C4-B209-674FCB162373}"/>
+																<PropertyList>
+																	<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+																</PropertyList>
 															</GroupingBehavior>
 															<GroupingBehavior>
 																<ItemRef Name="eng2_combustion_outside" ID="{EDE163A0-A449-4571-91DC-797095ED387E}"/>
+																<PropertyList>
+																	<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+																</PropertyList>
 															</GroupingBehavior>
 														</GroupingBehaviorList>
 														<GroupingList>
@@ -5341,12 +5294,18 @@
 														<BlendContainer Name="eng1_combustion_inside" ID="{6CB8D29A-A98E-453B-A0DF-781B53FABEE0}" ShortID="974816000">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>20</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Lowpass" Type="int16">
 																	<ValueList>
 																		<Value>43</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="OverrideEffect" Type="bool" Value="True"/>
+																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
 																	<RTPCList>
@@ -5421,14 +5380,17 @@
 																		</RTPC>
 																	</RTPCList>
 																</Property>
-																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="25"/>
 															</PropertyList>
 															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="aircraft_player_inside_3m_spread15" ID="{F5FBB6BB-1F86-4FA7-99C5-7D1DAE906FF9}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+																	<ObjectRef Name="combustion_inside_generic" ID="{F900BE9D-5340-45F1-B91E-571D4C83E671}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -5632,38 +5594,6 @@
 																					<ValueList>
 																						<Value>6</Value>
 																					</ValueList>
-																					<RTPCList>
-																						<RTPC Name="" ID="{1C8A6404-28C6-4555-922C-E6980A2B9BCB}" ShortID="881190109">
-																							<ReferenceList>
-																								<Reference Name="ControlInput">
-																									<ObjectRef Name="SIMVAR_GENERAL_ENG_RPM" ID="{2A2495B6-0158-4F47-8261-D625910D546D}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<Curve Name="" ID="{5D0D8EDC-55D5-4D65-9903-92B14BCBCA17}">
-																								<PropertyList>
-																									<Property Name="Flags" Type="int32" Value="3"/>
-																								</PropertyList>
-																								<PointList>
-																									<Point>
-																										<XPos>0</XPos>
-																										<YPos>0</YPos>
-																										<Flags>5</Flags>
-																										<SegmentShape>InvertedSCurve</SegmentShape>
-																									</Point>
-																									<Point>
-																										<XPos>514</XPos>
-																										<YPos>-200</YPos>
-																										<Flags>0</Flags>
-																									</Point>
-																									<Point>
-																										<XPos>10000</XPos>
-																										<YPos>-200</YPos>
-																										<Flags>37</Flags>
-																									</Point>
-																								</PointList>
-																							</Curve>
-																						</RTPC>
-																					</RTPCList>
 																				</Property>
 																			</PropertyList>
 																			<ReferenceList>
@@ -5997,9 +5927,7 @@
 																			<PropertyList>
 																				<Property Name="Volume" Type="Real64">
 																					<RTPCList>
-																						<RTPC Name="" ID="{E163B8B6-3870-44AA-B341-4F3A6B572017}" ShortID="724184785">
-																							<ReferenceList/>
-																						</RTPC>
+																						<RTPC Name="" ID="{E163B8B6-3870-44AA-B341-4F3A6B572017}" ShortID="724184785"/>
 																					</RTPCList>
 																				</Property>
 																			</PropertyList>
@@ -7913,6 +7841,7 @@
 														<BlendContainer Name="eng1_combustion_outside" ID="{8170A6DA-959A-47D4-8FFA-CE49305615B4}" ShortID="784826723">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 																<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
@@ -8026,6 +7955,9 @@
 																</Property>
 															</PropertyList>
 															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="aircraft_player_outside_500m" ID="{E0A12C5A-64A0-4AB4-B7B1-2E71146E9FE2}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 																</Reference>
@@ -8237,38 +8169,6 @@
 																					<ValueList>
 																						<Value>6</Value>
 																					</ValueList>
-																					<RTPCList>
-																						<RTPC Name="" ID="{E9AE18D4-C84E-467D-AD3D-8C57801EFD49}" ShortID="239685588">
-																							<ReferenceList>
-																								<Reference Name="ControlInput">
-																									<ObjectRef Name="SIMVAR_GENERAL_ENG_RPM" ID="{2A2495B6-0158-4F47-8261-D625910D546D}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<Curve Name="" ID="{1C11E537-5EA7-4124-8292-04B9688B4057}">
-																								<PropertyList>
-																									<Property Name="Flags" Type="int32" Value="3"/>
-																								</PropertyList>
-																								<PointList>
-																									<Point>
-																										<XPos>0</XPos>
-																										<YPos>0</YPos>
-																										<Flags>5</Flags>
-																										<SegmentShape>InvertedSCurve</SegmentShape>
-																									</Point>
-																									<Point>
-																										<XPos>514</XPos>
-																										<YPos>-200</YPos>
-																										<Flags>0</Flags>
-																									</Point>
-																									<Point>
-																										<XPos>10000</XPos>
-																										<YPos>-200</YPos>
-																										<Flags>37</Flags>
-																									</Point>
-																								</PointList>
-																							</Curve>
-																						</RTPC>
-																					</RTPCList>
 																				</Property>
 																			</PropertyList>
 																			<ReferenceList>
@@ -8602,9 +8502,7 @@
 																			<PropertyList>
 																				<Property Name="Volume" Type="Real64">
 																					<RTPCList>
-																						<RTPC Name="" ID="{7398E054-D6FE-4EF0-91A6-4F87B96DD91C}" ShortID="668579722">
-																							<ReferenceList/>
-																						</RTPC>
+																						<RTPC Name="" ID="{7398E054-D6FE-4EF0-91A6-4F87B96DD91C}" ShortID="668579722"/>
 																					</RTPCList>
 																				</Property>
 																			</PropertyList>
@@ -10520,9 +10418,15 @@
 														<GroupingBehaviorList>
 															<GroupingBehavior>
 																<ItemRef Name="eng1_combustion_inside" ID="{6CB8D29A-A98E-453B-A0DF-781B53FABEE0}"/>
+																<PropertyList>
+																	<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+																</PropertyList>
 															</GroupingBehavior>
 															<GroupingBehavior>
 																<ItemRef Name="eng1_combustion_outside" ID="{8170A6DA-959A-47D4-8FFA-CE49305615B4}"/>
+																<PropertyList>
+																	<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+																</PropertyList>
 															</GroupingBehavior>
 														</GroupingBehaviorList>
 														<GroupingList>
