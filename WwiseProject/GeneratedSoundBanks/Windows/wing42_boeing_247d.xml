@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>E:\Zak\Boeing 247d\workspace\wing42_boeing_247d\WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>E:\Zak\Boeing 247d\workspace\wing42_boeing_247d\WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\Zak\Boeing 247d\workspace\wing42_boeing_247d\WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\Zak\Boeing 247d\workspace\wing42_boeing_247d\WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="1230727645" GUID="{2EF879DE-5CFE-405A-AAF7-7767E43E03B1}" Language="SFX">
+			<ObjectPath>\SoundBanks\aircrafts\wing42_boeing_247d</ObjectPath>
+			<ShortName>wing42_boeing_247d</ShortName>
+			<Path>wing42_boeing_247d.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3515446682" Name="Play_wing42_boeing_247d_eng1_combustion" ObjectPath="\Events\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\wing42_boeing_247d\engines\Play_wing42_boeing_247d_eng1_combustion" GUID="{5E2EA609-DD52-410E-8FB2-78267C7D44BA}" MaxAttenuation="500.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="13045047" Language="SFX">
+							<ShortName>07 1RPM 6.wav</ShortName>
+							<Path>SFX\07 1RPM 6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="21289942" Language="SFX">
+							<ShortName>38 7rpm 2oclock 4.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="23195004" Language="SFX">
+							<ShortName>23_1070rpm_1.wav</ShortName>
+							<Path>SFX\23_1070rpm_1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="52073621" Language="SFX">
+							<ShortName>20 2rpm 2oclock 7.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 7_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="65260596" Language="SFX">
+							<ShortName>31 5rpm 2oclock 5.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="89088776" Language="SFX">
+							<ShortName>38 7rpm 2oclock 3.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="119546281" Language="SFX">
+							<ShortName>20 2rpm 2oclock low end.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="147115382" Language="SFX">
+							<ShortName>23_1070rpm_2.wav</ShortName>
+							<Path>SFX\23_1070rpm_2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="186864788" Language="SFX">
+							<ShortName>35 6rpm 2oclock 4.wav</ShortName>
+							<Path>SFX\35 6rpm 2oclock 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="225124426" Language="SFX">
+							<ShortName>35 6rpm 2oclock Low end.wav</ShortName>
+							<Path>SFX\35 6rpm 2oclock Low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="239631907" Language="SFX">
+							<ShortName>26 2rpm 3oclock 3.wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="256730592" Language="SFX">
+							<ShortName>08 1rpm 2oclock 2.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="306367927" Language="SFX">
+							<ShortName>20 2rpm 2oclock 5.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="339494709" Language="SFX">
+							<ShortName>08 1rpm 2oclock 6.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="361136937" Language="SFX">
+							<ShortName>26 2rpm 3oclock 6 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 6 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="367352441" Language="SFX">
+							<ShortName>23_1070rpm_4.wav</ShortName>
+							<Path>SFX\23_1070rpm_4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="381527117" Language="SFX">
+							<ShortName>29 4rpm 2oclock 1.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="389152894" Language="SFX">
+							<ShortName>29 4rpm 2oclock 5.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock 5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="390960495" Language="SFX">
+							<ShortName>35 6rpm 2oclock 2.wav</ShortName>
+							<Path>SFX\35 6rpm 2oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="402834729" Language="SFX">
+							<ShortName>08 1rpm 2oclock 7.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 7_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="443786095" Language="SFX">
+							<ShortName>31 5rpm 2oclock 4.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="456655030" Language="SFX">
+							<ShortName>35 6rpm 2oclock 5.wav</ShortName>
+							<Path>SFX\35 6rpm 2oclock 5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="500492744" Language="SFX">
+							<ShortName>07 1RPM 1.wav</ShortName>
+							<Path>SFX\07 1RPM 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="501820878" Language="SFX">
+							<ShortName>38 7rpm 2oclock 1.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="508021457" Language="SFX">
+							<ShortName>07 1RPM 2.wav</ShortName>
+							<Path>SFX\07 1RPM 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="520461136" Language="SFX">
+							<ShortName>38 7rpm 2oclock 2.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="534140188" Language="SFX">
+							<ShortName>08 1rpm 2oclock 4.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="535159176" Language="SFX">
+							<ShortName>07 1RPM low end.wav</ShortName>
+							<Path>SFX\07 1RPM low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="542761898" Language="SFX">
+							<ShortName>26 2rpm 3oclock 4 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 4 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="552505258" Language="SFX">
+							<ShortName>26 2rpm 3oclock 11 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 11 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="568859332" Language="SFX">
+							<ShortName>38 7rpm 2oclock 5.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="575024028" Language="SFX">
+							<ShortName>08 1rpm 2oclock 3.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="582271277" Language="SFX">
+							<ShortName>29 4rpm 2oclock 6.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock 6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="585884523" Language="SFX">
+							<ShortName>23_1070rpm_7.wav</ShortName>
+							<Path>SFX\23_1070rpm_7_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="591477281" Language="SFX">
+							<ShortName>31 5rpm 2oclock 2.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="612529558" Language="SFX">
+							<ShortName>20 2rpm 2oclock 6.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="625064572" Language="SFX">
+							<ShortName>31 5rpm 2oclock 1.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="627774152" Language="SFX">
+							<ShortName>31 5rpm 2oclock 7.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 7_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="629115964" Language="SFX">
+							<ShortName>26 2rpm 3oclock 9 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 9 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="647262480" Language="SFX">
+							<ShortName>38 7rpm 2oclock 7.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 7_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="679195843" Language="SFX">
+							<ShortName>23_1070rpm_6.wav</ShortName>
+							<Path>SFX\23_1070rpm_6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="700369138" Language="SFX">
+							<ShortName>23_1070rpm_8.wav</ShortName>
+							<Path>SFX\23_1070rpm_8_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="706876273" Language="SFX">
+							<ShortName>38 7rpm 2oclock 6.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="707406132" Language="SFX">
+							<ShortName>26 2rpm 3oclock 2.wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="707743477" Language="SFX">
+							<ShortName>35 6rpm 2oclock 1.wav</ShortName>
+							<Path>SFX\35 6rpm 2oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="719765179" Language="SFX">
+							<ShortName>08 1rpm 2oclock 9.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 9_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="735661637" Language="SFX">
+							<ShortName>31 5rpm 2oclock Low end.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock Low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="757266175" Language="SFX">
+							<ShortName>29 4rpm 2oclock 4.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="761414559" Language="SFX">
+							<ShortName>07 1RPM 3.wav</ShortName>
+							<Path>SFX\07 1RPM 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="784338541" Language="SFX">
+							<ShortName>38 7rpm 2oclock low end.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="795441004" Language="SFX">
+							<ShortName>29 4rpm 2oclock 3.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="856391650" Language="SFX">
+							<ShortName>26 2rpm 3oclock 5 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 5 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="858599166" Language="SFX">
+							<ShortName>26 2rpm 3oclock 10 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 10 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="862053544" Language="SFX">
+							<ShortName>31 5rpm 2oclock 6.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="880417320" Language="SFX">
+							<ShortName>29 4rpm 2oclock Low end.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock Low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="883732074" Language="SFX">
+							<ShortName>23_1070rpm_5.wav</ShortName>
+							<Path>SFX\23_1070rpm_5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="905538219" Language="SFX">
+							<ShortName>08 1rpm 2oclock 5.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="906435695" Language="SFX">
+							<ShortName>26 2rpm 3oclock Low end.wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock Low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="911909435" Language="SFX">
+							<ShortName>26 2rpm 3oclock 8 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 8 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="926128951" Language="SFX">
+							<ShortName>08 1rpm 2oclock low end.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="945690080" Language="SFX">
+							<ShortName>20 2rpm 2oclock 3.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="947306115" Language="SFX">
+							<ShortName>26 2rpm 3oclock 1.wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="957937295" Language="SFX">
+							<ShortName>26 2rpm 3oclock 7 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 7 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="978755631" Language="SFX">
+							<ShortName>20 2rpm 2oclock 2.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="982036349" Language="SFX">
+							<ShortName>08 1rpm 2oclock 1.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="990241441" Language="SFX">
+							<ShortName>20 2rpm 2oclock 4.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="993663459" Language="SFX">
+							<ShortName>29 4rpm 2oclock 2.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1016608869" Language="SFX">
+							<ShortName>20 2rpm 2oclock 1.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1021483429" Language="SFX">
+							<ShortName>08 1rpm 2oclock 8.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 8_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1029266016" Language="SFX">
+							<ShortName>35 6rpm 2oclock 3.wav</ShortName>
+							<Path>SFX\35 6rpm 2oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1032634692" Language="SFX">
+							<ShortName>23_1070rpm_3.wav</ShortName>
+							<Path>SFX\23_1070rpm_3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1049418156" Language="SFX">
+							<ShortName>31 5rpm 2oclock 3.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1053865426" Language="SFX">
+							<ShortName>07 1RPM 4.wav</ShortName>
+							<Path>SFX\07 1RPM 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1062517115" Language="SFX">
+							<ShortName>07 1RPM 5.wav</ShortName>
+							<Path>SFX\07 1RPM 5_1E8ECBBC.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2069837898" Name="rev_outdoor_aircraft" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\game\game_aux\aux_outside\rev_outdoor_aircraft" GUID="{3070D14E-37F3-4DB4-8C7E-262318A02693}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="4288098379" Name="Play_wing42_boeing_247d_eng1_combustion_start" ObjectPath="\Events\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\wing42_boeing_247d\engines\Play_wing42_boeing_247d_eng1_combustion_start" GUID="{20C46360-5001-4A4E-82C8-9F44B6ECD2BE}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="950043516" Name="Play_wing42_boeing_247d_eng1_prop" ObjectPath="\Events\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\wing42_boeing_247d\engines\Play_wing42_boeing_247d_eng1_prop" GUID="{D596B535-8264-4FAD-9672-9A48E40CF0F2}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3412875845" Name="Play_wing42_boeing_247d_eng1_shutdown" ObjectPath="\Events\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\wing42_boeing_247d\engines\Play_wing42_boeing_247d_eng1_shutdown" GUID="{9A7911EA-9CCC-47DD-A52D-25FD0870EC86}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2918079627" Name="Play_wing42_boeing_247d_eng2_combustion" ObjectPath="\Events\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\wing42_boeing_247d\engines\Play_wing42_boeing_247d_eng2_combustion" GUID="{E4C6601A-21EF-47F5-8A4A-C095E081F142}" MaxAttenuation="500.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="13045047" Language="SFX">
+							<ShortName>07 1RPM 6.wav</ShortName>
+							<Path>SFX\07 1RPM 6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="21289942" Language="SFX">
+							<ShortName>38 7rpm 2oclock 4.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="23195004" Language="SFX">
+							<ShortName>23_1070rpm_1.wav</ShortName>
+							<Path>SFX\23_1070rpm_1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="52073621" Language="SFX">
+							<ShortName>20 2rpm 2oclock 7.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 7_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="65260596" Language="SFX">
+							<ShortName>31 5rpm 2oclock 5.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="89088776" Language="SFX">
+							<ShortName>38 7rpm 2oclock 3.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="119546281" Language="SFX">
+							<ShortName>20 2rpm 2oclock low end.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="147115382" Language="SFX">
+							<ShortName>23_1070rpm_2.wav</ShortName>
+							<Path>SFX\23_1070rpm_2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="186864788" Language="SFX">
+							<ShortName>35 6rpm 2oclock 4.wav</ShortName>
+							<Path>SFX\35 6rpm 2oclock 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="225124426" Language="SFX">
+							<ShortName>35 6rpm 2oclock Low end.wav</ShortName>
+							<Path>SFX\35 6rpm 2oclock Low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="239631907" Language="SFX">
+							<ShortName>26 2rpm 3oclock 3.wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="256730592" Language="SFX">
+							<ShortName>08 1rpm 2oclock 2.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="306367927" Language="SFX">
+							<ShortName>20 2rpm 2oclock 5.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="339494709" Language="SFX">
+							<ShortName>08 1rpm 2oclock 6.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="361136937" Language="SFX">
+							<ShortName>26 2rpm 3oclock 6 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 6 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="367352441" Language="SFX">
+							<ShortName>23_1070rpm_4.wav</ShortName>
+							<Path>SFX\23_1070rpm_4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="381527117" Language="SFX">
+							<ShortName>29 4rpm 2oclock 1.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="389152894" Language="SFX">
+							<ShortName>29 4rpm 2oclock 5.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock 5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="390960495" Language="SFX">
+							<ShortName>35 6rpm 2oclock 2.wav</ShortName>
+							<Path>SFX\35 6rpm 2oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="402834729" Language="SFX">
+							<ShortName>08 1rpm 2oclock 7.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 7_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="443786095" Language="SFX">
+							<ShortName>31 5rpm 2oclock 4.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="456655030" Language="SFX">
+							<ShortName>35 6rpm 2oclock 5.wav</ShortName>
+							<Path>SFX\35 6rpm 2oclock 5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="500492744" Language="SFX">
+							<ShortName>07 1RPM 1.wav</ShortName>
+							<Path>SFX\07 1RPM 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="501820878" Language="SFX">
+							<ShortName>38 7rpm 2oclock 1.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="508021457" Language="SFX">
+							<ShortName>07 1RPM 2.wav</ShortName>
+							<Path>SFX\07 1RPM 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="520461136" Language="SFX">
+							<ShortName>38 7rpm 2oclock 2.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="534140188" Language="SFX">
+							<ShortName>08 1rpm 2oclock 4.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="535159176" Language="SFX">
+							<ShortName>07 1RPM low end.wav</ShortName>
+							<Path>SFX\07 1RPM low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="542761898" Language="SFX">
+							<ShortName>26 2rpm 3oclock 4 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 4 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="552505258" Language="SFX">
+							<ShortName>26 2rpm 3oclock 11 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 11 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="568859332" Language="SFX">
+							<ShortName>38 7rpm 2oclock 5.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="575024028" Language="SFX">
+							<ShortName>08 1rpm 2oclock 3.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="582271277" Language="SFX">
+							<ShortName>29 4rpm 2oclock 6.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock 6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="585884523" Language="SFX">
+							<ShortName>23_1070rpm_7.wav</ShortName>
+							<Path>SFX\23_1070rpm_7_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="591477281" Language="SFX">
+							<ShortName>31 5rpm 2oclock 2.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="612529558" Language="SFX">
+							<ShortName>20 2rpm 2oclock 6.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="625064572" Language="SFX">
+							<ShortName>31 5rpm 2oclock 1.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="627774152" Language="SFX">
+							<ShortName>31 5rpm 2oclock 7.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 7_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="629115964" Language="SFX">
+							<ShortName>26 2rpm 3oclock 9 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 9 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="647262480" Language="SFX">
+							<ShortName>38 7rpm 2oclock 7.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 7_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="679195843" Language="SFX">
+							<ShortName>23_1070rpm_6.wav</ShortName>
+							<Path>SFX\23_1070rpm_6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="700369138" Language="SFX">
+							<ShortName>23_1070rpm_8.wav</ShortName>
+							<Path>SFX\23_1070rpm_8_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="706876273" Language="SFX">
+							<ShortName>38 7rpm 2oclock 6.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock 6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="707406132" Language="SFX">
+							<ShortName>26 2rpm 3oclock 2.wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="707743477" Language="SFX">
+							<ShortName>35 6rpm 2oclock 1.wav</ShortName>
+							<Path>SFX\35 6rpm 2oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="719765179" Language="SFX">
+							<ShortName>08 1rpm 2oclock 9.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 9_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="735661637" Language="SFX">
+							<ShortName>31 5rpm 2oclock Low end.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock Low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="757266175" Language="SFX">
+							<ShortName>29 4rpm 2oclock 4.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="761414559" Language="SFX">
+							<ShortName>07 1RPM 3.wav</ShortName>
+							<Path>SFX\07 1RPM 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="784338541" Language="SFX">
+							<ShortName>38 7rpm 2oclock low end.wav</ShortName>
+							<Path>SFX\38 7rpm 2oclock low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="795441004" Language="SFX">
+							<ShortName>29 4rpm 2oclock 3.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="856391650" Language="SFX">
+							<ShortName>26 2rpm 3oclock 5 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 5 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="858599166" Language="SFX">
+							<ShortName>26 2rpm 3oclock 10 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 10 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="862053544" Language="SFX">
+							<ShortName>31 5rpm 2oclock 6.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 6_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="880417320" Language="SFX">
+							<ShortName>29 4rpm 2oclock Low end.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock Low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="883732074" Language="SFX">
+							<ShortName>23_1070rpm_5.wav</ShortName>
+							<Path>SFX\23_1070rpm_5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="905538219" Language="SFX">
+							<ShortName>08 1rpm 2oclock 5.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 5_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="906435695" Language="SFX">
+							<ShortName>26 2rpm 3oclock Low end.wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock Low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="911909435" Language="SFX">
+							<ShortName>26 2rpm 3oclock 8 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 8 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="926128951" Language="SFX">
+							<ShortName>08 1rpm 2oclock low end.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock low end_89DC6E16.wem</Path>
+						</File>
+						<File Id="945690080" Language="SFX">
+							<ShortName>20 2rpm 2oclock 3.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="947306115" Language="SFX">
+							<ShortName>26 2rpm 3oclock 1.wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="957937295" Language="SFX">
+							<ShortName>26 2rpm 3oclock 7 .wav</ShortName>
+							<Path>SFX\26 2rpm 3oclock 7 _1E8ECBBC.wem</Path>
+						</File>
+						<File Id="978755631" Language="SFX">
+							<ShortName>20 2rpm 2oclock 2.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="982036349" Language="SFX">
+							<ShortName>08 1rpm 2oclock 1.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="990241441" Language="SFX">
+							<ShortName>20 2rpm 2oclock 4.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="993663459" Language="SFX">
+							<ShortName>29 4rpm 2oclock 2.wav</ShortName>
+							<Path>SFX\29 4rpm 2oclock 2_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1016608869" Language="SFX">
+							<ShortName>20 2rpm 2oclock 1.wav</ShortName>
+							<Path>SFX\20 2rpm 2oclock 1_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1021483429" Language="SFX">
+							<ShortName>08 1rpm 2oclock 8.wav</ShortName>
+							<Path>SFX\08 1rpm 2oclock 8_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1029266016" Language="SFX">
+							<ShortName>35 6rpm 2oclock 3.wav</ShortName>
+							<Path>SFX\35 6rpm 2oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1032634692" Language="SFX">
+							<ShortName>23_1070rpm_3.wav</ShortName>
+							<Path>SFX\23_1070rpm_3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1049418156" Language="SFX">
+							<ShortName>31 5rpm 2oclock 3.wav</ShortName>
+							<Path>SFX\31 5rpm 2oclock 3_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1053865426" Language="SFX">
+							<ShortName>07 1RPM 4.wav</ShortName>
+							<Path>SFX\07 1RPM 4_1E8ECBBC.wem</Path>
+						</File>
+						<File Id="1062517115" Language="SFX">
+							<ShortName>07 1RPM 5.wav</ShortName>
+							<Path>SFX\07 1RPM 5_1E8ECBBC.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2069837898" Name="rev_outdoor_aircraft" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\game\game_aux\aux_outside\rev_outdoor_aircraft" GUID="{3070D14E-37F3-4DB4-8C7E-262318A02693}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2672334406" Name="Play_wing42_boeing_247d_eng2_combustion_start" ObjectPath="\Events\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\wing42_boeing_247d\engines\Play_wing42_boeing_247d_eng2_combustion_start" GUID="{80C8B2EF-42B4-45E1-8B97-8C27FA109F91}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1835300613" Name="Play_wing42_boeing_247d_eng2_prop" ObjectPath="\Events\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\wing42_boeing_247d\engines\Play_wing42_boeing_247d_eng2_prop" GUID="{80BB5C72-A02D-4AF6-B899-689C9F7BA97D}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2729287984" Name="Play_wing42_boeing_247d_eng2_shutdown" ObjectPath="\Events\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER\wing42_boeing_247d\engines\Play_wing42_boeing_247d_eng2_shutdown" GUID="{E17161E6-F45F-4C16-83D6-A5641608FA1E}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="13045047" Language="SFX">
+					<ShortName>07 1RPM 6.wav</ShortName>
+					<Path>SFX\07 1RPM 6_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="21289942" Language="SFX">
+					<ShortName>38 7rpm 2oclock 4.wav</ShortName>
+					<Path>SFX\38 7rpm 2oclock 4_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="23195004" Language="SFX">
+					<ShortName>23_1070rpm_1.wav</ShortName>
+					<Path>SFX\23_1070rpm_1_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="52073621" Language="SFX">
+					<ShortName>20 2rpm 2oclock 7.wav</ShortName>
+					<Path>SFX\20 2rpm 2oclock 7_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="65260596" Language="SFX">
+					<ShortName>31 5rpm 2oclock 5.wav</ShortName>
+					<Path>SFX\31 5rpm 2oclock 5_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="89088776" Language="SFX">
+					<ShortName>38 7rpm 2oclock 3.wav</ShortName>
+					<Path>SFX\38 7rpm 2oclock 3_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="119546281" Language="SFX">
+					<ShortName>20 2rpm 2oclock low end.wav</ShortName>
+					<Path>SFX\20 2rpm 2oclock low end_89DC6E16.wem</Path>
+				</File>
+				<File Id="147115382" Language="SFX">
+					<ShortName>23_1070rpm_2.wav</ShortName>
+					<Path>SFX\23_1070rpm_2_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="186864788" Language="SFX">
+					<ShortName>35 6rpm 2oclock 4.wav</ShortName>
+					<Path>SFX\35 6rpm 2oclock 4_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="225124426" Language="SFX">
+					<ShortName>35 6rpm 2oclock Low end.wav</ShortName>
+					<Path>SFX\35 6rpm 2oclock Low end_89DC6E16.wem</Path>
+				</File>
+				<File Id="239631907" Language="SFX">
+					<ShortName>26 2rpm 3oclock 3.wav</ShortName>
+					<Path>SFX\26 2rpm 3oclock 3_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="256730592" Language="SFX">
+					<ShortName>08 1rpm 2oclock 2.wav</ShortName>
+					<Path>SFX\08 1rpm 2oclock 2_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="306367927" Language="SFX">
+					<ShortName>20 2rpm 2oclock 5.wav</ShortName>
+					<Path>SFX\20 2rpm 2oclock 5_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="339494709" Language="SFX">
+					<ShortName>08 1rpm 2oclock 6.wav</ShortName>
+					<Path>SFX\08 1rpm 2oclock 6_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="361136937" Language="SFX">
+					<ShortName>26 2rpm 3oclock 6 .wav</ShortName>
+					<Path>SFX\26 2rpm 3oclock 6 _1E8ECBBC.wem</Path>
+				</File>
+				<File Id="367352441" Language="SFX">
+					<ShortName>23_1070rpm_4.wav</ShortName>
+					<Path>SFX\23_1070rpm_4_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="381527117" Language="SFX">
+					<ShortName>29 4rpm 2oclock 1.wav</ShortName>
+					<Path>SFX\29 4rpm 2oclock 1_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="389152894" Language="SFX">
+					<ShortName>29 4rpm 2oclock 5.wav</ShortName>
+					<Path>SFX\29 4rpm 2oclock 5_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="390960495" Language="SFX">
+					<ShortName>35 6rpm 2oclock 2.wav</ShortName>
+					<Path>SFX\35 6rpm 2oclock 2_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="402834729" Language="SFX">
+					<ShortName>08 1rpm 2oclock 7.wav</ShortName>
+					<Path>SFX\08 1rpm 2oclock 7_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="443786095" Language="SFX">
+					<ShortName>31 5rpm 2oclock 4.wav</ShortName>
+					<Path>SFX\31 5rpm 2oclock 4_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="456655030" Language="SFX">
+					<ShortName>35 6rpm 2oclock 5.wav</ShortName>
+					<Path>SFX\35 6rpm 2oclock 5_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="500492744" Language="SFX">
+					<ShortName>07 1RPM 1.wav</ShortName>
+					<Path>SFX\07 1RPM 1_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="501820878" Language="SFX">
+					<ShortName>38 7rpm 2oclock 1.wav</ShortName>
+					<Path>SFX\38 7rpm 2oclock 1_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="508021457" Language="SFX">
+					<ShortName>07 1RPM 2.wav</ShortName>
+					<Path>SFX\07 1RPM 2_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="520461136" Language="SFX">
+					<ShortName>38 7rpm 2oclock 2.wav</ShortName>
+					<Path>SFX\38 7rpm 2oclock 2_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="534140188" Language="SFX">
+					<ShortName>08 1rpm 2oclock 4.wav</ShortName>
+					<Path>SFX\08 1rpm 2oclock 4_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="535159176" Language="SFX">
+					<ShortName>07 1RPM low end.wav</ShortName>
+					<Path>SFX\07 1RPM low end_89DC6E16.wem</Path>
+				</File>
+				<File Id="542761898" Language="SFX">
+					<ShortName>26 2rpm 3oclock 4 .wav</ShortName>
+					<Path>SFX\26 2rpm 3oclock 4 _1E8ECBBC.wem</Path>
+				</File>
+				<File Id="552505258" Language="SFX">
+					<ShortName>26 2rpm 3oclock 11 .wav</ShortName>
+					<Path>SFX\26 2rpm 3oclock 11 _1E8ECBBC.wem</Path>
+				</File>
+				<File Id="568859332" Language="SFX">
+					<ShortName>38 7rpm 2oclock 5.wav</ShortName>
+					<Path>SFX\38 7rpm 2oclock 5_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="575024028" Language="SFX">
+					<ShortName>08 1rpm 2oclock 3.wav</ShortName>
+					<Path>SFX\08 1rpm 2oclock 3_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="582271277" Language="SFX">
+					<ShortName>29 4rpm 2oclock 6.wav</ShortName>
+					<Path>SFX\29 4rpm 2oclock 6_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="585884523" Language="SFX">
+					<ShortName>23_1070rpm_7.wav</ShortName>
+					<Path>SFX\23_1070rpm_7_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="591477281" Language="SFX">
+					<ShortName>31 5rpm 2oclock 2.wav</ShortName>
+					<Path>SFX\31 5rpm 2oclock 2_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="612529558" Language="SFX">
+					<ShortName>20 2rpm 2oclock 6.wav</ShortName>
+					<Path>SFX\20 2rpm 2oclock 6_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="625064572" Language="SFX">
+					<ShortName>31 5rpm 2oclock 1.wav</ShortName>
+					<Path>SFX\31 5rpm 2oclock 1_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="627774152" Language="SFX">
+					<ShortName>31 5rpm 2oclock 7.wav</ShortName>
+					<Path>SFX\31 5rpm 2oclock 7_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="629115964" Language="SFX">
+					<ShortName>26 2rpm 3oclock 9 .wav</ShortName>
+					<Path>SFX\26 2rpm 3oclock 9 _1E8ECBBC.wem</Path>
+				</File>
+				<File Id="647262480" Language="SFX">
+					<ShortName>38 7rpm 2oclock 7.wav</ShortName>
+					<Path>SFX\38 7rpm 2oclock 7_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="679195843" Language="SFX">
+					<ShortName>23_1070rpm_6.wav</ShortName>
+					<Path>SFX\23_1070rpm_6_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="700369138" Language="SFX">
+					<ShortName>23_1070rpm_8.wav</ShortName>
+					<Path>SFX\23_1070rpm_8_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="706876273" Language="SFX">
+					<ShortName>38 7rpm 2oclock 6.wav</ShortName>
+					<Path>SFX\38 7rpm 2oclock 6_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="707406132" Language="SFX">
+					<ShortName>26 2rpm 3oclock 2.wav</ShortName>
+					<Path>SFX\26 2rpm 3oclock 2_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="707743477" Language="SFX">
+					<ShortName>35 6rpm 2oclock 1.wav</ShortName>
+					<Path>SFX\35 6rpm 2oclock 1_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="719765179" Language="SFX">
+					<ShortName>08 1rpm 2oclock 9.wav</ShortName>
+					<Path>SFX\08 1rpm 2oclock 9_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="735661637" Language="SFX">
+					<ShortName>31 5rpm 2oclock Low end.wav</ShortName>
+					<Path>SFX\31 5rpm 2oclock Low end_89DC6E16.wem</Path>
+				</File>
+				<File Id="757266175" Language="SFX">
+					<ShortName>29 4rpm 2oclock 4.wav</ShortName>
+					<Path>SFX\29 4rpm 2oclock 4_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="761414559" Language="SFX">
+					<ShortName>07 1RPM 3.wav</ShortName>
+					<Path>SFX\07 1RPM 3_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="784338541" Language="SFX">
+					<ShortName>38 7rpm 2oclock low end.wav</ShortName>
+					<Path>SFX\38 7rpm 2oclock low end_89DC6E16.wem</Path>
+				</File>
+				<File Id="795441004" Language="SFX">
+					<ShortName>29 4rpm 2oclock 3.wav</ShortName>
+					<Path>SFX\29 4rpm 2oclock 3_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="856391650" Language="SFX">
+					<ShortName>26 2rpm 3oclock 5 .wav</ShortName>
+					<Path>SFX\26 2rpm 3oclock 5 _1E8ECBBC.wem</Path>
+				</File>
+				<File Id="858599166" Language="SFX">
+					<ShortName>26 2rpm 3oclock 10 .wav</ShortName>
+					<Path>SFX\26 2rpm 3oclock 10 _1E8ECBBC.wem</Path>
+				</File>
+				<File Id="862053544" Language="SFX">
+					<ShortName>31 5rpm 2oclock 6.wav</ShortName>
+					<Path>SFX\31 5rpm 2oclock 6_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="880417320" Language="SFX">
+					<ShortName>29 4rpm 2oclock Low end.wav</ShortName>
+					<Path>SFX\29 4rpm 2oclock Low end_89DC6E16.wem</Path>
+				</File>
+				<File Id="883732074" Language="SFX">
+					<ShortName>23_1070rpm_5.wav</ShortName>
+					<Path>SFX\23_1070rpm_5_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="905538219" Language="SFX">
+					<ShortName>08 1rpm 2oclock 5.wav</ShortName>
+					<Path>SFX\08 1rpm 2oclock 5_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="906435695" Language="SFX">
+					<ShortName>26 2rpm 3oclock Low end.wav</ShortName>
+					<Path>SFX\26 2rpm 3oclock Low end_89DC6E16.wem</Path>
+				</File>
+				<File Id="911909435" Language="SFX">
+					<ShortName>26 2rpm 3oclock 8 .wav</ShortName>
+					<Path>SFX\26 2rpm 3oclock 8 _1E8ECBBC.wem</Path>
+				</File>
+				<File Id="926128951" Language="SFX">
+					<ShortName>08 1rpm 2oclock low end.wav</ShortName>
+					<Path>SFX\08 1rpm 2oclock low end_89DC6E16.wem</Path>
+				</File>
+				<File Id="945690080" Language="SFX">
+					<ShortName>20 2rpm 2oclock 3.wav</ShortName>
+					<Path>SFX\20 2rpm 2oclock 3_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="947306115" Language="SFX">
+					<ShortName>26 2rpm 3oclock 1.wav</ShortName>
+					<Path>SFX\26 2rpm 3oclock 1_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="957937295" Language="SFX">
+					<ShortName>26 2rpm 3oclock 7 .wav</ShortName>
+					<Path>SFX\26 2rpm 3oclock 7 _1E8ECBBC.wem</Path>
+				</File>
+				<File Id="978755631" Language="SFX">
+					<ShortName>20 2rpm 2oclock 2.wav</ShortName>
+					<Path>SFX\20 2rpm 2oclock 2_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="982036349" Language="SFX">
+					<ShortName>08 1rpm 2oclock 1.wav</ShortName>
+					<Path>SFX\08 1rpm 2oclock 1_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="990241441" Language="SFX">
+					<ShortName>20 2rpm 2oclock 4.wav</ShortName>
+					<Path>SFX\20 2rpm 2oclock 4_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="993663459" Language="SFX">
+					<ShortName>29 4rpm 2oclock 2.wav</ShortName>
+					<Path>SFX\29 4rpm 2oclock 2_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="1016608869" Language="SFX">
+					<ShortName>20 2rpm 2oclock 1.wav</ShortName>
+					<Path>SFX\20 2rpm 2oclock 1_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="1021483429" Language="SFX">
+					<ShortName>08 1rpm 2oclock 8.wav</ShortName>
+					<Path>SFX\08 1rpm 2oclock 8_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="1029266016" Language="SFX">
+					<ShortName>35 6rpm 2oclock 3.wav</ShortName>
+					<Path>SFX\35 6rpm 2oclock 3_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="1032634692" Language="SFX">
+					<ShortName>23_1070rpm_3.wav</ShortName>
+					<Path>SFX\23_1070rpm_3_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="1049418156" Language="SFX">
+					<ShortName>31 5rpm 2oclock 3.wav</ShortName>
+					<Path>SFX\31 5rpm 2oclock 3_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="1053865426" Language="SFX">
+					<ShortName>07 1RPM 4.wav</ShortName>
+					<Path>SFX\07 1RPM 4_1E8ECBBC.wem</Path>
+				</File>
+				<File Id="1062517115" Language="SFX">
+					<ShortName>07 1RPM 5.wav</ShortName>
+					<Path>SFX\07 1RPM 5_1E8ECBBC.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<GameParameters>
+				<GameParameter Id="1662679502" Name="SIMVAR_CHASE_CAMERA_ZOOM" ObjectPath="\Game Parameters\simvar\camera\SIMVAR_CHASE_CAMERA_ZOOM" GUID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}"/>
+				<GameParameter Id="2809322939" Name="SIMVAR_GENERAL_ENG_RPM" ObjectPath="\Game Parameters\simvar\engine\shared\SIMVAR_GENERAL_ENG_RPM" GUID="{2A2495B6-0158-4F47-8261-D625910D546D}"/>
+				<GameParameter Id="3779073172" Name="ENV_DOPPLERCENTS" ObjectPath="\Game Parameters\environment\common\ENV_DOPPLERCENTS" GUID="{05BB02CD-EBB3-47D1-9A4B-320AA5FE6C21}"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="4185053780" Name="VIEWPOINT" ObjectPath="\States\aircraft\VIEWPOINT" GUID="{13BEFA7F-C929-4FAA-8B48-86589D04F1D6}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\aircraft\VIEWPOINT\None" GUID="{232BE3B6-4A43-4CFD-8F19-E3A1D58580D1}"/>
+						<State Id="3553349781" Name="INSIDE" ObjectPath="\States\aircraft\VIEWPOINT\INSIDE" GUID="{FFECDB48-6798-4725-AB04-DCC845B2904E}"/>
+						<State Id="438105790" Name="OUTSIDE" ObjectPath="\States\aircraft\VIEWPOINT\OUTSIDE" GUID="{A2B684CD-A8E1-4B6B-A69B-84CC4AD39406}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
