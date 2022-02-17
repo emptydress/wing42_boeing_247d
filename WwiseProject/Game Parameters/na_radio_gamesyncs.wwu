@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="NA_Radio_Game_Parameters" ID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="21"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Folder Name="RTPCs" ID="{06B8C739-7061-4DB7-BD0E-F9C2478F2F7B}" ShortID="158719956">
+					<ChildrenList>
+						<GameParameter Name="RADIO_RANGE_MUSIC_SLIDER" ID="{50F8CC41-849B-4AFD-A5AD-7C6D5085E261}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0.5"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RADIO_RANGE_MUSIC_VOLUME" ID="{4CAA57DB-8EF6-4D74-9A98-DF73B2D43E72}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="40"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="40"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RADIO_RANGE_ID_VOLUME" ID="{3C42917E-2188-4545-B806-7CEF4F690C8D}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="40"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RADIO_RANGE_N_VOLUME" ID="{77DE8D47-2B14-446A-85D6-B29AC1F54375}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="40"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RADIO_RANGE_A_VOLUME" ID="{D9BB9335-8051-4D4F-921E-6F2CA936BF8C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="40"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RADIO_RANGE_VOLUME" ID="{A2DFEEF4-C308-492E-B73B-7FD4671E5174}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RADIO_RANGE_FREQUENCY" ID="{D88FB2C6-F6A1-45F9-9E47-6ECFA3585143}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="190"/>
+								<Property Name="Max" Type="Real64" Value="1750"/>
+								<Property Name="Min" Type="Real64" Value="190"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RADIO_RANGE_BAND" ID="{5533455E-369F-4573-A42E-547C2C5EEF67}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="5"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RADIO_RANGE_BAND_POSITION" ID="{1143840E-0D7F-4E4F-9B0B-CE2FBDD8CA68}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="60"/>
+								<Property Name="Max" Type="Real64" Value="120"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RADIO_RANGE_FREQUENCY_HANDLE" ID="{982F0057-C253-4B65-9784-3830851CA10E}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Event_triggers" ID="{84B0C2CF-EB0E-4026-A8F1-13B5CCB676B3}" ShortID="798392837">
+					<ChildrenList>
+						<GameParameter Name="SOUND_AN_PLAYING_BOOL" ID="{6D438DE5-1CD7-4FE9-8171-202DEBF41D11}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SOUND_A_PLAYING_BOOL" ID="{FB862CB3-732B-4D65-A06B-ADBC3DFC7960}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SOUND_N_PLAYING_BOOL" ID="{1667D7C2-F08E-4DE7-9364-3D1DB4AF2DE7}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SOUND_ID_BIP_PLAYING_BOOL" ID="{F4BF164C-708D-4217-9295-E6C85B96A453}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SOUND_ID_BEEP_PLAYING_BOOL" ID="{4BB30B73-F19A-4B59-AF73-FFCFF3FC9C24}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SOUND_NOISE_PLAYING_BOOL" ID="{CA8B0E7D-B386-41FD-963C-35B9141CECD3}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SOUND_MUSIC_PLAYING_BOOL" ID="{2453D525-97E7-4660-AFBA-B9930475CD68}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SWITCH_RADIO_RANGE_CW" ID="{B6F33438-C328-40BD-B1D9-B66EF9DBE98B}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A486626B-F6B5-4AC8-BDC7-1EE14741EB8E}" SchemaVersion="97" RootDocumentID="{D9F9BB79-FC42-4C53-A23C-177B41F92938}">
+	<Events>
+		<WorkUnit Name="NA_Radio_Events" ID="{A486626B-F6B5-4AC8-BDC7-1EE14741EB8E}" OwnerID="{D9F9BB79-FC42-4C53-A23C-177B41F92938}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="NA_Radio" ID="{B5985F32-2622-4B95-A73A-D9AE1A463A41}" ShortID="924691072">
+					<ChildrenList>
+						<Folder Name="Hardware" ID="{DF1D3055-3367-4ED8-94C9-B152018D3AE6}" ShortID="167876248">
+							<ChildrenList>
+								<Event Name="Play_wing42_boeing_247d_knob_vhf_decimals" ID="{B4BB9406-7AD6-4771-9AE9-B85CAB79C5D6}"/>
+								<Event Name="Play_wing42_boeing_247d_knob_vhf_integers" ID="{E95C7942-3182-4333-A63B-98A12D31A284}"/>
+								<Event Name="wing42_boeing_247d_switch_radio_range_power_on" ID="{13BECD0C-7E87-49A4-82C0-948BEC814071}"/>
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_power_off" ID="{EB1904C5-6ADE-4BC3-A1C4-670ED953DCFE}"/>
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_cw_on" ID="{CDDC932C-9106-43B1-B743-66C9693E9570}"/>
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_cw_off" ID="{565AE358-5000-4E54-8ED0-29C6CCC2D0BC}"/>
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_light_on" ID="{01751597-3F5F-4BE7-B45D-2B6F6153721E}"/>
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_light_off" ID="{9F6B50D0-9245-415A-B59F-DB04EC03EAFE}"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Navigation" ID="{F164D5A3-CD1C-4984-90DE-B1ED09958E7B}" ShortID="963079794">
+							<ChildrenList>
+								<Event Name="Play_wing42_boeing_247d_RR_AN_tone_start" ID="{FC0055EE-9074-4A7E-B52A-45371898856F}"/>
+								<Event Name="Play_wing42_boeing_247d_RR_AN_tone_stop" ID="{F25B2BB6-59D1-473F-8D63-3C1FB51C2F99}"/>
+								<Event Name="Play_wing42_boeing_247d_RR_ID_bip" ID="{79ED6293-633B-4CA0-9850-67A1DD8F180C}"/>
+								<Event Name="Play_wing42_boeing_247d_RR_ID_beep" ID="{05ACF4DB-4932-49B9-8EEF-51C97F83154F}"/>
+								<Event Name="Play_wing42_boeing_247d_RR_noise_start" ID="{D8B324A4-111F-498B-9880-5F0C69C7899B}"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Music" ID="{77D96B5D-DDEC-463B-9282-6EAE2DC469C1}" ShortID="400032578">
+							<ChildrenList>
+								<Event Name="Play_wing42_boeing_247d_RR_music_start" ID="{6A760E41-93AF-40B2-8E35-A6BD7CDC70C4}"/>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
