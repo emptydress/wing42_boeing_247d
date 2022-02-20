@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{11543A83-1B02-4941-AF00-DB68683AE8EE}" SchemaVersion="97">
+	<Modulators>
+		<WorkUnit Name="radio" ID="{11543A83-1B02-4941-AF00-DB68683AE8EE}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="lfo-radio_warble" ID="{C94425E7-B763-408F-ACBF-8676403DAE12}" ShortID="905312681">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="7.04">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{AED528A4-9AE2-4C1B-B770-3B6DD4AF7C97}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="0.09"/>
+											<Property Name="Min" Type="Real64" Value="-0.27"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoInitialPhase" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6FC31EC6-FEAB-41FD-8632-A7C83E0E6CAE}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="0.4"/>
+											<Property Name="Min" Type="Real64" Value="-0.5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoWaveform" Type="int32" Value="1"/>
+						<Property Name="ModulatorScope" Type="int32" Value="0"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="lfo-radio_warble-depth" ID="{FFBA97D7-77F5-4FAB-AC5C-2917F4341D3D}" ShortID="803655921">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.08"/>
+						<Property Name="ModulatorScope" Type="int32" Value="3"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="lfo-radio_warble-frequency" ID="{0C8B2614-B506-4A95-BF21-24E5BF54DB58}" ShortID="950427102">
+					<PropertyList>
+						<Property Name="LfoDepth" Type="Real64" Value="6.8"/>
+						<Property Name="LfoFrequency" Type="Real64" Value="2">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B20F36DE-424C-429E-9AB2-202BE24137C7}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="1.429"/>
+											<Property Name="Min" Type="Real64" Value="-1.429"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="ModulatorScope" Type="int32" Value="3"/>
+					</PropertyList>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
+	</Modulators>
+</WwiseDocument>

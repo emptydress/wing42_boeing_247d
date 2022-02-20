@@ -13,11 +13,11 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="eng1_combustion_inside" ID="{6CB8D29A-A98E-453B-A0DF-781B53FABEE0}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="eng1_combustion_inside" ID="{506F75A8-5134-44DA-B819-E59ED4EB9D67}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{65ABEA5E-5B78-45DC-B939-A2100259F22A}" ShortID="920920530">
+								<Action Name="" ID="{3DBA9D89-52B0-4A21-BC5E-427D9460B0CD}" ShortID="241383393">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
@@ -37,7 +37,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="eng2_combustion_inside" ID="{25994289-CA2A-40C4-B209-674FCB162373}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="eng2_combustion_inside" ID="{63C392E3-4B64-4BBF-A139-E46C178E993D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -47,7 +47,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="eng2_combustion_outside" ID="{EDE163A0-A449-4571-91DC-797095ED387E}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="eng2_combustion_outside" ID="{3D18D0C3-0619-40EF-972B-10A61A2B548A}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -60,10 +60,198 @@
 								<Action Name="" ID="{D5C17204-1441-48D5-9B52-BB4659206859}" ShortID="460168569">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="eng1_combustion" ID="{A1B245B5-9192-4612-AE33-A42FB9CE5C31}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="07_533rpm" ID="{37546FA6-23D7-42E2-9061-E8640A33B5A5}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{32921FB5-06C3-4EDB-844F-75F9D0EA52F9}" ShortID="119098657">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="08_633rpm" ID="{AB047289-F74A-4B91-9F1B-2D04E5DB296C}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F5FAB27D-A482-4747-8065-ADE514AFF57E}" ShortID="122270627">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="20_813rpm" ID="{D044DA1E-8639-4F2C-BDB6-B51E4B8B1565}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3841C4E2-9EFC-4C75-B4B8-E377D9C2C06E}" ShortID="823969643">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="23_1070rpm" ID="{BEA67A5C-7158-4E6A-83BD-1B176BDD7DA0}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{49B6806D-B114-4B85-8F81-D950A267ACEB}" ShortID="204938146">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="26_1313rpm" ID="{1D861E31-F906-489E-A5B1-9E8EDF88A543}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4CCEB928-BD64-42B7-BA7C-8A1B951151EE}" ShortID="292506096">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="29_1420rpm" ID="{8BC85D91-0109-47FE-8CF8-B434E7FE6E5C}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{19554D45-06D2-4A86-8BFF-FD9D99B97ED5}" ShortID="521184398">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="31_1689rpm" ID="{AFBCE6AA-552B-4764-912D-1DFB16371ED7}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5B819F53-FA55-44FC-8D3E-33F86BC9951F}" ShortID="1016109980">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="35_1790rpm" ID="{4DB00541-DAB6-4D3A-9795-EB5481DA5171}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{27136596-AE08-4900-A4E6-9E38983F38D4}" ShortID="690047676">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="38_2020rpm" ID="{FB1421BA-D6CC-4941-B872-B1AFC38E03E4}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{97716AB1-BADC-40ED-868C-72D1E034AE8F}" ShortID="903457185">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="07_533rpm" ID="{271702F5-C5DB-43F3-9E0C-2E0E4E6C9D53}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4003386D-6D29-4153-AB33-D4569B64F564}" ShortID="54674938">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="08_633rpm" ID="{2E70D62E-6453-47A4-8141-ACD447D94239}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F2EA0CA9-8EBE-461E-875D-0FD55D83A740}" ShortID="1043385464">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="20_813rpm" ID="{FAE1AF82-F489-426C-90C5-AB80284F15FF}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4426AF8B-9246-4DA8-AC4F-72955DF18475}" ShortID="370867762">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="23_1070rpm" ID="{BA4FB4DE-3831-4E2E-A410-5DC9D3FAA4E6}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C7041CB5-212A-4A5D-B4F1-18740B8CF8AD}" ShortID="298415167">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="26_1313rpm" ID="{199B2FA4-36F2-4428-92CC-8696FFDF7D02}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5A6F2965-6ABA-4F19-859E-719BED43D017}" ShortID="846372047">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="29_1420rpm" ID="{20B4AB6D-75D1-4418-AEE2-90F3F36920AA}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1947F0AF-449F-44F3-A803-AB39D1F71386}" ShortID="609486515">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="31_1689rpm" ID="{FEAAB277-FF38-455A-A9F6-0524F1BBF4B0}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EC1D09FE-0DB4-4C5D-8A9F-A66BAB9B9CD5}" ShortID="886693407">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="35_1790rpm" ID="{022EB062-B9B9-4F84-B544-4AA68F851787}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8AD224A4-CA93-4D4B-8E58-3286F52F806E}" ShortID="948561274">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="38_2020rpm" ID="{8BE5F068-4FBA-48D3-B800-181B8E5D80DE}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -71,13 +259,201 @@
 						</Event>
 						<Event Name="Play_wing42_boeing_247d_eng2_shutdown" ID="{E17161E6-F45F-4C16-83D6-A5641608FA1E}">
 							<ChildrenList>
-								<Action Name="" ID="{A87E9A7A-67B0-4506-8428-1ACF8A85E77E}" ShortID="702788883">
+								<Action Name="" ID="{2952C4CD-BD0C-4E7A-8C17-61DB92452F80}" ShortID="850756693">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="eng2_combustion" ID="{1ECBEDB2-9714-4D92-940C-5193C588797A}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="07_533rpm" ID="{1B2749AF-36A6-4A81-B351-8D6DED041972}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FB69DBC9-89DE-421B-A128-8B27E1439AF6}" ShortID="424723912">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="08_633rpm" ID="{50F59842-BC52-4468-8C83-A757D9B2784F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A249E9BD-2F01-45C3-8F25-DDC18072DD2A}" ShortID="414158307">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="20_813rpm" ID="{8F1A2EF3-7B29-42E4-A054-A4E629781E69}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{88464B6D-430C-4395-98B6-8FD270508654}" ShortID="412114966">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="23_1070rpm" ID="{CC886CDC-1475-4432-BAC8-64AB109EA4F8}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D8CEBD80-0C0C-4E11-9EB4-EEF3FA03C7E0}" ShortID="820065975">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="26_1313rpm" ID="{E90714F0-650F-44CE-8918-8ED8B246D4C0}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{29CF8BC0-65C3-4A59-9911-0D93736DA6EC}" ShortID="997021636">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="29_1420rpm" ID="{80D4EFBB-4276-497B-8383-286D7B0504D3}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{04956202-FC20-4EAF-98A6-624EA65E75AC}" ShortID="936554827">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="31_1689rpm" ID="{CAD3970C-EE5C-4023-8CDF-D14C36325FD5}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B8147F05-955A-4BEC-8119-829AF3EC4B62}" ShortID="101192302">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="35_1790rpm" ID="{D6766213-6764-46B0-BC11-E70E106B31BB}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FD3E9070-7FAB-48C0-96ED-A50EF1668547}" ShortID="790403056">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="38_2020rpm" ID="{F2BFB862-8DFA-470E-A501-840499A6650B}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{240CAFDF-CBEB-45B8-A04E-734C0516B25C}" ShortID="84725048">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="07_533rpm" ID="{5DE39BCF-C27D-416E-B447-F9918CCE00F2}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{83624F52-8056-498E-80B2-6E6AE5E1692F}" ShortID="370623073">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="08_633rpm" ID="{6E4C98DC-7CBC-473D-B1A0-A06935A608F6}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1ADD744E-B21F-4865-9655-461BDD0C618A}" ShortID="526730170">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="20_813rpm" ID="{E38D4E01-BA11-4246-A262-DE981A3D80CE}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F928D53D-9CD8-49DE-8201-7F11D8AA7904}" ShortID="236052619">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="23_1070rpm" ID="{1138AACA-7332-4D59-8F01-B96A732AF105}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C4497131-CF2F-45EF-A8AA-B98A81AA7C75}" ShortID="377059639">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="26_1313rpm" ID="{A7728E18-26DD-4644-8CFA-829C3F58F4F2}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AEE7FA9C-6364-4980-943B-98DD9238097F}" ShortID="332924687">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="29_1420rpm" ID="{4BA95F68-BD66-4678-BAC4-5303751560F7}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D508C9A9-6AE3-4559-AD2A-694603A0006F}" ShortID="548460278">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="31_1689rpm" ID="{ADC3B3DE-FC2C-4B99-BDE0-00C0CA0F242F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{21198F1B-8890-4020-9FD7-1E49C2F6A6FB}" ShortID="1009180173">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="35_1790rpm" ID="{1243BDA1-3B07-403A-BB76-CFB4B4F63E33}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CAE2A4D2-C684-4D0E-8EFD-E72DF391E503}" ShortID="774325278">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="38_2020rpm" ID="{372EA72C-ABE9-4A18-90D2-AD9F0631BAD0}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -85,6 +461,192 @@
 						</Event>
 						<Event Name="Play_wing42_boeing_247d_eng1_combustion_start" ID="{20C46360-5001-4A4E-82C8-9F44B6ECD2BE}"/>
 						<Event Name="Play_wing42_boeing_247d_eng2_combustion_start" ID="{80C8B2EF-42B4-45E1-8B97-8C27FA109F91}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="NA_Radio" ID="{B5985F32-2622-4B95-A73A-D9AE1A463A41}" ShortID="924691072">
+					<ChildrenList>
+						<Folder Name="Hardware" ID="{DF1D3055-3367-4ED8-94C9-B152018D3AE6}" ShortID="167876248">
+							<ChildrenList>
+								<Event Name="Play_wing42_boeing_247d_knob_vhf_decimals" ID="{B4BB9406-7AD6-4771-9AE9-B85CAB79C5D6}"/>
+								<Event Name="Play_wing42_boeing_247d_knob_vhf_integers" ID="{E95C7942-3182-4333-A63B-98A12D31A284}"/>
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_power_on" ID="{13BECD0C-7E87-49A4-82C0-948BEC814071}">
+									<ChildrenList>
+										<Action Name="" ID="{EDF9F665-D5C1-4FDA-BDCD-1B6ED2FA7D0A}" ShortID="339723578">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Flip on" ID="{DC227BE4-075D-45FE-8FC3-1800F1F12C4B}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_power_off" ID="{EB1904C5-6ADE-4BC3-A1C4-670ED953DCFE}">
+									<ChildrenList>
+										<Action Name="" ID="{AF2060A4-5E08-4AC7-ABA4-0E2F0C9F56BA}" ShortID="964157313">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Flip off" ID="{779F57BF-60CD-46D7-8E07-FA572661DFAA}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_cw_on" ID="{CDDC932C-9106-43B1-B743-66C9693E9570}">
+									<ChildrenList>
+										<Action Name="" ID="{A4C0C560-D7A8-4941-806E-80279E2C9918}" ShortID="1053958659">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Flip on" ID="{DC227BE4-075D-45FE-8FC3-1800F1F12C4B}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_cw_off" ID="{565AE358-5000-4E54-8ED0-29C6CCC2D0BC}">
+									<ChildrenList>
+										<Action Name="" ID="{63F74F8F-D846-4EAF-9BA6-5A86FF29B98A}" ShortID="541515012">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Flip off" ID="{779F57BF-60CD-46D7-8E07-FA572661DFAA}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_light_on" ID="{01751597-3F5F-4BE7-B45D-2B6F6153721E}">
+									<ChildrenList>
+										<Action Name="" ID="{87A1AF3F-D45A-413C-8313-36DD3F8F0D35}" ShortID="983152997">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Flip on" ID="{DC227BE4-075D-45FE-8FC3-1800F1F12C4B}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_light_off" ID="{9F6B50D0-9245-415A-B59F-DB04EC03EAFE}">
+									<ChildrenList>
+										<Action Name="" ID="{D52D38D2-A780-481E-9B8F-89ACBB283F3C}" ShortID="776520335">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Flip off" ID="{779F57BF-60CD-46D7-8E07-FA572661DFAA}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Navigation" ID="{F164D5A3-CD1C-4984-90DE-B1ED09958E7B}" ShortID="963079794">
+							<ChildrenList>
+								<Event Name="Play_wing42_boeing_247d_RR_AN_tone_start" ID="{FC0055EE-9074-4A7E-B52A-45371898856F}">
+									<ChildrenList>
+										<Action Name="" ID="{1925237B-AFA1-4877-A22E-AE848602F1B7}" ShortID="910064152">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="A-N" ID="{31ED3897-BB0E-412C-A046-1976179458B3}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_wing42_boeing_247d_RR_AN_tone_stop" ID="{F25B2BB6-59D1-473F-8D63-3C1FB51C2F99}">
+									<ChildrenList>
+										<Action Name="" ID="{194DA877-6F61-466E-846B-456E13819190}" ShortID="1064742586">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="A-N" ID="{31ED3897-BB0E-412C-A046-1976179458B3}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_wing42_boeing_247d_RR_ID_bip" ID="{79ED6293-633B-4CA0-9850-67A1DD8F180C}">
+									<ChildrenList>
+										<Action Name="" ID="{9A540D10-7A23-4206-85A0-F29AA07F00BE}" ShortID="178192106">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bip" ID="{0E4BD464-465C-48DF-96A3-F44B82E19F29}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_wing42_boeing_247d_RR_ID_beep" ID="{05ACF4DB-4932-49B9-8EEF-51C97F83154F}">
+									<ChildrenList>
+										<Action Name="" ID="{132CBFF4-51C4-4934-A5E1-696FFB8495E3}" ShortID="828205607">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="boop" ID="{382F0637-5310-4BAE-B859-B7E26B145417}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_wing42_boeing_247d_RR_noise_start" ID="{D8B324A4-111F-498B-9880-5F0C69C7899B}">
+									<ChildrenList>
+										<Action Name="" ID="{21EAA3A4-81A5-41AA-9F14-AAC4E7EBCBFF}" ShortID="660544645">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="static" ID="{7C17C268-FFD1-4D3F-923B-1407FE7B7696}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Music" ID="{77D96B5D-DDEC-463B-9282-6EAE2DC469C1}" ShortID="400032578">
+							<ChildrenList>
+								<Event Name="Play_wing42_boeing_247d_RR_music_start" ID="{6A760E41-93AF-40B2-8E35-A6BD7CDC70C4}">
+									<ChildrenList>
+										<Action Name="" ID="{F0E2112B-EFBF-49B8-BB14-E7A724453899}" ShortID="600152124">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="American Radio Stations" ID="{A3242D31-97A6-455B-8425-11AD6790E472}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

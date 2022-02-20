@@ -21,6 +21,20 @@ namespace AK
         static const AkUniqueID PLAY_WING42_BOEING_247D_ENG2_COMBUSTION_START = 2672334406U;
         static const AkUniqueID PLAY_WING42_BOEING_247D_ENG2_PROP = 1835300613U;
         static const AkUniqueID PLAY_WING42_BOEING_247D_ENG2_SHUTDOWN = 2729287984U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_KNOB_VHF_DECIMALS = 934406635U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_KNOB_VHF_INTEGERS = 4093439546U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_RR_AN_TONE_START = 617814789U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_RR_AN_TONE_STOP = 2264379559U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_RR_ID_BEEP = 2277973450U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_RR_ID_BIP = 3033293279U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_RR_MUSIC_START = 3830696024U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_RR_NOISE_START = 826574943U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_SWITCH_RADIO_RANGE_CW_OFF = 3258476026U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_SWITCH_RADIO_RANGE_CW_ON = 3392337276U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_SWITCH_RADIO_RANGE_LIGHT_OFF = 2085931976U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_SWITCH_RADIO_RANGE_LIGHT_ON = 4051274322U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_SWITCH_RADIO_RANGE_POWER_OFF = 3224618195U;
+        static const AkUniqueID PLAY_WING42_BOEING_247D_SWITCH_RADIO_RANGE_POWER_ON = 1994665375U;
     } // namespace EVENTS
 
     namespace STATES
@@ -570,6 +584,18 @@ namespace AK
         static const AkUniqueID MUTE_WARNING_OUTSIDE = 1479801155U;
         static const AkUniqueID NPC_ALPHA_PERCENT = 4231049133U;
         static const AkUniqueID PASSENGER_NUMBER = 168543721U;
+        static const AkUniqueID RADIO_RANGE_A_VOLUME = 2926166717U;
+        static const AkUniqueID RADIO_RANGE_BAND = 2147621814U;
+        static const AkUniqueID RADIO_RANGE_BAND_POSITION = 1406273468U;
+        static const AkUniqueID RADIO_RANGE_FREQUENCY = 1514954239U;
+        static const AkUniqueID RADIO_RANGE_FREQUENCY_HANDLE = 2845930544U;
+        static const AkUniqueID RADIO_RANGE_ID_VOLUME = 1869355353U;
+        static const AkUniqueID RADIO_RANGE_MUSIC_GENRE = 2684672592U;
+        static const AkUniqueID RADIO_RANGE_MUSIC_SLIDER = 4221178340U;
+        static const AkUniqueID RADIO_RANGE_MUSIC_VOLUME = 1102684005U;
+        static const AkUniqueID RADIO_RANGE_N_VOLUME = 353147304U;
+        static const AkUniqueID RADIO_RANGE_NOISE_VOLUME = 751155864U;
+        static const AkUniqueID RADIO_RANGE_VOLUME = 3869142633U;
         static const AkUniqueID SC_AURAL_WARNING = 1288733096U;
         static const AkUniqueID SC_COMBUSTION = 2569770059U;
         static const AkUniqueID SC_ENGINES = 2025464895U;
@@ -719,6 +745,13 @@ namespace AK
         static const AkUniqueID SIMVAR_YOKE_X_POSITION_DERIVED = 1017211267U;
         static const AkUniqueID SIMVAR_YOKE_Y_POSITION = 3891096118U;
         static const AkUniqueID SIMVAR_YOKE_Y_POSITION_DERIVED = 2646086036U;
+        static const AkUniqueID SOUND_A_PLAYING_BOOL = 4187614504U;
+        static const AkUniqueID SOUND_AN_PLAYING_BOOL = 2309511678U;
+        static const AkUniqueID SOUND_ID_BEEP_PLAYING_BOOL = 3915833317U;
+        static const AkUniqueID SOUND_ID_BIP_PLAYING_BOOL = 3580427468U;
+        static const AkUniqueID SOUND_MUSIC_PLAYING_BOOL = 3075732272U;
+        static const AkUniqueID SOUND_N_PLAYING_BOOL = 1137746125U;
+        static const AkUniqueID SOUND_NOISE_PLAYING_BOOL = 1602187557U;
         static const AkUniqueID SPP_DISTANCE = 3028259178U;
         static const AkUniqueID SPP_EMITERCONE = 1871673890U;
         static const AkUniqueID SPP_LISTENERCONE = 3039223294U;
@@ -732,14 +765,13 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID SWITCH_RADIO_RANGE_CW = 3829653716U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID LOCAL_SOUNDBANK = 2933379036U;
-        static const AkUniqueID MYCOMPANY_GAUGE_AIRCRAFT_AI = 509158762U;
-        static const AkUniqueID MYCOMPANY_SIMPLE_AIRCRAFT_AI = 1218587771U;
         static const AkUniqueID WING42_BOEING_247D = 1230727645U;
     } // namespace BANKS
 

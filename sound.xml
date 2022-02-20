@@ -50,12 +50,73 @@
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
 		</Sound>
 
+
 		<!--===================================== Engine 2 (right?) ======================================-->
 
 		<Sound WwiseEvent="Combustion" WwiseData="true" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" RPMMin="400"  EngineIndex="2" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
 		</Sound>
 
+
 	</EngineSoundPresets>
+
+	<SimVarSounds>
+		<!--=========================================== NA Radio =========================================-->
+		
+		<!--Navigation-->
+		<Sound WwiseData="True" Continuous="true" ViewPoint="All" BreakOnStop="False" WwiseEvent="RR_AN_tone_start" LocalVar="SOUND AN PLAYING BOOL">
+			<Range LowerBound="1"/>
+			<WwiseRTPC LocalVar="RADIO RANGE A VOLUME" RTPCName="RADIO_RANGE_A_VOLUME"/>
+			<WwiseRTPC LocalVar="RADIO RANGE N VOLUME" RTPCName="RADIO_RANGE_N_VOLUME"/>
+			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
+			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean" Index="0">
+				<Range LowerBound="1"/>
+			</Requires>
+		</Sound>
+		
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="RR_ID_bip_start" LocalVar="SOUND ID BIP PLAYING BOOL">
+			<Range LowerBound="1"/>
+			<WwiseRTPC LocalVar="RADIO RANGE ID VOLUME" RTPCName="RADIO_RANGE_ID_VOLUME"/>
+			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
+			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean" Index="0">
+				<Range LowerBound="1"/>
+			</Requires>
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="RR_ID_beep_start" LocalVar="SOUND ID BEEP PLAYING BOOL">
+			<Range LowerBound="1"/>
+			<WwiseRTPC LocalVar="RADIO RANGE ID VOLUME" RTPCName="RADIO_RANGE_ID_VOLUME"/>
+			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
+			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean" Index="0">
+				<Range LowerBound="1"/>
+			</Requires>
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="RR_noise_start" LocalVar="SOUND ID NOISE PLAYING BOOL">
+			<Range LowerBound="1"/>
+			<WwiseRTPC LocalVar="RADIO RANGE ID VOLUME" RTPCName="RADIO_RANGE_ID_VOLUME"/>
+			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
+			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean" Index="0">
+				<Range LowerBound="1"/>
+			</Requires>
+		</Sound>
+
+	</SimVarSounds>
+
+
+	<AnimationSounds>
+
+
+		<!--=========================================== NA Radio =========================================-->
+
+			<!--Switches-->
+	        <Sound WwiseData="True" Continuous="False" ViewPoint="Inside" NodeName="switch_radio_range_power" WwiseEvent="switch_radio_range_power_on"></Sound>
+	        <Sound WwiseData="True" Continuous="False" ViewPoint="Inside" NodeName="switch_radio_range_power" WwiseEvent="switch_radio_range_power_off"></Sound>
+	        <Sound WwiseData="True" Continuous="False" ViewPoint="Inside" NodeName="switch_radio_range_cw" WwiseEvent="switch_radio_range_cw_on"></Sound>
+	        <Sound WwiseData="True" Continuous="False" ViewPoint="Inside" NodeName="switch_radio_range_cw" WwiseEvent="switch_radio_range_cw_off"></Sound>
+	        <Sound WwiseData="True" Continuous="False" ViewPoint="Inside" NodeName="switch_radio_range_light" WwiseEvent="switch_radio_range_light_on"></Sound>
+	        <Sound WwiseData="True" Continuous="False" ViewPoint="Inside" NodeName="switch_radio_range_light" WwiseEvent="switch_radio_range_light_off"></Sound>
+
+	</AnimationSounds>
 
 </SoundInfo>
