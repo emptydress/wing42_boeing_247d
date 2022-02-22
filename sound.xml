@@ -1,25 +1,26 @@
 
 <!--
-	************************************************************
-	@				   										   @
-	@            The Scintillating Sonic Sensations            @
-	@                                                          @
-	@                          of the                          @
-	@                     ................                     @
-	@                     .			     .                     @
-	@                     . BOEING  247D .					   @
-	@                     .              .			           @
-	@                     ````````````````                     @
-	@                       and  friends                       @
-	@				   										   @
-	@					     by  Wing42                        @
+    ************************************************************
+    @                                                          @
+    @            The Scintillating Sonic Sensations            @
+    @                                                          @
+    @                          of the                          @
+    @                     ................                     @
+    @                     .              .                     @
+    @                     . BOEING  247D .                     @
+    @                     .              .                     @
+    @                     ````````````````                     @
+    @                       and  friends                       @
+    @                                                          @
+    @                        by  Wing42                        @
     @                      www.wing42.com                      @
-	@				   										   @
-	@               Sound Design  by  Zak Spence               @
-	@                 emptydressmusic@gmail.com                @
-	@											               @
-	@        Copyright (c) Wing42, All rights reserved.        @
-	************************************************************
+    @                  tested with version 7.2                 @
+    @                                                          @
+    @               Sound Design  by  Zak Spence               @
+    @                 emptydressmusic@gmail.com                @ 
+    @                                                          @
+    @        Copyright (c) Wing42, All rights reserved.        @
+    ************************************************************
 -->
 
 <SoundInfo Version="0.1">
@@ -64,7 +65,7 @@
 		<!--=========================================== NA Radio =========================================-->
 		
 		<!--Navigation-->
-		<Sound WwiseData="True" Continuous="true" ViewPoint="All" BreakOnStop="False" WwiseEvent="RR_AN_tone_start" LocalVar="SOUND AN PLAYING BOOL">
+		<Sound WwiseData="True" Continuous="true" ViewPoint="All" BreakOnStop="False" WwiseEvent="rr_nav_tone_start" LocalVar="SOUND AN PLAYING BOOL">
 			<Range LowerBound="1"/>
 			<WwiseRTPC LocalVar="RADIO RANGE A VOLUME" RTPCName="RADIO_RANGE_A_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE N VOLUME" RTPCName="RADIO_RANGE_N_VOLUME"/>
@@ -74,7 +75,17 @@
 			</Requires>
 		</Sound>
 		
-		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="RR_ID_bip_start" LocalVar="SOUND ID BIP PLAYING BOOL">
+		<Sound WwiseData="True" Continuous="true" ViewPoint="All" BreakOnStop="False" WwiseEvent="rr_music_start" LocalVar="SOUND AN PLAYING BOOL">
+			<Range LowerBound="1"/>
+			<WwiseRTPC LocalVar="RADIO RANGE A VOLUME" RTPCName="RADIO_RANGE_A_VOLUME"/>
+			<WwiseRTPC LocalVar="RADIO RANGE N VOLUME" RTPCName="RADIO_RANGE_N_VOLUME"/>
+			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
+			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean" Index="0">
+				<Range LowerBound="1"/>
+			</Requires>
+		</Sound>
+		
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="rr_id_bip" LocalVar="SOUND ID BIP PLAYING BOOL">
 			<Range LowerBound="1"/>
 			<WwiseRTPC LocalVar="RADIO RANGE ID VOLUME" RTPCName="RADIO_RANGE_ID_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
@@ -83,7 +94,7 @@
 			</Requires>
 		</Sound>
 
-		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="RR_ID_beep_start" LocalVar="SOUND ID BEEP PLAYING BOOL">
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="rr_id_boop" LocalVar="SOUND ID BEEP PLAYING BOOL">
 			<Range LowerBound="1"/>
 			<WwiseRTPC LocalVar="RADIO RANGE ID VOLUME" RTPCName="RADIO_RANGE_ID_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
@@ -92,9 +103,9 @@
 			</Requires>
 		</Sound>
 
-		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="RR_noise_start" LocalVar="SOUND ID NOISE PLAYING BOOL">
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="rr_noise_start" LocalVar="SOUND NOISE PLAYING BOOL">
 			<Range LowerBound="1"/>
-			<WwiseRTPC LocalVar="RADIO RANGE ID VOLUME" RTPCName="RADIO_RANGE_ID_VOLUME"/>
+			<WwiseRTPC LocalVar="RADIO RANGE NOISE VOLUME" RTPCName="RADIO_RANGE_NOISE_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
 			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean" Index="0">
 				<Range LowerBound="1"/>

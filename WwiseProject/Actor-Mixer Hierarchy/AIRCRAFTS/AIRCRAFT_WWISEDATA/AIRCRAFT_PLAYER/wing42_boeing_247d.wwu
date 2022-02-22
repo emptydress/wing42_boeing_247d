@@ -13,9 +13,9 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Folder Name="engines" ID="{555064BB-4ED7-43BD-8612-7F3436787AF8}" ShortID="842050559">
+						<Folder Name="Engines" ID="{555064BB-4ED7-43BD-8612-7F3436787AF8}" ShortID="842050559">
 							<ChildrenList>
-								<ActorMixer Name="engine" ID="{27EE4E95-4421-421A-AD78-38E72FCBCD91}" ShortID="290126234">
+								<ActorMixer Name="Engine" ID="{27EE4E95-4421-421A-AD78-38E72FCBCD91}" ShortID="290126234">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
@@ -60,7 +60,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<ActorMixer Name="boeing_247d_eng2" ID="{710FA6D7-2794-406A-A605-19C2B7A29D75}" ShortID="220578317">
+										<ActorMixer Name="Engine-2-right" ID="{710FA6D7-2794-406A-A605-19C2B7A29D75}" ShortID="220578317">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -221,7 +221,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>100</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -5993,7 +5993,7 @@
 												</SwitchContainer>
 											</ChildrenList>
 										</ActorMixer>
-										<ActorMixer Name="boeing_247d_eng1" ID="{8157B384-09E2-4816-8B44-513F83751291}" ShortID="389953727">
+										<ActorMixer Name="Engine-1-left" ID="{8157B384-09E2-4816-8B44-513F83751291}" ShortID="389953727">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -6157,7 +6157,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>100</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -11937,6 +11937,7 @@
 							<ChildrenList>
 								<ActorMixer Name="Radio" ID="{B19FACB7-88AE-4613-9947-A581322B81CE}" ShortID="390500568">
 									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<RTPCList>
 												<RTPC Name="" ID="{6214779A-60C7-4973-AF7F-CB7E760CF00B}" ShortID="264639516">
@@ -11977,22 +11978,46 @@
 									<ChildrenList>
 										<ActorMixer Name="Music" ID="{879D8A30-CB29-4F4B-945E-3AB9DA0032CC}" ShortID="864541194">
 											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{305C4688-513A-47E7-B087-4167B2D738D5}" ShortID="660288491">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="RADIO_RANGE_MUSIC_VOLUME" ID="{4CAA57DB-8EF6-4D74-9A98-DF73B2D43E72}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{58B31ACC-3CF7-459C-9184-844E09283855}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>40</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+													<ObjectRef Name="Radio-Music-Downsampler" ID="{7ACD8B7D-538D-4E82-B76F-543E0674F1F3}" WorkUnitID="{6A407443-EBF7-4635-B77E-0C4C9AD80886}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="warning_voice" ID="{5038AD67-4F00-47B0-A727-6901006DEE35}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<BlendContainer Name="American Radio Stations" ID="{A3242D31-97A6-455B-8425-11AD6790E472}" ShortID="737210011">
+												<BlendContainer Name="American-Radio_Stations" ID="{A3242D31-97A6-455B-8425-11AD6790E472}" ShortID="737210011">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -12002,7 +12027,10 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="Arbitrary-Dixie" ID="{6EE5D407-2FEF-4247-8996-14547741076C}" ShortID="204777031">
+														<Sound Name="American Dixie" ID="{6EE5D407-2FEF-4247-8996-14547741076C}" ShortID="204777031">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -12053,7 +12081,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="boop" ID="{382F0637-5310-4BAE-B859-B7E26B145417}" ShortID="1017970904">
+												<Sound Name="Boop" ID="{382F0637-5310-4BAE-B859-B7E26B145417}" ShortID="1017970904">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -12187,7 +12215,7 @@
 														<ActiveSource Name="Wwise Synth One" ID="{A51F866B-2CF8-42DE-8E17-6AB45A79C336}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="bip" ID="{0E4BD464-465C-48DF-96A3-F44B82E19F29}" ShortID="478544896">
+												<Sound Name="Bip" ID="{0E4BD464-465C-48DF-96A3-F44B82E19F29}" ShortID="478544896">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -12321,7 +12349,7 @@
 														<ActiveSource Name="Wwise Synth One" ID="{28F505AC-3B1D-4715-8215-4FAEF29843EA}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<BlendContainer Name="A-N" ID="{31ED3897-BB0E-412C-A046-1976179458B3}" ShortID="311796571">
+												<BlendContainer Name="A_N" ID="{31ED3897-BB0E-412C-A046-1976179458B3}" ShortID="311796571">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -12383,7 +12411,7 @@
 																<SourcePlugin Name="Wwise Synth One" ID="{4599DE2F-00ED-4AAF-A171-B5A7E191C22F}" ShortID="925887579" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 																	<PropertyList>
 																		<Property Name="FmAmount" Type="Real32" Value="7.4"/>
-																		<Property Name="NoiseLevel" Type="Real32" Value="-41.9"/>
+																		<Property Name="NoiseShape" Type="int32" Value="2"/>
 																		<Property Name="OperationMode" Type="int32" Value="1"/>
 																		<Property Name="Osc1Level" Type="Real32" Value="-16"/>
 																		<Property Name="Osc2Invert" Type="bool" Value="True"/>
@@ -12538,7 +12566,6 @@
 																<SourcePlugin Name="Wwise Synth One" ID="{2ED8615C-2CF9-4790-9752-A9579A9D8F26}" ShortID="459682224" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 																	<PropertyList>
 																		<Property Name="FmAmount" Type="Real32" Value="7.4"/>
-																		<Property Name="NoiseLevel" Type="Real32" Value="-41.9"/>
 																		<Property Name="OperationMode" Type="int32" Value="1"/>
 																		<Property Name="Osc1Level" Type="Real32" Value="-16"/>
 																		<Property Name="Osc2Invert" Type="bool" Value="True"/>
@@ -12662,7 +12689,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<BlendContainer Name="static" ID="{7C17C268-FFD1-4D3F-923B-1407FE7B7696}" ShortID="26860721">
+												<BlendContainer Name="Static" ID="{7C17C268-FFD1-4D3F-923B-1407FE7B7696}" ShortID="26860721">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -12705,7 +12732,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="red" ID="{F9A8F5D1-90BA-41B5-9D03-B0980AAF7925}" ShortID="556325376">
+														<Sound Name="Red-Noise" ID="{F9A8F5D1-90BA-41B5-9D03-B0980AAF7925}" ShortID="556325376">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
@@ -12737,7 +12764,7 @@
 																<ActiveSource Name="Wwise Synth One" ID="{863E9248-E02A-4012-945E-31DC2F177F3A}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="white" ID="{A11AF50C-06E4-4937-88F3-3C71B182C0DA}" ShortID="805125795">
+														<Sound Name="White-Noise" ID="{A11AF50C-06E4-4937-88F3-3C71B182C0DA}" ShortID="805125795">
 															<PropertyList>
 																<Property Name="Highpass" Type="int16">
 																	<ValueList>
@@ -12764,7 +12791,7 @@
 																	<PropertyList>
 																		<Property Name="NoiseLevel" Type="Real32" Value="-19"/>
 																		<Property Name="NoiseShape" Type="int32" Value="2"/>
-																		<Property Name="Osc1Level" Type="Real32" Value="-51"/>
+																		<Property Name="Osc1Level" Type="Real32" Value="-96"/>
 																		<Property Name="Osc2Level" Type="Real32" Value="-96"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
@@ -12794,60 +12821,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Flip on" ID="{DC227BE4-075D-45FE-8FC3-1800F1F12C4B}" ShortID="735981204">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>30</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Flip on" ID="{0A5862C1-005A-423D-9301-E581193427EE}" ShortID="269821109">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{615B6B4F-72D5-4424-95CF-846E4902D554}">
-															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.0216741794146778"/>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="6.41295789538307"/>
-																<Property Name="TrimEnd" Type="Real64" Value="6.96180821917809"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{615B6B4F-72D5-4424-95CF-846E4902D554}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Flip off" ID="{779F57BF-60CD-46D7-8E07-FA572661DFAA}" ShortID="1002447050">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>30</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
+										<RandomSequenceContainer Name="Flip-Off" ID="{DC227BE4-075D-45FE-8FC3-1800F1F12C4B}" ShortID="735981204">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -12882,6 +12856,45 @@
 													</ChildrenList>
 													<ActiveSourceList>
 														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{32012FA4-13DA-4E18-AA56-849778665105}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Flip-On" ID="{779F57BF-60CD-46D7-8E07-FA572661DFAA}" ShortID="1002447050">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip on" ID="{0A5862C1-005A-423D-9301-E581193427EE}" ShortID="269821109">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{615B6B4F-72D5-4424-95CF-846E4902D554}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0216741794146778"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.41295789538307"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.96180821917809"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{615B6B4F-72D5-4424-95CF-846E4902D554}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
