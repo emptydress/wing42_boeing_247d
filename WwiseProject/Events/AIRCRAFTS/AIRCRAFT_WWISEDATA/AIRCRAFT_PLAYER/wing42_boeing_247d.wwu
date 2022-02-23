@@ -571,20 +571,6 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_wing42_boeing_247d_rr_nav_tone_stop" ID="{F25B2BB6-59D1-473F-8D63-3C1FB51C2F99}">
-									<ChildrenList>
-										<Action Name="" ID="{194DA877-6F61-466E-846B-456E13819190}" ShortID="1064742586">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="A_N" ID="{31ED3897-BB0E-412C-A046-1976179458B3}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="Play_wing42_boeing_247d_rr_nav_bip" ID="{79ED6293-633B-4CA0-9850-67A1DD8F180C}">
 									<ChildrenList>
 										<Action Name="" ID="{9A540D10-7A23-4206-85A0-F29AA07F00BE}" ShortID="178192106">
@@ -658,21 +644,6 @@
 													</ModifierList>
 												</Property>
 												<Property Name="SeekType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="American-Radio_Stations" ID="{A3242D31-97A6-455B-8425-11AD6790E472}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_wing42_boeing_247d_rr_music_stop" ID="{A416378B-6DCF-4169-A625-608D2F0FDF51}">
-									<ChildrenList>
-										<Action Name="" ID="{CD631510-ED39-43C8-A3C1-696A340C5431}" ShortID="719230152">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeOutCurve" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">

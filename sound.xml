@@ -70,35 +70,34 @@
 			<WwiseRTPC LocalVar="RADIO RANGE A VOLUME" RTPCName="RADIO_RANGE_A_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE N VOLUME" RTPCName="RADIO_RANGE_N_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
-			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean" Index="0">
+			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean">
 				<Range LowerBound="1"/>
 			</Requires>
 		</Sound>
 		
-		<Sound WwiseData="True" Continuous="true" ViewPoint="All" BreakOnStop="False" WwiseEvent="rr_music_start" LocalVar="SOUND AN PLAYING BOOL">
+		<Sound WwiseData="True" Continuous="true" ViewPoint="All" BreakOnStop="False" WwiseEvent="rr_music_start" LocalVar="SOUND MUSIC PLAYING BOOL">
 			<Range LowerBound="1"/>
-			<WwiseRTPC LocalVar="RADIO RANGE A VOLUME" RTPCName="RADIO_RANGE_A_VOLUME"/>
-			<WwiseRTPC LocalVar="RADIO RANGE N VOLUME" RTPCName="RADIO_RANGE_N_VOLUME"/>
+			<WwiseRTPC LocalVar="RADIO RANGE MUSIC VOLUME" RTPCName="RADIO_RANGE_MUSIC_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
-			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean" Index="0">
-				<Range LowerBound="1"/>
+			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean">
+				<Range LowerBound="0"/>
 			</Requires>
 		</Sound>
 		
-		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="rr_id_bip" LocalVar="SOUND ID BIP PLAYING BOOL">
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="rr_nav_bip" LocalVar="SOUND ID BIP PLAYING BOOL">
 			<Range LowerBound="1"/>
 			<WwiseRTPC LocalVar="RADIO RANGE ID VOLUME" RTPCName="RADIO_RANGE_ID_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
-			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean" Index="0">
+			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean">
 				<Range LowerBound="1"/>
 			</Requires>
 		</Sound>
 
-		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="rr_id_boop" LocalVar="SOUND ID BEEP PLAYING BOOL">
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" WwiseEvent="rr_nav_boop" LocalVar="SOUND ID BEEP PLAYING BOOL">
 			<Range LowerBound="1"/>
 			<WwiseRTPC LocalVar="RADIO RANGE ID VOLUME" RTPCName="RADIO_RANGE_ID_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
-			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean" Index="0">
+			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean">
 				<Range LowerBound="1"/>
 			</Requires>
 		</Sound>
@@ -107,9 +106,6 @@
 			<Range LowerBound="1"/>
 			<WwiseRTPC LocalVar="RADIO RANGE NOISE VOLUME" RTPCName="RADIO_RANGE_NOISE_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
-			<Requires LocalVar="SWITCH RADIO RANGE CW" Units="Boolean" Index="0">
-				<Range LowerBound="1"/>
-			</Requires>
 		</Sound>
 
 	</SimVarSounds>
