@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="NA_Radio_Game_Parameters" ID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}" PersistMode="Standalone">
+		<WorkUnit Name="na_radio" ID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}" PersistMode="Standalone">
 			<PropertyList>
 				<Property Name="Color" Type="int16" Value="21"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -70,6 +70,12 @@
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="RADIO_RANGE_FREQUENCY_HANDLE" ID="{982F0057-C253-4B65-9784-3830851CA10E}"/>
+						<GameParameter Name="RADIO_RANGE_MUSIC_GENRE" ID="{D4A3E081-8C94-4D93-AA93-66B7C6D4FBEF}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="5"/>
+								<Property Name="Max" Type="Real64" Value="10"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Event_triggers" ID="{84B0C2CF-EB0E-4026-A8F1-13B5CCB676B3}" ShortID="798392837">

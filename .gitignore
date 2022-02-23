@@ -1,9 +1,10 @@
-**/SoundbanksInfo.xml
+*.swp
 **/PluginInfo.xml
-.cache/
+**/SoundbanksInfo.xml
+**/SoundbankInfoCache.dat
 **/*.prof
 **/*.wsettings
 **/*.akd
 WwiseProject/.cache/
-WwiseProject/FlightSim.wrap2.validationcache
-WwiseProject/FlightSim.wrap2.wsettings
+WwiseProject/Originals/
+American Radio Station/
