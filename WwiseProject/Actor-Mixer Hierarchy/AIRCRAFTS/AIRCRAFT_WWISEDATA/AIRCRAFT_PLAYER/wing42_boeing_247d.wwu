@@ -12680,6 +12680,36 @@
 											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="Noise" ID="{9B8CE9AE-AA84-4B47-AA27-BFDC87EDAE28}" ShortID="19004880">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{3703E121-EC2B-4271-BEA8-915D59D04062}" ShortID="351647099">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{E88FC33C-A15F-40C3-9B80-4BAF736A2058}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>40</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -12695,32 +12725,6 @@
 															<ValueList>
 																<Value>5</Value>
 															</ValueList>
-															<RTPCList>
-																<RTPC Name="" ID="{D9FDDD4F-538C-4D2B-A384-0C9D3F208AC1}" ShortID="230562813">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{0EC8277F-EC79-4B7E-B9CB-E5CDF3602180}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>40</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
 														</Property>
 													</PropertyList>
 													<ReferenceList>

@@ -84,6 +84,7 @@
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="1"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="RTPCRamping" Type="int16" Value="1"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="SOUND_A_PLAYING_BOOL" ID="{FB862CB3-732B-4D65-A06B-ADBC3DFC7960}">
