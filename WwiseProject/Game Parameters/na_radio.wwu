@@ -82,50 +82,49 @@
 					<ChildrenList>
 						<GameParameter Name="SOUND_AN_PLAYING_BOOL" ID="{6D438DE5-1CD7-4FE9-8171-202DEBF41D11}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
-								<Property Name="RTPCRamping" Type="int16" Value="1"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="SOUND_A_PLAYING_BOOL" ID="{FB862CB3-732B-4D65-A06B-ADBC3DFC7960}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="SOUND_N_PLAYING_BOOL" ID="{1667D7C2-F08E-4DE7-9364-3D1DB4AF2DE7}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="SOUND_ID_BIP_PLAYING_BOOL" ID="{F4BF164C-708D-4217-9295-E6C85B96A453}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="SOUND_ID_BEEP_PLAYING_BOOL" ID="{4BB30B73-F19A-4B59-AF73-FFCFF3FC9C24}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="SOUND_NOISE_PLAYING_BOOL" ID="{CA8B0E7D-B386-41FD-963C-35B9141CECD3}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="SOUND_MUSIC_PLAYING_BOOL" ID="{2453D525-97E7-4660-AFBA-B9930475CD68}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="SWITCH_RADIO_RANGE_CW" ID="{B6F33438-C328-40BD-B1D9-B66EF9DBE98B}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
