@@ -65,7 +65,7 @@
 		<!--=========================================== NA Radio =========================================-->
 		
 		<!--Navigation-->
-		<Sound WwiseData="True" Continuous="true" ViewPoint="All" BreakOnStop="False" WwiseEvent="rr_nav_tone_start" LocalVar="SOUND AN PLAYING BOOL">
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="False" WwiseEvent="rr_nav_tone_start" LocalVar="SOUND AN PLAYING BOOL">
 			<Range LowerBound="1"/>
 			<WwiseRTPC LocalVar="RADIO RANGE A VOLUME" RTPCName="RADIO_RANGE_A_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE N VOLUME" RTPCName="RADIO_RANGE_N_VOLUME"/>
@@ -75,7 +75,7 @@
 			</Requires>
 		</Sound>
 		
-		<Sound WwiseData="True" Continuous="true" ViewPoint="All" BreakOnStop="False" WwiseEvent="rr_music_start" LocalVar="SOUND MUSIC PLAYING BOOL">
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="False" WwiseEvent="rr_music_start" LocalVar="SOUND MUSIC PLAYING BOOL">
 			<Range LowerBound="1"/>
 			<WwiseRTPC LocalVar="RADIO RANGE MUSIC VOLUME" RTPCName="RADIO_RANGE_MUSIC_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
@@ -106,6 +106,9 @@
 			<Range LowerBound="1"/>
 			<WwiseRTPC LocalVar="RADIO RANGE NOISE VOLUME" RTPCName="RADIO_RANGE_NOISE_VOLUME"/>
 			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
+			<Requires LocalVar="SOUND NOISE PLAYING BOOL" Units="Boolean">
+				<Range LowerBound="1"/>
+			</Requires>
 		</Sound>
 
 	</SimVarSounds>

@@ -12063,12 +12063,12 @@
 											<PropertyList>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>35</Value>
+														<Value>28</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>38</Value>
+														<Value>25</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -12127,7 +12127,75 @@
 														<SourcePlugin Name="Wwise Synth One" ID="{A51F866B-2CF8-42DE-8E17-6AB45A79C336}" ShortID="765259475" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="FmAmount" Type="Real32" Value="7.4"/>
-																<Property Name="NoiseLevel" Type="Real32" Value="-41.9"/>
+																<Property Name="NoiseLevel" Type="Real32" Value="-12">
+																	<RTPCList>
+																		<RTPC Name="" ID="{1080780E-298B-4EE6-875C-955E54FD460D}" ShortID="234139976">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{258B25AD-33D6-4B2E-B9E9-B9C3F85E16DE}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-17.77486</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>40</XPos>
+																						<YPos>-4.18626</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																		<RTPC Name="" ID="{4F6591C1-E451-48EC-A89C-2FFE80A7B170}" ShortID="306790616">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorTime Name="Modulator Time (Custom)" ID="{92829563-6B11-4F51-B955-2589C005255B}" ShortID="1067170744">
+																							<PropertyList>
+																								<Property Name="TimeModDuration" Type="Real64" Value="0.9"/>
+																							</PropertyList>
+																						</ModulatorTime>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{77E03E5F-DC54-4FA5-A7C2-E3BD666905A4}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.009</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.011</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.9</XPos>
+																						<YPos>-120</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="NoiseShape" Type="int32" Value="2"/>
 																<Property Name="OperationMode" Type="int32" Value="1"/>
 																<Property Name="Osc1Level" Type="Real32" Value="-16"/>
 																<Property Name="Osc2Invert" Type="bool" Value="True"/>
@@ -12261,7 +12329,75 @@
 														<SourcePlugin Name="Wwise Synth One" ID="{28F505AC-3B1D-4715-8215-4FAEF29843EA}" ShortID="485792857" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 															<PropertyList>
 																<Property Name="FmAmount" Type="Real32" Value="7.4"/>
-																<Property Name="NoiseLevel" Type="Real32" Value="-41.9"/>
+																<Property Name="NoiseLevel" Type="Real32" Value="-12">
+																	<RTPCList>
+																		<RTPC Name="" ID="{92A295B1-5237-4B1F-9C01-1D2DB3A76C90}" ShortID="1030096828">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorTime Name="Modulator Time (Custom)" ID="{B1F73C3B-E2B0-447F-85CC-91A8480CB8C6}" ShortID="32842459">
+																							<PropertyList>
+																								<Property Name="TimeModDuration" Type="Real64" Value="0.3"/>
+																							</PropertyList>
+																						</ModulatorTime>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{F5432C0C-2A37-423D-AC4E-403CAF0D7C0E}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.01</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.011</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.3</XPos>
+																						<YPos>-120</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																		<RTPC Name="" ID="{34C53DE5-3AE9-4163-8426-4808933F03FC}" ShortID="458169300">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{7D7219A4-C033-4609-862E-CCCAB5906508}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-17.77486</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>40</XPos>
+																						<YPos>-4.18626</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="NoiseShape" Type="int32" Value="2"/>
 																<Property Name="OperationMode" Type="int32" Value="1"/>
 																<Property Name="Osc1Level" Type="Real32" Value="-16"/>
 																<Property Name="Osc2Invert" Type="bool" Value="True"/>
@@ -12369,8 +12505,10 @@
 														<Sound Name="A" ID="{0F9B1BF5-BC70-42C5-BF14-8AAD08D43323}" ShortID="36640973">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="OverrideMidiEventsBehavior" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{DBDCC900-802D-43B1-BD4F-150D0000BEBC}" ShortID="1022612482">
 																			<ReferenceList>
@@ -12411,6 +12549,96 @@
 																<SourcePlugin Name="Wwise Synth One" ID="{4599DE2F-00ED-4AAF-A171-B5A7E191C22F}" ShortID="925887579" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 																	<PropertyList>
 																		<Property Name="FmAmount" Type="Real32" Value="7.4"/>
+																		<Property Name="NoiseLevel" Type="Real32" Value="-12">
+																			<RTPCList>
+																				<RTPC Name="" ID="{83BDA661-4D86-4C4D-B486-36F7EE5804ED}" ShortID="389199366">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<Custom>
+																								<ModulatorTime Name="Modulator Time (Custom)" ID="{8679E9B0-15A5-4012-91EE-59CC2FBFD543}" ShortID="318344764">
+																									<PropertyList>
+																										<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																										<Property Name="TimeModDuration" Type="Real64" Value="2.4"/>
+																										<Property Name="TimeModLoops" Type="int32" Value="0"/>
+																									</PropertyList>
+																								</ModulatorTime>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{7FF9B3D3-961A-4C8D-B70B-5D4C6508ABCA}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.895</XPos>
+																								<YPos>-120</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.9</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.91</XPos>
+																								<YPos>-120</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1.495</XPos>
+																								<YPos>-120</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1.5</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1.51</XPos>
+																								<YPos>-120</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>2.4</XPos>
+																								<YPos>-120</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																				<RTPC Name="" ID="{CFC16AE3-8E25-4E62-B4EC-5272B2A2ED10}" ShortID="775656715">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{6688EA52-7D56-4F56-ABE0-0BC925CF658B}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-17.77486</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>40</XPos>
+																								<YPos>-4.18626</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
 																		<Property Name="NoiseShape" Type="int32" Value="2"/>
 																		<Property Name="OperationMode" Type="int32" Value="1"/>
 																		<Property Name="Osc1Level" Type="Real32" Value="-16"/>
@@ -12419,13 +12647,13 @@
 																		<Property Name="Osc2Pwm" Type="Real32" Value="79.2"/>
 																		<Property Name="Osc2Transpose" Type="int32">
 																			<RTPCList>
-																				<RTPC Name="" ID="{2A654086-69EB-4793-9047-3DB9B8E0E372}" ShortID="931948568">
+																				<RTPC Name="" ID="{426DB483-AB2E-46E4-B377-023B5EEF3A29}" ShortID="531462755">
 																					<ReferenceList>
 																						<Reference Name="ControlInput">
 																							<ObjectRef Name="lfo-radio_warble" ID="{C94425E7-B763-408F-ACBF-8676403DAE12}" WorkUnitID="{11543A83-1B02-4941-AF00-DB68683AE8EE}"/>
 																						</Reference>
 																					</ReferenceList>
-																					<Curve Name="" ID="{4A6C89D7-4BC0-4714-898D-6F81A3638012}">
+																					<Curve Name="" ID="{0DA4E1D2-8184-44D2-9B46-D4F8888A7162}">
 																						<PropertyList>
 																							<Property Name="Flags" Type="int32" Value="65537"/>
 																						</PropertyList>
@@ -12455,7 +12683,6 @@
 																								<ModulatorTime Name="Modulator Time (Custom)" ID="{521C7E47-35F8-408D-8F40-5662920C99EA}" ShortID="539412011">
 																									<PropertyList>
 																										<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
-																										<Property Name="ModulatorScope" Type="int32" Value="0"/>
 																										<Property Name="TimeModDuration" Type="Real64" Value="2.4"/>
 																										<Property Name="TimeModLoops" Type="int32" Value="0"/>
 																									</PropertyList>
@@ -12474,12 +12701,12 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>0.895</XPos>
+																								<XPos>0.909</XPos>
 																								<YPos>-120</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>0.9</XPos>
+																								<XPos>0.91</XPos>
 																								<YPos>0</YPos>
 																								<Flags>0</Flags>
 																							</Point>
@@ -12494,13 +12721,13 @@
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>1.495</XPos>
+																								<XPos>1.509</XPos>
 																								<YPos>-120</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>1.5</XPos>
-																								<YPos>0</YPos>
+																								<XPos>1.51</XPos>
+																								<YPos>-0</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
@@ -12524,8 +12751,10 @@
 														<Sound Name="N" ID="{4B354DB8-8BD9-4449-9482-5FF0C2415830}" ShortID="500809495">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="OverrideMidiEventsBehavior" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{FEF4EE62-4F0D-4CA9-9FA8-629886434466}" ShortID="728066637">
 																			<ReferenceList>
@@ -12566,6 +12795,97 @@
 																<SourcePlugin Name="Wwise Synth One" ID="{2ED8615C-2CF9-4790-9752-A9579A9D8F26}" ShortID="459682224" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
 																	<PropertyList>
 																		<Property Name="FmAmount" Type="Real32" Value="7.4"/>
+																		<Property Name="NoiseLevel" Type="Real32" Value="-12">
+																			<RTPCList>
+																				<RTPC Name="" ID="{BE9ABC16-BAC9-4F68-9D39-7421E52CA753}" ShortID="925860425">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{385CE624-D3DC-41E5-A4CE-6399C535007E}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-17.77486</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>40</XPos>
+																								<YPos>-4.18626</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																				<RTPC Name="" ID="{EA60E346-3396-40D7-9A13-E23056C49885}" ShortID="36707393">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<Custom>
+																								<ModulatorTime Name="Modulator Time (Custom)" ID="{7611E710-9A10-40BB-94FE-91EC7B321454}" ShortID="882847185">
+																									<PropertyList>
+																										<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																										<Property Name="TimeModDuration" Type="Real64" Value="2.4"/>
+																										<Property Name="TimeModLoops" Type="int32" Value="0"/>
+																									</PropertyList>
+																								</ModulatorTime>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{F78AFAE0-FFFD-46D5-9503-ED93F6C8AA8C}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.001</XPos>
+																								<YPos>-120</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.009</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.011</XPos>
+																								<YPos>-120</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1.195</XPos>
+																								<YPos>-120</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1.2</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1.21</XPos>
+																								<YPos>-120</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>2.4</XPos>
+																								<YPos>-120</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="NoiseShape" Type="int32" Value="2"/>
 																		<Property Name="OperationMode" Type="int32" Value="1"/>
 																		<Property Name="Osc1Level" Type="Real32" Value="-16"/>
 																		<Property Name="Osc2Invert" Type="bool" Value="True"/>
@@ -12573,13 +12893,13 @@
 																		<Property Name="Osc2Pwm" Type="Real32" Value="79.2"/>
 																		<Property Name="Osc2Transpose" Type="int32">
 																			<RTPCList>
-																				<RTPC Name="" ID="{D2111F6B-FC34-4C55-AB7B-9412F3872163}" ShortID="484584158">
+																				<RTPC Name="" ID="{21CDF210-FE97-4F2E-80A2-B2FE6DE6579D}" ShortID="814723012">
 																					<ReferenceList>
 																						<Reference Name="ControlInput">
 																							<ObjectRef Name="lfo-radio_warble" ID="{C94425E7-B763-408F-ACBF-8676403DAE12}" WorkUnitID="{11543A83-1B02-4941-AF00-DB68683AE8EE}"/>
 																						</Reference>
 																					</ReferenceList>
-																					<Curve Name="" ID="{4EB26D1F-97D5-415C-B51C-50CD3A9B1D6C}">
+																					<Curve Name="" ID="{8977C37E-5555-40D1-80F4-B284B3690A1E}">
 																						<PropertyList>
 																							<Property Name="Flags" Type="int32" Value="65537"/>
 																						</PropertyList>
@@ -12609,7 +12929,6 @@
 																								<ModulatorTime Name="Modulator Time (Custom)" ID="{4F9D97A2-C9AB-4BD5-9B9A-E837569A7E42}" ShortID="190251401">
 																									<PropertyList>
 																										<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
-																										<Property Name="ModulatorScope" Type="int32" Value="0"/>
 																										<Property Name="TimeModDuration" Type="Real64" Value="2.4"/>
 																										<Property Name="TimeModLoops" Type="int32" Value="0"/>
 																									</PropertyList>
@@ -12624,8 +12943,13 @@
 																						<PointList>
 																							<Point>
 																								<XPos>0</XPos>
-																								<YPos>0</YPos>
+																								<YPos>-120</YPos>
 																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.01</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
 																								<XPos>0.895</XPos>
@@ -12638,12 +12962,12 @@
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>1.195</XPos>
+																								<XPos>1.2</XPos>
 																								<YPos>-120</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>1.2</XPos>
+																								<XPos>1.21</XPos>
 																								<YPos>0</YPos>
 																								<Flags>0</Flags>
 																							</Point>
@@ -12770,11 +13094,6 @@
 														</Sound>
 														<Sound Name="White-Noise" ID="{A11AF50C-06E4-4937-88F3-3C71B182C0DA}" ShortID="805125795">
 															<PropertyList>
-																<Property Name="Highpass" Type="int16">
-																	<ValueList>
-																		<Value>38</Value>
-																	</ValueList>
-																</Property>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>

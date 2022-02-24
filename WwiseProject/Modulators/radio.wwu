@@ -5,14 +5,21 @@
 			<ChildrenList>
 				<ModulatorLfo Name="lfo-radio_warble" ID="{C94425E7-B763-408F-ACBF-8676403DAE12}" ShortID="905312681">
 					<PropertyList>
+						<Property Name="LfoDepth" Type="Real64" Value="66">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F316EF73-FA04-4C15-BF34-50545DC99FE0}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="LfoFrequency" Type="Real64" Value="7.04">
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{AED528A4-9AE2-4C1B-B770-3B6DD4AF7C97}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="0.09"/>
-											<Property Name="Min" Type="Real64" Value="-0.27"/>
+											<Property Name="Max" Type="Real64" Value="3"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
