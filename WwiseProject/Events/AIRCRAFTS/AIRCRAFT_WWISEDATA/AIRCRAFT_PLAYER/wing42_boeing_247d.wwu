@@ -653,6 +653,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_wing42_boeing_247d_rr_music_stop" ID="{CFA519C1-EE35-4957-BAB4-6AC06D03371A}"/>
 							</ChildrenList>
 						</Folder>
 						<Event Name="Play_wing42_boeing_247d_rr_noise_start" ID="{D8B324A4-111F-498B-9880-5F0C69C7899B}">
