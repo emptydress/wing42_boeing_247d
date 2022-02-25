@@ -18,7 +18,6 @@
 								<ActorMixer Name="Engine" ID="{27EE4E95-4421-421A-AD78-38E72FCBCD91}" ShortID="290126234">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>-5</Value>
@@ -92,28 +91,28 @@
 																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 																<Property Name="Lowpass" Type="int16">
 																	<RTPCList>
-																		<RTPC Name="" ID="{17A5047A-FCC0-4184-8605-1F13B82584AF}" ShortID="999772053">
+																		<RTPC Name="" ID="{C1B0E2B7-E2D6-418D-A06B-E9B8C6C42CE8}" ShortID="285568016">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
 																					<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																				</Reference>
 																			</ReferenceList>
-																			<Curve Name="" ID="{D96AD6D2-E7EF-49CA-BBA5-2DE043835FF5}">
+																			<Curve Name="" ID="{4E965C81-F8CE-4CF3-92DC-0C8168847927}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="65537"/>
 																				</PropertyList>
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>30</YPos>
+																						<YPos>35</YPos>
 																						<Flags>5</Flags>
-																						<SegmentShape>Exp3</SegmentShape>
+																						<SegmentShape>InvertedSCurve</SegmentShape>
 																					</Point>
 																					<Point>
-																						<XPos>50</XPos>
-																						<YPos>25</YPos>
+																						<XPos>49.37343</XPos>
+																						<YPos>30</YPos>
 																						<Flags>0</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
+																						<SegmentShape>InvertedSCurve</SegmentShape>
 																					</Point>
 																					<Point>
 																						<XPos>100</XPos>
@@ -215,13 +214,19 @@
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>-19.08485</YPos>
+																						<YPos>-10</YPos>
 																						<Flags>5</Flags>
-																						<SegmentShape>Exp3</SegmentShape>
+																						<SegmentShape>SCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>49.87469</XPos>
+																						<YPos>-8</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
 																					</Point>
 																					<Point>
 																						<XPos>100</XPos>
-																						<YPos>0</YPos>
+																						<YPos>2</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -6028,28 +6033,28 @@
 																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 																<Property Name="Lowpass" Type="int16">
 																	<RTPCList>
-																		<RTPC Name="" ID="{C9FBEB01-4051-4FEE-A375-2CCC0B518CCA}" ShortID="14111443">
+																		<RTPC Name="" ID="{8D0C3B66-C125-4307-ADB9-2D498E4D94A2}" ShortID="85705035">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
 																					<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																				</Reference>
 																			</ReferenceList>
-																			<Curve Name="" ID="{5CCC6B68-3A7D-448B-90B3-7DF5FFCEC311}">
+																			<Curve Name="" ID="{5337C34A-C29B-4B8D-BA93-7F5CEB076865}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="65537"/>
 																				</PropertyList>
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>30</YPos>
+																						<YPos>35</YPos>
 																						<Flags>5</Flags>
-																						<SegmentShape>Exp3</SegmentShape>
+																						<SegmentShape>InvertedSCurve</SegmentShape>
 																					</Point>
 																					<Point>
-																						<XPos>50</XPos>
-																						<YPos>25</YPos>
+																						<XPos>49.37343</XPos>
+																						<YPos>30</YPos>
 																						<Flags>0</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
+																						<SegmentShape>InvertedSCurve</SegmentShape>
 																					</Point>
 																					<Point>
 																						<XPos>100</XPos>
@@ -6138,26 +6143,32 @@
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<RTPCList>
-																		<RTPC Name="" ID="{8A779D14-A376-42C7-9EB7-525EA9FEEC23}" ShortID="875050382">
+																		<RTPC Name="" ID="{B379FE1B-48EB-4131-8262-9E8ACA47E9A2}" ShortID="943328235">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
 																					<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																				</Reference>
 																			</ReferenceList>
-																			<Curve Name="" ID="{F1B0EF9B-35C9-4FA5-A468-CCAB7A8E8229}">
+																			<Curve Name="" ID="{FEFFD7CE-426C-4201-B1AE-BB9C31A5E33B}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>-19.08485</YPos>
+																						<YPos>-10</YPos>
 																						<Flags>5</Flags>
-																						<SegmentShape>Exp3</SegmentShape>
+																						<SegmentShape>SCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>49.87469</XPos>
+																						<YPos>-8</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
 																					</Point>
 																					<Point>
 																						<XPos>100</XPos>
-																						<YPos>0</YPos>
+																						<YPos>2</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -11972,7 +11983,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+											<ObjectRef Name="warning_voice" ID="{5038AD67-4F00-47B0-A727-6901006DEE35}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -12129,25 +12140,25 @@
 																<Property Name="FmAmount" Type="Real32" Value="7.4"/>
 																<Property Name="NoiseLevel" Type="Real32" Value="-12">
 																	<RTPCList>
-																		<RTPC Name="" ID="{1080780E-298B-4EE6-875C-955E54FD460D}" ShortID="234139976">
+																		<RTPC Name="" ID="{D0CB87AC-EF87-4D05-BD8D-CFAD647E3F8E}" ShortID="67540412">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
 																					<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
 																				</Reference>
 																			</ReferenceList>
-																			<Curve Name="" ID="{258B25AD-33D6-4B2E-B9E9-B9C3F85E16DE}">
+																			<Curve Name="" ID="{68DE1DE3-02C7-4EC3-BEBD-23C0C7B53C73}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>-17.77486</YPos>
+																						<YPos>-14</YPos>
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
 																						<XPos>40</XPos>
-																						<YPos>-4.18626</YPos>
+																						<YPos>-6</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -12371,25 +12382,25 @@
 																				</PointList>
 																			</Curve>
 																		</RTPC>
-																		<RTPC Name="" ID="{34C53DE5-3AE9-4163-8426-4808933F03FC}" ShortID="458169300">
+																		<RTPC Name="" ID="{E9AF5CCB-32C8-49E0-9165-46404AA1BCBC}" ShortID="207383671">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
 																					<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
 																				</Reference>
 																			</ReferenceList>
-																			<Curve Name="" ID="{7D7219A4-C033-4609-862E-CCCAB5906508}">
+																			<Curve Name="" ID="{5D6303BA-DECB-43F9-B6D9-F3087E7852B9}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>-17.77486</YPos>
+																						<YPos>-14</YPos>
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
 																						<XPos>40</XPos>
-																						<YPos>-4.18626</YPos>
+																						<YPos>-6</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -12507,7 +12518,7 @@
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>5</Value>
+																		<Value>10</Value>
 																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{DBDCC900-802D-43B1-BD4F-150D0000BEBC}" ShortID="1022612482">
@@ -12626,12 +12637,12 @@
 																						<PointList>
 																							<Point>
 																								<XPos>0</XPos>
-																								<YPos>-17.77486</YPos>
+																								<YPos>-14</YPos>
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
 																								<XPos>40</XPos>
-																								<YPos>-4.18626</YPos>
+																								<YPos>-6</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -12727,7 +12738,7 @@
 																							</Point>
 																							<Point>
 																								<XPos>1.51</XPos>
-																								<YPos>-0</YPos>
+																								<YPos>0</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
@@ -12753,7 +12764,7 @@
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>5</Value>
+																		<Value>10</Value>
 																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{FEF4EE62-4F0D-4CA9-9FA8-629886434466}" ShortID="728066637">
@@ -12797,25 +12808,25 @@
 																		<Property Name="FmAmount" Type="Real32" Value="7.4"/>
 																		<Property Name="NoiseLevel" Type="Real32" Value="-12">
 																			<RTPCList>
-																				<RTPC Name="" ID="{BE9ABC16-BAC9-4F68-9D39-7421E52CA753}" ShortID="925860425">
+																				<RTPC Name="" ID="{911ADA21-AED3-4EC8-AC41-92CCCDFC1486}" ShortID="62316743">
 																					<ReferenceList>
 																						<Reference Name="ControlInput">
 																							<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
 																						</Reference>
 																					</ReferenceList>
-																					<Curve Name="" ID="{385CE624-D3DC-41E5-A4CE-6399C535007E}">
+																					<Curve Name="" ID="{9D940F84-ACD3-4B30-B64E-883FC4A9B1AE}">
 																						<PropertyList>
 																							<Property Name="Flags" Type="int32" Value="3"/>
 																						</PropertyList>
 																						<PointList>
 																							<Point>
 																								<XPos>0</XPos>
-																								<YPos>-17.77486</YPos>
+																								<YPos>-14</YPos>
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
 																								<XPos>40</XPos>
-																								<YPos>-4.18626</YPos>
+																								<YPos>-6</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -13044,13 +13055,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<BlendContainer Name="Static" ID="{7C17C268-FFD1-4D3F-923B-1407FE7B7696}" ShortID="26860721">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>5</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -13063,11 +13067,6 @@
 														<Sound Name="Red-Noise" ID="{F9A8F5D1-90BA-41B5-9D03-B0980AAF7925}" ShortID="556325376">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>6</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -13095,11 +13094,6 @@
 														<Sound Name="White-Noise" ID="{A11AF50C-06E4-4937-88F3-3C71B182C0DA}" ShortID="805125795">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>6</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">

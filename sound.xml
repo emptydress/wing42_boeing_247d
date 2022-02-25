@@ -31,7 +31,8 @@
 	
 	<AcousticParameters>
 		<Parameter Name="ReverberationPreset" ShareSetOutside="rev_outdoor_aircraft"/>
-		<Parameter Name="Insulation_ExitClosed" Value="-12"/>
+		<Parameter Name="ReverberationPreset" ShareSetInside="rev_inside_generic_airliner"/>
+		<Parameter Name="Insulation_ExitClosed" Value="-16"/>
 		<Parameter Name="Insulation_ExitOpen" Value="0"/>
 	</AcousticParameters>
 
