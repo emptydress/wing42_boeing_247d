@@ -5,7 +5,7 @@
 **/*.prof
 **/*.wsettings
 **/*.akd
-WwiseProject/.cache/
+**/.cache/**/*
 WwiseProject/Originals/
 American Radio Station/
 WwiseProject/*.*.validationcache
