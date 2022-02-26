@@ -461,6 +461,34 @@
 						</Event>
 						<Event Name="Play_wing42_boeing_247d_eng1_combustion_start" ID="{20C46360-5001-4A4E-82C8-9F44B6ECD2BE}"/>
 						<Event Name="Play_wing42_boeing_247d_eng2_combustion_start" ID="{80C8B2EF-42B4-45E1-8B97-8C27FA109F91}"/>
+						<Event Name="Play_wing42_boeing_247d_backfire_left" ID="{42106194-D849-4BAD-8296-CBC97157D962}">
+							<ChildrenList>
+								<Action Name="" ID="{F34A4577-EA09-4350-8EFF-D318D2DEF395}" ShortID="623366319">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Backfire" ID="{36A9D26E-9AC9-4F5D-9436-43BC06E4F03A}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_backfire_right" ID="{25D83E78-DFA3-46FC-A533-A9E9D4943D72}">
+							<ChildrenList>
+								<Action Name="" ID="{9F724F73-A93A-411A-BCE2-FDFA16E1B807}" ShortID="954497978">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Backfire" ID="{36A9D26E-9AC9-4F5D-9436-43BC06E4F03A}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="NA_Radio" ID="{B5985F32-2622-4B95-A73A-D9AE1A463A41}" ShortID="924691072">
