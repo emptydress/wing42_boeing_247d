@@ -47,15 +47,32 @@
 		
 		<!--====================================== Engine 1 (left?) ======================================-->
 
+		<Sound WwiseEvent="CombustionStart" ConeHeading="180" WwiseData="true" EngineIndex="1" >
+			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>    
+	    </Sound>
 
-		<Sound WwiseData="true" WwiseEvent="Combustion"  ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" RPMMin="400"  EngineIndex="1" >
+		<Sound WwiseData="True" WwiseEvent="Combustion"  ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" RPMMin="400"  EngineIndex="1" >
+		    <WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
+			
+		</Sound>
+
+		<Sound WwiseData="True" WwiseEvent="Shutdown" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" EngineIndex="1" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
+			
 		</Sound>
 
 
 		<!--===================================== Engine 2 (right?) ======================================-->
 
+        <Sound WwiseEvent="CombustionStart" ConeHeading="180" WwiseData="true" EngineIndex="2" >
+		    <WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>    
+	    </Sound>
+
 		<Sound WwiseEvent="Combustion" WwiseData="true" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" RPMMin="400"  EngineIndex="2" >
+			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
+		</Sound>
+
+		<Sound WwiseData="True" WwiseEvent="Shutdown" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" EngineIndex="2" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
 		</Sound>
 
@@ -129,4 +146,4 @@
 
 	</AnimationSounds>
 
-</SoundInfo>
+</SoundInfo> 
