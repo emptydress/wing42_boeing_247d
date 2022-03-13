@@ -3,16 +3,28 @@
 	<GameParameters>
 		<WorkUnit Name="wing42_boeing_247d" ID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="SimvarTriggers" ID="{E241959A-E19D-4694-8F7F-E7BD5A455B0A}" ShortID="434210862">
-					<ChildrenList>
-						<GameParameter Name="FX_PUFF1" ID="{5EB5D42C-7359-4253-ABCE-CBD05DA6D8D7}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="1"/>
-							</PropertyList>
-						</GameParameter>
-					</ChildrenList>
-				</Folder>
+				<GameParameter Name="FX_PUFF1" ID="{5EB5D42C-7359-4253-ABCE-CBD05DA6D8D7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="FLYWHEEL_RPM" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}">
+					<PropertyList>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="900"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="24"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="24"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="FLYWHEEL_CLUTCH" ID="{0F261FFC-3BB0-4E35-A44B-C3A791361E41}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
