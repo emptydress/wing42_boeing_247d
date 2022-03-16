@@ -101,7 +101,7 @@
 																</Property>
 																<Property Name="Lowpass" Type="int16">
 																	<ValueList>
-																		<Value>60</Value>
+																		<Value>25</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="OverrideOutput" Type="bool" Value="True"/>
@@ -7798,45 +7798,30 @@
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 																<Property Name="BlendBehavior" Type="int16" Value="1"/>
 																<Property Name="Lowpass" Type="int16">
+																	<ValueList>
+																		<Value>25</Value>
+																	</ValueList>
 																	<RTPCList>
-																		<RTPC Name="" ID="{4CB65305-C49B-499F-85B9-7AD13925DE83}" ShortID="1057398818">
+																		<RTPC Name="" ID="{78CC5469-F5E9-4048-9B54-416A4F1CD69B}" ShortID="1019783398">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
 																					<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																				</Reference>
 																			</ReferenceList>
-																			<Curve Name="" ID="{FA053456-1B44-4F8C-869E-6ECA407CECCA}">
+																			<Curve Name="" ID="{28A291B5-E711-46F1-B7C7-19C1FCCC2F95}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="65537"/>
 																				</PropertyList>
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>13</YPos>
+																						<YPos>15</YPos>
 																						<Flags>5</Flags>
-																						<SegmentShape>Log3</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>20.70922</XPos>
-																						<YPos>10</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Log3</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>50.22449</XPos>
-																						<YPos>5</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>InvertedSCurve</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>70.07092</XPos>
-																						<YPos>2</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Exp3</SegmentShape>
+																						<SegmentShape>Exp2</SegmentShape>
 																					</Point>
 																					<Point>
 																						<XPos>100</XPos>
-																						<YPos>-18</YPos>
+																						<YPos>0</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -7951,44 +7936,26 @@
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<RTPCList>
-																		<RTPC Name="" ID="{463B343A-8617-4CDB-B597-C2B2BE6E0094}" ShortID="236210184">
+																		<RTPC Name="" ID="{3993842C-EC1E-4E98-B8AB-B4EBE1BADAC1}" ShortID="354006268">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
 																					<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																				</Reference>
 																			</ReferenceList>
-																			<Curve Name="" ID="{A3CE9331-40D6-4D5D-AA30-296AAF1C0101}">
+																			<Curve Name="" ID="{8087E51F-5BB3-4F35-BF2F-11B273A6F199}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>5.84153000000001</YPos>
+																						<YPos>-4.61825999999999</YPos>
 																						<Flags>5</Flags>
-																						<SegmentShape>Log3</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>30.24823</XPos>
-																						<YPos>8.06626</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Log3</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>60</XPos>
-																						<YPos>9</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Log2</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>75</XPos>
-																						<YPos>12</YPos>
-																						<Flags>0</Flags>
 																						<SegmentShape>Exp3</SegmentShape>
 																					</Point>
 																					<Point>
 																						<XPos>100</XPos>
-																						<YPos>14</YPos>
+																						<YPos>4</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -15639,6 +15606,11 @@
 																<Property Name="Highpass" Type="int16">
 																	<ValueList>
 																		<Value>17</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Lowpass" Type="int16">
+																	<ValueList>
+																		<Value>25</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="OverrideOutput" Type="bool" Value="True"/>
@@ -23330,6 +23302,9 @@
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 																<Property Name="BlendBehavior" Type="int16" Value="1"/>
 																<Property Name="Lowpass" Type="int16">
+																	<ValueList>
+																		<Value>25</Value>
+																	</ValueList>
 																	<RTPCList>
 																		<RTPC Name="" ID="{3C31E747-C125-46C0-BE69-A1537EFBAB3E}" ShortID="510953924">
 																			<ReferenceList>
@@ -23344,31 +23319,13 @@
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>13</YPos>
+																						<YPos>15</YPos>
 																						<Flags>5</Flags>
-																						<SegmentShape>Log3</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>20.70922</XPos>
-																						<YPos>10</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Log3</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>50.22449</XPos>
-																						<YPos>5</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>InvertedSCurve</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>70.07092</XPos>
-																						<YPos>2</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Exp3</SegmentShape>
+																						<SegmentShape>Exp2</SegmentShape>
 																					</Point>
 																					<Point>
 																						<XPos>100</XPos>
-																						<YPos>-18</YPos>
+																						<YPos>0</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -23483,44 +23440,26 @@
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<RTPCList>
-																		<RTPC Name="" ID="{58DAD6DE-1D36-4D84-BF98-1BB3CC87CED4}" ShortID="663134962">
+																		<RTPC Name="" ID="{243E2105-4A55-446E-856A-AE67D5607D5D}" ShortID="1019105669">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
 																					<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																				</Reference>
 																			</ReferenceList>
-																			<Curve Name="" ID="{A978F787-9BD9-41FB-AF91-3F467A1D95C1}">
+																			<Curve Name="" ID="{EAD17DAC-ED86-4130-B93B-9AC764B1C6D3}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>5.84153000000001</YPos>
+																						<YPos>-4.61826</YPos>
 																						<Flags>5</Flags>
-																						<SegmentShape>Log3</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>30.24823</XPos>
-																						<YPos>8.06626</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Log3</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>60</XPos>
-																						<YPos>9</YPos>
-																						<Flags>0</Flags>
-																						<SegmentShape>Log2</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>75</XPos>
-																						<YPos>12</YPos>
-																						<Flags>0</Flags>
 																						<SegmentShape>Exp3</SegmentShape>
 																					</Point>
 																					<Point>
 																						<XPos>100</XPos>
-																						<YPos>14</YPos>
+																						<YPos>4</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -31132,11 +31071,6 @@
 														<Value>24</Value>
 													</ValueList>
 												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>3</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -31196,9 +31130,6 @@
 															</RTPCList>
 														</Property>
 														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-21</Value>
-															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{BA5B09EE-D428-4DDB-A4C1-B89806DF16E0}" ShortID="385772786">
 																	<ReferenceList>
@@ -32684,7 +32615,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="shutdown" ID="{34EAC4C2-7FFD-483F-985F-61CBC34CB039}" ShortID="1028307841">
+										<RandomSequenceContainer Name="shutdown-outside" ID="{34EAC4C2-7FFD-483F-985F-61CBC34CB039}" ShortID="1028307841">
 											<PropertyList>
 												<Property Name="Highpass" Type="int16">
 													<RTPCList>
@@ -32870,11 +32801,6 @@
 																	</Curve>
 																</RTPC>
 															</RTPCList>
-														</Property>
-														<Property Name="Lowpass" Type="int16">
-															<ValueList>
-																<Value>36</Value>
-															</ValueList>
 														</Property>
 														<Property Name="Pitch" Type="int32">
 															<ValueList>
@@ -33129,7 +33055,7 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Noncombustion" ID="{5959975E-BF2B-4683-A0C8-C996C18F690A}" ShortID="95795696">
+												<RandomSequenceContainer Name="Shutdown" ID="{5959975E-BF2B-4683-A0C8-C996C18F690A}" ShortID="95795696">
 													<PropertyList>
 														<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -33272,7 +33198,7 @@
 											</ChildrenList>
 											<Playlist>
 												<ItemRef Name="Transition_idle" ID="{DE34B30B-B7D7-456D-BBDD-9C2344A3E186}"/>
-												<ItemRef Name="Noncombustion" ID="{5959975E-BF2B-4683-A0C8-C996C18F690A}"/>
+												<ItemRef Name="Shutdown" ID="{5959975E-BF2B-4683-A0C8-C996C18F690A}"/>
 											</Playlist>
 										</RandomSequenceContainer>
 									</ChildrenList>
@@ -34097,11 +34023,6 @@
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="25"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -34118,7 +34039,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<BlendContainer Name="Flywheel_spin" ID="{353FFBFF-F226-434A-9131-E03A09C073FE}" ShortID="501072254">
+										<BlendContainer Name="Flywheel_spin-outside" ID="{353FFBFF-F226-434A-9131-E03A09C073FE}" ShortID="501072254">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -34294,6 +34215,35 @@
 													<PropertyList>
 														<Property Name="BlendBehavior" Type="int16" Value="1"/>
 														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Lowpass" Type="int16">
+															<RTPCList>
+																<RTPC Name="" ID="{FAA27833-7C37-47AA-A684-CA5ACE9730EF}" ShortID="241106812">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{3D54ED3D-CD2D-43D7-B78A-49B20FFF512A}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>11</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
 														<Property Name="Pitch" Type="int32">
 															<RTPCList>
 																<RTPC Name="" ID="{9534D727-642B-4CAE-9032-771D2E2DFE69}" ShortID="976774658">
@@ -34488,7 +34438,7 @@
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>12000</XPos>
+																				<XPos>2000</XPos>
 																				<YPos>600</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -34499,44 +34449,26 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<RTPCList>
-																<RTPC Name="" ID="{FBD89657-8C72-463C-9115-86CBF0C9D2BD}" ShortID="1038576490">
+																<RTPC Name="" ID="{BBF893A7-6238-430C-840A-83A5544F752B}" ShortID="317650478">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{4FDB8FC2-F466-404F-BEFF-0E60A5AB4071}">
+																	<Curve Name="" ID="{0C376B6E-5DA8-451A-B04A-C94077F6974E}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>5.84153000000001</YPos>
+																				<YPos>-12</YPos>
 																				<Flags>5</Flags>
-																				<SegmentShape>Log3</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>30.24823</XPos>
-																				<YPos>8.06626</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Log3</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>60</XPos>
-																				<YPos>9</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Log2</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>75</XPos>
-																				<YPos>12</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Exp3</SegmentShape>
+																				<SegmentShape>InvertedSCurve</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
-																				<YPos>14</YPos>
+																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -38699,23 +38631,22 @@
 																		<LeftEdgePos>716</LeftEdgePos>
 																		<LeftFadingMode>Automatic</LeftFadingMode>
 																		<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																		<RightEdgePos>764</RightEdgePos>
-																		<RightFadingMode>Automatic</RightFadingMode>
-																		<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																	</CrossfadingInfo>
-																</BlendTrackAssoc>
-																<BlendTrackAssoc>
-																	<ItemRef Name="rand_32" ID="{FC5F4273-5E9A-46E5-B954-B9829F932D54}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>740</LeftEdgePos>
-																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																		<RightEdgePos>12000</RightEdgePos>
+																		<RightEdgePos>2000</RightEdgePos>
 																		<RightFadingMode>Automatic</RightFadingMode>
 																		<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
 																	</CrossfadingInfo>
 																</BlendTrackAssoc>
 															</BlendTrackAssocList>
+														</BlendTrack>
+														<BlendTrack Name="New Blend Track" ID="{0C588CCD-1444-4152-AD79-E9C3DBDFDFBD}" ShortID="426904616">
+															<PropertyList>
+																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="LayerCrossFadeControlInput">
+																	<ObjectRef Name="FLYWHEEL_RPM_2" ID="{95B78310-5F97-4E18-A9BB-9F650EE31EE3}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+																</Reference>
+															</ReferenceList>
 														</BlendTrack>
 													</BlendTrackList>
 												</BlendContainer>
@@ -38724,48 +38655,27 @@
 														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>4</Value>
-															</ValueList>
 															<RTPCList>
-																<RTPC Name="" ID="{6D3F18E4-BEC4-4FAB-8D3F-9D7BCD2BE33F}" ShortID="859033594">
+																<RTPC Name="" ID="{682B15BC-6C6A-46B6-9279-C4626ECD464B}" ShortID="456797732">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{0AC80EF6-7E1F-41A5-AEA9-E54A4DA7E934}">
+																	<Curve Name="" ID="{AB57D301-1BCA-4B16-AB69-048CCCD64148}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>5.84153000000001</YPos>
+																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>30.24823</XPos>
-																				<YPos>8.06626</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Log3</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>60</XPos>
-																				<YPos>9</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Log2</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>75</XPos>
-																				<YPos>12</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Exp3</SegmentShape>
-																			</Point>
-																			<Point>
 																				<XPos>100</XPos>
-																				<YPos>14</YPos>
+																				<YPos>7</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -38890,7 +38800,7 @@
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>12000</XPos>
+																				<XPos>2000</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -38913,10 +38823,63 @@
 										</BlendContainer>
 										<BlendContainer Name="Clutch_mesh" ID="{1B87EEEF-CDD7-4D5E-B2CB-2489C950D790}" ShortID="892893640">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{571F25A6-6678-4939-823C-55793702DAB6}" ShortID="38336378">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{F052BF40-8FC6-4905-AA68-77E3FAB80C43}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>11</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>8</Value>
-													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{409CD2AB-2BE0-455B-A2B1-EF09DF3FED57}" ShortID="475035170">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{3873FD3C-0867-441F-8786-AF562358A218}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-16</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -39051,7 +39014,7 @@
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>12000</XPos>
+																				<XPos>2000</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -39124,7 +39087,7 @@
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>12000</XPos>
+																				<XPos>2000</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -39165,7 +39128,7 @@
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>12000</XPos>
+																				<XPos>2000</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>

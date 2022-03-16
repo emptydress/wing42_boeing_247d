@@ -91,7 +91,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="shutdown" ID="{34EAC4C2-7FFD-483F-985F-61CBC34CB039}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="shutdown-outside" ID="{34EAC4C2-7FFD-483F-985F-61CBC34CB039}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -134,7 +134,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="shutdown" ID="{34EAC4C2-7FFD-483F-985F-61CBC34CB039}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="shutdown-outside" ID="{34EAC4C2-7FFD-483F-985F-61CBC34CB039}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -456,7 +456,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Flywheel_spin" ID="{353FFBFF-F226-434A-9131-E03A09C073FE}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+									<ObjectRef Name="Flywheel_spin-outside" ID="{353FFBFF-F226-434A-9131-E03A09C073FE}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -475,7 +475,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Flywheel_spin" ID="{353FFBFF-F226-434A-9131-E03A09C073FE}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+									<ObjectRef Name="Flywheel_spin-outside" ID="{353FFBFF-F226-434A-9131-E03A09C073FE}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
