@@ -57,28 +57,28 @@
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>			
 		</Sound>
 
-		<Sound WwiseData="True" WwiseEvent="NonCombustion" ConeHeading="180" BreakOnStop="True" ViewPoint="All" EngineIndex="1">
+		<!--Sound WwiseData="True" WwiseEvent="NonCombustion" ConeHeading="180" BreakOnStop="True" ViewPoint="All" EngineIndex="1">
 		    <WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
-		</Sound>
+		</Sound-->
 
 
 		<!--===================================== Engine 2 (right?) ======================================-->
 
-        <Sound WwiseEvent="CombustionStart" ConeHeading="180" WwiseData="true" EngineIndex="2" FadeOutType="2" FadeOutTime=".1" CancelConeHeadingWhenInside="False">
+        <Sound WwiseEvent="CombustionStart" ConeHeading="180" WwiseData="true" EngineIndex="2" FadeOutType="2" FadeOutTime=".1">
 		    <WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
 	    </Sound>
 
-		<Sound WwiseEvent="Combustion" WwiseData="true" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" RPMMin="400"  EngineIndex="2" CancelConeHeadingWhenInside="False">
+		<Sound WwiseEvent="Combustion" WwiseData="true" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" RPMMin="400"  EngineIndex="2">
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
 		</Sound>
 
-		<Sound WwiseData="True" WwiseEvent="Shutdown" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" EngineIndex="2" CancelConeHeadingWhenInside="False">
+		<Sound WwiseData="True" WwiseEvent="Shutdown" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" EngineIndex="2">
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
 		</Sound>
 
-		<Sound WwiseData="True" WwiseEvent="NonCombustion" ConeHeading="180" BreakOnStop="True" ViewPoint="All" EngineIndex="2" CancelConeHeadingWhenInside="False">
+		<!--Sound WwiseData="True" WwiseEvent="NonCombustion" ConeHeading="180" BreakOnStop="True" ViewPoint="All" EngineIndex="2" CancelConeHeadingWhenInside="False">
 		    <WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
-		</Sound>
+		</Sound-->
 
 	</EngineSoundPresets>
 
@@ -88,11 +88,11 @@
 
 		<!--Backfires-->
 
-		<Sound WwiseData="True" WwiseEvent="backfire" CustomSuffix="left" ViewPoint="Outside" LocalVar="FX PUFF1" Index="1" ConeHeading="195" FadeOutType="0" CancelConeHeadingWhenInside="False">
+		<Sound WwiseData="True" ViewPoint="Outside" LocalVar="FX PUFF1 1" ConeHeading="195">
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
 		</Sound>
 
-		<Sound WwiseData="True" WwiseEvent="backfire" CustomSuffix="right" ViewPoint="Outside" LocalVar="FX PUFF1" Index="2" ConeHeading="165" FadeOutType="0" CancelConeHeadingWhenInside="False">
+		<Sound WwiseData="True" WwiseEvent="backfire_right" ViewPoint="Outside" LocalVar="FX PUFF1 2" ConeHeading="165">
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
 		</Sound>
 
@@ -132,24 +132,28 @@
 		</Sound>
 
 	<!--Flywheel-->
-		<Sound WwiseData="True" Continuous="True" ViewPoint="All" NodeName="mb_starter_crank_left" WwiseEvent="flywheel_windup_left" LocalVar="FLYWHEEL RPM" Index="1">
-			<Range LowerBound="20" />
+
+
+
+		<Sound WwiseData="True" Continuous="True" ViewPoint="All" LocalVar="FLYWHEEL RPM 1" NodeName="mb_starter_crank_left" WwiseEvent="flywheel_windup_left">
+			<Range LowerBound="1"/>
+			<WwiseRTPC LocalVar="FLYWHEEL RPM 1" RTPCName="FLYWHEEL_RPM_1"/>
 		</Sound>
 		
-		<Sound WwiseData="True" Continuous="True" ViewPoint="All" NodeName="mb_starter_crank_right" WwiseEvent="flywheel_windup_right" LocalVar="FLYWHEEL RPM" Index="2" >
-			<Range LowerBound="20" />
+		<Sound WwiseData="True" Continuous="True" ViewPoint="All" LocalVar="FLYWHEEL RPM 2" NodeName="mb_starter_crank_right" WwiseEvent="flywheel_windup_right">
+			<Range LowerBound="1"/>
+			<WwiseRTPC LocalVar="FLYWHEEL RPM 2" RTPCName="FLYWHEEL_RPM_2"/>
 		</Sound>
 
-		<!--Sound WwiseData="True" Continuous="False" ViewPoint="Outside" NodeName="mb_starter_crank_left" WwiseEvent="flywheel_clutch_left" LocalVar="FLYWHEEL CLUTCH" Index="1">
+		<!--Sound WwiseData="True" Continuous="False" ViewPoint="All" LocalVar="FLYWHEEL CLUTCH 1" WwiseEvent="flywheel_clutch_left" >
 			<Range LowerBound="1" />
-		</Sound/-->
-		<!--Sound WwiseData="True" Continuous="False" ViewPoint="Outside" NodeName="mb_starter_crank_right" WwiseEvent="flywheel_clutch_right" LocalVar="FLYWHEEL CLUTCH" Index="1">
-			<Range LowerBound="1"/>
+			<WwiseRTPC LocalVar="FLYWHEEL CLUTCH 1" RTPCName="FLYWHEEL_CLUTCH_1" />
 		</Sound/>
 
-		<Sound WwiseData="True" WwiseEvent="flywheel_stop" SimVar="GENERAL ENG COMBUSTION" FadeOutType="2" FadeOutTime="30"/>
-			<Range UpperBound="0" />
-		</Sound-->
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" LocalVar="FLYWHEEL CLUTCH 2" WwiseEvent="flywheel_clutch_right"/>
+			<Range LowerBound="1"/>
+			<WwiseRTPC LocalVar="FLYWHEEL CLUTCH 2" RTPCName="FLYWHEEL_CLUTCH_2" />
+		</Sound/-->
 
 	</SimVarSounds>
 

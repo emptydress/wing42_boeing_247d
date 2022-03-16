@@ -13,3 +13,4 @@ WwiseProject/*.validationcache
 WwiseProject/.cache/SoundBankInfoCache.dat
 WwiseProject/FlightSim.mediaid
 WwiseProject/GeneratedSoundBanks/Windows/local_soundbank.bnk
+**/*.lnk
