@@ -1,4 +1,4 @@
-*.swp
+**/*.swp
 **/PluginInfo.xml
 **/SoundbanksInfo.xml
 **/SoundbankInfoCache.dat
@@ -6,7 +6,11 @@
 **/*.wsettings
 **/*.akd
 WwiseProject/.cache/
-WwiseProject/Originals/
-American Radio Station/
-WwiseProject/*.*.validationcache
 WwiseProject/GeneratedSoundBanks/
+American\ Radio\ Station/
+WwiseProject/Originals/
+WwiseProject/*.validationcache
+WwiseProject/.cache/SoundBankInfoCache.dat
+WwiseProject/FlightSim.mediaid
+WwiseProject/GeneratedSoundBanks/Windows/local_soundbank.bnk
+**/*.lnk

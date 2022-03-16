@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="wing42_boeing_247d" ID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="FX_PUFF1_1" ID="{5EB5D42C-7359-4253-ABCE-CBD05DA6D8D7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}">
+					<PropertyList>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="12000"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="24"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="24"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="FLYWHEEL_CLUTCH_1" ID="{0F261FFC-3BB0-4E35-A44B-C3A791361E41}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="FLYWHEEL_RPM_2" ID="{95B78310-5F97-4E18-A9BB-9F650EE31EE3}">
+					<PropertyList>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="12000"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="24"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="24"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="FLYWHEEL_CLUTCH_2" ID="{CC0E96D3-C656-4E93-B828-AB757E17BED5}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="FX_PUFF1_2" ID="{52615E69-3037-4594-907C-4038D20188D3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -14,7 +14,7 @@
     @                                                          @
     @                        by  Wing42                        @
     @                      www.wing42.com                      @
-    @                  tested with version 7.2                 @
+    @                  tested with version ___                 @
     @                                                          @
     @               Sound Design  by  Zak Spence               @
     @                 emptydressmusic@gmail.com                @ 
@@ -32,10 +32,9 @@
 	<AcousticParameters>
 		<Parameter Name="ReverberationPreset" ShareSetOutside="rev_outdoor_aircraft"/>
 		<Parameter Name="ReverberationPreset" ShareSetInside="rev_inside_generic_airliner"/>
-		<Parameter Name="Insulation_ExitClosed" Value="-16"/>
+		<Parameter Name="Insulation_ExitClosed" Value="-12"/>
 		<Parameter Name="Insulation_ExitOpen" Value="0"/>
 	</AcousticParameters>
-
 
 <!--
 		@*===================================================================================================*@
@@ -44,21 +43,42 @@
 -->
 	<EngineSoundPresets>
 
-		
 		<!--====================================== Engine 1 (left?) ======================================-->
 
-
-		<Sound WwiseData="true" WwiseEvent="Combustion"  ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" RPMMin="400"  EngineIndex="1" >
+		<Sound WwiseEvent="CombustionStart" ConeHeading="180" WwiseData="true" EngineIndex="1" FadeOutType="2" FadeOutTime=".1">
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
+	    </Sound>
+
+		<Sound WwiseData="True" WwiseEvent="Combustion"  ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" RPMMin="400"  EngineIndex="1">
+		    <WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
 		</Sound>
+
+		<Sound WwiseData="True" WwiseEvent="Shutdown" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" EngineIndex="1">
+			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>			
+		</Sound>
+
+		<!--Sound WwiseData="True" WwiseEvent="NonCombustion" ConeHeading="180" BreakOnStop="True" ViewPoint="All" EngineIndex="1">
+		    <WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
+		</Sound-->
 
 
 		<!--===================================== Engine 2 (right?) ======================================-->
 
-		<Sound WwiseEvent="Combustion" WwiseData="true" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" RPMMin="400"  EngineIndex="2" >
+        <Sound WwiseEvent="CombustionStart" ConeHeading="180" WwiseData="true" EngineIndex="2" FadeOutType="2" FadeOutTime=".1">
+		    <WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
+	    </Sound>
+
+		<Sound WwiseEvent="Combustion" WwiseData="true" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" RPMMin="400"  EngineIndex="2">
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
 		</Sound>
 
+		<Sound WwiseData="True" WwiseEvent="Shutdown" ConeHeading="180" FadeOutType="2" FadeOutTime="0.3" EngineIndex="2">
+			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
+		</Sound>
+
+		<!--Sound WwiseData="True" WwiseEvent="NonCombustion" ConeHeading="180" BreakOnStop="True" ViewPoint="All" EngineIndex="2" CancelConeHeadingWhenInside="False">
+		    <WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
+		</Sound-->
 
 	</EngineSoundPresets>
 
@@ -68,11 +88,11 @@
 
 		<!--Backfires-->
 
-		<Sound WwiseData="True" WwiseEvent="backfire" CustomSuffix="left" ViewPoint="Outside" LocalVar="FX PUFF1" Index="1" ConeHeading="195" FadeOutType="0">
+		<Sound WwiseData="True" ViewPoint="Outside" LocalVar="FX PUFF1 1" ConeHeading="195">
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
 		</Sound>
 
-		<Sound WwiseData="True" WwiseEvent="backfire" CustomSuffix="right" ViewPoint="Outside" LocalVar="FX PUFF1" Index="2" ConeHeading="165" FadeOutType="0">
+		<Sound WwiseData="True" WwiseEvent="backfire_right" ViewPoint="Outside" LocalVar="FX PUFF1 2" ConeHeading="165">
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" Derived="False" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM"/>
 		</Sound>
 
@@ -111,11 +131,34 @@
 			<WwiseRTPC LocalVar="RADIO RANGE VOLUME" RTPCName="RADIO_RANGE_VOLUME"/>
 		</Sound>
 
+	<!--Flywheel-->
+
+
+
+		<Sound WwiseData="True" Continuous="True" ViewPoint="All" LocalVar="FLYWHEEL RPM 1" NodeName="mb_starter_crank_left" WwiseEvent="flywheel_windup_left">
+			<Range LowerBound="1"/>
+			<WwiseRTPC LocalVar="FLYWHEEL RPM 1" RTPCName="FLYWHEEL_RPM_1"/>
+		</Sound>
+		
+		<Sound WwiseData="True" Continuous="True" ViewPoint="All" LocalVar="FLYWHEEL RPM 2" NodeName="mb_starter_crank_right" WwiseEvent="flywheel_windup_right">
+			<Range LowerBound="1"/>
+			<WwiseRTPC LocalVar="FLYWHEEL RPM 2" RTPCName="FLYWHEEL_RPM_2"/>
+		</Sound>
+
+		<!--Sound WwiseData="True" Continuous="False" ViewPoint="All" LocalVar="FLYWHEEL CLUTCH 1" WwiseEvent="flywheel_clutch_left" >
+			<Range LowerBound="1" />
+			<WwiseRTPC LocalVar="FLYWHEEL CLUTCH 1" RTPCName="FLYWHEEL_CLUTCH_1" />
+		</Sound/>
+
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" LocalVar="FLYWHEEL CLUTCH 2" WwiseEvent="flywheel_clutch_right"/>
+			<Range LowerBound="1"/>
+			<WwiseRTPC LocalVar="FLYWHEEL CLUTCH 2" RTPCName="FLYWHEEL_CLUTCH_2" />
+		</Sound/-->
+
 	</SimVarSounds>
 
 
 	<AnimationSounds>
-
 
 		<!--=========================================== NA Radio =========================================-->
 
@@ -127,6 +170,203 @@
 	        <Sound WwiseData="True" Continuous="False" ViewPoint="Inside" NodeName="switch_radio_range_light" WwiseEvent="switch_radio_range_light_on"></Sound>
 	        <Sound WwiseData="True" Continuous="False" ViewPoint="Inside" NodeName="switch_radio_range_light" WwiseEvent="switch_radio_range_light_off"></Sound>
 
+<!--
+switch_master_battery_on	switch_master_battery
+switch_master_battery_off	
+switch_landing_light_left_on	switch_landing_light_left
+switch_landing_light_left_off	
+switch_landing_light_right_on	switch_landing_light_right
+switch_landing_light_right_off	
+switch_master_avionics_on	master_avionics_switch
+switch_master_avionics_off	
+switch_cryst_on	switch_cryst
+switch_cryst_off	
+switch_long_wave_on	switch_long_wave
+switch_long_wave_off	
+switch_short_wave_on	switch_short_wave
+switch_short_wave_off	
+switch_compass_light_on	switch_compass_light
+switch_compass_light_off	
+switch_nav_instr_lights_on	switch_nav_instr_lights
+switch_nav_instr_lights_off	
+switch_eng_instr_lights_on	switch_eng_instr_lights
+switch_eng_instr_lights_off	
+switch_nav_lights_on	switch_nav_lights
+switch_nav_lights_off	
+switch_cabin_lights_on	switch_cabin_lights
+switch_cabin_lights_off	
+switch_dome_lights_on1	switch_dome_lights
+switch_dome_lights_on2	
+switch_dome_lights_off	
+switch_dome_lights_cabin_on1	switch_dome_light_cabin
+switch_dome_lights_cabin_on2	
+switch_dome_lights_cabin_off	
+switch_courtesy_lights_on	switch_courtesy_lights
+switch_courtesy_lights_off	
+switch_map_light_on	switch_map_light
+switch_map_light_off	
+switch_radio_light_on	switch_radio_light
+switch_radio_light_off	
+switch_reading_light_2_on	switch_reading_light_2
+switch_reading_light_2_off	
+switch_reading_light_3_on	switch_reading_light_3
+switch_reading_light_3_off	
+...	
+switch_reading_light_13_on	switch_reading_light_13
+switch_reading_light_13_off	
+switch_pitot_heat_on	switch_pitot_heat
+switch_pitot_heat_off	
+selector_wing_deicer_on	selector_wing_deicer
+selector_wing_deicer_off	
+switch_flare_1_pull	switch_flare_1
+switch_flare_1_release	
+switch_flare_2_pull	switch_flare_2
+switch_flare_2_release	
+switch_radio_range_power_on	switch_radio_range_power
+switch_radio_range_power_off	
+switch_radio_range_cw_on	switch_radio_range_cw
+switch_radio_range_cw_off	
+switch_cabin_warning_off	switch_cabin_warning
+switch_cabin_warning_nosmoking	
+switch_cabin_warning_seatbelts	
+switch_cabin_warning_both	
+relay_cabin_warning_1	pax_signs_box
+relay_cabin_warning_2	
+master_ignition_switch_on	master_ignition_switch
+master_ignition_switch_off	
+mag_switch_1_off	mag_switch_1
+mag_switch_1_left	
+mag_switch_1_right	
+mag_switch_1_both	
+mag_switch_2_off	mag_switch_2
+mag_switch_2_left	
+mag_switch_2_right	
+mag_switch_2_both	
+lever_manifold_pressure_gauge_left	lever_manifold_pressure_gauge_selector
+lever_manifold_pressure_gauge_right	
+lever_fuel_gauge_selector_main	lever_fuel_gauge_selector
+lever_fuel_gauge_selector_aux	
+lever_parking_brake_on	parking_break_lever
+lever_parking_brake_off	
+selector_cylinder_head_1	selector_cylinder_head
+selector_cylinder_head_2	
+selector_cylinder_head_3	
+selector_cylinder_head_4	
+selector_cylinder_head_5	
+selector_cylinder_head_6	
+selector_cylinder_head_7	
+selector_cylinder_head_8	
+selector_cylinder_head_9	
+primer_valve_on	primer_valve
+primer_valve_off	
+primer_selector_left	primer_selector
+primer_selector_off	
+primer_selector_right	
+selector_engine_off	engine_selector
+selector_engine_left	
+selector_engine_both	
+selector_engine_right	
+selector_tank_off	tank_selector
+selector_tank_left_main	
+selector_tank_right_main	
+selector_tank_right_aux	
+manual_gear_selector_up	manual_gear_selector
+manual_gear_selector_down	
+lever_landing_gear_up	lever_landing_gear
+lever_landing_gear_neutral	
+lever_landing_gear_down	
+wobble_pump_stop1	wobble_pump
+wobble_pump_stop2	
+button_feathering_left_push	button_feathering_left
+button_feathering_left_lock	
+button_feathering_left_release	
+button_feathering_right_push	button_feathering_right
+button_feathering_right_lock	
+button_feathering_right_release	
+lux_fire_left	crankcase_left
+lux_fire_right	crankcase_right
+lux_selector_stop1	
+knob_vhf_integers	com_radio_tuning1
+knob_vhf_decimals	com_radio_tuning2
+backfire_left	fx_exhaust_left
+backfire_right	fx_exhaust_right
+	
+	
+	
+	
+	
+	
+	
+	
+tap_glass_gear	instrument_glass_gear
+tap_glass_oat	instrument_glass_oat
+tap_glass_eng_temp	instrument_glass_eng_temp
+tap_glass_fuel_gauge_left	instrument_glass_fuel_gauge_left
+tap_glass_fuel_gauge_right	instrument_glass_fuel_gauge_right
+tap_glass_dg	instrument_glass_dg
+tap_glass_ah	instrument_glass_ah
+tap_glass_asi	instrument_glass_asi
+tap_glass_altimeter	instrument_glass_altimeter
+tap_glass_tb	instrument_glass_tb
+tap_glass_map	instrument_glass_map
+tap_glass_vsi	instrument_glass_vsi
+tap_glass_clock	instrument_glass_clock
+tap_glass_fuel_pressure_left	instrument_glass_fuel_pressure_left
+tap_glass_fuel_pressure_right	instrument_glass_fuel_pressure_right
+tap_glass_oil_pressure_left	instrument_glass_oil_pressure_left
+tap_glass_oil_pressure_right	instrument_glass_oil_pressure_right
+tap_glass_oil_temp_left	instrument_glass_oil_temp_left
+tap_glass_oil_temp_right	instrument_glass_oil_temp_right
+tap_glass_rpm_left	instrument_glass_rpm_left
+tap_glass_rpm_right	instrument_glass_rpm_right
+tap_glass_ammeter	instrument_glass_ammeter
+tap_glass_compass	instrument_glass_compass
+tap_glass_radio	instrument_glass_radio
+	
+exit_0_open	exit_0_node
+exit_0_close	
+exit_1_open	cockpit_hatch
+exit_1_close	
+exit_1_lock1_open	hatch_lock_left
+exit_1_lock1_close	
+exit_1_lock2_open	hatch_lock_right
+exit_1_lock2_close	
+exit_2_open	exit_2_node
+exit_2_close	
+exit_3_open	exit_3_node
+exit_3_close	
+escape_hatch_handle1_open	escape_hatch_handle1
+escape_hatch_handle1_close	
+escape_hatch_handle2_open	escape_hatch_handle2
+escape_hatch_handle2_close	
+escape_hatch_node_open	escape_hatch_node
+escape_hatch_node_close	
+	
+ashtray_1_open	ashtray_1
+ashtray_1_close	
+ashtray_2_open	ashtray_2
+ashtray_2_close	
+ashtray_3_open	ashtray_3
+ashtray_3_close	
+ashtray_4_open	ashtray_4
+ashtray_4_close	
+ashtray_5_open	ashtray_5
+ashtray_5_close	
+ashtray_6_open	ashtray_6
+ashtray_6_close	
+ashtray_7_open	ashtray_7
+ashtray_7_close	
+ashtray_8_open	ashtray_8
+ashtray_8_close	
+ashtray_9_open	ashtray_9
+ashtray_9_close	
+ashtray_10_open	ashtray_10
+ashtray_10_close	
+	
+fuse_remove	junction-box-j71
+fuse_insert	
+fuse_radio_remove	fusebox_radio
+fuse_radio_insert-->	
 	</AnimationSounds>
 
-</SoundInfo>
+</SoundInfo> 
