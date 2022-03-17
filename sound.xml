@@ -244,13 +244,13 @@
 			WwiseData="True" 
 			Continuous="True" 
 			ViewPoint="All" 
-			LocalVar="FLYWHEEL RPM 1" 
+			LocalVar="FLYWHEEL RPM:1" 
 			NodeName="mb_starter_crank_left" 
 			WwiseEvent="flywheel_windup_left">
 			<Range 
 				LowerBound="1"/>
 			<WwiseRTPC 
-				LocalVar="FLYWHEEL RPM 1" 
+				LocalVar="FLYWHEEL RPM:1" 
 				RTPCName="FLYWHEEL_RPM_1"/>
 		</Sound>
 
