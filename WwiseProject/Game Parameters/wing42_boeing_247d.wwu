@@ -67,6 +67,168 @@
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
+						<GameParameter Name="WINDOW_1" ID="{96C44ACE-62AE-44D4-B92E-D68AB40EAA26}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="WINDOW_2" ID="{0ADBA7D9-8A03-40E3-A931-434852C8F66E}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="ELEVATOR_TRIM" ID="{FCDBBE90-61CF-41FE-B1B9-35FCE8B77727}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="AILERON_TRIM" ID="{9107FC6B-18C1-4A76-A435-E5504ECC17CF}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RUDDER_TRIM" ID="{B112C643-7C45-4BA9-82BA-EB6944B752CD}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="CABIN_HEAT_LEVER" ID="{0608FBED-09E9-4A9F-9083-F199F70D5F1A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="KNOB_CLOCK" ID="{8E7D3B73-80EC-4E03-80B4-0FA97CC3962C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="PRIMER_HANDLE" ID="{179F0314-D93A-4649-9587-F3B01223F506}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="KNOB_DG" ID="{9A31B5D3-0825-411D-9855-0B4AD58B828D}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="120"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="KNOB_ALTIMETER" ID="{22CB0118-F1A5-4694-BC40-E0273C3A4FC9}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="120"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="PROPELLER_FRICTION_LOCK" ID="{E3AA59C1-713B-4713-9AE8-0A747FD07DD3}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="THROTTLE_FRICTION_LOCK" ID="{D190319D-82F9-4E76-B4CE-DA6046DD12F8}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="MIXTURE_FRICTION_LOCK" ID="{98637CE2-92BA-45B1-B5FF-3E8FACDF5D9E}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="AUX_FRICTION_LOCK" ID="{7C323FCF-CE6F-4679-AAA7-06EA7A429C0B}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="LEVER_OIL_SHUTTER_1" ID="{AF5DA75D-AD27-47FD-86ED-FE175EA2E84E}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="LEVER_OIL_SHUTTER_2" ID="{BD15EBA1-FBD8-4BA2-BCAE-C3B764DB8E12}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="LEVER_CARB_HEAT_1" ID="{FF739391-331D-44B3-9CD9-EB885DAB20A6}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="LEVER_CARB_HEAT_2" ID="{DAB9E5EC-C604-4D30-84DE-98FAC8D334ED}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="FEATHERING_BUTTON_2" ID="{643F8EBF-5A5A-4D19-9CE0-753AF0BEE55A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="FEATHERING_BUTTON_1" ID="{CBF4D121-D9D0-4F6A-8799-BE6AA4D3ABDA}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="LEVER_GEAR_POSITION" ID="{A40E5E73-83AA-4160-8AE6-ECC9153D59C1}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="ENGINE_TEMPERATURE_SELECTOR_POSITION" ID="{D7DEF18D-98A5-4EF6-BDCB-69D225D5022A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="80"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="LEVER_ENGINE_SELECTOR" ID="{A5D9F867-1D83-40EB-9069-9E8DE25A1F49}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="LEVER_TANK_SELECTOR" ID="{6DD27305-BA43-460B-8A0D-F8259ECC8511}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="FUEL_QUANTITY_SELECTOR" ID="{BDA9875A-F568-401F-9FD8-7B9EDDCCDEDA}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="50"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="PRIMER_SELECTOR" ID="{B591A954-0481-4BC2-A267-8F0C7DCB710D}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="LEVER_PARKING_BRAKE" ID="{8EEF8D8E-CC5D-4856-A323-456C70B695EF}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="PRIMER_VALVE" ID="{BA6C4E4E-BA6C-4251-B439-E266BF8E605A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="50"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="FEATHERING_COVER" ID="{98F6EDAB-B504-4EB6-BEB3-EE872B961FDC}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="LUX_SELECTOR" ID="{C77FE939-F15A-4577-9885-7431B469D653}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="LUX_LEVER" ID="{445ECFC1-4719-42B5-8555-EB3DA4AA2F12}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Radio" ID="{3107E808-9EBD-4B3D-99C4-E2EBF0B742C3}" ShortID="566073449">
@@ -344,65 +506,6 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Cockpit_controls" ID="{9A3F903E-D433-47E4-B293-386CA6E643C7}" ShortID="918363861">
-					<ChildrenList>
-						<GameParameter Name="FEATHERING_BUTTON_2" ID="{643F8EBF-5A5A-4D19-9CE0-753AF0BEE55A}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="2"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="FEATHERING_BUTTON_1" ID="{CBF4D121-D9D0-4F6A-8799-BE6AA4D3ABDA}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="2"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="LEVER_GEAR_POSITION" ID="{A40E5E73-83AA-4160-8AE6-ECC9153D59C1}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="LEVER_TANK_SELECTOR" ID="{6DD27305-BA43-460B-8A0D-F8259ECC8511}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="LEVER_ENGINE_SELECTOR" ID="{A5D9F867-1D83-40EB-9069-9E8DE25A1F49}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="PRIMER_SELECTOR" ID="{B591A954-0481-4BC2-A267-8F0C7DCB710D}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="PRIMER_VALVE" ID="{BA6C4E4E-BA6C-4251-B439-E266BF8E605A}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="50"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="FUEL_QUANTITY_SELECTOR" ID="{BDA9875A-F568-401F-9FD8-7B9EDDCCDEDA}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="50"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="LEVER_PARKING_BRAKE" ID="{8EEF8D8E-CC5D-4856-A323-456C70B695EF}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-							</PropertyList>
-						</GameParameter>
-						<GameParameter Name="ENGINE_TEMPERATURE_SELECTOR_POSITION" ID="{D7DEF18D-98A5-4EF6-BDCB-69D225D5022A}">
-							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="80"/>
-							</PropertyList>
-						</GameParameter>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="Gyro" ID="{F269F7FF-94F9-4E29-9A6D-5C2790D55427}" ShortID="1014195498">
 					<ChildrenList>
 						<GameParameter Name="VAC_DG_RPM" ID="{E95CC87E-D57A-461D-871D-3FD219C4BB5F}">
@@ -411,7 +514,33 @@
 								<Property Name="Max" Type="Real64" Value="25000"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="VAC_AH_RPM" ID="{CB207AC3-956B-4367-A952-88CC06B8F77A}"/>
+						<GameParameter Name="VAC_AH_RPM" ID="{CB207AC3-956B-4367-A952-88CC06B8F77A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="25000"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="VAC_TB_RPM" ID="{6930A7B6-FDC5-461F-A66C-5966BFC2C417}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="15000"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Rattles" ID="{84571DB0-7085-42A9-AABB-2FEEF0270E56}" ShortID="390477963">
+					<ChildrenList>
+						<GameParameter Name="RATTLE_INTENSITY" ID="{7EDCAA1F-03DC-48F8-BEA9-92C8082945ED}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RATTLE_INTENSITY_NORMALIZED" ID="{AF216AAF-EEEC-4C8D-8EFD-D69A07CCE920}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
