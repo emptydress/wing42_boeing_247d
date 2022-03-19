@@ -13,17 +13,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Engine1_combustion-outside" ID="{F7720743-3603-4C32-88C6-5198C32933EF}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{345F3B61-430F-4ADD-9922-7B2946F35E34}" ShortID="146422251">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Engine1_combustion-inside" ID="{A40CAB8A-33B4-446D-858D-6B6DFB8384E1}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="eng1_combustion" ID="{A1B245B5-9192-4612-AE33-A42FB9CE5C31}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -37,17 +27,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Engine2_combustion-outside" ID="{D056C73B-C0FC-4C34-8186-3ADE36B34125}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{688232DC-FF66-4214-9048-92388BDCB18E}" ShortID="43983943">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Engine2_combustion-inside" ID="{E276CD50-1658-418E-9BD8-757318C11EA1}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="eng2_combustion" ID="{FFAD262B-FC26-4D45-9217-34010A2839D5}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -145,11 +125,6 @@
 								<Action Name="" ID="{75EB2E2D-A88C-42BB-A522-22A9B799FC6C}" ShortID="682132493">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -179,11 +154,6 @@
 								<Action Name="" ID="{4B2E1E81-C265-48B6-A9C4-BC8595AC78C6}" ShortID="320633657">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -216,7 +186,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Backfire" ID="{36A9D26E-9AC9-4F5D-9436-43BC06E4F03A}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="Backfire_left" ID="{2DA3D8BC-C058-40BA-B60A-69BC8C078F8D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -230,7 +200,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Backfire" ID="{36A9D26E-9AC9-4F5D-9436-43BC06E4F03A}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="Backfire_right" ID="{CA7F3015-EA14-44F4-A4AA-2C3E98D133BF}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -456,7 +426,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Flywheel_spin-outside" ID="{353FFBFF-F226-434A-9131-E03A09C073FE}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+									<ObjectRef Name="Flywheel_left" ID="{2D1CFB18-9B0F-424C-A993-3F86C7E5FFCB}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -467,35 +437,10 @@
 						<Action Name="" ID="{EC808D99-D4BD-4480-A8E1-B4945C422C0A}" ShortID="280678869">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Flywheel_spin-outside" ID="{353FFBFF-F226-434A-9131-E03A09C073FE}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{F19E80E3-D0B2-4D28-A512-C79A71A493F8}" ShortID="98696298">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Dummy_windup" ID="{9AE69345-140F-4968-A00D-0C11A49966A5}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{3FF40119-8B3E-45CB-A429-BEF88C2689F2}" ShortID="71890728">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Dummy_Flywheel_lowend" ID="{F770F19A-D927-4BC2-B7A9-0A49F473B353}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+									<ObjectRef Name="Flywheel_right" ID="{C6BA6CF2-AE1E-40A3-9F1F-2FF2B38B342F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -509,7 +454,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Clutch_mesh" ID="{1B87EEEF-CDD7-4D5E-B2CB-2489C950D790}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+									<ObjectRef Name="Mesh" ID="{5E9C70CC-42D9-4545-B1A7-3BA71B2473E2}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -523,7 +468,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Clutch_mesh" ID="{1B87EEEF-CDD7-4D5E-B2CB-2489C950D790}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+									<ObjectRef Name="Mesh" ID="{5E9C70CC-42D9-4545-B1A7-3BA71B2473E2}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

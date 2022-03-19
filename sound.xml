@@ -148,12 +148,12 @@
 		<!--Sound WwiseData="True" Continuous="False" ViewPoint="All" LocalVar="FLYWHEEL CLUTCH 1" WwiseEvent="flywheel_clutch_left" >
 			<Range LowerBound="1" />
 			<WwiseRTPC LocalVar="FLYWHEEL RPM 1" RTPCName="FLYWHEEL_RPM_1" />
-		</Sound/>
+		</Sound>
 
 		<Sound WwiseData="True" Continuous="False" ViewPoint="All" LocalVar="FLYWHEEL CLUTCH 2" WwiseEvent="flywheel_clutch_right"/>
 			<Range LowerBound="1"/>
 			<WwiseRTPC LocalVar="FLYWHEEL RPM 2" RTPCName="FLYWHEEL_RPM_2" />
-		</Sound/-->
+		</Sound-->
 
 	</SimVarSounds>
 
