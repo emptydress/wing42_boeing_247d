@@ -46593,35 +46593,6 @@
 																	<PropertyList>
 																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																		<Property Name="Volume" Type="Real64">
-																			<RTPCList>
-																				<RTPC Name="" ID="{5DDF0E29-DA28-47E8-9DE3-FE092E5B3586}" ShortID="181670876">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{26CEBD43-D084-494E-A8B6-CE6E7DC3F3AB}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="3"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																								<SegmentShape>Log3</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>100</XPos>
-																								<YPos>7</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
