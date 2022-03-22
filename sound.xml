@@ -41,6 +41,14 @@
 		@*====================================* The Fruit of Prometheus *====================================*@
 		@*===================================================================================================*@
 -->
+
+	<EngineSoundTransitions>
+		<Sound WwiseData="True" EngineIndex="1" StateFrome="Off" StateTo="On" WwiseEvent="eng1_startup" />
+		<Sound WwiseData="True" EngineIndex="2" StateFrome="Off" StateTo="On" WwiseEvent="eng2_startup" />
+		<Sound WwiseData="True" EngineIndex="1" StateFrome="On" StateTo="Off" WwiseEvent="eng1_shutdown" />
+		<Sound WwiseData="True" EngineIndex="2" StateFrome="On" StateTo="Off" WwiseEvent="eng2_shutdown" />
+	</EngineSoundTransitions>
+
 	<EngineSoundPresets>
 
 		<!--====================================== Engine 1 (left?) ======================================-->
