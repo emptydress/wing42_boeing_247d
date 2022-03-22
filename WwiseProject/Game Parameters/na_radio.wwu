@@ -7,70 +7,70 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Folder Name="RTPCs" ID="{06B8C739-7061-4DB7-BD0E-F9C2478F2F7B}" ShortID="158719956">
+				<Folder Name="RTPCs" ID="{EBE0BECF-B55C-4340-BF92-6367CAD5CB6A}" ShortID="158719957">
 					<ChildrenList>
-						<GameParameter Name="RADIO_RANGE_MUSIC_SLIDER" ID="{50F8CC41-849B-4AFD-A5AD-7C6D5085E261}">
+						<GameParameter Name="RADIO_RANGE_MUSIC_SLIDER_01" ID="{C3E53B3E-3534-4284-9562-59EECD87CDB1}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0.5"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="RADIO_RANGE_MUSIC_VOLUME" ID="{4CAA57DB-8EF6-4D74-9A98-DF73B2D43E72}">
+						<GameParameter Name="RADIO_RANGE_MUSIC_VOLUME_01" ID="{694B4B6C-2596-4E86-ADBB-858F44AF6CC8}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="40"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}">
+						<GameParameter Name="RADIO_RANGE_NOISE_VOLUME_01" ID="{7B91ED1C-BCDC-4B41-8667-D28CA59DCBA3}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="40"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="RADIO_RANGE_ID_VOLUME" ID="{3C42917E-2188-4545-B806-7CEF4F690C8D}">
+						<GameParameter Name="RADIO_RANGE_ID_VOLUME_01" ID="{B3E25210-1806-4202-ADD9-EEFD0680267F}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="40"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="RADIO_RANGE_N_VOLUME" ID="{77DE8D47-2B14-446A-85D6-B29AC1F54375}">
+						<GameParameter Name="RADIO_RANGE_N_VOLUME_01" ID="{51F5A7FB-A0E0-4FCF-AF6C-897CFFA29480}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="40"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="RADIO_RANGE_A_VOLUME" ID="{D9BB9335-8051-4D4F-921E-6F2CA936BF8C}">
+						<GameParameter Name="RADIO_RANGE_A_VOLUME_01" ID="{D4CD1D92-223B-4ED8-8264-6BAD91E4B34C}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="40"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="RADIO_RANGE_VOLUME" ID="{A2DFEEF4-C308-492E-B73B-7FD4671E5174}">
+						<GameParameter Name="RADIO_RANGE_VOLUME_01" ID="{160D6B75-5553-4060-A63D-AEB346516CEB}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="RADIO_RANGE_FREQUENCY" ID="{D88FB2C6-F6A1-45F9-9E47-6ECFA3585143}">
+						<GameParameter Name="RADIO_RANGE_FREQUENCY_01" ID="{287B9FBF-9357-425B-9D0B-43AFBF6A2CCC}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="190"/>
 								<Property Name="Max" Type="Real64" Value="1750"/>
 								<Property Name="Min" Type="Real64" Value="190"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="RADIO_RANGE_BAND" ID="{5533455E-369F-4573-A42E-547C2C5EEF67}">
+						<GameParameter Name="RADIO_RANGE_BAND_01" ID="{0FD57ADF-684F-44D2-A0BB-CAA0841FFEF9}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="5"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="RADIO_RANGE_BAND_POSITION" ID="{1143840E-0D7F-4E4F-9B0B-CE2FBDD8CA68}">
+						<GameParameter Name="RADIO_RANGE_BAND_POSITION_01" ID="{438294AD-C520-4BFA-A98A-AFB4E2DE1C82}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="60"/>
 								<Property Name="Max" Type="Real64" Value="120"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="RADIO_RANGE_FREQUENCY_HANDLE" ID="{982F0057-C253-4B65-9784-3830851CA10E}"/>
-						<GameParameter Name="RADIO_RANGE_MUSIC_GENRE" ID="{D4A3E081-8C94-4D93-AA93-66B7C6D4FBEF}">
+						<GameParameter Name="RADIO_RANGE_FREQUENCY_HANDLE_01" ID="{188FDBD3-D66B-4E04-8E9A-B4F60BABDA96}"/>
+						<GameParameter Name="RADIO_RANGE_MUSIC_GENRE_01" ID="{DCCC47D7-52BD-4F71-A659-3EDEB3DC984C}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="5"/>
 								<Property Name="Max" Type="Real64" Value="10"/>
@@ -78,51 +78,51 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Event_triggers" ID="{84B0C2CF-EB0E-4026-A8F1-13B5CCB676B3}" ShortID="798392837">
+				<Folder Name="Event_triggers" ID="{0215980A-6122-4A60-A597-C5E97554764E}" ShortID="798392838">
 					<ChildrenList>
-						<GameParameter Name="SOUND_AN_PLAYING_BOOL" ID="{6D438DE5-1CD7-4FE9-8171-202DEBF41D11}">
+						<GameParameter Name="SOUND_AN_PLAYING_BOOL_01" ID="{D4F4E3AF-AE8E-4FC1-9EAB-F73408164795}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="SOUND_A_PLAYING_BOOL" ID="{FB862CB3-732B-4D65-A06B-ADBC3DFC7960}">
+						<GameParameter Name="SOUND_A_PLAYING_BOOL_01" ID="{29614A5D-28F6-4057-9799-EB3C1D96414D}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="SOUND_N_PLAYING_BOOL" ID="{1667D7C2-F08E-4DE7-9364-3D1DB4AF2DE7}">
+						<GameParameter Name="SOUND_N_PLAYING_BOOL_01" ID="{DF35C783-0378-4F25-9A5E-BF524960EC88}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="SOUND_ID_BIP_PLAYING_BOOL" ID="{F4BF164C-708D-4217-9295-E6C85B96A453}">
+						<GameParameter Name="SOUND_ID_BIP_PLAYING_BOOL_01" ID="{279F9E73-820A-4256-B3A2-1543EA0CF859}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="SOUND_ID_BEEP_PLAYING_BOOL" ID="{4BB30B73-F19A-4B59-AF73-FFCFF3FC9C24}">
+						<GameParameter Name="SOUND_ID_BEEP_PLAYING_BOOL_01" ID="{8F611CA4-35B3-4473-887B-D51DAB1D4D8B}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="SOUND_NOISE_PLAYING_BOOL" ID="{CA8B0E7D-B386-41FD-963C-35B9141CECD3}">
+						<GameParameter Name="SOUND_NOISE_PLAYING_BOOL_01" ID="{3ED5CD0C-8A8A-4D5F-8263-327F399ED0BB}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="SOUND_MUSIC_PLAYING_BOOL" ID="{2453D525-97E7-4660-AFBA-B9930475CD68}">
+						<GameParameter Name="SOUND_MUSIC_PLAYING_BOOL_01" ID="{82DC531C-4DB7-4B14-9358-8EF11D872143}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="SWITCH_RADIO_RANGE_CW" ID="{B6F33438-C328-40BD-B1D9-B66EF9DBE98B}">
+						<GameParameter Name="SWITCH_RADIO_RANGE_CW_01" ID="{26A953F8-1DBA-4AFE-BCF7-C2944E580521}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Max" Type="Real64" Value="1"/>

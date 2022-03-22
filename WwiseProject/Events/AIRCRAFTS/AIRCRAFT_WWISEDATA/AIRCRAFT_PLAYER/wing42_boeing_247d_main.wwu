@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{D9F9BB79-FC42-4C53-A23C-177B41F92938}" SchemaVersion="97">
+<WwiseDocument Type="WorkUnit" ID="{4B8F07F0-F399-494D-86AC-3EB5001D2F57}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="wing42_boeing_247d" ID="{D9F9BB79-FC42-4C53-A23C-177B41F92938}" PersistMode="Standalone">
+		<WorkUnit Name="wing42_boeing_247d_main" ID="{4B8F07F0-F399-494D-86AC-3EB5001D2F57}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="engines" ID="{8CC277E3-6E7D-42FE-B0CE-5EC799D150FF}" ShortID="602948966">
+				<Folder Name="engines" ID="{97CD1C2F-761B-4279-87C2-BD5834DC54F4}" ShortID="602948967">
 					<ChildrenList>
-						<Event Name="Play_wing42_boeing_247d_eng1_combustion" ID="{5E2EA609-DD52-410E-8FB2-78267C7D44BA}">
+						<Event Name="Play_wing42_boeing_247d_eng1_combustion" ID="{8B4A0F28-3EB5-4EB4-88C0-C2A5F38D895C}">
 							<ChildrenList>
-								<Action Name="" ID="{4B12BA95-82DE-4B60-B67E-C44A888783D3}" ShortID="410568205">
+								<Action Name="" ID="{2DF42D74-B71A-4D11-A5A2-F0032DBD72BF}" ShortID="410568206">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
@@ -19,9 +19,9 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_eng2_combustion" ID="{E4C6601A-21EF-47F5-8A4A-C095E081F142}">
+						<Event Name="Play_wing42_boeing_247d_eng2_combustion" ID="{3F3663C1-C5A4-4DF1-9BDC-BD12C8F6B3B5}">
 							<ChildrenList>
-								<Action Name="" ID="{A2EDB813-567B-4237-85BC-2D89DD6471FD}" ShortID="590884324">
+								<Action Name="" ID="{2CD9D36F-F3C0-47D0-934A-57E535609CD1}" ShortID="590884325">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
@@ -33,7 +33,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_eng1_prop" ID="{D596B535-8264-4FAD-9672-9A48E40CF0F2}">
+						<Event Name="Play_wing42_boeing_247d_eng1_prop" ID="{26959EF9-58EA-4FCD-B36E-2E741832AD1B}">
 							<ChildrenList>
 								<Action Name="" ID="{AC55BD70-1CBE-4DC3-AD4C-A72EE8BADCB8}" ShortID="548021002">
 									<PropertyList>
@@ -47,7 +47,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_eng2_prop" ID="{80BB5C72-A02D-4AF6-B899-689C9F7BA97D}">
+						<Event Name="Play_wing42_boeing_247d_eng2_prop" ID="{228C436E-21EF-484C-8887-6C41C2B177B1}">
 							<ChildrenList>
 								<Action Name="" ID="{5734C3BF-1BF6-496D-8757-D9C6519F8C69}" ShortID="273868548">
 									<PropertyList>
@@ -61,9 +61,9 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_eng1_shutdown" ID="{9A7911EA-9CCC-47DD-A52D-25FD0870EC86}">
+						<Event Name="Play_wing42_boeing_247d_eng1_shutdown" ID="{A0630147-45AC-4619-87C4-049AE7E369EA}">
 							<ChildrenList>
-								<Action Name="" ID="{9E8559BD-920B-4695-93F6-61EDF403F19A}" ShortID="628030828">
+								<Action Name="" ID="{3C72C80C-6DE0-4787-91DA-BB95366E2BB7}" ShortID="628030829">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 										<Property Name="FadeInCurve" Type="int16" Value="1"/>
@@ -76,9 +76,9 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_eng2_shutdown" ID="{E17161E6-F45F-4C16-83D6-A5641608FA1E}">
+						<Event Name="Play_wing42_boeing_247d_eng2_shutdown" ID="{923914E5-9B95-459F-B3A8-AA2FB54CDB00}">
 							<ChildrenList>
-								<Action Name="" ID="{0C300B73-A73A-402A-9F20-FA58F62DB324}" ShortID="315684459">
+								<Action Name="" ID="{7D1F2CFE-ACAF-4E89-8C6F-09FC9A94FF83}" ShortID="315684460">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 										<Property Name="FadeInCurve" Type="int16" Value="1"/>
@@ -92,9 +92,9 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_eng1_combustion_start" ID="{20C46360-5001-4A4E-82C8-9F44B6ECD2BE}">
+						<Event Name="Play_wing42_boeing_247d_eng1_combustion_start" ID="{EAC4B2C7-9595-49B0-A751-7889CB1539CD}">
 							<ChildrenList>
-								<Action Name="" ID="{75EB2E2D-A88C-42BB-A522-22A9B799FC6C}" ShortID="682132493">
+								<Action Name="" ID="{41D9255D-8E04-4839-8F16-B37FD9FEFB7C}" ShortID="682132494">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
@@ -106,9 +106,9 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_eng2_combustion_start" ID="{80C8B2EF-42B4-45E1-8B97-8C27FA109F91}">
+						<Event Name="Play_wing42_boeing_247d_eng2_combustion_start" ID="{461E0763-85F6-4E68-96F7-533C9D8D042A}">
 							<ChildrenList>
-								<Action Name="" ID="{4B2E1E81-C265-48B6-A9C4-BC8595AC78C6}" ShortID="320633657">
+								<Action Name="" ID="{90E0FD79-EAE1-45DA-BF6B-8983908DF6B5}" ShortID="320633658">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
@@ -120,9 +120,9 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_backfire_left" ID="{42106194-D849-4BAD-8296-CBC97157D962}">
+						<Event Name="Play_wing42_boeing_247d_backfire_left" ID="{9BD1ED55-1187-4D0F-A0D2-D291C9A5FDC6}">
 							<ChildrenList>
-								<Action Name="" ID="{F34A4577-EA09-4350-8EFF-D318D2DEF395}" ShortID="623366319">
+								<Action Name="" ID="{4447A6EF-4FC3-4B8C-A99D-AD13D570A217}" ShortID="623366320">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
@@ -134,9 +134,9 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_backfire_right" ID="{25D83E78-DFA3-46FC-A533-A9E9D4943D72}">
+						<Event Name="Play_wing42_boeing_247d_backfire_right" ID="{8668D287-3E50-4A46-82CB-B6A206A5D467}">
 							<ChildrenList>
-								<Action Name="" ID="{9F724F73-A93A-411A-BCE2-FDFA16E1B807}" ShortID="954497978">
+								<Action Name="" ID="{7BA58494-C58E-4DCE-843F-DF93CC29C4C8}" ShortID="954497979">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
@@ -148,19 +148,19 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_eng1_non_combustion" ID="{99AEBD2F-EDD6-44DD-A08F-B0C4C61ECB82}"/>
-						<Event Name="Play_wing42_boeing_247d_eng2_non_combustion" ID="{A20D3D1E-A1C0-4E28-99D2-CFED52A03862}"/>
+						<Event Name="Play_wing42_boeing_247d_eng1_non_combustion" ID="{000D2D6A-F149-4BB9-9F93-94CA9FA13029}"/>
+						<Event Name="Play_wing42_boeing_247d_eng2_non_combustion" ID="{B1FF85D1-8801-4411-A6CC-7F5542805B54}"/>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="NA_Radio" ID="{B5985F32-2622-4B95-A73A-D9AE1A463A41}" ShortID="924691072">
+				<Folder Name="NA_Radio" ID="{1B0E84E2-C71A-4578-9067-F96D9A826F2B}" ShortID="924691073">
 					<ChildrenList>
 						<Folder Name="Behavior_triggers-event_defined_programatically_in_behavior_template_system" ID="{DF1D3055-3367-4ED8-94C9-B152018D3AE6}" ShortID="167876248">
 							<ChildrenList>
 								<Event Name="Play_wing42_boeing_247d_knob_vhf_decimals" ID="{B4BB9406-7AD6-4771-9AE9-B85CAB79C5D6}"/>
 								<Event Name="Play_wing42_boeing_247d_knob_vhf_integers" ID="{E95C7942-3182-4333-A63B-98A12D31A284}"/>
-								<Event Name="Play_wing42_boeing_247d_switch_radio_range_power_on" ID="{13BECD0C-7E87-49A4-82C0-948BEC814071}">
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_power_on" ID="{821C53DD-23C1-4948-91F4-250B32A7863B}">
 									<ChildrenList>
-										<Action Name="" ID="{EDF9F665-D5C1-4FDA-BDCD-1B6ED2FA7D0A}" ShortID="339723578">
+										<Action Name="" ID="{4C0ACAEA-D8BD-4CF5-AB3F-FF96CD3433F1}" ShortID="339723579">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -172,9 +172,9 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_wing42_boeing_247d_switch_radio_range_power_off" ID="{EB1904C5-6ADE-4BC3-A1C4-670ED953DCFE}">
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_power_off" ID="{DBB0B1EF-339F-4962-BC0C-B9280FC3CF35}">
 									<ChildrenList>
-										<Action Name="" ID="{AF2060A4-5E08-4AC7-ABA4-0E2F0C9F56BA}" ShortID="964157313">
+										<Action Name="" ID="{0F4BED53-F1C5-44F0-BFD3-8AB8E858F292}" ShortID="964157314">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -186,9 +186,9 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_wing42_boeing_247d_switch_radio_range_cw_on" ID="{CDDC932C-9106-43B1-B743-66C9693E9570}">
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_cw_on" ID="{8E35AC11-4CD6-44A8-848C-FA5B09CF2AB8}">
 									<ChildrenList>
-										<Action Name="" ID="{A4C0C560-D7A8-4941-806E-80279E2C9918}" ShortID="1053958659">
+										<Action Name="" ID="{B722DC93-FBF1-4C4B-888A-9E9EB33ED407}" ShortID="1053958660">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -200,9 +200,9 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_wing42_boeing_247d_switch_radio_range_cw_off" ID="{565AE358-5000-4E54-8ED0-29C6CCC2D0BC}">
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_cw_off" ID="{EC79E622-D0FB-47C8-BD19-AAA2FB21CF4E}">
 									<ChildrenList>
-										<Action Name="" ID="{63F74F8F-D846-4EAF-9BA6-5A86FF29B98A}" ShortID="541515012">
+										<Action Name="" ID="{35BF9AD4-3C3A-4922-8DBA-E8261D9F2CF0}" ShortID="541515013">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -214,9 +214,9 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_wing42_boeing_247d_switch_radio_range_light_on" ID="{01751597-3F5F-4BE7-B45D-2B6F6153721E}">
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_light_on" ID="{F8E3590D-E025-44BA-A504-DCAAA446EBC6}">
 									<ChildrenList>
-										<Action Name="" ID="{87A1AF3F-D45A-413C-8313-36DD3F8F0D35}" ShortID="983152997">
+										<Action Name="" ID="{F9CE0F7D-EC1A-4B31-B3C9-FC5FA9AF83C4}" ShortID="983152998">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -228,9 +228,9 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_wing42_boeing_247d_switch_radio_range_light_off" ID="{9F6B50D0-9245-415A-B59F-DB04EC03EAFE}">
+								<Event Name="Play_wing42_boeing_247d_switch_radio_range_light_off" ID="{F53A5FAE-B44A-4C36-B9DE-6A66A6D26A73}">
 									<ChildrenList>
-										<Action Name="" ID="{D52D38D2-A780-481E-9B8F-89ACBB283F3C}" ShortID="776520335">
+										<Action Name="" ID="{7A1653C4-73E5-4544-B624-541367C93A8F}" ShortID="776520336">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -244,11 +244,11 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Navigation" ID="{F164D5A3-CD1C-4984-90DE-B1ED09958E7B}" ShortID="963079794">
+						<Folder Name="Navigation" ID="{83879823-598B-4693-8D8B-67F4829A14EC}" ShortID="963079795">
 							<ChildrenList>
-								<Event Name="Play_wing42_boeing_247d_rr_nav_tone_start" ID="{FC0055EE-9074-4A7E-B52A-45371898856F}">
+								<Event Name="Play_wing42_boeing_247d_rr_nav_tone_start" ID="{F0B518B0-B3F4-496B-ADA6-1A079366D107}">
 									<ChildrenList>
-										<Action Name="" ID="{1925237B-AFA1-4877-A22E-AE848602F1B7}" ShortID="910064152">
+										<Action Name="" ID="{CAE0AA0F-B392-4C8E-8DA0-4A5B088765CD}" ShortID="910064153">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -260,9 +260,9 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_wing42_boeing_247d_rr_nav_bip" ID="{79ED6293-633B-4CA0-9850-67A1DD8F180C}">
+								<Event Name="Play_wing42_boeing_247d_rr_nav_bip" ID="{326DB860-11B2-4AB4-B050-23F5C3F750BE}">
 									<ChildrenList>
-										<Action Name="" ID="{9A540D10-7A23-4206-85A0-F29AA07F00BE}" ShortID="178192106">
+										<Action Name="" ID="{D0D813ED-45BB-4554-83C7-EFED59B794C5}" ShortID="178192107">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -274,9 +274,9 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_wing42_boeing_247d_rr_nav_boop" ID="{05ACF4DB-4932-49B9-8EEF-51C97F83154F}">
+								<Event Name="Play_wing42_boeing_247d_rr_nav_boop" ID="{BDE2CA96-652D-4D88-9DFC-5C68340E7C6E}">
 									<ChildrenList>
-										<Action Name="" ID="{132CBFF4-51C4-4934-A5E1-696FFB8495E3}" ShortID="828205607">
+										<Action Name="" ID="{55901D49-C681-4A0D-B201-2A9B65039D6D}" ShortID="828205608">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -290,11 +290,11 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Music" ID="{77D96B5D-DDEC-463B-9282-6EAE2DC469C1}" ShortID="400032578">
+						<Folder Name="Music" ID="{AFFBADB9-326E-42B3-A9CA-DEEB35053939}" ShortID="400032579">
 							<ChildrenList>
-								<Event Name="Play_wing42_boeing_247d_rr_music_start" ID="{6A760E41-93AF-40B2-8E35-A6BD7CDC70C4}">
+								<Event Name="Play_wing42_boeing_247d_rr_music_start" ID="{6042DE3C-9545-4A45-A00E-44C3547A5722}">
 									<ChildrenList>
-										<Action Name="" ID="{F0E2112B-EFBF-49B8-BB14-E7A724453899}" ShortID="600152124">
+										<Action Name="" ID="{F394E134-055A-485F-AFF3-CE6B63DEF2C4}" ShortID="600152125">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -304,13 +304,13 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{9B2F3E27-5B67-428E-B580-7EC11F6EABE0}" ShortID="332744354">
+										<Action Name="" ID="{E5AB5A6F-0352-49B6-BBF4-715CEB596084}" ShortID="332744355">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="36"/>
 												<Property Name="SeekPercent" Type="Real64" Value="100">
 													<ModifierList>
 														<ModifierInfo>
-															<Modifier Name="" ID="{03572280-31A2-468F-A7B6-B9F80D9F6BAC}">
+															<Modifier Name="" ID="{17A25555-BC5B-4714-859A-93F50B788102}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
 																	<Property Name="Min" Type="Real64" Value="-100"/>
@@ -322,7 +322,7 @@
 												<Property Name="SeekTime" Type="Real64">
 													<ModifierList>
 														<ModifierInfo>
-															<Modifier Name="" ID="{A65B6F18-7CC0-4394-A7D7-6ADEB5031AAC}">
+															<Modifier Name="" ID="{1A4762AE-997D-4958-963B-4C85EF169759}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
 																	<Property Name="Max" Type="Real64" Value="3600"/>
@@ -344,9 +344,9 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Event Name="Play_wing42_boeing_247d_rr_noise_start" ID="{D8B324A4-111F-498B-9880-5F0C69C7899B}">
+						<Event Name="Play_wing42_boeing_247d_rr_noise_start" ID="{D31C52DB-8FFD-4706-82BF-885CDB3D2AB6}">
 							<ChildrenList>
-								<Action Name="" ID="{21EAA3A4-81A5-41AA-9F14-AAC4E7EBCBFF}" ShortID="660544645">
+								<Action Name="" ID="{52DB2A63-F434-4629-A8A4-20ED02B0F551}" ShortID="660544646">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
@@ -360,9 +360,9 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_wing42_boeing_247d_flywheel_windup_left" ID="{E0C56930-EFDB-4D26-9688-96DCB2188A51}">
+				<Event Name="Play_wing42_boeing_247d_flywheel_windup_left" ID="{0B9DF525-5823-4A9F-9DF7-AAFEB55E24FC}">
 					<ChildrenList>
-						<Action Name="" ID="{85973B8B-B446-401E-ACFB-2735AA3D436B}" ShortID="168898844">
+						<Action Name="" ID="{2A0EE55B-42A3-4654-8C69-D80CED6750D9}" ShortID="168898845">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
@@ -374,9 +374,9 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_wing42_boeing_247d_flywheel_windup_right" ID="{CD2A4FBD-4EE7-41AB-A2C9-EFE5754E3E3A}">
+				<Event Name="Play_wing42_boeing_247d_flywheel_windup_right" ID="{8BF0FF2F-2290-4575-AF4E-ED627D59BB5C}">
 					<ChildrenList>
-						<Action Name="" ID="{EC808D99-D4BD-4480-A8E1-B4945C422C0A}" ShortID="280678869">
+						<Action Name="" ID="{A55418E4-3D23-4705-90D6-CC97CEDEFFD4}" ShortID="280678870">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
@@ -388,9 +388,9 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_wing42_boeing_247d_flywheel_clutch_left" ID="{467533DF-6027-4DDD-8954-AA80B3CB5ADC}">
+				<Event Name="Play_wing42_boeing_247d_flywheel_clutch_left" ID="{BD0F7C3A-2CC0-4C1C-B78B-EF72A882EBF0}">
 					<ChildrenList>
-						<Action Name="" ID="{B7DF063F-6F2A-4704-99B8-3D9CC5BD0237}" ShortID="842554006">
+						<Action Name="" ID="{7C2B4409-F35A-4581-B28C-930FD72B599C}" ShortID="842554007">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
@@ -402,9 +402,9 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_wing42_boeing_247d_flywheel_clutch_right" ID="{3FFB70AD-44D4-40F6-A548-B38C988DB9E6}">
+				<Event Name="Play_wing42_boeing_247d_flywheel_clutch_right" ID="{50D7891E-3046-437F-A59A-08A5FD8E406D}">
 					<ChildrenList>
-						<Action Name="" ID="{54AD001E-88A2-4BAD-B3DA-2022B98B55C4}" ShortID="187923400">
+						<Action Name="" ID="{5A0F857A-4A71-4111-89DA-15BF8E443CAD}" ShortID="187923401">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>

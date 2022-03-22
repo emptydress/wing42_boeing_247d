@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}" SchemaVersion="97">
+<WwiseDocument Type="WorkUnit" ID="{7DD3A578-1EFB-4C42-B33F-7BB6CFADCF81}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="wing42_boeing_247d" ID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}" PersistMode="Standalone">
+		<WorkUnit Name="wing42_boeing_247d_main" ID="{7DD3A578-1EFB-4C42-B33F-7BB6CFADCF81}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="FX_PUFF1_1" ID="{5EB5D42C-7359-4253-ABCE-CBD05DA6D8D7}">
+				<GameParameter Name="FX_PUFF1_01" ID="{5E535A58-79C4-48F6-A8E5-9D7068D934E8}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}">
+				<GameParameter Name="FLYWHEEL_RPM_02" ID="{B23CF8E7-84B2-4AEB-BAEC-03E2B386B27D}">
 					<PropertyList>
 						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
@@ -18,13 +18,13 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="24"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="FLYWHEEL_CLUTCH_1" ID="{0F261FFC-3BB0-4E35-A44B-C3A791361E41}">
+				<GameParameter Name="FLYWHEEL_CLUTCH_01" ID="{DE753580-7DF3-4927-9D09-1E3D2715E71A}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="FLYWHEEL_RPM_2" ID="{95B78310-5F97-4E18-A9BB-9F650EE31EE3}">
+				<GameParameter Name="FLYWHEEL_RPM_01" ID="{F893C529-89A7-4986-BF46-89CAF37AC8DA}">
 					<PropertyList>
 						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
@@ -33,24 +33,24 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="24"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="FLYWHEEL_CLUTCH_2" ID="{CC0E96D3-C656-4E93-B828-AB757E17BED5}">
+				<GameParameter Name="FLYWHEEL_CLUTCH_02" ID="{5DCEEB43-C8C4-4094-9D8B-0716F12CF909}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="FX_PUFF1_2" ID="{52615E69-3037-4594-907C-4038D20188D3}">
+				<GameParameter Name="FX_PUFF1_02" ID="{04510902-4CCD-4DD1-BE19-543EE20AD24E}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}">
+				<GameParameter Name="WINDOW_01" ID="{F600CCD0-1B3B-44E8-A92C-BF61FC6473AC}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="WINDOW_2" ID="{031F1263-FF76-411F-949B-7CB189BBEC46}">
+				<GameParameter Name="WINDOW_02" ID="{9BB12287-90ED-4E51-BC14-47CEF038FD42}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>

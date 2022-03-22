@@ -95,35 +95,6 @@
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 																<Property Name="BlendBehavior" Type="int16" Value="1"/>
 																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																<Property Name="Lowpass" Type="int16">
-																	<RTPCList>
-																		<RTPC Name="" ID="{DA6B7CD1-1066-491F-9631-B0214546DDA5}" ShortID="425903541">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{F22CF50F-5617-4F40-B5FC-E41425336220}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>61</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>SCurve</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>30</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
 																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
@@ -15640,35 +15611,6 @@
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 																<Property Name="BlendBehavior" Type="int16" Value="1"/>
 																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																<Property Name="Lowpass" Type="int16">
-																	<RTPCList>
-																		<RTPC Name="" ID="{1A1A2141-24CE-4738-A3F5-ECF9E6772219}" ShortID="633379093">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{AF403CF3-52E5-4AB1-A433-02C701C4697B}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>61</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>SCurve</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>30</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
 																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
@@ -31462,31 +31404,6 @@
 																				</PointList>
 																			</Curve>
 																		</RTPC>
-																		<RTPC Name="" ID="{A1B8DD9B-BBB4-4C4B-9C05-2A6F195E8B50}" ShortID="801957981">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{B7CA6F9E-A86F-4FBC-B6A6-1314D08FC529}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>85</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>InvertedSCurve</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>15</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
 																	</RTPCList>
 																</Property>
 																<Property Name="Volume" Type="Real64">
@@ -31494,31 +31411,6 @@
 																		<Value>-9</Value>
 																	</ValueList>
 																	<RTPCList>
-																		<RTPC Name="" ID="{E126BC58-4161-4DBA-A086-F8F90E63D6C5}" ShortID="729109751">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{D58A8800-0683-4F21-B91B-0FBC3312F99F}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-16.30452</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>-12.87971</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
 																		<RTPC Name="" ID="{1FC027C6-1FA4-43A6-8527-900B42A51524}" ShortID="891598992">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
@@ -31933,31 +31825,6 @@
 															<PropertyList>
 																<Property Name="Lowpass" Type="int16">
 																	<RTPCList>
-																		<RTPC Name="" ID="{1242C641-4C3B-4322-AD98-16F894992CA8}" ShortID="198405975">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{68A61C6D-FBAE-448B-BD97-DDAA3F0A9843}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>85</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>InvertedSCurve</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>30</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
 																		<RTPC Name="" ID="{46B66B80-C3E5-4EE4-A807-DE19D3C96216}" ShortID="921544107">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
@@ -32039,31 +31906,6 @@
 																					<Point>
 																						<XPos>0.4</XPos>
 																						<YPos>-28.62731</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																		<RTPC Name="" ID="{5941C448-4035-4F66-AC66-C503121BA35B}" ShortID="540304725">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{0D33C82F-B68F-4527-B9FE-03F74CD14FA1}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-12</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>0</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -33563,35 +33405,6 @@
 												<RandomSequenceContainer Name="shutdown-inside" ID="{34EAC4C2-7FFD-483F-985F-61CBC34CB039}" ShortID="1028307841">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{0A474C2E-E5FC-483C-ADE5-97C82E367E04}" ShortID="118345037">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{D5AF3A81-6165-4847-BF81-FE65D47EAA50}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>61</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>30</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
@@ -34587,35 +34400,6 @@
 												<RandomSequenceContainer Name="shutdown-inside" ID="{C8165895-B813-41D3-902E-63DC3971ECD3}" ShortID="813735019">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{87C32704-99CC-4371-9547-87FC41E41FEF}" ShortID="627057281">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{A2718B4B-D42B-4BBE-9B9E-46C44CC37242}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>61</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>30</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
@@ -35786,35 +35570,6 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="startup-inside" ID="{6A089F06-9D8B-4B68-982D-F15BB9285250}" ShortID="530663265">
 													<PropertyList>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{3C393F54-2DE9-4146-A8A2-B23310605B54}" ShortID="287466999">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{80D35D9E-8DEA-4B7E-B78A-0951D88FC33E}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>61</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>30</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
@@ -36674,35 +36429,6 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="startup-inside" ID="{B2C223EF-8722-4CB2-A056-99FD2B07F884}" ShortID="160173875">
 													<PropertyList>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{8C620BD6-D284-4E00-82D8-63CCC0ED903A}" ShortID="332782524">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{85E0AE71-0B70-4D7E-8E81-B1C7F530B613}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>61</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>30</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
@@ -37408,38 +37134,6 @@
 											<ValueList>
 												<Value>-7</Value>
 											</ValueList>
-											<RTPCList>
-												<RTPC Name="" ID="{A2282805-431D-4352-ADCB-51F389E43883}" ShortID="307737545">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{6B1CDC84-6547-4912-88C6-405312E4DA11}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-6</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Log1</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>850</XPos>
-																<YPos>0</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>2000</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -37681,209 +37375,6 @@
 																							<Point>
 																								<XPos>100</XPos>
 																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
-																		<Property Name="Pitch" Type="int32">
-																			<RTPCList>
-																				<RTPC Name="" ID="{22CCA17B-4320-4D44-A5D0-3A32C2CA46DF}" ShortID="138926990">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{29FE1743-B590-424C-873C-C4C39AA3CCEC}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="65537"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-1150</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>20</XPos>
-																								<YPos>-1100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>44</XPos>
-																								<YPos>-1050</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>68</XPos>
-																								<YPos>-1000</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>92</XPos>
-																								<YPos>-950</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>116</XPos>
-																								<YPos>-900</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>140</XPos>
-																								<YPos>-850</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>164</XPos>
-																								<YPos>-800</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>188</XPos>
-																								<YPos>-750</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>212</XPos>
-																								<YPos>-700</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>236</XPos>
-																								<YPos>-650</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>260</XPos>
-																								<YPos>-600</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>284</XPos>
-																								<YPos>-550</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>308</XPos>
-																								<YPos>-500</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>332</XPos>
-																								<YPos>-450</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>356</XPos>
-																								<YPos>-400</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>380</XPos>
-																								<YPos>-350</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>404</XPos>
-																								<YPos>-300</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>428</XPos>
-																								<YPos>-250</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>452</XPos>
-																								<YPos>-200</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>476</XPos>
-																								<YPos>-150</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>500</XPos>
-																								<YPos>-100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>524</XPos>
-																								<YPos>-50</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>548</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>572</XPos>
-																								<YPos>50</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>596</XPos>
-																								<YPos>100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>620</XPos>
-																								<YPos>150</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>644</XPos>
-																								<YPos>200</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>668</XPos>
-																								<YPos>250</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>692</XPos>
-																								<YPos>300</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>716</XPos>
-																								<YPos>350</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>740</XPos>
-																								<YPos>400</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>764</XPos>
-																								<YPos>450</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>788</XPos>
-																								<YPos>500</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>812</XPos>
-																								<YPos>550</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>900</XPos>
-																								<YPos>600</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2000</XPos>
-																								<YPos>600</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -41731,366 +41222,105 @@
 																	</ChildrenList>
 																	<BlendTrackList>
 																		<BlendTrack Name="Flywheel_rpm" ID="{EAE50AB7-7AA8-4E08-A5EF-A5188BA2E8BE}" ShortID="673437535">
-																			<PropertyList>
-																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
+																			<ReferenceList/>
 																			<BlendTrackAssocList>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_01" ID="{AD97E5D4-F3B3-407D-BCB4-836249AC4F7F}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>0</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<RightEdgePos>44</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_02" ID="{D91CB606-944B-49C9-A0B7-5EE463503606}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>25.5249784859533</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>68</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_03" ID="{0B2DA659-FE6E-44C9-94AE-0277A1200145}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>44</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>92</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_04" ID="{80AB5A6F-E677-450B-A7BA-A90FA41FE2B1}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>68</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
-																						<RightEdgePos>116</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_05" ID="{AF323139-2CD1-4574-B2C8-953154FF71DB}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>92</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>140</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_06" ID="{93FB8099-BFBA-4C25-A372-1A539C6C6D72}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>116</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>164</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_07" ID="{8901F52D-E41D-426C-92D3-35377D060537}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>140</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>188</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_08" ID="{D7538E35-FF65-41DD-BD42-9FD8CFFCD7DC}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>164</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>212</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_09" ID="{8E5D9C95-924A-4A1E-BB56-FD54BE5C46D2}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>188</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>236</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_10" ID="{FAD0B9DF-167D-42E7-91F4-C09018EC011E}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>212</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>260</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_11" ID="{DBCB703C-5359-43B5-85F0-1F913BD7ECFC}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>236</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>284</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_12" ID="{089D033E-E31F-486A-A505-F80ACB757A45}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>260</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>308</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_13" ID="{FB267839-F177-48E7-835C-CEDC25C1DE21}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>284</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>332</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_14" ID="{6324F3F8-9CCC-45C8-A7F5-23AB0857263C}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>308</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>356</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_15" ID="{5BAAC401-AC5E-4787-9776-09D0C28FA198}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>332</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>380</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_16" ID="{11C78311-AD60-402B-BF1C-6C3618FC9AE1}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>356</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>404</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_17" ID="{58D11ED1-9726-46EA-B169-66D12AB8EC85}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>380</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>428</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_18" ID="{227FC0CB-85DA-45B9-86E8-EC773557683E}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>404</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>452</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_19" ID="{21170449-9000-4A8B-9D21-C81BCE9DC7BC}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>428</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>476</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_20" ID="{75F49C98-2DE8-4BBA-9EE3-73F5C1629E5A}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>452</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>500</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_21" ID="{3C259FEB-2D56-4040-9084-C9A3E43D4A05}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>476</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>524</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_22" ID="{7CF8ADCE-F3D6-4478-A310-5CAD29D8EF46}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>500</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>548</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_23" ID="{4A3203DD-D140-4C75-A920-191E04E4C064}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>524</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>572</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_24" ID="{1A5E0588-CA95-484E-8501-DCAEB7D6031B}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>548</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>596</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_25" ID="{15532BE7-D1DE-4562-B68A-9483C2DC0573}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>572</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>620</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_26" ID="{892DC764-3235-4032-B08D-40AFF7493FE9}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>596</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>644</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_27" ID="{A5C6D7EF-0537-44A2-97A9-6B96E9E11E98}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>620</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>668</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_28" ID="{79EA870A-F20D-456F-B735-A531219565B2}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>644</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>692</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_29" ID="{069F2D6F-39FF-4209-9243-B15E1E25F4CE}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>668</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>716</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_30" ID="{DF56D684-3AC9-489C-9789-04CD4E2FDD0D}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>692</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>740</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_31" ID="{A64620B9-B996-401E-A77B-C5C760052EF5}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>716</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>2000</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																			</BlendTrackAssocList>
 																		</BlendTrack>
 																		<BlendTrack Name="New Blend Track" ID="{F8CA01FA-4093-47C6-9D00-2ED3902A8524}" ShortID="152494187">
-																			<PropertyList>
-																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="FLYWHEEL_RPM_2" ID="{95B78310-5F97-4E18-A9BB-9F650EE31EE3}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
+																			<ReferenceList/>
 																		</BlendTrack>
 																	</BlendTrackList>
 																</BlendContainer>
@@ -42235,53 +41465,6 @@
 															</ChildrenList>
 															<BlendTrackList>
 																<BlendTrack Name="ALL WILL BE REVEALED" ID="{C8BB765B-3027-468A-8276-55464D18F204}" ShortID="36132151">
-																	<PropertyList>
-																		<Property Name="Volume" Type="Real64">
-																			<RTPCList>
-																				<RTPC Name="" ID="{A2367554-8155-4127-AB43-F026DF3EC537}" ShortID="428752234">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{2EFF973A-6356-45B4-BF63-B95D31698FBC}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="3"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-200</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>3.64999</XPos>
-																								<YPos>-12.68489</YPos>
-																								<Flags>0</Flags>
-																								<SegmentShape>Log3</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>21.60451</XPos>
-																								<YPos>-5.53047</YPos>
-																								<Flags>0</Flags>
-																								<SegmentShape>Log3</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>900</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2000</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
-																	</PropertyList>
 																	<BlendTrackAssocList>
 																		<BlendTrackAssoc>
 																			<ItemRef Name="Flywheel_lowend" ID="{D77EEB9F-43D6-41A5-ACB8-E5F752EEEE01}"/>
@@ -42298,35 +41481,6 @@
 												<BlendContainer Name="Flywheel-cockpit" ID="{4F62EBCC-1AD2-406C-98FB-2DED02234984}" ShortID="440468341">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{176A02DA-8066-4B26-B172-3C4C9E261696}" ShortID="651616994">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{065C9E58-8139-4AF7-9368-D72CA49DD547}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>61</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>45</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="25"/>
 													</PropertyList>
@@ -42515,209 +41669,6 @@
 																	<PropertyList>
 																		<Property Name="BlendBehavior" Type="int16" Value="1"/>
 																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																		<Property Name="Pitch" Type="int32">
-																			<RTPCList>
-																				<RTPC Name="" ID="{7F088FA7-6E03-474A-9D3B-53064244EE45}" ShortID="245367493">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{2AF54CF2-29BB-4D59-BB87-007713847B14}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="65537"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-1150</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>20</XPos>
-																								<YPos>-1100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>44</XPos>
-																								<YPos>-1050</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>68</XPos>
-																								<YPos>-1000</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>92</XPos>
-																								<YPos>-950</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>116</XPos>
-																								<YPos>-900</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>140</XPos>
-																								<YPos>-850</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>164</XPos>
-																								<YPos>-800</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>188</XPos>
-																								<YPos>-750</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>212</XPos>
-																								<YPos>-700</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>236</XPos>
-																								<YPos>-650</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>260</XPos>
-																								<YPos>-600</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>284</XPos>
-																								<YPos>-550</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>308</XPos>
-																								<YPos>-500</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>332</XPos>
-																								<YPos>-450</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>356</XPos>
-																								<YPos>-400</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>380</XPos>
-																								<YPos>-350</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>404</XPos>
-																								<YPos>-300</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>428</XPos>
-																								<YPos>-250</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>452</XPos>
-																								<YPos>-200</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>476</XPos>
-																								<YPos>-150</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>500</XPos>
-																								<YPos>-100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>524</XPos>
-																								<YPos>-50</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>548</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>572</XPos>
-																								<YPos>50</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>596</XPos>
-																								<YPos>100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>620</XPos>
-																								<YPos>150</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>644</XPos>
-																								<YPos>200</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>668</XPos>
-																								<YPos>250</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>692</XPos>
-																								<YPos>300</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>716</XPos>
-																								<YPos>350</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>740</XPos>
-																								<YPos>400</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>764</XPos>
-																								<YPos>450</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>788</XPos>
-																								<YPos>500</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>812</XPos>
-																								<YPos>550</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>900</XPos>
-																								<YPos>600</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2000</XPos>
-																								<YPos>600</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
@@ -46529,366 +45480,105 @@
 																	</ChildrenList>
 																	<BlendTrackList>
 																		<BlendTrack Name="Flywheel_rpm" ID="{8E534DC9-2AFD-4BDF-A1C6-37FA49BF375C}" ShortID="732953635">
-																			<PropertyList>
-																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
+																			<ReferenceList/>
 																			<BlendTrackAssocList>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_01" ID="{8449E92C-C62A-4E78-9443-29F945736782}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>0</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<RightEdgePos>44</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_02" ID="{08194634-8F98-4021-90A9-7A637CFEC990}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>25.5249784859533</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>68</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_03" ID="{1F3422D1-2F95-47CA-9593-0E82BF8BAA53}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>44</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>92</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_04" ID="{FF9B6FCC-1881-467D-956F-E35C84A392DF}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>68</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
-																						<RightEdgePos>116</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_05" ID="{05D40FAD-2617-4044-AD88-CC24A29307E8}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>92</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>140</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_06" ID="{F5F0F270-A1BA-448A-ACC6-4335FA246C3A}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>116</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>164</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_07" ID="{9E8A4651-C5CE-4A85-B54A-B635EBF15B68}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>140</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>188</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_08" ID="{0B617B88-B185-4D60-A36A-EDABF38C036A}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>164</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>212</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_09" ID="{7E917E1F-14ED-4911-B007-2085C5977D91}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>188</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>236</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_10" ID="{C1436A95-19E0-4485-910D-E79D6F2058AC}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>212</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>260</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_11" ID="{0084DFD1-2B38-408B-98A9-3499A230D31F}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>236</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>284</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_12" ID="{5596815C-11CC-4803-A93A-9F1ABEEB12C8}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>260</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>308</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_13" ID="{E8A90DCE-6A6D-482D-A6A2-2E80C9FDD27C}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>284</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>332</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_14" ID="{DC493DD2-68CD-4568-BE6F-8DB72389068F}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>308</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>356</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_15" ID="{555C11AD-A3BE-4D6E-8333-047010C1505F}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>332</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>380</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_16" ID="{2BB58CC2-57A9-4C6B-86A1-B1A3B07CEEB0}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>356</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>404</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_17" ID="{8CB0120D-D763-4E1F-9DDA-DD87A263113A}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>380</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>428</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_18" ID="{4E07374A-1ED5-4B7F-A91F-53DBC2FAC5C4}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>404</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>452</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_19" ID="{9E47DD19-8669-42DB-ADBD-B6D1B7621EE1}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>428</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>476</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_20" ID="{78B6F93F-78BF-43E0-9202-A5C482B3836E}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>452</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>500</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_21" ID="{FB8E176A-F1AC-4C20-B026-BF7F6E4E33F5}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>476</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>524</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_22" ID="{3B004563-4AA6-43A4-93C5-64254E7D68B4}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>500</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>548</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_23" ID="{99922491-AB0C-4C32-833D-125D6C178503}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>524</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>572</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_24" ID="{5DBFB87C-39D9-433B-8835-E433540833A1}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>548</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>596</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_25" ID="{DF0C6E62-C96C-470F-AFBD-076E9DC8DB92}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>572</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>620</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_26" ID="{E6D8F1F3-201E-4B0E-ABD8-3C9204362E01}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>596</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>644</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_27" ID="{EEB66816-14A1-41B2-82B6-1E8A5765D693}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>620</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>668</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_28" ID="{E2A15B76-86F4-4F60-A421-68A00709101E}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>644</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>692</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_29" ID="{9B26F112-DF99-4E55-A44C-FD893DD6658E}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>668</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>716</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_30" ID="{D8923A28-6DC1-4104-BD0D-1E91B0E5AC95}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>692</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>740</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_31" ID="{38FEAF82-DE4D-4140-825A-FC974D7B801D}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>716</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>2000</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																			</BlendTrackAssocList>
 																		</BlendTrack>
 																		<BlendTrack Name="New Blend Track" ID="{A3AA56A2-772A-4D38-924B-B9E06EFDFA4B}" ShortID="975826474">
-																			<PropertyList>
-																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="FLYWHEEL_RPM_2" ID="{95B78310-5F97-4E18-A9BB-9F650EE31EE3}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
+																			<ReferenceList/>
 																		</BlendTrack>
 																	</BlendTrackList>
 																</BlendContainer>
@@ -47005,53 +45695,6 @@
 															</ChildrenList>
 															<BlendTrackList>
 																<BlendTrack Name="ALL WILL BE REVEALED" ID="{D322BFDF-38A8-4EC6-BA5A-279599475A40}" ShortID="1041950855">
-																	<PropertyList>
-																		<Property Name="Volume" Type="Real64">
-																			<RTPCList>
-																				<RTPC Name="" ID="{48E0A393-E86F-4A10-A8D1-1D1FF418AA6F}" ShortID="579868754">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{056EE187-2821-4091-8CA3-1366CEBB6241}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="3"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-200</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>3.64999</XPos>
-																								<YPos>-12.68489</YPos>
-																								<Flags>0</Flags>
-																								<SegmentShape>Log3</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>21.60451</XPos>
-																								<YPos>-5.53047</YPos>
-																								<Flags>0</Flags>
-																								<SegmentShape>Log3</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>900</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2000</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
-																	</PropertyList>
 																	<BlendTrackAssocList>
 																		<BlendTrackAssoc>
 																			<ItemRef Name="Flywheel_lowend" ID="{7DA5996C-FA4B-4D89-B9F7-5394CDB1A314}"/>
@@ -47315,209 +45958,6 @@
 																							<Point>
 																								<XPos>100</XPos>
 																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
-																		<Property Name="Pitch" Type="int32">
-																			<RTPCList>
-																				<RTPC Name="" ID="{FB0F8040-CBC6-4CA1-A92C-E72CD3FAAC33}" ShortID="998222200">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{66431FF7-38A9-43BA-A4A4-E8FF398FD6D0}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="65537"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-1150</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>20</XPos>
-																								<YPos>-1100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>44</XPos>
-																								<YPos>-1050</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>68</XPos>
-																								<YPos>-1000</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>92</XPos>
-																								<YPos>-950</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>116</XPos>
-																								<YPos>-900</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>140</XPos>
-																								<YPos>-850</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>164</XPos>
-																								<YPos>-800</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>188</XPos>
-																								<YPos>-750</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>212</XPos>
-																								<YPos>-700</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>236</XPos>
-																								<YPos>-650</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>260</XPos>
-																								<YPos>-600</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>284</XPos>
-																								<YPos>-550</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>308</XPos>
-																								<YPos>-500</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>332</XPos>
-																								<YPos>-450</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>356</XPos>
-																								<YPos>-400</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>380</XPos>
-																								<YPos>-350</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>404</XPos>
-																								<YPos>-300</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>428</XPos>
-																								<YPos>-250</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>452</XPos>
-																								<YPos>-200</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>476</XPos>
-																								<YPos>-150</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>500</XPos>
-																								<YPos>-100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>524</XPos>
-																								<YPos>-50</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>548</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>572</XPos>
-																								<YPos>50</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>596</XPos>
-																								<YPos>100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>620</XPos>
-																								<YPos>150</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>644</XPos>
-																								<YPos>200</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>668</XPos>
-																								<YPos>250</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>692</XPos>
-																								<YPos>300</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>716</XPos>
-																								<YPos>350</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>740</XPos>
-																								<YPos>400</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>764</XPos>
-																								<YPos>450</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>788</XPos>
-																								<YPos>500</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>812</XPos>
-																								<YPos>550</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>900</XPos>
-																								<YPos>600</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2000</XPos>
-																								<YPos>600</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -51365,366 +49805,105 @@
 																	</ChildrenList>
 																	<BlendTrackList>
 																		<BlendTrack Name="Flywheel_rpm" ID="{257D4958-DA1A-4964-8FD5-97DA371485FD}" ShortID="95337957">
-																			<PropertyList>
-																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
+																			<ReferenceList/>
 																			<BlendTrackAssocList>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_01" ID="{8326CFE9-4A44-4C92-90F1-EA7B759452CC}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>0</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<RightEdgePos>44</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_02" ID="{50135896-994C-445C-B9FE-972C1139A481}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>25.5249784859533</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>68</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_03" ID="{8EFE70FC-1A17-4E8B-8081-647CD439591E}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>44</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>92</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_04" ID="{FF05D5E4-5312-4A17-A795-EF356C237A8B}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>68</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
-																						<RightEdgePos>116</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_05" ID="{549D6C64-8BB2-4F75-9AEF-CD6ECB662E10}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>92</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>140</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_06" ID="{1BA9F1A2-EAD5-469A-BD09-CD4C6483B8FE}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>116</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>164</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_07" ID="{A5E74AF9-7AFA-412A-9487-539B4F6E0E9D}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>140</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>188</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_08" ID="{F9726AC1-6992-438E-9B69-91F7C3813E16}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>164</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>212</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_09" ID="{98063ADF-6BFA-42DC-9486-F10E40ACD9BC}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>188</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>236</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_10" ID="{C79309E6-6E8E-44B2-AF12-21D17064A4DA}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>212</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>260</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_11" ID="{680BA83A-BAF7-4CE0-BE7B-FCB397A4DB40}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>236</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>284</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_12" ID="{2ED52B86-FCA1-4222-9EFF-4438472BDD1A}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>260</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>308</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_13" ID="{55C2D85B-7499-459E-B2FF-60641A81BCB4}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>284</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>332</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_14" ID="{27DC2D8D-654C-4919-80C5-F421AED36D1B}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>308</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>356</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_15" ID="{391667BD-E95B-49F4-86D5-E17BE4DF2248}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>332</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>380</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_16" ID="{07C506EF-9EC8-446C-A7B4-86AA001299CE}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>356</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>404</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_17" ID="{6B5ECCF3-8594-4204-B0D4-98D1E7C8B61B}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>380</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>428</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_18" ID="{CD9AD24D-4692-4109-8F34-B15EF756D368}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>404</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>452</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_19" ID="{3B4108B2-26FD-4E20-900A-254643BF27D6}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>428</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>476</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_20" ID="{1D27938E-98D9-40D7-B33C-28A0EB60F885}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>452</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>500</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_21" ID="{0665DAA0-C17E-4964-B079-9C2E98CD284D}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>476</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>524</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_22" ID="{B989D51D-E64C-4ED9-B5EB-443683B736B1}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>500</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>548</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_23" ID="{2ECD2A26-2F08-42B1-B62A-2D898F295D7B}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>524</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>572</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_24" ID="{078AC08F-8F17-4209-AB86-5DDBC65F2AA9}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>548</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>596</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_25" ID="{0E9C036D-CBFD-43DD-A54A-A8E68CB36E9E}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>572</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>620</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_26" ID="{AED30E38-5CD8-45DC-B866-871B19EEC63B}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>596</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>644</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_27" ID="{2E691558-8AC0-497D-BE83-716704961C11}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>620</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>668</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_28" ID="{6DF16F8F-BDD2-45A1-B507-9A0E415931D7}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>644</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>692</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_29" ID="{B58F4112-1FC1-42AB-BDCE-9D05C936DC25}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>668</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>716</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_30" ID="{1B76F2CE-2B7E-4BA3-99E8-23E48418F5CF}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>692</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>740</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_31" ID="{CDCB1460-3D55-4DF3-8BFB-2CDEE0A4C8DF}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>716</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>2000</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																			</BlendTrackAssocList>
 																		</BlendTrack>
 																		<BlendTrack Name="New Blend Track" ID="{98B31587-E885-46B6-8B94-5D0ED665AEF0}" ShortID="482590876">
-																			<PropertyList>
-																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="FLYWHEEL_RPM_2" ID="{95B78310-5F97-4E18-A9BB-9F650EE31EE3}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
+																			<ReferenceList/>
 																		</BlendTrack>
 																	</BlendTrackList>
 																</BlendContainer>
@@ -51869,53 +50048,6 @@
 															</ChildrenList>
 															<BlendTrackList>
 																<BlendTrack Name="ALL WILL BE REVEALED" ID="{C0E57306-754C-40F8-92FD-8079D2629B76}" ShortID="524841669">
-																	<PropertyList>
-																		<Property Name="Volume" Type="Real64">
-																			<RTPCList>
-																				<RTPC Name="" ID="{7A0F4453-4F17-4AE4-96A7-98A7CE6BBAE3}" ShortID="104687368">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{087E8A42-96E6-4CFC-83E9-E9CF37556B31}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="3"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-200</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>3.64999</XPos>
-																								<YPos>-12.68489</YPos>
-																								<Flags>0</Flags>
-																								<SegmentShape>Log3</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>21.60451</XPos>
-																								<YPos>-5.53047</YPos>
-																								<Flags>0</Flags>
-																								<SegmentShape>Log3</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>900</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2000</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
-																	</PropertyList>
 																	<BlendTrackAssocList>
 																		<BlendTrackAssoc>
 																			<ItemRef Name="Flywheel_lowend" ID="{2ADBB37C-8946-4C69-A824-5B57C8B4C291}"/>
@@ -51932,35 +50064,6 @@
 												<BlendContainer Name="Flywheel-cockpit" ID="{AA902663-DD8C-41D3-BA0E-9817A0354E53}" ShortID="277369315">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{C5B23EE6-8093-4633-8F79-5700A840AFEA}" ShortID="618004355">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{CD18F868-E4EE-4A2E-9338-51A678588808}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>61</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>45</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="25"/>
 													</PropertyList>
@@ -52149,209 +50252,6 @@
 																	<PropertyList>
 																		<Property Name="BlendBehavior" Type="int16" Value="1"/>
 																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																		<Property Name="Pitch" Type="int32">
-																			<RTPCList>
-																				<RTPC Name="" ID="{827DBBC9-AD0C-444F-87B7-AAB955BA397D}" ShortID="83524113">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{996248B3-8BA5-4184-A418-E912610195D9}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="65537"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-1150</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>20</XPos>
-																								<YPos>-1100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>44</XPos>
-																								<YPos>-1050</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>68</XPos>
-																								<YPos>-1000</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>92</XPos>
-																								<YPos>-950</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>116</XPos>
-																								<YPos>-900</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>140</XPos>
-																								<YPos>-850</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>164</XPos>
-																								<YPos>-800</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>188</XPos>
-																								<YPos>-750</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>212</XPos>
-																								<YPos>-700</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>236</XPos>
-																								<YPos>-650</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>260</XPos>
-																								<YPos>-600</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>284</XPos>
-																								<YPos>-550</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>308</XPos>
-																								<YPos>-500</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>332</XPos>
-																								<YPos>-450</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>356</XPos>
-																								<YPos>-400</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>380</XPos>
-																								<YPos>-350</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>404</XPos>
-																								<YPos>-300</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>428</XPos>
-																								<YPos>-250</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>452</XPos>
-																								<YPos>-200</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>476</XPos>
-																								<YPos>-150</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>500</XPos>
-																								<YPos>-100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>524</XPos>
-																								<YPos>-50</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>548</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>572</XPos>
-																								<YPos>50</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>596</XPos>
-																								<YPos>100</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>620</XPos>
-																								<YPos>150</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>644</XPos>
-																								<YPos>200</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>668</XPos>
-																								<YPos>250</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>692</XPos>
-																								<YPos>300</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>716</XPos>
-																								<YPos>350</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>740</XPos>
-																								<YPos>400</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>764</XPos>
-																								<YPos>450</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>788</XPos>
-																								<YPos>500</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>812</XPos>
-																								<YPos>550</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>900</XPos>
-																								<YPos>600</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2000</XPos>
-																								<YPos>600</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
@@ -56163,366 +54063,105 @@
 																	</ChildrenList>
 																	<BlendTrackList>
 																		<BlendTrack Name="Flywheel_rpm" ID="{F431792B-4FB3-4F33-83CC-B3BC4A13194D}" ShortID="97736026">
-																			<PropertyList>
-																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
+																			<ReferenceList/>
 																			<BlendTrackAssocList>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_01" ID="{3B8E963E-0C7B-4416-B982-B1505FA548FA}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>0</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<RightEdgePos>44</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_02" ID="{CECC9EC9-6554-4775-B3B1-7D5241D620AF}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>25.5249784859533</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>68</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_03" ID="{48D0C917-0A20-417D-9003-E0468865ED65}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>44</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>92</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_04" ID="{E14A2EA2-D8DF-428E-BD3B-38118B854EE5}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>68</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
-																						<RightEdgePos>116</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_05" ID="{C2DA60DB-DE22-4719-B03D-0AC8934527F4}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>92</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>140</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_06" ID="{AE110940-DF2C-4FFB-85C8-38AA74B13CE7}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>116</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>164</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_07" ID="{75E783C0-4115-4310-9917-BC5C9F07FAFD}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>140</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>188</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_08" ID="{BBF2ED4D-9305-4A76-AFF7-DC3C0115DE7A}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>164</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>212</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_09" ID="{F063C10A-E287-44E8-BE78-6675D7A6EB31}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>188</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>236</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_10" ID="{BCB5EDB2-D3B9-4EDA-B42B-D948E0348E22}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>212</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>260</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_11" ID="{F96527E2-0C2C-4DBB-8FA2-551A44FFF31E}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>236</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>284</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_12" ID="{0615686E-A1FE-4019-B52F-9D5C0A35F49F}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>260</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>308</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_13" ID="{DA04BA14-FE8F-4A14-9496-23BC67BFF474}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>284</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>332</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_14" ID="{D76BFEAF-88BC-4BFB-B1C8-66BDC0F78938}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>308</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>356</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_15" ID="{CE9273C7-AFC4-42DB-B0ED-755238E7C0D2}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>332</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>380</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_16" ID="{DD4B5959-B1F8-46B7-BC16-C10169234242}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>356</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>404</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_17" ID="{3E6477B1-A119-4055-A5EE-5D708317D2C4}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>380</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>428</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_18" ID="{408F54BE-1C66-4B31-B53C-3174C3D4C885}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>404</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>452</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_19" ID="{52A24678-B7FF-4F63-9C53-4E17D30495A7}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>428</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>476</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_20" ID="{065EF7FE-DE93-4683-914C-F433CF9BD843}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>452</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>500</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_21" ID="{868C24B8-FA92-42A3-80CC-B5AE62D1A13A}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>476</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>524</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_22" ID="{2EFB1C70-21BD-473E-A1CC-49A64BB660C1}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>500</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>548</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_23" ID="{D5EDA223-CBCC-4A00-8D58-02BAC26A8BDD}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>524</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>572</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_24" ID="{52497C6F-C6F5-4C1C-B0DF-56074CE32411}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>548</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>596</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_25" ID="{76530389-0868-498E-9F15-F35419B81339}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>572</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>620</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_26" ID="{96981C0E-9417-401C-B07A-A0F23D074B1A}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>596</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>644</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_27" ID="{1ECAC0E9-F7C5-40EE-8C5D-2B946DBD8F6A}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>620</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>668</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_28" ID="{90F05BAA-8F35-4E8B-89CF-D36827F9553D}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>644</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>692</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_29" ID="{86368090-AA8B-4625-8A36-B84263A6480C}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>668</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>716</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_30" ID="{224C51B2-F9B2-4D23-B4AD-912A9AAEA166}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>692</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>740</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																				<BlendTrackAssoc>
 																					<ItemRef Name="rand_31" ID="{AAFF8BF6-64F3-44CE-845E-5B04C991B63A}"/>
-																					<CrossfadingInfo>
-																						<LeftEdgePos>716</LeftEdgePos>
-																						<LeftFadingMode>Automatic</LeftFadingMode>
-																						<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																						<RightEdgePos>2000</RightEdgePos>
-																						<RightFadingMode>Automatic</RightFadingMode>
-																						<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-																					</CrossfadingInfo>
 																				</BlendTrackAssoc>
 																			</BlendTrackAssocList>
 																		</BlendTrack>
 																		<BlendTrack Name="New Blend Track" ID="{C439A046-515B-4B9B-887D-FFC8A5EB6C6C}" ShortID="437417480">
-																			<PropertyList>
-																				<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="LayerCrossFadeControlInput">
-																					<ObjectRef Name="FLYWHEEL_RPM_2" ID="{95B78310-5F97-4E18-A9BB-9F650EE31EE3}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
+																			<ReferenceList/>
 																		</BlendTrack>
 																	</BlendTrackList>
 																</BlendContainer>
@@ -56610,53 +54249,6 @@
 															</ChildrenList>
 															<BlendTrackList>
 																<BlendTrack Name="ALL WILL BE REVEALED" ID="{651FD094-8C12-4AEA-8937-3CC262F82745}" ShortID="1015079944">
-																	<PropertyList>
-																		<Property Name="Volume" Type="Real64">
-																			<RTPCList>
-																				<RTPC Name="" ID="{F943C14A-1F01-44FB-9F12-62A2D2BB019C}" ShortID="938185395">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{4FEE73B1-ACD9-4A11-8E84-F8AFD3CEBC6A}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="3"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-200</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>3.64999</XPos>
-																								<YPos>-12.68489</YPos>
-																								<Flags>0</Flags>
-																								<SegmentShape>Log3</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>21.60451</XPos>
-																								<YPos>-5.53047</YPos>
-																								<Flags>0</Flags>
-																								<SegmentShape>Log3</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>900</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2000</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
-																	</PropertyList>
 																	<BlendTrackAssocList>
 																		<BlendTrackAssoc>
 																			<ItemRef Name="Flywheel_lowend" ID="{0F347DE8-F145-431D-91BC-272CE0A470C5}"/>
@@ -56840,40 +54432,6 @@
 																				</PointList>
 																			</Curve>
 																		</RTPC>
-																		<RTPC Name="" ID="{0C23AFC7-79AB-4077-944E-049C20AC4919}" ShortID="88203059">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{27C9BCB2-190D-4BDA-9168-5C15F07B5656}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-6</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>601.940491591203</XPos>
-																						<YPos>-0.717295127215209</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>850</XPos>
-																						<YPos>0</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>2000</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
 																	</RTPCList>
 																</Property>
 															</PropertyList>
@@ -56927,37 +54485,6 @@
 																			<ValueList>
 																				<Value>-250</Value>
 																			</ValueList>
-																			<RTPCList>
-																				<RTPC Name="" ID="{BCDE7F46-5C62-4BA9-81C3-14C99247043F}" ShortID="190615209">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{52D01095-5AFE-4452-BCD1-54A6622099FD}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="65537"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-1200</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>900</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2000</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
 																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
@@ -56999,66 +54526,8 @@
 												<BlendContainer Name="Mesh-cockpit" ID="{7C0DA989-08B8-4F1E-AC19-656CFC41B2C9}" ShortID="523582712">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{7C249240-CEE5-4F56-8BAA-435C0A519D5A}" ShortID="195720003">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{908C11C8-5363-4B29-BB04-48FC8B0B9378}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>52</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>45</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="25"/>
-														<Property Name="Volume" Type="Real64">
-															<RTPCList>
-																<RTPC Name="" ID="{13591A47-F266-4E2F-B72A-EBDA7172833E}" ShortID="670909001">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{3DDB9A0A-F22F-4F93-BB66-8583A64D2823}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-12</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>Exp1</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>-6.74252</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -57070,46 +54539,6 @@
 													</ReferenceList>
 													<ChildrenList>
 														<BlendContainer Name="Clutch_mesh" ID="{100FE829-8429-4C94-9D39-79D422F37661}" ShortID="954751569">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{4B4D4B60-A5D7-47B6-B04C-42CDD4F70524}" ShortID="579279310">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{6D1B97FA-09DD-4958-AE0F-175C4ADC4064}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-3</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>601.940491591203</XPos>
-																						<YPos>-0.717295127215209</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>850</XPos>
-																						<YPos>0</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>2000</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -57160,37 +54589,6 @@
 																			<ValueList>
 																				<Value>-250</Value>
 																			</ValueList>
-																			<RTPCList>
-																				<RTPC Name="" ID="{4A009B4B-DF40-4416-BED1-B206152C627E}" ShortID="212168464">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="FLYWHEEL_RPM_1" ID="{66012D1F-1B7D-4F89-9CBF-DB220730AAED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{FA58A214-A712-48EC-9129-ABF2342F80DA}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="65537"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-1200</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>900</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>2000</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
 																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
@@ -57697,35 +55095,6 @@
 													</RTPCList>
 												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="Lowpass" Type="int16">
-													<RTPCList>
-														<RTPC Name="" ID="{BAFEFC88-98BB-4484-9683-BCC5A23AE5A8}" ShortID="3400413">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{28B60E33-95E3-44E6-A63B-D33354219AE0}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>61</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>SCurve</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>30</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<RTPCList>
@@ -57833,31 +55202,6 @@
 																	<Point>
 																		<XPos>10000</XPos>
 																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-														<RTPC Name="" ID="{DE1FD489-3C22-47EC-998A-D6A819953A57}" ShortID="1001877202">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{F70F8EA0-6E89-4B95-A7EF-38808EF6A62C}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-12</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp2</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -58167,35 +55511,6 @@
 													</RTPCList>
 												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="Lowpass" Type="int16">
-													<RTPCList>
-														<RTPC Name="" ID="{A4919BCC-5BE3-4D3E-9835-EF4DD8FE8A01}" ShortID="623304659">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="WINDOW_2" ID="{031F1263-FF76-411F-949B-7CB189BBEC46}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{5F0EB45A-F82F-4A4C-AF43-D9017AA858D2}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>61</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>SCurve</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>30</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<RTPCList>
@@ -58303,31 +55618,6 @@
 																	<Point>
 																		<XPos>10000</XPos>
 																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-														<RTPC Name="" ID="{D60ECDC0-286A-4BDE-9C0C-1FE9D95E47A9}" ShortID="878919350">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="WINDOW_2" ID="{031F1263-FF76-411F-949B-7CB189BBEC46}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{71D217EC-F1F3-46C2-8EC0-832E0AEEFB69}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-12</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp2</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
