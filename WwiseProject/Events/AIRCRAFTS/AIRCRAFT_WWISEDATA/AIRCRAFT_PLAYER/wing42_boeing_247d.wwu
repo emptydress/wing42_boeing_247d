@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="wing42_boeing_247d" ID="{A03EE125-7E02-4298-9FC8-CFECE3877AD7}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="engines" ID="{AF619F6B-47DC-4B40-A1D8-01204FCF9B1D}" ShortID="602948967">
+				<Folder Name="Engines" ID="{AF619F6B-47DC-4B40-A1D8-01204FCF9B1D}" ShortID="602948967">
 					<ChildrenList>
 						<Event Name="Play_wing42_boeing_247d_eng1_combustion" ID="{AAD65F84-EAA0-4AFB-904D-F937C5F4DAEF}">
 							<ChildrenList>
