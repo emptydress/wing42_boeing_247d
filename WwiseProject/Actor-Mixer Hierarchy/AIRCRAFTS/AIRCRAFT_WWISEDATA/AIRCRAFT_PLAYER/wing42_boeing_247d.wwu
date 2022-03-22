@@ -95,35 +95,6 @@
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 																<Property Name="BlendBehavior" Type="int16" Value="1"/>
 																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																<Property Name="Lowpass" Type="int16">
-																	<RTPCList>
-																		<RTPC Name="" ID="{DA6B7CD1-1066-491F-9631-B0214546DDA5}" ShortID="425903541">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{F22CF50F-5617-4F40-B5FC-E41425336220}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>61</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>SCurve</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>30</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
 																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
@@ -15640,35 +15611,6 @@
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 																<Property Name="BlendBehavior" Type="int16" Value="1"/>
 																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																<Property Name="Lowpass" Type="int16">
-																	<RTPCList>
-																		<RTPC Name="" ID="{1A1A2141-24CE-4738-A3F5-ECF9E6772219}" ShortID="633379093">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{AF403CF3-52E5-4AB1-A433-02C701C4697B}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>61</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>SCurve</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>30</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
 																<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
@@ -31462,31 +31404,6 @@
 																				</PointList>
 																			</Curve>
 																		</RTPC>
-																		<RTPC Name="" ID="{A1B8DD9B-BBB4-4C4B-9C05-2A6F195E8B50}" ShortID="801957981">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{B7CA6F9E-A86F-4FBC-B6A6-1314D08FC529}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>85</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>InvertedSCurve</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>15</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
 																	</RTPCList>
 																</Property>
 																<Property Name="Volume" Type="Real64">
@@ -31494,31 +31411,6 @@
 																		<Value>-9</Value>
 																	</ValueList>
 																	<RTPCList>
-																		<RTPC Name="" ID="{E126BC58-4161-4DBA-A086-F8F90E63D6C5}" ShortID="729109751">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{D58A8800-0683-4F21-B91B-0FBC3312F99F}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-16.30452</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>-12.87971</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
 																		<RTPC Name="" ID="{1FC027C6-1FA4-43A6-8527-900B42A51524}" ShortID="891598992">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
@@ -31933,31 +31825,6 @@
 															<PropertyList>
 																<Property Name="Lowpass" Type="int16">
 																	<RTPCList>
-																		<RTPC Name="" ID="{1242C641-4C3B-4322-AD98-16F894992CA8}" ShortID="198405975">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{68A61C6D-FBAE-448B-BD97-DDAA3F0A9843}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>85</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>InvertedSCurve</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>30</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
 																		<RTPC Name="" ID="{46B66B80-C3E5-4EE4-A807-DE19D3C96216}" ShortID="921544107">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
@@ -32039,31 +31906,6 @@
 																					<Point>
 																						<XPos>0.4</XPos>
 																						<YPos>-28.62731</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																		<RTPC Name="" ID="{5941C448-4035-4F66-AC66-C503121BA35B}" ShortID="540304725">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{0D33C82F-B68F-4527-B9FE-03F74CD14FA1}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-12</YPos>
-																						<Flags>5</Flags>
-																						<SegmentShape>Exp1</SegmentShape>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>0</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -32208,7 +32050,7 @@
 												<RTPC Name="" ID="{6214779A-60C7-4973-AF7F-CB7E760CF00B}" ShortID="264639516">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="RADIO_RANGE_VOLUME" ID="{A2DFEEF4-C308-492E-B73B-7FD4671E5174}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+															<ObjectRef Name="RADIO_RANGE_VOLUME" ID="{A2DFEEF4-C308-492E-B73B-7FD4671E5174}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{81CBF04B-D8F5-4E71-B9B7-DAC3F0919289}">
@@ -32249,7 +32091,7 @@
 														<RTPC Name="" ID="{305C4688-513A-47E7-B087-4167B2D738D5}" ShortID="660288491">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="RADIO_RANGE_MUSIC_VOLUME" ID="{4CAA57DB-8EF6-4D74-9A98-DF73B2D43E72}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																	<ObjectRef Name="RADIO_RANGE_MUSIC_VOLUME" ID="{4CAA57DB-8EF6-4D74-9A98-DF73B2D43E72}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{58B31ACC-3CF7-459C-9184-844E09283855}">
@@ -32373,7 +32215,7 @@
 																<RTPC Name="" ID="{D0390925-760D-4510-B7D5-77ECBFE12D1D}" ShortID="134375848">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
-																			<ObjectRef Name="RADIO_RANGE_ID_VOLUME" ID="{3C42917E-2188-4545-B806-7CEF4F690C8D}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																			<ObjectRef Name="RADIO_RANGE_ID_VOLUME" ID="{3C42917E-2188-4545-B806-7CEF4F690C8D}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<Curve Name="" ID="{D0AB9D01-391B-4AF0-A845-8AA9907A5ED5}">
@@ -32414,7 +32256,7 @@
 																		<RTPC Name="" ID="{D0CB87AC-EF87-4D05-BD8D-CFAD647E3F8E}" ShortID="67540412">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
-																					<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																					<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<Curve Name="" ID="{68DE1DE3-02C7-4EC3-BEBD-23C0C7B53C73}">
@@ -32580,7 +32422,7 @@
 																<RTPC Name="" ID="{05BAD15F-C247-4161-85E0-028F96DAF924}" ShortID="338572352">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
-																			<ObjectRef Name="RADIO_RANGE_ID_VOLUME" ID="{3C42917E-2188-4545-B806-7CEF4F690C8D}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																			<ObjectRef Name="RADIO_RANGE_ID_VOLUME" ID="{3C42917E-2188-4545-B806-7CEF4F690C8D}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<Curve Name="" ID="{D7DC933F-0217-4C30-91CB-124C02705A0D}">
@@ -32661,7 +32503,7 @@
 																		<RTPC Name="" ID="{E9AF5CCB-32C8-49E0-9165-46404AA1BCBC}" ShortID="207383671">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
-																					<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																					<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<Curve Name="" ID="{5D6303BA-DECB-43F9-B6D9-F3087E7852B9}">
@@ -32806,7 +32648,7 @@
 																		<RTPC Name="" ID="{DBDCC900-802D-43B1-BD4F-150D0000BEBC}" ShortID="1022612482">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
-																					<ObjectRef Name="RADIO_RANGE_A_VOLUME" ID="{D9BB9335-8051-4D4F-921E-6F2CA936BF8C}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																					<ObjectRef Name="RADIO_RANGE_A_VOLUME" ID="{D9BB9335-8051-4D4F-921E-6F2CA936BF8C}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<Curve Name="" ID="{EA930123-A2F3-46AA-971C-7414E0C6F37F}">
@@ -32910,7 +32752,7 @@
 																				<RTPC Name="" ID="{CFC16AE3-8E25-4E62-B4EC-5272B2A2ED10}" ShortID="775656715">
 																					<ReferenceList>
 																						<Reference Name="ControlInput">
-																							<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																							<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																						</Reference>
 																					</ReferenceList>
 																					<Curve Name="" ID="{6688EA52-7D56-4F56-ABE0-0BC925CF658B}">
@@ -33058,7 +32900,7 @@
 																		<RTPC Name="" ID="{FEF4EE62-4F0D-4CA9-9FA8-629886434466}" ShortID="728066637">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
-																					<ObjectRef Name="RADIO_RANGE_N_VOLUME" ID="{77DE8D47-2B14-446A-85D6-B29AC1F54375}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																					<ObjectRef Name="RADIO_RANGE_N_VOLUME" ID="{77DE8D47-2B14-446A-85D6-B29AC1F54375}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<Curve Name="" ID="{2730B398-C31F-454F-8938-B1EB22A37034}">
@@ -33100,7 +32942,7 @@
 																				<RTPC Name="" ID="{911ADA21-AED3-4EC8-AC41-92CCCDFC1486}" ShortID="62316743">
 																					<ReferenceList>
 																						<Reference Name="ControlInput">
-																							<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																							<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																						</Reference>
 																					</ReferenceList>
 																					<Curve Name="" ID="{9D940F84-ACD3-4B30-B64E-883FC4A9B1AE}">
@@ -33310,7 +33152,7 @@
 														<RTPC Name="" ID="{3703E121-EC2B-4271-BEA8-915D59D04062}" ShortID="351647099">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{D8247A8D-ADA1-4AE3-96D7-AA1E81F5CF7C}"/>
+																	<ObjectRef Name="RADIO_RANGE_NOISE_VOLUME" ID="{1363964E-3DA3-4147-A517-5C234BA239A2}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{E88FC33C-A15F-40C3-9B80-4BAF736A2058}">
@@ -33563,35 +33405,6 @@
 												<RandomSequenceContainer Name="shutdown-inside" ID="{34EAC4C2-7FFD-483F-985F-61CBC34CB039}" ShortID="1028307841">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{0A474C2E-E5FC-483C-ADE5-97C82E367E04}" ShortID="118345037">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{D5AF3A81-6165-4847-BF81-FE65D47EAA50}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>61</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>30</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
@@ -34587,35 +34400,6 @@
 												<RandomSequenceContainer Name="shutdown-inside" ID="{C8165895-B813-41D3-902E-63DC3971ECD3}" ShortID="813735019">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{87C32704-99CC-4371-9547-87FC41E41FEF}" ShortID="627057281">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{A2718B4B-D42B-4BBE-9B9E-46C44CC37242}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>61</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>30</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
@@ -35786,35 +35570,6 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="startup-inside" ID="{6A089F06-9D8B-4B68-982D-F15BB9285250}" ShortID="530663265">
 													<PropertyList>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{3C393F54-2DE9-4146-A8A2-B23310605B54}" ShortID="287466999">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{80D35D9E-8DEA-4B7E-B78A-0951D88FC33E}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>61</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>30</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
@@ -36674,35 +36429,6 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="startup-inside" ID="{B2C223EF-8722-4CB2-A056-99FD2B07F884}" ShortID="160173875">
 													<PropertyList>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{8C620BD6-D284-4E00-82D8-63CCC0ED903A}" ShortID="332782524">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{85E0AE71-0B70-4D7E-8E81-B1C7F530B613}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>61</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>30</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
@@ -42298,35 +42024,6 @@
 												<BlendContainer Name="Flywheel-cockpit" ID="{4F62EBCC-1AD2-406C-98FB-2DED02234984}" ShortID="440468341">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{176A02DA-8066-4B26-B172-3C4C9E261696}" ShortID="651616994">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{065C9E58-8139-4AF7-9368-D72CA49DD547}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>61</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>45</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="25"/>
 													</PropertyList>
@@ -51932,35 +51629,6 @@
 												<BlendContainer Name="Flywheel-cockpit" ID="{AA902663-DD8C-41D3-BA0E-9817A0354E53}" ShortID="277369315">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{C5B23EE6-8093-4633-8F79-5700A840AFEA}" ShortID="618004355">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{CD18F868-E4EE-4A2E-9338-51A678588808}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>61</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>45</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="25"/>
 													</PropertyList>
@@ -56999,66 +56667,8 @@
 												<BlendContainer Name="Mesh-cockpit" ID="{7C0DA989-08B8-4F1E-AC19-656CFC41B2C9}" ShortID="523582712">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="Lowpass" Type="int16">
-															<RTPCList>
-																<RTPC Name="" ID="{7C249240-CEE5-4F56-8BAA-435C0A519D5A}" ShortID="195720003">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{908C11C8-5363-4B29-BB04-48FC8B0B9378}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>52</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>45</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="25"/>
-														<Property Name="Volume" Type="Real64">
-															<RTPCList>
-																<RTPC Name="" ID="{13591A47-F266-4E2F-B72A-EBDA7172833E}" ShortID="670909001">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{3DDB9A0A-F22F-4F93-BB66-8583A64D2823}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-12</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>Exp1</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>-6.74252</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -57697,35 +57307,6 @@
 													</RTPCList>
 												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="Lowpass" Type="int16">
-													<RTPCList>
-														<RTPC Name="" ID="{BAFEFC88-98BB-4484-9683-BCC5A23AE5A8}" ShortID="3400413">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{28B60E33-95E3-44E6-A63B-D33354219AE0}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>61</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>SCurve</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>30</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<RTPCList>
@@ -57833,31 +57414,6 @@
 																	<Point>
 																		<XPos>10000</XPos>
 																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-														<RTPC Name="" ID="{DE1FD489-3C22-47EC-998A-D6A819953A57}" ShortID="1001877202">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="WINDOW_1" ID="{06329C7C-3652-4D71-ABD7-75A317E80465}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{F70F8EA0-6E89-4B95-A7EF-38808EF6A62C}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-12</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp2</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -58167,35 +57723,6 @@
 													</RTPCList>
 												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="Lowpass" Type="int16">
-													<RTPCList>
-														<RTPC Name="" ID="{A4919BCC-5BE3-4D3E-9835-EF4DD8FE8A01}" ShortID="623304659">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="WINDOW_2" ID="{031F1263-FF76-411F-949B-7CB189BBEC46}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{5F0EB45A-F82F-4A4C-AF43-D9017AA858D2}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>61</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>SCurve</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>30</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<RTPCList>
@@ -58303,31 +57830,6 @@
 																	<Point>
 																		<XPos>10000</XPos>
 																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-														<RTPC Name="" ID="{D60ECDC0-286A-4BDE-9C0C-1FE9D95E47A9}" ShortID="878919350">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="WINDOW_2" ID="{031F1263-FF76-411F-949B-7CB189BBEC46}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{71D217EC-F1F3-46C2-8EC0-832E0AEEFB69}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-12</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp2</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
