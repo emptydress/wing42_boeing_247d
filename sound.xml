@@ -555,13 +555,13 @@
 		</Sound>
 
 
-		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_on1">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_light_on1">
 		</Sound>
 
-		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_on2">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_light_on2">
 		</Sound>
 
-		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_off">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_light_off">
 		</Sound>
 
 
@@ -596,24 +596,77 @@
 		</Sound>
 
 
+		<!--Reading lights-->
 		<Sound WwiseData="True" NodeName="switch_reading_light_2" WwiseEvent="switch_reading_light_2_on">
 		</Sound>
 
 		<Sound WwiseData="True" NodeName="switch_reading_light_2" WwiseEvent="switch_reading_light_2_off">
 		</Sound>
 
+		<Sound WwiseData="True" NodeName="switch_reading_light_3" WwiseEvent="switch_reading_light_3_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_3" WwiseEvent="switch_reading_light_3_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_4" WwiseEvent="switch_reading_light_4_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_4" WwiseEvent="switch_reading_light_4_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_5" WwiseEvent="switch_reading_light_5_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_5" WwiseEvent="switch_reading_light_5_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_6" WwiseEvent="switch_reading_light_6_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_6" WwiseEvent="switch_reading_light_6_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_7" WwiseEvent="switch_reading_light_7_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_7" WwiseEvent="switch_reading_light_7_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_8" WwiseEvent="switch_reading_light_8_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_8" WwiseEvent="switch_reading_light_8_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_9" WwiseEvent="switch_reading_light_9_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_9" WwiseEvent="switch_reading_light_9_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_10" WwiseEvent="switch_reading_light_10_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_10" WwiseEvent="switch_reading_light_10_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_11" WwiseEvent="switch_reading_light_11_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_11" WwiseEvent="switch_reading_light_11_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_12" WwiseEvent="switch_reading_light_12_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_12" WwiseEvent="switch_reading_light_12_off">
+		</Sound>
 
 		<Sound WwiseData="True" NodeName="switch_reading_light_13" WwiseEvent="switch_reading_light_13_on">
 		</Sound>
 
 		<Sound WwiseData="True" NodeName="switch_reading_light_13" WwiseEvent="switch_reading_light_13_off">
-		</Sound>
-
-
-		<Sound WwiseData="True" NodeName="switch_reading_light_3" WwiseEvent="switch_reading_light_3_on">
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="switch_reading_light_3" WwiseEvent="switch_reading_light_3_off">
 		</Sound>
 
 
