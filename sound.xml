@@ -13,7 +13,7 @@
     @                                                          @
     @                        by  Wing42                        @
     @                      www.wing42.com                      @
-    @                  tested with version ___                 @
+    @                  tested with version 7.6                 @
     @                                                          @
     @               Sound Design  by  Zak Spence               @
     @                 emptydressmusic@gmail.com                @ 
@@ -383,6 +383,25 @@
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
+		<Sound WwiseData="True" NodeName="cockpit_vent_1" LocalVar="VENT 1" WwiseEvent="vent_1" >
+			<WwiseRTPC LocalVar="VENT 1" RTPCName="VENT_1_acceleration_PITCH_CONTROLLER" Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" />
+			<WwiseRTPC LocalVar="VENT 1" RTPCName="VENT_1_derived_VOLUME_CONTROLLER" Derived="True" RTPCAttackTime=".2" RTPCReleaseTime=".2" />
+		</Sound>
+		<Sound WwiseData="True" NodeName="cockpit_vent_2" LocalVar="VENT 2" WwiseEvent="vent_2" >
+			<WwiseRTPC LocalVar="VENT 2" RTPCName="VENT_2_acceleration_PITCH_CONTROLLER" Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" />
+			<WwiseRTPC LocalVar="VENT 2" RTPCName="VENT_2_derived_VOLUME_CONTROLLER" Derived="True" RTPCAttackTime=".2" RTPCReleaseTime=".2" />
+		</Sound>
+		<Sound WwiseData="True" NodeName="cabin_ac_1" LocalVar="VENT 3" WwiseEvent="vent_3" >
+			<WwiseRTPC LocalVar="VENT 3" RTPCName="VENT_3_acceleration_PITCH_CONTROLLER" Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" />
+			<WwiseRTPC LocalVar="VENT 3" RTPCName="VENT_3_derived_VOLUME_CONTROLLER" Derived="True" RTPCAttackTime=".2" RTPCReleaseTime=".2" />
+		</Sound>
+		<Sound WwiseData="True" NodeName="cabin_ac_2" LocalVar="VENT 4" WwiseEvent="vent_4" >
+			<WwiseRTPC LocalVar="VENT 4" RTPCName="VENT_4_acceleration_PITCH_CONTROLLER" Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" />
+			<WwiseRTPC LocalVar="VENT 4" RTPCName="VENT_4_derived_VOLUME_CONTROLLER" Derived="True" RTPCAttackTime=".2" RTPCReleaseTime=".2" />
+		</Sound>
+
+
+
 
 	</SimVarSounds>
 
@@ -481,10 +500,10 @@
 
 
 		<!--Crystal Switches-->
-		<Sound WwiseData="True" NodeName="switch_cryst" WwiseEvent="switch_=cryst_on">
+		<Sound WwiseData="True" NodeName="switch_cryst" WwiseEvent="switch_cryst_on">
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="switch_cryst" WwiseEvent="switch_=cryst_off">
+		<Sound WwiseData="True" NodeName="switch_cryst" WwiseEvent="switch_cryst_off">
 		</Sound>
 
 		<Sound WwiseData="True" NodeName="switch_long_wave" WwiseEvent="switch_long_wave_on">
@@ -529,30 +548,30 @@
 		</Sound>
 
 
-		<Sound WwiseData="True" NodeName="switch_cabin_lights" WwiseEvent="switch_nav_lights_on">
+		<Sound WwiseData="True" NodeName="switch_cabin_lights" WwiseEvent="switch_cabin_lights_on">
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="switch_cabin_lights" WwiseEvent="switch_nav_lights_off">
-		</Sound>
-
-
-		<Sound WwiseData="True" NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_on1">
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_on2">
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_off">
+		<Sound WwiseData="True" NodeName="switch_cabin_lights" WwiseEvent="switch_cabin_lights_off">
 		</Sound>
 
 
-		<Sound WwiseData="True" NodeName="switch_dome_lights_cabin" WwiseEvent="switch_dome_lights_cabin_on1">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_on1">
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="switch_dome_lights_cabin" WwiseEvent="switch_dome_lights_cabin_on2">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_on2">
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="switch_dome_lights_cabin" WwiseEvent="switch_dome_lights_cabin_off">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_off">
+		</Sound>
+
+
+		<Sound WwiseData="True" NodeName="switch_dome_light_cabin" WwiseEvent="switch_dome_lights_cabin_on1">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_dome_light_cabin" WwiseEvent="switch_dome_lights_cabin_on2">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_dome_light_cabin" WwiseEvent="switch_dome_lights_cabin_off">
 		</Sound>
 
 
