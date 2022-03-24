@@ -13,7 +13,7 @@
     @                                                          @
     @                        by  Wing42                        @
     @                      www.wing42.com                      @
-    @                  tested with version ___                 @
+    @                  tested with version 7.6                 @
     @                                                          @
     @               Sound Design  by  Zak Spence               @
     @                 emptydressmusic@gmail.com                @ 
@@ -141,19 +141,19 @@
 		</Sound>
 
 		<!--Flywheel-->
-		<Sound WwiseData="True" Continuous="True" ViewPoint="All" LocalVar="FLYWHEEL RPM 1" NodeName="mb_starter_crank_left" WwiseEvent="flywheel_windup_left">
+		<Sound WwiseData="True" Continuous="True" ViewPoint="All" LocalVar="FLYWHEEL RPM 1" NodeName="mb_starter_crank_left" WwiseEvent="flywheel_windup_left" >
 			<Range LowerBound="1" />
 			<WwiseRTPC LocalVar="FLYWHEEL RPM 1" RTPCName="FLYWHEEL_RPM_1" />
 			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
-		<Sound WwiseData="True" Continuous="True" ViewPoint="All" LocalVar="FLYWHEEL RPM 2" NodeName="mb_starter_crank_right" WwiseEvent="flywheel_windup_right">
+		<Sound WwiseData="True" Continuous="True" ViewPoint="All" LocalVar="FLYWHEEL RPM 2" NodeName="mb_starter_crank_right" WwiseEvent="flywheel_windup_right" >
 			<Range LowerBound="1" />
 			<WwiseRTPC LocalVar="FLYWHEEL RPM 2" RTPCName="FLYWHEEL_RPM_2" />
 			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 
-		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" LocalVar="FLYWHEEL CLUTCH 1" NodeName="mb_starter_crank_left" WwiseEvent="flywheel_clutch_left">
+		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" LocalVar="FLYWHEEL CLUTCH 1" NodeName="mb_starter_crank_left" WwiseEvent="flywheel_clutch_left" >
 			<Range LowerBound="1" />
 			<WwiseRTPC LocalVar="FLYWHEEL RPM 1" RTPCName="FLYWHEEL_RPM_1" />
 			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
@@ -166,10 +166,10 @@
 		</Sound>
 
 		<!--Relay click-->
-		<Sound WwiseData="True" LocalVar="SOUND PLAY RELAY 1" NodeName="pax_signs_box" WwiseEvent="relay_cabin_warning_1">
+		<Sound WwiseData="True" LocalVar="SOUND PLAY RELAY 1" NodeName="pax_signs_box" WwiseEvent="relay_cabin_warning_1" >
 		</Sound>
 
-		<Sound WwiseData="True" LocalVar="SOUND PLAY RELAY 1" NodeName="pax_signs_box" WwiseEvent="relay_cabin_warning_1">
+		<Sound WwiseData="True" LocalVar="SOUND PLAY RELAY 1" NodeName="pax_signs_box" WwiseEvent="relay_cabin_warning_1" >
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -250,97 +250,113 @@
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Gyro Instruments-->
-		<Sound WwiseData="True" NodeName="dg" LocalVar="VAC DG RPM" WwiseEvent="gyro_dg" >
+		<Sound WwiseData="True" NodeName="dg" WwiseEvent="gyro_dg">
+			<WwiseRTPC LocalVar="VAC DG RPM" RTPCName="VAC_DG_RPM" />
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="ah" LocalVar="VAC AH RPM" WwiseEvent="gyro_ah" >
+		<Sound WwiseData="True" NodeName="ah" WwiseEvent="gyro_ah">
+			<WwiseRTPC LocalVar="VAC AH RPM" RTPCName="VAC_AH_RPM" />
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="instrument_tb" LocalVar="VAC TB RPM" WwiseEvent="gyro_tb" >
+		<Sound WwiseData="True" NodeName="instrument_tb" WwiseEvent="gyro_tb">
+			<WwiseRTPC LocalVar="VAC TB RPM" RTPCName="VAC_TB_RPM" />
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Windows-->
-		<Sound WwiseData="True" NodeName="node_left_window" LocalVar="WINDOW 1" WwiseEvent="window_left" >
+		<Sound WwiseData="True" NodeName="node_left_window" WwiseEvent="window_left">
+			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="node_right_window"  LocalVar="WINDOW 2" WwiseEvent="window_right">
+		<Sound WwiseData="True" NodeName="node_right_window" WwiseEvent="window_right">
+			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Rheostats-->
-		<Sound WwiseData="True" NodeName="rheostat_nav_instrument_lights" LocalVar="RHEOSTAT NAV INSTRUMENT LIGHT" WwiseEvent="rheostat_nav_instr_lights" >
+		<Sound WwiseData="True" NodeName="rheostat_nav_instrument_lights" WwiseEvent="rheostat_nav_instr_lights">
+			<WwiseRTPC LocalVar="RHEOSTAT NAV INSTRUMENT LIGHT" RTPCName="RHEOSTAT_NAV_INSTRUMENT_LIGHT" />
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="rheostat_eng_instrument_lights" LocalVar="RHEOSTAT ENG INSTRUMENT LIGHT" WwiseEvent="rheostat_eng_instr_lights" >
+		<Sound WwiseData="True" NodeName="rheostat_eng_instrument_lights" WwiseEvent="rheostat_eng_instr_lights">
+			<WwiseRTPC LocalVar="RHEOSTAT ENG INSTRUMENT LIGHT" RTPCName="RHEOSTAT_ENG_INSTRUMENT_LIGHT" />
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="rheostat_compass_light" LocalVar="RHEOSTAT COMPASS LIGHT" WwiseEvent="rheostat_compass_lights" >
+		<Sound WwiseData="True" NodeName="rheostat_compass_light" WwiseEvent="rheostat_compass_lights">
+			<WwiseRTPC LocalVar="RHEOSTAT COMPASS LIGHT" RTPCName="RHEOSTAT_COMPASS_LIGHT" />
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Trim-->
-		<Sound WwiseData="True" NodeName="crank_elevator_trim" LocalVar="ELEVATOR TRIM" WwiseEvent="crank_elevator_trim" >
+		<Sound WwiseData="True" NodeName="crank_elevator_trim" WwiseEvent="crank_elevator_trim">
+			<WwiseRTPC LocalVar="ELEVATOR TRIM" RTPCName="ELEVATOR_TRIM" />
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="crank_aileron_trim" LocalVar="AILERON TRIM" WwiseEvent="crank_aileron_trim" >
+		<Sound WwiseData="True" NodeName="crank_aileron_trim" WwiseEvent="crank_aileron_trim">
+			<WwiseRTPC LocalVar="AILERON TRIM" RTPCName="AILERON_TRIM" />
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="crank_rudder_trim" LocalVar="RUDDER TRIM" WwiseEvent="crank_rudder_trim" >
+		<Sound WwiseData="True" NodeName="crank_rudder_trim" WwiseEvent="crank_rudder_trim">
+			<WwiseRTPC LocalVar="RUDDER TRIM" RTPCName="RUDDER_TRIM" />
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Manual gear ratchet-->
-		<Sound WwiseData="True" NodeName="lever_manual_gear" LocalVar="MANUAL GEAR LEVER" WwiseEvent="lever_manual_gear" >
+		<Sound WwiseData="True" NodeName="lever_manual_gear" WwiseEvent="lever_manual_gear">
+			<WwiseRTPC LocalVar="MANUAL GEAR LEVER" RTPCName="MANUAL_GEAR_LEVER" />
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Manual gear selector-->
-		<Sound WwiseData="True" NodeName="manual_gear_selector" LocalVar="MANUAL GEAR SELECTOR" WwiseEvent="manual_gear_selector_up" >
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="manual_gear_selector" LocalVar="MANUAL GEAR SELECTOR" WwiseEvent="manual_gear_selector_down" >
+		<Sound WwiseData="True" NodeName="manual_gear_selector" WwiseEvent="manual_gear_selector">
+			<WwiseRTPC LocalVar="MANUAL GEAR SELECTOR" RTPCName="MANUAL_GEAR_SELECTOR" />
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Cabin heat-->
-		<Sound WwiseData="True" NodeName="lever_cabin_heater" LocalVar="CABIN HEAT LEVER" WwiseEvent="lever_cabin_heater" >
+		<Sound WwiseData="True" NodeName="lever_cabin_heater" WwiseEvent="lever_cabin_heater">
+			<WwiseRTPC LocalVar="CABIN HEAT LEVER" RTPCName="CABIN_HEAT_LEVER" />
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Clock-->
-		<Sound WwiseData="True" NodeName="instrument_clock" LovalVar="KNOB CLOCK" WwiseEvent="instrument_clock" >
+		<Sound WwiseData="True" NodeName="instrument_clock" WwiseEvent="instrument_clock">
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="instrument_clock" LocalVar="KNOB CLOCK" WwiseEvent="wind_clock" >
+		<Sound WwiseData="True" NodeName="instrument_clock" WwiseEvent="wind_clock">
+			<WwiseRTPC LocalVar="KNOB CLOCK" RTPCName="KNOB_CLOCK" />
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Primer-->
-		<Sound WwiseData="True" NodeName="primer_handle" WwiseEvent="primer_handle" LocalVar="PRIMER HANDLE" >
+		<Sound WwiseData="True" NodeName="primer_handle" WwiseEvent="primer_handle">
+			<WwiseRTPC LocalVar="PRIMER HANDLE" RTPCName="PRIMER_HANDLE" />
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Feathering buttons cover-->
-		<Sound WwiseData="True" NodeName="feathering_cover" WwiseEvent="feathering_cover" LocalVar="FEATHERING COVER" >
+		<Sound WwiseData="True" NodeName="feathering_cover" WwiseEvent="feathering_cover">
+			<WwiseRTPC LocalVar="FEATHERING COVER" RTPCName="FEATHERING_COVER" />
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Fire extinguisher-->
-		<Sound WwiseData="True" NodeName="lux_crank" WwiseEvent="lux_crank" LocalVar="LUX SELECTOR" >
+		<Sound WwiseData="True" NodeName="lux_crank" WwiseEvent="lux_crank">
+			<WwiseRTPC LocalVar="LUX SELECTOR" RTPCName="LUX_SELECTOR" />
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="lux_lever" LocalVar="LUX LEVER" WwiseEvent="lux_lever">
+		<Sound WwiseData="True" NodeName="lux_lever" WwiseEvent="lux_lever">
+			<WwiseRTPC LocalVar="LUX LEVER" RTPCName="LUX_LEVER" />
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -352,19 +368,39 @@
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Feathering pumps-->
-		<Sound WwiseData="True" NodeName="crankcase_left" SimVar="CIRCUIT ON" Units="Boolean" Index="31" WwiseEvent="button_feathering_pump_left">
+		<Sound WwiseData="True" NodeName="crankcase_left" SimVar="CIRCUIT ON" Units="Boolean" Index="31" WwiseEvent="feathering_pump_left">
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="crankcase_right" SimVar="CIRCUIT ON" Units="Boolean" Index="31" WwiseEvent="button_feathering_pump_right">
+		<Sound WwiseData="True" NodeName="crankcase_right" SimVar="CIRCUIT ON" Units="Boolean" Index="31" WwiseEvent="feathering_pump_right">
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Vibrations-->
-		<Sound WwiseData="True" LocalVar="RATTLE INTENSITY NORMALIZED" WwiseEvent="vibration_rattle" >
+		<Sound WwiseData="True" WwiseEvent="vibration_rattle">
+			<WwiseRTPC LocalVar="RATTLE INTENSITY NORMALIZED" RTPCName="RATTLE_INTENSITY_NORMALIZED" />
 		</Sound>
 
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
+
+		<Sound WwiseData="True" NodeName="cockpit_vent_1" LocalVar="VENT 1" WwiseEvent="vent_1" >
+			<WwiseRTPC LocalVar="VENT 1" RTPCName="VENT_1_acceleration_PITCH_CONTROLLER" Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" />
+			<WwiseRTPC LocalVar="VENT 1" RTPCName="VENT_1_derived_VOLUME_CONTROLLER" Derived="True" RTPCAttackTime=".2" RTPCReleaseTime=".2" />
+		</Sound>
+		<Sound WwiseData="True" NodeName="cockpit_vent_2" LocalVar="VENT 2" WwiseEvent="vent_2" >
+			<WwiseRTPC LocalVar="VENT 2" RTPCName="VENT_2_acceleration_PITCH_CONTROLLER" Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" />
+			<WwiseRTPC LocalVar="VENT 2" RTPCName="VENT_2_derived_VOLUME_CONTROLLER" Derived="True" RTPCAttackTime=".2" RTPCReleaseTime=".2" />
+		</Sound>
+		<Sound WwiseData="True" NodeName="cabin_ac_1" LocalVar="VENT 3" WwiseEvent="vent_3" >
+			<WwiseRTPC LocalVar="VENT 3" RTPCName="VENT_3_acceleration_PITCH_CONTROLLER" Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" />
+			<WwiseRTPC LocalVar="VENT 3" RTPCName="VENT_3_derived_VOLUME_CONTROLLER" Derived="True" RTPCAttackTime=".2" RTPCReleaseTime=".2" />
+		</Sound>
+		<Sound WwiseData="True" NodeName="cabin_ac_2" LocalVar="VENT 4" WwiseEvent="vent_4" >
+			<WwiseRTPC LocalVar="VENT 4" RTPCName="VENT_4_acceleration_PITCH_CONTROLLER" Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" />
+			<WwiseRTPC LocalVar="VENT 4" RTPCName="VENT_4_derived_VOLUME_CONTROLLER" Derived="True" RTPCAttackTime=".2" RTPCReleaseTime=".2" />
+		</Sound>
+
+
 
 
 	</SimVarSounds>
@@ -372,7 +408,7 @@
 
 
 
-	<!--
+<!--
 	************************************************************
 	@                                                          @
 	@          The Scintillating Animation-triggered           @
@@ -411,7 +447,7 @@
 		<Sound WwiseData="True" Continuous="False" ViewPoint="Inside" NodeName="switch_radio_range_light" WwiseEvent="switch_radio_range_light_on"></Sound>
 
 		<Sound WwiseData="True" Continuous="False" ViewPoint="Inside" NodeName="switch_radio_range_light" WwiseEvent="switch_radio_range_light_off"></Sound>
-
+		
 
 		<!--Radio-->
 		<Sound WwiseData="True" NodeName="switch_radio_range_power" WwiseEvent="switch_radio_range_power_on">
@@ -464,10 +500,10 @@
 
 
 		<!--Crystal Switches-->
-		<Sound WwiseData="True" NodeName="switch_cryst" WwiseEvent="switch_=cryst_on">
+		<Sound WwiseData="True" NodeName="switch_cryst" WwiseEvent="switch_cryst_on">
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="switch_cryst" WwiseEvent="switch_=cryst_off">
+		<Sound WwiseData="True" NodeName="switch_cryst" WwiseEvent="switch_cryst_off">
 		</Sound>
 
 		<Sound WwiseData="True" NodeName="switch_long_wave" WwiseEvent="switch_long_wave_on">
@@ -512,30 +548,30 @@
 		</Sound>
 
 
-		<Sound WwiseData="True" NodeName="switch_cabin_lights" WwiseEvent="switch_nav_lights_on">
+		<Sound WwiseData="True" NodeName="switch_cabin_lights" WwiseEvent="switch_cabin_lights_on">
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="switch_cabin_lights" WwiseEvent="switch_nav_lights_off">
-		</Sound>
-
-
-		<Sound WwiseData="True" NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_on1">
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_on2">
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_off">
+		<Sound WwiseData="True" NodeName="switch_cabin_lights" WwiseEvent="switch_cabin_lights_off">
 		</Sound>
 
 
-		<Sound WwiseData="True" NodeName="switch_dome_lights_cabin" WwiseEvent="switch_dome_lights_cabin_on1">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_light_on1">
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="switch_dome_lights_cabin" WwiseEvent="switch_dome_lights_cabin_on2">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_light_on2">
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="switch_dome_lights_cabin" WwiseEvent="switch_dome_lights_cabin_off">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_light_off">
+		</Sound>
+
+
+		<Sound WwiseData="True" NodeName="switch_dome_light_cabin" WwiseEvent="switch_dome_lights_cabin_on1">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_dome_light_cabin" WwiseEvent="switch_dome_lights_cabin_on2">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_dome_light_cabin" WwiseEvent="switch_dome_lights_cabin_off">
 		</Sound>
 
 
@@ -560,24 +596,77 @@
 		</Sound>
 
 
+		<!--Reading lights-->
 		<Sound WwiseData="True" NodeName="switch_reading_light_2" WwiseEvent="switch_reading_light_2_on">
 		</Sound>
 
 		<Sound WwiseData="True" NodeName="switch_reading_light_2" WwiseEvent="switch_reading_light_2_off">
 		</Sound>
 
+		<Sound WwiseData="True" NodeName="switch_reading_light_3" WwiseEvent="switch_reading_light_3_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_3" WwiseEvent="switch_reading_light_3_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_4" WwiseEvent="switch_reading_light_4_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_4" WwiseEvent="switch_reading_light_4_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_5" WwiseEvent="switch_reading_light_5_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_5" WwiseEvent="switch_reading_light_5_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_6" WwiseEvent="switch_reading_light_6_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_6" WwiseEvent="switch_reading_light_6_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_7" WwiseEvent="switch_reading_light_7_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_7" WwiseEvent="switch_reading_light_7_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_8" WwiseEvent="switch_reading_light_8_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_8" WwiseEvent="switch_reading_light_8_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_9" WwiseEvent="switch_reading_light_9_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_9" WwiseEvent="switch_reading_light_9_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_10" WwiseEvent="switch_reading_light_10_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_10" WwiseEvent="switch_reading_light_10_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_11" WwiseEvent="switch_reading_light_11_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_11" WwiseEvent="switch_reading_light_11_off">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_12" WwiseEvent="switch_reading_light_12_on">
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="switch_reading_light_12" WwiseEvent="switch_reading_light_12_off">
+		</Sound>
 
 		<Sound WwiseData="True" NodeName="switch_reading_light_13" WwiseEvent="switch_reading_light_13_on">
 		</Sound>
 
 		<Sound WwiseData="True" NodeName="switch_reading_light_13" WwiseEvent="switch_reading_light_13_off">
-		</Sound>
-
-
-		<Sound WwiseData="True" NodeName="switch_reading_light_3" WwiseEvent="switch_reading_light_3_on">
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="switch_reading_light_3" WwiseEvent="switch_reading_light_3_off">
 		</Sound>
 
 
