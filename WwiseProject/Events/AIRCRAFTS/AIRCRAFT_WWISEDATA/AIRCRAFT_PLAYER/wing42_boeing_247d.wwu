@@ -498,19 +498,188 @@
 				</Folder>
 				<Folder Name="Glass_tippy_tappies" ID="{8FD9ABD4-EC85-43DB-81C1-D9C26655DBDF}" ShortID="236771037">
 					<ChildrenList>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_gear" ID="{245288F0-A9E3-45D9-B222-56BC01E35A3C}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_oat" ID="{3B497BEC-1E77-4DEC-BABA-C9905AFFADBE}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_eng_temp" ID="{FA851F17-8C3B-48B6-A813-0F70181A3027}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_fuel_gauge_left" ID="{C96BE359-9883-40C9-94D2-5EE18DE2DA2F}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_fuel_gauge_right" ID="{E7FBB8B0-3835-4C0C-A5B3-23617342B4D9}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_dg" ID="{5586C212-0647-4669-A0CA-E553CAF98C3E}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_ah" ID="{65B734AD-8FB5-45CC-9081-38C2A3138FC4}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_asi" ID="{E5D0A086-0080-4C2A-B8F2-45FE613A2D13}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_altimeter" ID="{2A4B3D48-ED8A-42F2-9C41-75F59B5CACC0}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_tb" ID="{FD148E26-F879-423F-BE01-B7D28E5C98F1}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_map" ID="{37E80965-C3D5-4D56-9381-74249A0810CC}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_vsi" ID="{6684A57C-67E3-49AD-B270-BA49ED5C89C0}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_clock" ID="{28DF50C2-BF5D-4BA7-9E9C-214F3253E05C}"/>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_gear" ID="{245288F0-A9E3-45D9-B222-56BC01E35A3C}">
+							<ChildrenList>
+								<Action Name="" ID="{F39A43E7-BCDD-4FEF-9145-D4272DFC825D}" ShortID="679321672">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_oat" ID="{3B497BEC-1E77-4DEC-BABA-C9905AFFADBE}">
+							<ChildrenList>
+								<Action Name="" ID="{82B7218D-57A1-441B-B4DA-B3E550D2FCE8}" ShortID="507232141">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_eng_temp" ID="{FA851F17-8C3B-48B6-A813-0F70181A3027}">
+							<ChildrenList>
+								<Action Name="" ID="{C8144351-539F-473A-A325-3D9CA20E4E13}" ShortID="271344784">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="small-semi_hollow-taut" ID="{A616F9C1-D2D5-4A87-A95D-FC65471394C5}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_fuel_gauge_left" ID="{C96BE359-9883-40C9-94D2-5EE18DE2DA2F}">
+							<ChildrenList>
+								<Action Name="" ID="{05327B3E-59EA-4384-87A2-5DE447181A36}" ShortID="550470853">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_fuel_gauge_right" ID="{E7FBB8B0-3835-4C0C-A5B3-23617342B4D9}">
+							<ChildrenList>
+								<Action Name="" ID="{F62CACEA-14CC-4561-BF32-8D0CD07FD848}" ShortID="37484861">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_dg" ID="{5586C212-0647-4669-A0CA-E553CAF98C3E}">
+							<ChildrenList>
+								<Action Name="" ID="{06D1DDF3-5878-44EB-BAD2-F306CA7AC03B}" ShortID="153551381">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DIRECTIONAL_GYRO" ID="{6AEEFF7C-7479-4A86-BD40-3103CB36F6E5}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_ah" ID="{65B734AD-8FB5-45CC-9081-38C2A3138FC4}">
+							<ChildrenList>
+								<Action Name="" ID="{7AF48FB5-9DA8-45EB-8E1E-AC23D03BDE84}" ShortID="875610023">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FALSE_HORIZON" ID="{4D12CD9A-AFE4-4E5C-94DF-3B21BC58611C}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_asi" ID="{E5D0A086-0080-4C2A-B8F2-45FE613A2D13}">
+							<ChildrenList>
+								<Action Name="" ID="{CF57ED63-5350-4F80-B027-BBC7E4435487}" ShortID="482252368">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_altimeter" ID="{2A4B3D48-ED8A-42F2-9C41-75F59B5CACC0}">
+							<ChildrenList>
+								<Action Name="" ID="{501B23DE-F894-4C4E-ADB6-2DD3DB963A80}" ShortID="795042325">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_tb" ID="{FD148E26-F879-423F-BE01-B7D28E5C98F1}">
+							<ChildrenList>
+								<Action Name="" ID="{BB01D918-F65C-45FF-B137-0D6BFD14E82B}" ShortID="670291988">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_map" ID="{37E80965-C3D5-4D56-9381-74249A0810CC}">
+							<ChildrenList>
+								<Action Name="" ID="{F7730750-6A06-4EF9-BE19-1911D89CA3C7}" ShortID="254755765">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_vsi" ID="{6684A57C-67E3-49AD-B270-BA49ED5C89C0}">
+							<ChildrenList>
+								<Action Name="" ID="{09E8C1BA-4755-470F-86B1-824024EFC0E2}" ShortID="1038456065">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_clock" ID="{28DF50C2-BF5D-4BA7-9E9C-214F3253E05C}">
+							<ChildrenList>
+								<Action Name="" ID="{B090294E-F032-437A-B5D6-11840A8D10C0}" ShortID="391333556">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Play_wing42_boeing_247d_tap_glass_fuel_pressure_left" ID="{CC698140-9120-4C1E-A40A-5127920782DC}"/>
 						<Event Name="Play_wing42_boeing_247d_tap_glass_fuel_pressure_right" ID="{8557EB23-03D6-46C2-AE65-0A72758EEB4B}"/>
 						<Event Name="Play_wing42_boeing_247d_tap_glass_oil_pressure_left" ID="{CAD42070-5A66-4723-9B9C-D3BAB0392AB8}"/>
@@ -520,8 +689,34 @@
 						<Event Name="Play_wing42_boeing_247d_tap_glass_rpm_left" ID="{3C202959-DF1C-45D6-BCD0-0E247777C773}"/>
 						<Event Name="Play_wing42_boeing_247d_tap_glass_rpm_right" ID="{4570900A-23D8-43DC-825B-442308248B10}"/>
 						<Event Name="Play_wing42_boeing_247d_tap_glass_ammeter" ID="{7BF9DE9E-2154-4EB7-A355-4A7FADBD37E1}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_compass" ID="{FEA30367-21DE-43F2-85F4-2D19E0600983}"/>
-						<Event Name="Play_wing42_boeing_247d_tap_glass_radio" ID="{61FF8F46-0F46-46F7-ABA1-6BEFE0B21CCA}"/>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_compass" ID="{FEA30367-21DE-43F2-85F4-2D19E0600983}">
+							<ChildrenList>
+								<Action Name="" ID="{5BC2A4E7-36C1-40B9-833C-86C06B10A054}" ShortID="562563519">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="thonk" ID="{C0E549F9-BA86-4F23-A25A-6563870DB647}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_tap_glass_radio" ID="{61FF8F46-0F46-46F7-ABA1-6BEFE0B21CCA}">
+							<ChildrenList>
+								<Action Name="" ID="{DBAD7ACC-6720-41D8-934B-74F443C2C6C7}" ShortID="141514859">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="tiiiiny" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Primer" ID="{DAC0EFF3-8C76-4834-BE2F-AE951B907A5D}" ShortID="653247299">

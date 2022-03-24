@@ -58341,7 +58341,14 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Glass_tippy_tappies" ID="{282B1584-1CF3-413E-BA2D-D7EA2B31DCCE}" ShortID="616882357">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="aircraft_player_inside_3m_spread15" ID="{F5FBB6BB-1F86-4FA7-99C5-7D1DAE906FF9}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 								</Reference>
@@ -58350,7 +58357,27 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="tap01" ID="{C1827783-D8D3-4997-AB86-4A20162D4A3F}" ShortID="710911358">
+								<Sound Name="small-hollow" ID="{C1827783-D8D3-4997-AB86-4A20162D4A3F}" ShortID="710911358">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3B9DDE73-476A-48B8-8632-2EBBD469D55E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -58375,7 +58402,27 @@
 										<ActiveSource Name="tap01" ID="{7CFB1DCB-7DFF-47C8-9042-3B1698DD8DC3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="tap02" ID="{A616F9C1-D2D5-4A87-A95D-FC65471394C5}" ShortID="806332142">
+								<Sound Name="small-semi_hollow-taut" ID="{A616F9C1-D2D5-4A87-A95D-FC65471394C5}" ShortID="806332142">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{55756DD7-50C1-440A-8F94-55EED43B87BA}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -58400,7 +58447,28 @@
 										<ActiveSource Name="tap02" ID="{F606010A-1AAD-42B9-8AC6-A03CAD451398}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="tap03" ID="{C3F59472-DEC5-4ED6-B184-E597A413D8FF}" ShortID="770543742">
+								<Sound Name="flick" ID="{C3F59472-DEC5-4ED6-B184-E597A413D8FF}" ShortID="770543742">
+									<PropertyList>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BCCF5014-5975-4F1C-9E38-00AC6ED8BA20}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -58425,7 +58493,27 @@
 										<ActiveSource Name="tap03" ID="{2163C503-5DAB-4065-B24C-7D9E3E6B02E6}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="tap04" ID="{F0D6BB7E-A86C-437D-9A0F-FA1076BBC1B8}" ShortID="1064278544">
+								<Sound Name="medium-hollow" ID="{F0D6BB7E-A86C-437D-9A0F-FA1076BBC1B8}" ShortID="1064278544">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{33CA9B26-711E-4BF3-B1B2-79CBE67B3299}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-23</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -58450,7 +58538,27 @@
 										<ActiveSource Name="tap04" ID="{5B93CD23-8394-4C18-BDA2-D1A943E98280}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="tap05" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" ShortID="25847299">
+								<Sound Name="tiiiiny" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" ShortID="25847299">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F1851473-65E0-4CFE-A85A-14FA383AE70A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -58475,7 +58583,27 @@
 										<ActiveSource Name="tap05" ID="{774FE8EF-345B-452F-B745-2C7BAE6251CA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="tap06" ID="{C0E549F9-BA86-4F23-A25A-6563870DB647}" ShortID="1071126255">
+								<Sound Name="thonk" ID="{C0E549F9-BA86-4F23-A25A-6563870DB647}" ShortID="1071126255">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{54746744-7086-41DB-B692-91A0027E21D7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-18</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -58500,7 +58628,27 @@
 										<ActiveSource Name="tap06" ID="{B9CC108E-C9EF-42E1-9985-C844FA33A59C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="tap07" ID="{4D12CD9A-AFE4-4E5C-94DF-3B21BC58611C}" ShortID="191442556">
+								<Sound Name="FALSE_HORIZON" ID="{4D12CD9A-AFE4-4E5C-94DF-3B21BC58611C}" ShortID="191442556">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B5989E6A-B2C0-4DFF-8D7D-D971299F469C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -58525,32 +58673,27 @@
 										<ActiveSource Name="tap07" ID="{B0F65611-9F85-4F64-903C-0FD538688249}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="tap08" ID="{21E0E953-8B9D-48B7-815D-767FB6379740}" ShortID="881663728">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="tap08" ID="{06156C80-C64A-4A02-AE30-329900FAE97B}">
-											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>tap08.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="tap08" ID="{06156C80-C64A-4A02-AE30-329900FAE97B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="tap09" ID="{A1D0EAFF-4D5C-4F35-9AD8-E70D8843C96A}" ShortID="1055805587">
+								<Sound Name="velvety_thud" ID="{A1D0EAFF-4D5C-4F35-9AD8-E70D8843C96A}" ShortID="1055805587">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6581EF7C-82B8-4007-AE14-8AE3CAF1CCDA}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -58575,7 +58718,27 @@
 										<ActiveSource Name="tap09" ID="{84E2C10E-FE29-450B-9E5C-C1F2933A686E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="tap10" ID="{59E24F0A-A5E2-4ADD-9D85-E6F48D0FA947}" ShortID="310440670">
+								<Sound Name="ASDF" ID="{59E24F0A-A5E2-4ADD-9D85-E6F48D0FA947}" ShortID="310440670">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BE2A689A-D21C-46C5-85AE-884F93A5B20C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -58600,7 +58763,27 @@
 										<ActiveSource Name="tap10" ID="{BA705AD5-B668-4D69-B54F-A111721925DB}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="tap11" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" ShortID="310937106">
+								<Sound Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" ShortID="310937106">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C4BD4A26-6142-482C-9548-D8E95B5FAE2E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -58625,7 +58808,27 @@
 										<ActiveSource Name="tap11" ID="{0291C08C-5AFF-43E3-9524-F11AC5A2AA8D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="tap12" ID="{F5C27E3F-906F-4810-9BF7-11EE0DFFBCB2}" ShortID="121161210">
+								<Sound Name="small" ID="{F5C27E3F-906F-4810-9BF7-11EE0DFFBCB2}" ShortID="121161210">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0791133C-0E64-4264-B6DE-44F1135734A3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -58650,7 +58853,27 @@
 										<ActiveSource Name="tap12" ID="{D058FE5D-3CC7-47E7-AA71-3CE41685C5BA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="tap13" ID="{6AEEFF7C-7479-4A86-BD40-3103CB36F6E5}" ShortID="896813414">
+								<Sound Name="DIRECTIONAL_GYRO" ID="{6AEEFF7C-7479-4A86-BD40-3103CB36F6E5}" ShortID="896813414">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{512BAF52-90FD-46D4-ACC3-E2EF2A83F10B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
