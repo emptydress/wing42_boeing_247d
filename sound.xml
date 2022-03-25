@@ -48,7 +48,7 @@
 	</EngineSoundTransitions>
 
 	<AlwaysPlaySounds>
-		<Sound WwiseData="True" WwiseEvent="instrument_clock"/>
+		<Sound WwiseData="True" ViewPoint="Inside" WwiseEvent="instrument_clock"/>
 	</AlwaysPlaySounds>
 
 	<EngineSoundPresets>
@@ -270,13 +270,13 @@
 
 		<!--Windows-->
 		<Sound WwiseData="True" NodeName="node_left_window" LocalVar="WINDOW 1" WwiseEvent="window_left" >
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="WINDOW 1" RTPCName="WINDOW_1_derived_VOLUME_CONTROL" />
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1_acceleration_PITCH_CONTROL" />
+			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="WINDOW 1" RTPCName="WINDOW_1_derived_VOLUME_CONTROLLER" />
+			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1_acceleration_PITCH_CONTROLLER" />
 		</Sound>
 
 		<Sound WwiseData="True" NodeName="node_right_window" LocalVar="WINDOW 2" WwiseEvent="window_right">
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="WINDOW 2" RTPCName="WINDOW_2_derived_VOLUME_CONTROL" />
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2_acceleration_PITCH_CONTROL" />
+			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="WINDOW 2" RTPCName="WINDOW_2_derived_VOLUME_CONTROLLER" />
+			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2_acceleration_PITCH_CONTROLLER" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -337,8 +337,8 @@
 
 		<!--Primer-->
 		<Sound WwiseData="True" NodeName="primer_handle" WwiseEvent="primer_handle"  LocalVar="PRIMER HANDLE">
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="PRIMER HANDLE" RTPCName="PRIMER_HANDLE_derived_VOLUME_CONTROL" />
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="PRIMER HANDLE" RTPCName="PRIMER_HANDLE_acceleration_PITCH_CONTROL" />
+			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="PRIMER HANDLE" RTPCName="PRIMER_HANDLE_derived_VOLUME_CONTROLLER" />
+			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="PRIMER HANDLE" RTPCName="PRIMER_HANDLE_acceleration_PITCH_CONTROLLER" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -372,8 +372,15 @@
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Vibrations-->
-		<Sound WwiseData="True" WwiseEvent="vibration_rattle">
-			<WwiseRTPC LocalVar="RATTLE INTENSITY NORMALIZED" RTPCName="RATTLE_INTENSITY_NORMALIZED" />
+		<Sound WwiseData="True" Continuous="True" LocalVar="RATTLE INTENSITY" WwiseEvent="Rattle_start" >
+			<Range LowerBound="1" />
+			<WwiseRTPC Derived="False" LocalVar="RATTLE INTENSITY NORMALIZED" RTPCName="RATTLE_INTENSITY_NORMALIZED" />
+			<WwiseRTPC Derived="True"  LocalVar="RATTLE INTENSITY " RTPCName="RATTLE_INTENSITY_acceleration_PITCH_CONTROLLER" />
+			<WwiseRTPC Derived="True"  LocalVar="RATTLE INTENSITY" RTPCName="RATTLE_INTENSITY_derived_VOLUME_CONTROLLER" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" LocalVar="RATTLE INTENSITY" WwiseEvent="Rattle_stop" >
+			<Range UpperBound="0" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -386,6 +393,7 @@
 		</Sound>
 
 		<Sound WwiseData="True" Continuous="False" NodeName="cockpit_vent_1" LocalVar="VENT 1" WwiseEvent="vent_shut_01" >
+			<Range UpperBound="0" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 1" RTPCName="VENT_1_acceleration_PITCH_CONTROLLER" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="VENT 1" RTPCName="VENT_1_derived_VOLUME_CONTROLLER" />
 		</Sound> 
@@ -396,6 +404,7 @@
 		</Sound>
 
 		<Sound WwiseData="True" Continuous="False" NodeName="cockpit_vent_2" LocalVar="VENT 2" WwiseEvent="vent_shut_02" >
+			<Range UpperBound="0" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 2" RTPCName="VENT_2_acceleration_PITCH_CONTROLLER" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="VENT 2" RTPCName="VENT_2_derived_VOLUME_CONTROLLER" />
 		</Sound>
@@ -407,6 +416,7 @@
 		</Sound>
 
 		<Sound WwiseData="True" Continuous="False" NodeName="cabin_ac_1" LocalVar="VENT 3" WwiseEvent="vent_shut_03" >
+			<Range UpperBound="0" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 3" RTPCName="VENT_3_acceleration_PITCH_CONTROLLER" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="VENT 3" RTPCName="VENT_3_derived_VOLUME_CONTROLLER" />
 		</Sound>
@@ -417,6 +427,7 @@
 		</Sound>
 
 		<Sound WwiseData="True" NodeName="cabin_ac_2" LocalVar="VENT_4" WwiseEvent="vent_shut_04" >
+			<Range UpperBound="0" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 4" RTPCName="VENT_4_acceleration_PITCH_CONTROLLER" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="VENT 4" RTPCName="VENT_4_derived_VOLUME_CONTROLLER" />
 		</Sound>
@@ -425,7 +436,7 @@
 
 	</SimVarSounds>
 
-
+ 
 <!--
 	************************************************************
 	@                                                          @

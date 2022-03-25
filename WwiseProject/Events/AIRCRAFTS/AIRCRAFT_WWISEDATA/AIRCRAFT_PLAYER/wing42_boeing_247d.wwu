@@ -2416,7 +2416,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Tick_tock_motha_fucka" ID="{9F7C089C-E542-4952-8D6D-5F137B206F6A}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+									<ObjectRef Name="Clock" ID="{7E9BD764-BC55-43B2-96A3-A6F2DBFA739D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -2427,6 +2427,50 @@
 						<Event Name="Play_wing42_boeing_247d_gyro_dg" ID="{76E75AFD-3469-470D-9562-62DDA51C5743}"/>
 						<Event Name="Play_wing42_boeing_247d_gyro_ah" ID="{41C68DAD-4B98-4728-A963-FC7C22AC937F}"/>
 						<Event Name="Play_wing42_boeing_247d_instrument_tb" ID="{8DE219C8-B87B-44BD-A4B6-216DAAB1FBE0}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Rattles" ID="{A3F97518-CB33-4977-9B26-32ADCB9DD830}" ShortID="833650661">
+					<ChildrenList>
+						<Event Name="Play_wing42_boeing_247d_rattle_start" ID="{3A33E6E5-9BD2-4C41-8DAD-CDE0F0BCF8C5}">
+							<ChildrenList>
+								<Action Name="" ID="{EBFFA532-470E-4774-AEB2-C80400D1143A}" ShortID="736077677">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rattle_start" ID="{13BC404D-BC72-4C73-A017-9C6D54D5747B}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_rattle_stop" ID="{938CBAC6-BFFE-4584-87A5-D2463B150E69}">
+							<ChildrenList>
+								<Action Name="" ID="{9C413BFF-C375-49EE-A010-DF6C8B908245}" ShortID="409758110">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rattle_start" ID="{13BC404D-BC72-4C73-A017-9C6D54D5747B}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4B4562B8-6E76-42F9-AB1B-0E589C32755A}" ShortID="467916948">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rattle_stop" ID="{BF1CB0F8-5E4C-4B3F-9080-E9810E98B906}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

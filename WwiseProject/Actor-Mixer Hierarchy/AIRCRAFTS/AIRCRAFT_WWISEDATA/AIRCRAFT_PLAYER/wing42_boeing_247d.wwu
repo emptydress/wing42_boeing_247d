@@ -8,33 +8,12 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 						</Reference>
-						<Reference Name="Effect0">
-							<Custom>
-								<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{9BD1FE99-9BFA-4F11-8A84-6BEA3130C990}" ShortID="304202363" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-									<PropertyList>
-										<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
-										<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
-										<Property Name="GainBand2" Type="Real32" Value="-24"/>
-										<Property Name="GainBand3" Type="Real32" Value="-24"/>
-										<Property Name="OutputLevel" Type="Real32" Value="2"/>
-										<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
-									</PropertyList>
-								</Effect>
-							</Custom>
-						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Vents" ID="{2D713224-CC1F-4D9B-9BB1-6C6A6F295875}" ShortID="474283146">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -318,13 +297,13 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<RTPCList>
-														<RTPC Name="" ID="{FBC41336-E457-4993-8DC9-525BA47A28BA}" ShortID="225739116">
+														<RTPC Name="" ID="{D63B0A0F-CB1D-4E9C-B778-341992A4DD87}" ShortID="274001086">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="VENT_1_derived_VOLUME_CONTROLLER" ID="{2284E218-C234-4606-93A9-A72FF068CA9F}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{0BBCF9D9-C15E-4A23-BF1A-8DB4F9074ECE}">
+															<Curve Name="" ID="{EE03CFC7-7F6C-4BB5-B055-51131127B452}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -652,13 +631,13 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<RTPCList>
-														<RTPC Name="" ID="{AEF39BBD-1BFB-4741-BC27-49C7820E96E5}" ShortID="980407051">
+														<RTPC Name="" ID="{D0FCF03F-8776-4C5D-BEC7-B8BF073388FE}" ShortID="313675271">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="VENT_2_derived_VOLUME_CONTROLLER" ID="{F8EF9AC0-2F52-46AE-A08C-3DCC72F628AD}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+																	<ObjectRef Name="VENT_1_derived_VOLUME_CONTROLLER" ID="{2284E218-C234-4606-93A9-A72FF068CA9F}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{FF6D564A-6734-4F3B-8F8A-44DD9B68487F}">
+															<Curve Name="" ID="{157E7345-F404-444E-BD07-4A2FDC924CA5}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -986,13 +965,13 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<RTPCList>
-														<RTPC Name="" ID="{17D3C12A-761F-455D-BE28-338B089B1BFA}" ShortID="934983064">
+														<RTPC Name="" ID="{B564D5C1-6A67-481E-9AA0-5D221BBC3ECA}" ShortID="282481744">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="VENT_3_derived_VOLUME_CONTROLLER" ID="{71B9F46F-1A60-42A8-A37C-AE120F59BCB0}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+																	<ObjectRef Name="VENT_1_derived_VOLUME_CONTROLLER" ID="{2284E218-C234-4606-93A9-A72FF068CA9F}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{9BDB7798-C9FC-4530-AD89-94B34C493EFA}">
+															<Curve Name="" ID="{7C00D8AF-8901-4402-B61C-4827368B76E9}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -1320,13 +1299,13 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<RTPCList>
-														<RTPC Name="" ID="{232B6FCD-74ED-4DB9-A1A9-0DDB6DD14F5A}" ShortID="252321459">
+														<RTPC Name="" ID="{10B5CE36-39C4-4A39-AD35-C1BA8C9FE64A}" ShortID="548126244">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="VENT_4_derived_VOLUME_CONTROLLER" ID="{E2C45C81-84B4-4A9B-A161-D774D860D6C9}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+																	<ObjectRef Name="VENT_1_derived_VOLUME_CONTROLLER" ID="{2284E218-C234-4606-93A9-A72FF068CA9F}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{1773D439-822A-49CE-9370-CBA8AB8CEEAA}">
+															<Curve Name="" ID="{FD3EA3F3-4BBD-4C62-953C-185E73E5DD28}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -2016,6 +1995,11 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -2840,11 +2824,6 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>6</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -3186,7 +3165,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>6</Value>
+														<Value>-6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4849,7 +4828,7 @@
 												<RTPC Name="" ID="{9C7A2AA2-5119-42EB-94D8-FF57E8C927ED}" ShortID="679817193">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="WINDOW_1_acceleration_PITCH_CONTROL" ID="{64FF18CE-B01F-49BB-8A5A-79BCAFB0458E}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+															<ObjectRef Name="WINDOW_1_acceleration_PITCH_CONTROLLER" ID="{64FF18CE-B01F-49BB-8A5A-79BCAFB0458E}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{D35356EF-C0C8-40E8-870B-AB1C1767804F}">
@@ -4884,7 +4863,7 @@
 												<RTPC Name="" ID="{56EE42BC-D13D-4A2D-8D00-44B086CF52AD}" ShortID="867398039">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="WINDOW_1_derived_VOLUME_CONTROL" ID="{A1C0D951-AFEB-4976-B166-3E2648863233}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+															<ObjectRef Name="WINDOW_1_derived_VOLUME_CONTROLLER" ID="{A1C0D951-AFEB-4976-B166-3E2648863233}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{BF045973-EB55-4595-B3F1-E8AF0313FB4F}">
@@ -4896,13 +4875,13 @@
 																<XPos>-100</XPos>
 																<YPos>-0.02559</YPos>
 																<Flags>5</Flags>
-																<SegmentShape>SCurve</SegmentShape>
+																<SegmentShape>Exp3</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>0</XPos>
 																<YPos>-200</YPos>
 																<Flags>0</Flags>
-																<SegmentShape>SCurve</SegmentShape>
+																<SegmentShape>Log3</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
@@ -4957,7 +4936,7 @@
 												<RTPC Name="" ID="{1735A3B0-A031-4395-96FB-833F686018AC}" ShortID="596542937">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="WINDOW_2_acceleration_PITCH_CONTROL" ID="{9ECC78C2-33B3-4BFA-BB5D-7E80B85A3D72}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+															<ObjectRef Name="WINDOW_2_acceleration_PITCH_CONTROLLER" ID="{9ECC78C2-33B3-4BFA-BB5D-7E80B85A3D72}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{BDA2450A-3CB0-450D-AD33-6C609DC2D8A6}">
@@ -4992,7 +4971,7 @@
 												<RTPC Name="" ID="{435E6213-4CED-471E-BCAA-9A846CA97F72}" ShortID="796728610">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="WINDOW_2_derived_VOLUME_CONTROL" ID="{86A8C16F-D9DC-41A9-8FBE-6793166AA2ED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+															<ObjectRef Name="WINDOW_2_derived_VOLUME_CONTROLLER" ID="{86A8C16F-D9DC-41A9-8FBE-6793166AA2ED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{EB65266F-9CE3-482B-83DB-1CB05A2C0B44}">
@@ -5004,13 +4983,13 @@
 																<XPos>-100</XPos>
 																<YPos>0.0814</YPos>
 																<Flags>5</Flags>
-																<SegmentShape>SCurve</SegmentShape>
+																<SegmentShape>Exp3</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>0</XPos>
 																<YPos>-200</YPos>
 																<Flags>0</Flags>
-																<SegmentShape>SCurve</SegmentShape>
+																<SegmentShape>Log3</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
@@ -5070,6 +5049,13 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Dynamotor" ID="{EA8C7607-B4C6-4540-9527-F64922195467}" ShortID="104897034">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -5144,6 +5130,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="dynamotor_whir" ID="{7B9E211C-5BE9-41BE-BE75-E28E2E1CCA3F}" ShortID="679245671">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -5355,36 +5348,39 @@
 															</RTPCList>
 														</Property>
 														<Property Name="Lowpass" Type="int16">
-															<ValueList>
-																<Value>36</Value>
-															</ValueList>
 															<RTPCList>
-																<RTPC Name="" ID="{6A46AEC6-578A-4FA1-8844-220BF63582B4}" ShortID="273201240">
+																<RTPC Name="" ID="{8492D0FA-5D6D-4896-93F7-6212798D3E26}" ShortID="665485458">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="WINDOW_2" ID="{0ADBA7D9-8A03-40E3-A931-434852C8F66E}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{1043A944-1937-423A-8AA3-E85C0EA3394E}">
+																	<Curve Name="" ID="{C1E18CFE-DC4C-48F4-A74B-59311F73D888}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="65537"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>21</YPos>
+																				<YPos>56</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>10.38961</XPos>
-																				<YPos>11</YPos>
+																				<XPos>10.67492</XPos>
+																				<YPos>49</YPos>
 																				<Flags>0</Flags>
 																				<SegmentShape>Log1</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>20.61688</XPos>
-																				<YPos>10</YPos>
+																				<YPos>44</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>75.74893</XPos>
+																				<YPos>36</YPos>
 																				<Flags>0</Flags>
 																				<SegmentShape>SCurve</SegmentShape>
 																			</Point>
@@ -20955,9 +20951,6 @@
 															</RTPCList>
 														</Property>
 														<Property Name="Lowpass" Type="int16">
-															<ValueList>
-																<Value>36</Value>
-															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{73491CC5-944B-452C-9574-0313DCDEC0EF}" ShortID="850822590">
 																	<ReferenceList>
@@ -20972,19 +20965,25 @@
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>21</YPos>
+																				<YPos>56</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>10.38961</XPos>
-																				<YPos>11</YPos>
+																				<XPos>10.67492</XPos>
+																				<YPos>49</YPos>
 																				<Flags>0</Flags>
 																				<SegmentShape>Log1</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>20.61688</XPos>
-																				<YPos>10</YPos>
+																				<YPos>44</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>75.74893</XPos>
+																				<YPos>36</YPos>
 																				<Flags>0</Flags>
 																				<SegmentShape>SCurve</SegmentShape>
 																			</Point>
@@ -61646,15 +61645,441 @@
 										</Reference>
 									</ReferenceList>
 								</Sound>
-								<RandomSequenceContainer Name="Tick_tock_motha_fucka" ID="{9F7C089C-E542-4952-8D6D-5F137B206F6A}" ShortID="828385238">
+								<SwitchContainer Name="Clock" ID="{7E9BD764-BC55-43B2-96A3-A6F2DBFA739D}" ShortID="387863441">
 									<PropertyList>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-30</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{232BE3B6-4A43-4CFD-8F19-E3A1D58580D1}" WorkUnitID="{87A0C03E-5FFD-4005-A0D0-08169986D5FA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="VIEWPOINT" ID="{13BEFA7F-C929-4FAA-8B48-86589D04F1D6}" WorkUnitID="{87A0C03E-5FFD-4005-A0D0-08169986D5FA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Tick_tock_motha_fucka" ID="{9F7C089C-E542-4952-8D6D-5F137B206F6A}" ShortID="828385238">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-19</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="toc_01" ID="{4B62E77A-D06B-4410-86CB-EFCB6A29F5D0}" ShortID="947692867">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{462B7521-D86B-4A05-A4D4-4871352C271B}" ShortID="49550305" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<PropertyList>
+																		<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
+																		<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
+																		<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																		<Property Name="GainBand3" Type="Real32" Value="-24"/>
+																		<Property Name="OutputLevel" Type="Real32" Value="2"/>
+																		<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="toc_01" ID="{D66D5B06-7424-4CAB-8072-195E2EA6C07D}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.25"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>toc_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="toc_01" ID="{D66D5B06-7424-4CAB-8072-195E2EA6C07D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="toc_02" ID="{669CA319-23D6-4A02-AD4A-87C8127ACB18}" ShortID="524164928">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{54AA9080-D380-4E7F-9CF7-55262851FE68}" ShortID="591265819" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<PropertyList>
+																		<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
+																		<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
+																		<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																		<Property Name="GainBand3" Type="Real32" Value="-24"/>
+																		<Property Name="OutputLevel" Type="Real32" Value="2"/>
+																		<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="toc_01" ID="{096849E8-CE75-406D-B620-8C7B544969DA}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.25"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>toc_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="toc_01" ID="{096849E8-CE75-406D-B620-8C7B544969DA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="toc_03" ID="{485F4C0A-B318-4556-885E-D4DDE3019E5F}" ShortID="177195701">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{3412E02B-D139-4522-9BFD-ED9AD33AE2EE}" ShortID="962449599" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<PropertyList>
+																		<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
+																		<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
+																		<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																		<Property Name="GainBand3" Type="Real32" Value="-24"/>
+																		<Property Name="OutputLevel" Type="Real32" Value="2"/>
+																		<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="toc_01" ID="{D7CB0BCA-99CC-41C9-A415-439E2AAEFAC6}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.5"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.75"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>toc_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="toc_01" ID="{D7CB0BCA-99CC-41C9-A415-439E2AAEFAC6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="toc_04" ID="{8116B53B-191F-4E03-91CC-3DD55A1069A5}" ShortID="843711621">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{8532FA96-BF36-4A6F-BA55-D28BCDC9C384}" ShortID="17351022" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<PropertyList>
+																		<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
+																		<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
+																		<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																		<Property Name="GainBand3" Type="Real32" Value="-24"/>
+																		<Property Name="OutputLevel" Type="Real32" Value="2"/>
+																		<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="toc_01" ID="{61222969-A3B8-4AF4-BD0D-FCC8561C3131}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.75"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>toc_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="toc_01" ID="{61222969-A3B8-4AF4-BD0D-FCC8561C3131}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="toc_05" ID="{0DD049A8-56A9-49D7-9C6A-24AFC7E34090}" ShortID="690147220">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{9780A112-5DE0-47C1-8823-482E6773620C}" ShortID="1068307718" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<PropertyList>
+																		<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
+																		<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
+																		<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																		<Property Name="GainBand3" Type="Real32" Value="-24"/>
+																		<Property Name="OutputLevel" Type="Real32" Value="2"/>
+																		<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="toc_01" ID="{54167DD6-FE19-4F72-A869-87753F99C26B}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.25"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>toc_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="toc_01" ID="{54167DD6-FE19-4F72-A869-87753F99C26B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="toc_06" ID="{4EA2F509-1A6E-4820-A92C-0A92DF805DA6}" ShortID="358952821">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{2B2D45B0-C04D-471E-AACA-043A811DBDC8}" ShortID="521792078" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<PropertyList>
+																		<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
+																		<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
+																		<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																		<Property Name="GainBand3" Type="Real32" Value="-24"/>
+																		<Property Name="OutputLevel" Type="Real32" Value="2"/>
+																		<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="toc_01" ID="{DF853E7F-11EF-4B13-AAE8-84AB4866705C}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.25"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>toc_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="toc_01" ID="{DF853E7F-11EF-4B13-AAE8-84AB4866705C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="toc_07" ID="{CFB69015-BFEB-4D21-9915-D8A494FCCD25}" ShortID="1054866540">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{2F82D410-627E-4617-80F1-E5F9A5E9842F}" ShortID="729417531" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<PropertyList>
+																		<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
+																		<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
+																		<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																		<Property Name="GainBand3" Type="Real32" Value="-24"/>
+																		<Property Name="OutputLevel" Type="Real32" Value="2"/>
+																		<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="toc_01" ID="{93B9F0B6-20D2-4270-8A85-E2209212C54A}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.5"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.75"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>toc_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="toc_01" ID="{93B9F0B6-20D2-4270-8A85-E2209212C54A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="toc_08" ID="{0FF2CEFC-C2D4-4C36-887F-5D403F3E43CC}" ShortID="265167791">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{11428EBA-71D5-4E85-91AA-71047C0787D1}" ShortID="614198366" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<PropertyList>
+																		<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
+																		<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
+																		<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																		<Property Name="GainBand3" Type="Real32" Value="-24"/>
+																		<Property Name="OutputLevel" Type="Real32" Value="2"/>
+																		<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="toc_01" ID="{9D8581DD-C510-4DB9-B9FC-903F91D780A5}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.75"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>toc_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="toc_01" ID="{9D8581DD-C510-4DB9-B9FC-903F91D780A5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Tick_tock_motha_fucka" ID="{9F7C089C-E542-4952-8D6D-5F137B206F6A}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="INSIDE" ID="{FFECDB48-6798-4725-AB04-DCC845B2904E}"/>
+												<ItemList>
+													<ItemRef Name="Tick_tock_motha_fucka" ID="{9F7C089C-E542-4952-8D6D-5F137B206F6A}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Rattles" ID="{2AC5F0E9-B67D-4E24-AA16-9163644EFF4B}" ShortID="871347961">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Rattle_stop" ID="{BF1CB0F8-5E4C-4B3F-9080-E9810E98B906}" ShortID="83709268">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{E0A81EC6-BE89-4CA6-9082-9DF7F8C1D27F}" ShortID="760808332" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
+														<Property Name="GainBand2" Type="Real32" Value="-24"/>
+														<Property Name="GainBand3" Type="Real32" Value="-24"/>
+														<Property Name="OutputLevel" Type="Real32" Value="2"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="rattle0" ID="{AA96A8FD-FAE6-4A19-8AFF-C6FFC55A73C8}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.159435508494241"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.48806474594627"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="12.8079858490374"/>
+												<Property Name="TrimEnd" Type="Real64" Value="14.2960505949837"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>rattle0.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="rattle0" ID="{AA96A8FD-FAE6-4A19-8AFF-C6FFC55A73C8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Rattle_start" ID="{13BC404D-BC72-4C73-A017-9C6D54D5747B}" ShortID="746511869">
+									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -61665,14 +62090,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="toc_01" ID="{4B62E77A-D06B-4410-86CB-EFCB6A29F5D0}" ShortID="947692867">
+										<Sound Name="Rattle_start" ID="{019366D5-3A19-43D0-BE67-B6CC45C035FD}" ShortID="124663075">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 												</Reference>
 												<Reference Name="Effect0">
 													<Custom>
-														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{462B7521-D86B-4A05-A4D4-4871352C271B}" ShortID="49550305" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{E8F4F02C-7ECD-405B-8433-04C7A57A4014}" ShortID="652056986" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 															<PropertyList>
 																<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
 																<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
@@ -61689,30 +62114,34 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="toc_01" ID="{D66D5B06-7424-4CAB-8072-195E2EA6C07D}">
+												<AudioFileSource Name="rattle0" ID="{001EF0B5-3BF8-44A0-9373-93C2874E3663}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.372016186486579"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.25"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.558024279729845"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.43491957644819"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>toc_01.wav</AudioFile>
+													<AudioFile>rattle0.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="toc_01" ID="{D66D5B06-7424-4CAB-8072-195E2EA6C07D}" Platform="Linked"/>
+												<ActiveSource Name="rattle0" ID="{001EF0B5-3BF8-44A0-9373-93C2874E3663}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="toc_02" ID="{669CA319-23D6-4A02-AD4A-87C8127ACB18}" ShortID="524164928">
+										<BlendContainer Name="Rattles" ID="{47825C53-B2B6-457B-BCF7-52383FBBC223}" ShortID="210520604">
+											<PropertyList>
+												<Property Name="BlendBehavior" Type="int16" Value="1"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 												</Reference>
 												<Reference Name="Effect0">
 													<Custom>
-														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{54AA9080-D380-4E7F-9CF7-55262851FE68}" ShortID="591265819" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{6819F1C4-B4B5-4E7E-93F6-A16F3E374246}" ShortID="835782941" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 															<PropertyList>
 																<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
 																<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
@@ -61729,256 +62158,187 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="toc_01" ID="{096849E8-CE75-406D-B620-8C7B544969DA}">
+												<Sound Name="rattle1" ID="{23FBC4E1-7F2A-4747-B068-750EE1A4F5B2}" ShortID="370224690">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.25"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.5"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>toc_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="toc_01" ID="{096849E8-CE75-406D-B620-8C7B544969DA}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="toc_03" ID="{485F4C0A-B318-4556-885E-D4DDE3019E5F}" ShortID="177195701">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-												</Reference>
-												<Reference Name="Effect0">
-													<Custom>
-														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{3412E02B-D139-4522-9BFD-ED9AD33AE2EE}" ShortID="962449599" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{DDE1A42C-ED65-49C5-B8C9-BF1F106BEA76}" ShortID="490989700" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<PropertyList>
+																		<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
+																		<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
+																		<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																		<Property Name="GainBand3" Type="Real32" Value="-24"/>
+																		<Property Name="OutputLevel" Type="Real32" Value="2"/>
+																		<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="rattle1" ID="{AE244567-6F72-4B3C-B222-E0D974C63AA1}">
 															<PropertyList>
-																<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
-																<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
-																<Property Name="GainBand2" Type="Real32" Value="-24"/>
-																<Property Name="GainBand3" Type="Real32" Value="-24"/>
-																<Property Name="OutputLevel" Type="Real32" Value="2"/>
-																<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.152242862435219"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.152242862435219"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 															</PropertyList>
-														</Effect>
-													</Custom>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="toc_01" ID="{D7CB0BCA-99CC-41C9-A415-439E2AAEFAC6}">
+															<Language>SFX</Language>
+															<AudioFile>rattle1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="rattle1" ID="{AE244567-6F72-4B3C-B222-E0D974C63AA1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="rattle0" ID="{3E00914F-20E4-4A48-A3BE-8A09C9E23B74}" ShortID="382349211">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.5"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.75"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>toc_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="toc_01" ID="{D7CB0BCA-99CC-41C9-A415-439E2AAEFAC6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="toc_04" ID="{8116B53B-191F-4E03-91CC-3DD55A1069A5}" ShortID="843711621">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-												</Reference>
-												<Reference Name="Effect0">
-													<Custom>
-														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{8532FA96-BF36-4A6F-BA55-D28BCDC9C384}" ShortID="17351022" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{7B46E170-05AE-4707-99E8-6B49B3E75A89}" ShortID="418164925" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<PropertyList>
+																		<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
+																		<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
+																		<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																		<Property Name="GainBand3" Type="Real32" Value="-24"/>
+																		<Property Name="OutputLevel" Type="Real32" Value="2"/>
+																		<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="rattle0" ID="{7D35CB1F-A116-4575-8D3F-AEC27102BEBC}">
 															<PropertyList>
-																<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
-																<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
-																<Property Name="GainBand2" Type="Real32" Value="-24"/>
-																<Property Name="GainBand3" Type="Real32" Value="-24"/>
-																<Property Name="OutputLevel" Type="Real32" Value="2"/>
-																<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																<Property Name="LoopBegin" Type="Real64" Value="1.40834699169913"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.40834699169913"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 															</PropertyList>
-														</Effect>
-													</Custom>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="toc_01" ID="{61222969-A3B8-4AF4-BD0D-FCC8561C3131}">
+															<Language>SFX</Language>
+															<AudioFile>rattle0.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="rattle0" ID="{7D35CB1F-A116-4575-8D3F-AEC27102BEBC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="rattle2" ID="{31F052AF-925F-42FA-91B0-DB022CBDA42D}" ShortID="957974706">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.75"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>toc_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="toc_01" ID="{61222969-A3B8-4AF4-BD0D-FCC8561C3131}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="toc_05" ID="{0DD049A8-56A9-49D7-9C6A-24AFC7E34090}" ShortID="690147220">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-												</Reference>
-												<Reference Name="Effect0">
-													<Custom>
-														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{9780A112-5DE0-47C1-8823-482E6773620C}" ShortID="1068307718" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{7DA2D2D5-4B71-4FD3-9BD5-8C5F76D6E603}" ShortID="238606919" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																	<PropertyList>
+																		<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
+																		<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
+																		<Property Name="GainBand2" Type="Real32" Value="-24"/>
+																		<Property Name="GainBand3" Type="Real32" Value="-24"/>
+																		<Property Name="OutputLevel" Type="Real32" Value="2"/>
+																		<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="rattle2" ID="{E4C8268B-C930-4799-A5A2-87B456320207}">
 															<PropertyList>
-																<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
-																<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
-																<Property Name="GainBand2" Type="Real32" Value="-24"/>
-																<Property Name="GainBand3" Type="Real32" Value="-24"/>
-																<Property Name="OutputLevel" Type="Real32" Value="2"/>
-																<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.32001856397854"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 															</PropertyList>
-														</Effect>
-													</Custom>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="toc_01" ID="{54167DD6-FE19-4F72-A869-87753F99C26B}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.25"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>toc_01.wav</AudioFile>
-												</AudioFileSource>
+															<Language>SFX</Language>
+															<AudioFile>rattle2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="rattle2" ID="{E4C8268B-C930-4799-A5A2-87B456320207}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="toc_01" ID="{54167DD6-FE19-4F72-A869-87753F99C26B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="toc_06" ID="{4EA2F509-1A6E-4820-A92C-0A92DF805DA6}" ShortID="358952821">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-												</Reference>
-												<Reference Name="Effect0">
-													<Custom>
-														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{2B2D45B0-C04D-471E-AACA-043A811DBDC8}" ShortID="521792078" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-															<PropertyList>
-																<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
-																<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
-																<Property Name="GainBand2" Type="Real32" Value="-24"/>
-																<Property Name="GainBand3" Type="Real32" Value="-24"/>
-																<Property Name="OutputLevel" Type="Real32" Value="2"/>
-																<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
-															</PropertyList>
-														</Effect>
-													</Custom>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="toc_01" ID="{DF853E7F-11EF-4B13-AAE8-84AB4866705C}">
+											<BlendTrackList>
+												<BlendTrack Name="New Blend Track" ID="{1922D61D-FCAD-4790-804E-1BD542C9CBB4}" ShortID="764575224">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.25"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.5"/>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>toc_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="toc_01" ID="{DF853E7F-11EF-4B13-AAE8-84AB4866705C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="toc_07" ID="{CFB69015-BFEB-4D21-9915-D8A494FCCD25}" ShortID="1054866540">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-												</Reference>
-												<Reference Name="Effect0">
-													<Custom>
-														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{2F82D410-627E-4617-80F1-E5F9A5E9842F}" ShortID="729417531" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-															<PropertyList>
-																<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
-																<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
-																<Property Name="GainBand2" Type="Real32" Value="-24"/>
-																<Property Name="GainBand3" Type="Real32" Value="-24"/>
-																<Property Name="OutputLevel" Type="Real32" Value="2"/>
-																<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
-															</PropertyList>
-														</Effect>
-													</Custom>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="toc_01" ID="{93B9F0B6-20D2-4270-8A85-E2209212C54A}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.5"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.75"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>toc_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="toc_01" ID="{93B9F0B6-20D2-4270-8A85-E2209212C54A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="toc_08" ID="{0FF2CEFC-C2D4-4C36-887F-5D403F3E43CC}" ShortID="265167791">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-												</Reference>
-												<Reference Name="Effect0">
-													<Custom>
-														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{11428EBA-71D5-4E85-91AA-71047C0787D1}" ShortID="614198366" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-															<PropertyList>
-																<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
-																<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
-																<Property Name="GainBand2" Type="Real32" Value="-24"/>
-																<Property Name="GainBand3" Type="Real32" Value="-24"/>
-																<Property Name="OutputLevel" Type="Real32" Value="2"/>
-																<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
-															</PropertyList>
-														</Effect>
-													</Custom>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="toc_01" ID="{9D8581DD-C510-4DB9-B9FC-903F91D780A5}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.75"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>toc_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="toc_01" ID="{9D8581DD-C510-4DB9-B9FC-903F91D780A5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="RATTLE_INTENSITY" ID="{7EDCAA1F-03DC-48F8-BEA9-92C8082945ED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+														</Reference>
+													</ReferenceList>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="rattle0" ID="{3E00914F-20E4-4A48-A3BE-8A09C9E23B74}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>33.2024432809773</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="rattle1" ID="{23FBC4E1-7F2A-4747-B068-750EE1A4F5B2}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>16.5794066317627</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>72.9493891797558</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="rattle2" ID="{31F052AF-925F-42FA-91B0-DB022CBDA42D}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>52.6614310645724</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
+																<RightEdgePos>100</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
 									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="Rattle_start" ID="{019366D5-3A19-43D0-BE67-B6CC45C035FD}"/>
+										<ItemRef Name="Rattles" ID="{47825C53-B2B6-457B-BCF7-52383FBBC223}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
