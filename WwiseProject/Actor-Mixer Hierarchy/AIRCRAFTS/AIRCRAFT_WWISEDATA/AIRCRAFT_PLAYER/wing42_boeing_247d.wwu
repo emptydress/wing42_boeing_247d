@@ -1395,8 +1395,18 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-18</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0695C6C4-A533-47BD-ACC1-BB2E758E9AF7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-9"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1431,8 +1441,8 @@
 													<Modifier Name="" ID="{55756DD7-50C1-440A-8F94-55EED43B87BA}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="10"/>
-															<Property Name="Min" Type="Real64" Value="-10"/>
+															<Property Name="Max" Type="Real64" Value="20"/>
+															<Property Name="Min" Type="Real64" Value="-40"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1440,8 +1450,18 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-16</Value>
+												<Value>-22</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{43403EA8-1A87-42F4-B8D0-6D9E4FF7292E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-9"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1516,6 +1536,11 @@
 								</Sound>
 								<Sound Name="medium-hollow" ID="{F0D6BB7E-A86C-437D-9A0F-FA1076BBC1B8}" ShortID="1064278544">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>39</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1523,7 +1548,7 @@
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="10"/>
-															<Property Name="Min" Type="Real64" Value="-10"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1533,6 +1558,16 @@
 											<ValueList>
 												<Value>-23</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9038B644-36F2-45F1-8146-820BACE07CB8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-9"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1567,8 +1602,8 @@
 													<Modifier Name="" ID="{F1851473-65E0-4CFE-A85A-14FA383AE70A}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="10"/>
-															<Property Name="Min" Type="Real64" Value="-10"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-30"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1576,8 +1611,18 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>-6</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BCFEE4E6-A198-49A9-B47C-048D70DEC5B3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-8"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1621,8 +1666,18 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-18</Value>
+												<Value>-23</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BAC51C06-5C22-4AFF-8C8F-2C762AA346CE}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-7"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1651,6 +1706,11 @@
 								</Sound>
 								<Sound Name="FALSE_HORIZON" ID="{4D12CD9A-AFE4-4E5C-94DF-3B21BC58611C}" ShortID="191442556">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1666,8 +1726,18 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-14</Value>
+												<Value>-17</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5D2B732F-5752-4CAE-80F3-0DD065700DE5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-7"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1702,8 +1772,7 @@
 													<Modifier Name="" ID="{6581EF7C-82B8-4007-AE14-8AE3CAF1CCDA}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="10"/>
-															<Property Name="Min" Type="Real64" Value="-10"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1711,8 +1780,18 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-14</Value>
+												<Value>-18</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F70A9F94-0A45-43BC-B9E1-3D7EAFB634BB}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-9"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1792,8 +1871,8 @@
 													<Modifier Name="" ID="{C4BD4A26-6142-482C-9548-D8E95B5FAE2E}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="10"/>
-															<Property Name="Min" Type="Real64" Value="-10"/>
+															<Property Name="Max" Type="Real64" Value="20"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1803,6 +1882,16 @@
 											<ValueList>
 												<Value>-11</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{05A25611-7FA7-46FE-89A4-A1A453CE9E52}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-8"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1846,8 +1935,18 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-14</Value>
+												<Value>-19</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{632326F1-67BB-4223-9263-3B739237FC91}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-9"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1876,14 +1975,21 @@
 								</Sound>
 								<Sound Name="DIRECTIONAL_GYRO" ID="{6AEEFF7C-7479-4A86-BD40-3103CB36F6E5}" ShortID="896813414">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>43</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-50</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{512BAF52-90FD-46D4-ACC3-E2EF2A83F10B}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="10"/>
-															<Property Name="Min" Type="Real64" Value="-10"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1891,8 +1997,18 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-14</Value>
+												<Value>-17</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C9E8B46B-0A41-488C-B4D6-F211E43B75AF}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1998,7 +2114,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3440,7 +3556,20 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Switches" ID="{AB8A4254-A268-4FE7-9D35-4796E76B9A7E}" ShortID="124470603">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 								</Reference>
@@ -5164,7 +5293,20 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Gyroscope" ID="{C6C4C031-6170-41FB-A94B-CC25B256B3CB}" ShortID="470747445">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{153A9F72-EB4B-4970-A09D-FDD7BDA8F3CB}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 								</Reference>
@@ -5187,7 +5329,78 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="gyro0" ID="{87AC8819-97FD-4645-9303-99F19F93EF20}" ShortID="653669601">
+								<Sound Name="gyro_ah" ID="{87AC8819-97FD-4645-9303-99F19F93EF20}" ShortID="653669601">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{EB30D8E9-99CF-45C9-A766-770EFF8C2F97}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+															<Property Name="Min" Type="Real64" Value="-30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{D2919C61-F89A-43F8-9401-CFF6FEBC8140}" ShortID="161227321">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="VAC_AH_RPM" ID="{CB207AC3-956B-4367-A952-88CC06B8F77A}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{079BFA10-6A53-40DF-A09E-DEDA7F162284}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-247</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>25000</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{B5870271-249F-4ED8-973E-95725C7A7844}" ShortID="17080094">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="VAC_AH_RPM" ID="{CB207AC3-956B-4367-A952-88CC06B8F77A}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{78E17F18-FE8E-4021-8756-EFBA4C69AC2C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>25000</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -5210,6 +5423,198 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="gyro0" ID="{B8E412F9-4FA2-401D-96AF-7775439F8942}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="gyro_dg" ID="{0087EF0C-4C2B-41C9-AB37-C1723C1836EF}" ShortID="81807270">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3B6F3DC3-FCA6-4065-A1D1-1B0C3779CB59}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+															<Property Name="Min" Type="Real64" Value="-30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{4EDF0C35-8044-4574-9810-DD0094363E6D}" ShortID="209177332">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="VAC_DG_RPM" ID="{E95CC87E-D57A-461D-871D-3FD219C4BB5F}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{5BE908B3-BB35-4398-B684-6D56B4E0866A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-247</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>25000</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{56327AF2-5747-4617-BE15-04349FB5FFDF}" ShortID="492172568">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="VAC_DG_RPM" ID="{E95CC87E-D57A-461D-871D-3FD219C4BB5F}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{87852844-9023-4C5B-AD81-6040F615A254}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>25000</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="gyro0" ID="{79E28CA8-2EAB-4322-9D65-2E196A82A6B8}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gyro0.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="gyro0" ID="{79E28CA8-2EAB-4322-9D65-2E196A82A6B8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="gyro_dg_01" ID="{E14C6F30-B0FA-43CF-BB69-E88709943F7F}" ShortID="204864481">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3D9164F2-AF8C-44EF-956A-2C2B29B17C34}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+															<Property Name="Min" Type="Real64" Value="-30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{7B8FDF88-C1C8-4D75-95DD-60D5E683D308}" ShortID="1071584083">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="VAC_TB_RPM" ID="{6930A7B6-FDC5-461F-A66C-5966BFC2C417}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{74630590-CD5F-4701-9623-18F7956F1B1F}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-247</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>15000</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{47ACB635-BDAD-4100-AFAC-5E45F9FF7A4D}" ShortID="990540872">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="VAC_TB_RPM" ID="{6930A7B6-FDC5-461F-A66C-5966BFC2C417}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{1A70983A-CC44-449A-A5A9-F1AA6065DBCB}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>15000</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="gyro0" ID="{D6D0A438-1B75-4106-A478-DD5AD955410D}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gyro0.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="gyro0" ID="{D6D0A438-1B75-4106-A478-DD5AD955410D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -5309,7 +5714,7 @@
 											<ChildrenList>
 												<BlendContainer Name="Engine2_combustion-inside" ID="{E276CD50-1658-418E-9BD8-757318C11EA1}" ShortID="865835884">
 													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="BlendBehavior" Type="int16" Value="1"/>
 														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 														<Property Name="Highpass" Type="int16">
@@ -5349,44 +5754,32 @@
 														</Property>
 														<Property Name="Lowpass" Type="int16">
 															<RTPCList>
-																<RTPC Name="" ID="{8492D0FA-5D6D-4896-93F7-6212798D3E26}" ShortID="665485458">
+																<RTPC Name="" ID="{06EEB40D-BA2D-4EB8-B9CA-990A925433AC}" ShortID="463222386">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="WINDOW_2" ID="{0ADBA7D9-8A03-40E3-A931-434852C8F66E}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{C1E18CFE-DC4C-48F4-A74B-59311F73D888}">
+																	<Curve Name="" ID="{1024638D-92FF-4DD0-A13F-BC867B25952A}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="65537"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>56</YPos>
+																				<YPos>49</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>10.67492</XPos>
-																				<YPos>49</YPos>
+																				<XPos>3.91608</XPos>
+																				<YPos>43</YPos>
 																				<Flags>0</Flags>
-																				<SegmentShape>Log1</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>20.61688</XPos>
-																				<YPos>44</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>75.74893</XPos>
-																				<YPos>36</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
+																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
-																				<YPos>6</YPos>
+																				<YPos>20</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -13090,7 +13483,7 @@
 												</BlendContainer>
 												<BlendContainer Name="Engine2_combustion-outside" ID="{D056C73B-C0FC-4C34-8186-3ADE36B34125}" ShortID="117218595">
 													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="BlendBehavior" Type="int16" Value="1"/>
 														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 														<Property Name="Lowpass" Type="int16">
@@ -13225,7 +13618,6 @@
 																</RTPC>
 															</RTPCList>
 														</Property>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
 														<Property Name="UseMaxSoundPerInstance" Type="bool">
 															<ValueList>
 																<Value>True</Value>
@@ -20912,7 +21304,7 @@
 											<ChildrenList>
 												<BlendContainer Name="Engine1_combustion-inside" ID="{A40CAB8A-33B4-446D-858D-6B6DFB8384E1}" ShortID="1009881521">
 													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="BlendBehavior" Type="int16" Value="1"/>
 														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 														<Property Name="Highpass" Type="int16">
@@ -20965,31 +21357,19 @@
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>56</YPos>
+																				<YPos>49</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>10.67492</XPos>
-																				<YPos>49</YPos>
+																				<XPos>3.91608</XPos>
+																				<YPos>43</YPos>
 																				<Flags>0</Flags>
-																				<SegmentShape>Log1</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>20.61688</XPos>
-																				<YPos>44</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>75.74893</XPos>
-																				<YPos>36</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
+																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
-																				<YPos>6</YPos>
+																				<YPos>20</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -28688,7 +29068,7 @@
 												</BlendContainer>
 												<BlendContainer Name="Engine1_combustion-outside" ID="{F7720743-3603-4C32-88C6-5198C32933EF}" ShortID="584626676">
 													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="BlendBehavior" Type="int16" Value="1"/>
 														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 														<Property Name="Lowpass" Type="int16">
@@ -28823,7 +29203,6 @@
 																</RTPC>
 															</RTPCList>
 														</Property>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
 														<Property Name="UseMaxSoundPerInstance" Type="bool">
 															<ValueList>
 																<Value>True</Value>
@@ -36476,6 +36855,11 @@
 												<Value>24</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -36576,6 +36960,9 @@
 															</RTPCList>
 														</Property>
 														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{25C12195-C915-4139-9DD7-C07FBBF9A336}" ShortID="390809487">
 																	<ReferenceList>
@@ -36769,7 +37156,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-3</Value>
+																<Value>-5</Value>
 															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{394F837D-4481-4896-A98B-7564E5FA7627}" ShortID="742420009">
@@ -36996,6 +37383,9 @@
 															</RTPCList>
 														</Property>
 														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{C7B0547F-FE9D-43E0-84E5-9C8B13D07085}" ShortID="54210684">
 																	<ReferenceList>
@@ -37189,7 +37579,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-3</Value>
+																<Value>-5</Value>
 															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{FBA5FE34-7AB3-49B2-953A-6C2E41E2EC0F}" ShortID="520092350">
@@ -61295,11 +61685,13 @@
 						</ActorMixer>
 						<ActorMixer Name="Captain_controls" ID="{39C9BEC6-EA17-44EF-9C2E-450D0274E935}" ShortID="424181483">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="aircraft_player_inside_3m_spread100" ID="{023C370B-520E-4E03-AC0C-96158D8C267D}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+									<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -61351,30 +61743,6 @@
 										<Reference Name="Effect0">
 											<Custom>
 												<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{39710D4D-DE6F-4862-993E-6E7E01540012}" ShortID="656691802" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-													<PropertyList>
-														<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
-														<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
-														<Property Name="GainBand2" Type="Real32" Value="-24"/>
-														<Property Name="GainBand3" Type="Real32" Value="-24"/>
-														<Property Name="OutputLevel" Type="Real32" Value="2"/>
-														<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
-													</PropertyList>
-												</Effect>
-											</Custom>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-										</Reference>
-									</ReferenceList>
-								</Sound>
-								<Sound Name="Primer_handle" ID="{DD4BD1FC-4E25-41A8-AFC1-F00016B06F3E}" ShortID="1071879917">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-										</Reference>
-										<Reference Name="Effect0">
-											<Custom>
-												<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{2A8D0432-F402-49C8-B58C-757D99802355}" ShortID="790714892" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 													<PropertyList>
 														<Property Name="FrequencyBand2" Type="Real32" Value="12000"/>
 														<Property Name="FrequencyBand3" Type="Real32" Value="5500"/>
@@ -61459,11 +61827,269 @@
 										</Reference>
 									</ReferenceList>
 								</Sound>
+								<ActorMixer Name="Parking_brake" ID="{1373DA55-BBB2-45E9-A158-9CABA1BE7190}" ShortID="176129924">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CAD25A78-AEED-4D6E-89DE-59D3DA122087}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="lever_parking_brake_up" ID="{05553748-1847-4C0A-8CD4-DA1232F3D95F}" ShortID="248512830">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="lever_parking_brake" ID="{3AC714BC-1E02-4A71-AEA5-E2F65A880AED}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0688701563435069"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0607677850089767"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.303838925044883"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.21535570017953"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>lever_parking_brake.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="lever_parking_brake" ID="{3AC714BC-1E02-4A71-AEA5-E2F65A880AED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="lever_parking_brake_0" ID="{27EDD1B9-3929-4376-84DC-4F31078E455F}" ShortID="417022305">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{75BB6A19-F37B-4833-9576-C302BF004237}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="lever_parking_brake_0" ID="{11D1349D-6074-4CCB-BC3E-CFE472432357}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>lever_parking_brake_0.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="lever_parking_brake_0" ID="{11D1349D-6074-4CCB-BC3E-CFE472432357}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="lever_parking_brake_100" ID="{132B5526-1006-46E2-A626-A174B5B452E2}" ShortID="83850759">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="lever_parking_brake_100" ID="{1A476838-F869-45E8-9D7B-6A77D62C6621}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>lever_parking_brake_100.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="lever_parking_brake_100" ID="{1A476838-F869-45E8-9D7B-6A77D62C6621}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="lever_parking_brake_down" ID="{90CA88B0-BB33-4544-95C2-3BB30B64D859}" ShortID="157999965">
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m_spread100" ID="{023C370B-520E-4E03-AC0C-96158D8C267D}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="lever_parking_brake" ID="{EC92DE23-C589-48A5-A4D9-F71833975AFA}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0688701563435069"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0607677850089767"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.4746315828845"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>lever_parking_brake.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="lever_parking_brake" ID="{EC92DE23-C589-48A5-A4D9-F71833975AFA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<Sound Name="Primer_handle" ID="{4E75F907-0EBE-444A-BDC3-B232C67C66F2}" ShortID="1002627345">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{C42B21A8-0939-427B-8DFB-07F727EF8A18}" ShortID="1000883269">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="PRIMER_HANDLE_acceleration_PITCH_CONTROLLER" ID="{050267AA-EE5F-4AEA-91DD-D9F239CC8B92}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{C529EFE2-58E3-446E-99CB-E0646476A8FC}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-80</XPos>
+																<YPos>100</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-300</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>80</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{061442C9-34DF-48B3-BCC6-ADB87C1A38B1}" ShortID="71845864">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="PRIMER_HANDLE_derived_VOLUME_CONTROLLER" ID="{1BE0E2B8-5CC5-4077-82C8-00EB7BCF1936}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{879C2CA2-CCC9-46E0-806E-63A67BBE494F}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-80</XPos>
+																<YPos>-18</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>80</XPos>
+																<YPos>-18</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="lever_fuel_loop" ID="{DCD0D3B4-A5B1-46E9-A0F8-34B3875D74F0}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>24</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>lever_fuel_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="lever_fuel_loop" ID="{DCD0D3B4-A5B1-46E9-A0F8-34B3875D74F0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Ashtrays" ID="{D4953A95-D695-46DE-B204-C0DD0262D949}" ShortID="891051267">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
 										<ModifierInfo>
@@ -61504,9 +62130,6 @@
 											</ModifierList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{A2596641-23B2-4A9B-AA05-1A1727E824D9}">
@@ -61563,7 +62186,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>3</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -61622,7 +62245,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-14</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -62022,7 +62645,15 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Rattles" ID="{2AC5F0E9-B67D-4E24-AA16-9163644EFF4B}" ShortID="871347961">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
 								</Reference>

@@ -555,21 +555,37 @@
 					<ChildrenList>
 						<GameParameter Name="PRIMER_HANDLE_derived_VOLUME_CONTROLLER" ID="{1BE0E2B8-5CC5-4077-82C8-00EB7BCF1936}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.5"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="1"/>
-								<Property Name="Min" Type="Real64" Value="-1"/>
+								<Property Name="Max" Type="Real64" Value="80"/>
+								<Property Name="Min" Type="Real64" Value="-80"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="PRIMER_HANDLE_acceleration_PITCH_CONTROLLER" ID="{050267AA-EE5F-4AEA-91DD-D9F239CC8B92}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="0.2"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.5"/>
 								<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
-								<Property Name="Max" Type="Real64" Value="1"/>
-								<Property Name="Min" Type="Real64" Value="-1"/>
+								<Property Name="Max" Type="Real64" Value="80"/>
+								<Property Name="Min" Type="Real64" Value="-80"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+								<Property Name="SlewRateDown" Type="Real64" Value="0.1"/>
+								<Property Name="SlewRateUp" Type="Real64" Value="0.1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="LEVER_PARKING_BRAKE_derived_VOLUME_CONTROLLER" ID="{E0622996-BF9D-4767-979C-A6F483F05540}">
+							<PropertyList>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.5"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="LEVER_PARKING_BRAKE_acceleration_PITCH_CONTROLLER" ID="{CEFBB146-1B42-4682-8CE2-66D6F1E80A40}">
+							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.5"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Min" Type="Real64" Value="-100"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 								<Property Name="SlewRateDown" Type="Real64" Value="0.1"/>
 								<Property Name="SlewRateUp" Type="Real64" Value="0.1"/>
@@ -590,8 +606,8 @@
 						</GameParameter>
 						<GameParameter Name="VENT_1_derived_VOLUME_CONTROLLER" ID="{2284E218-C234-4606-93A9-A72FF068CA9F}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="2"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.5"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Min" Type="Real64" Value="-100"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
@@ -750,115 +766,115 @@
 								<GameParameter Name="FUSE_NAV_LIGHT" ID="{82DBCF3D-A4BE-4D09-9CEC-9EC84EB216D2}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_LEFT_LANDING_LIGHT" ID="{5F03997F-4B5D-42D6-92B2-A398C2FFCBDB}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_RIGHT_LANDING_LIGHT" ID="{7CB93657-A278-4B64-8640-482187591F83}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_COURTESY_LIGHT" ID="{EDFBCAFD-0887-4529-8E96-FE0A70F83509}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_ENG_INSTR_LIGHT" ID="{E8F9EC2B-FEF7-425E-B445-BFAE461EE0E0}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_NAV_INSTR_LIGHT" ID="{9BA22CEA-983B-4D23-B81E-4355ACD4FF34}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_MAP_LIGHT" ID="{27B5F196-6B2F-4905-AF13-BB86F05CD909}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_COMPASS_LIGHT" ID="{29A41DF4-0F9E-4CAE-9524-EEFB8C687D14}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_GEAR_MOTOR" ID="{A845D8DC-7B75-4330-B08A-A293579E62CA}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_PITOT_HEAT" ID="{8355C0C3-43E2-4DFE-88F6-A20F0F299149}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_FEATHERING_PUMPS" ID="{A9E084C0-A554-4E0B-9D50-8A09B3D2C5DD}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_GEAR_WARNING" ID="{446BF3E5-30AD-4FBD-B149-1EA4B6A2A8D2}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_CABIN_SIGNS" ID="{37A12A62-8998-4E9F-95DF-2BC4AB0F71F6}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_DOME_LIGHT" ID="{908DC3C8-C83F-4554-9070-8BC19BC0CE37}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_STEWARDESS_LIGHTS" ID="{AEAC1642-0446-425D-8022-F695CFD5F807}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_READING_LIGHTS" ID="{F954559F-6F35-430B-ADEE-65C0A78FB52A}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_GENERATOR" ID="{7794887A-1FD4-44B6-B2DC-28EF15F3805E}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_EMPTY_1" ID="{059C189B-70F0-4D41-97A4-C631EF2761EA}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_EMPTY_2" ID="{2FA30AAD-8916-4742-8139-A003E3F79B0E}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 								<GameParameter Name="FUSE_EMPTY_3" ID="{4C8E9F83-DFCA-44F7-A49F-FC7A8056B908}">
@@ -870,7 +886,7 @@
 								<GameParameter Name="FUSE_EMPTY_4" ID="{1514ACB4-9508-4D70-83D8-16288327078E}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="1"/>
+										<Property Name="Max" Type="Real64" Value="2"/>
 									</PropertyList>
 								</GameParameter>
 							</ChildrenList>

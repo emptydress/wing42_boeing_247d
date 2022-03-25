@@ -5082,11 +5082,11 @@
 													<XPos>0</XPos>
 													<YPos>0</YPos>
 													<Flags>5</Flags>
-													<SegmentShape>Exp3</SegmentShape>
+													<SegmentShape>Exp1</SegmentShape>
 												</Point>
 												<Point>
 													<XPos>3</XPos>
-													<YPos>0</YPos>
+													<YPos>-11.62419</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>
@@ -5422,13 +5422,13 @@
 											<PointList>
 												<Point>
 													<XPos>0</XPos>
-													<YPos>0</YPos>
+													<YPos>-0</YPos>
 													<Flags>5</Flags>
-													<SegmentShape>Exp3</SegmentShape>
+													<SegmentShape>Log3</SegmentShape>
 												</Point>
 												<Point>
 													<XPos>3</XPos>
-													<YPos>0</YPos>
+													<YPos>-12.99334</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>
