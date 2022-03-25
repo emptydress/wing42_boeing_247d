@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<Project Version="7" InfoFilePath="GeneratedSoundBanks\Windows\SoundbanksInfo.xml" OutputDirectory="E:\Zak\Boeing 247d\Otmar releases\1-03_12_22-v.0.7.6\PackageSources\SimObjects\Airplanes\wing42-boeing-247d\sound">
+<Project Version="7" InfoFilePath="GeneratedSoundBanks\Windows\SoundbanksInfo.xml" OutputDirectory="E:\Zak\Boeing_247d\Otmar_releases\1-Wing42-Boeing-247D-v.0.9.1\PackageSources\SimObjects\Airplanes\wing42-boeing-247d\sound">
   <ManualPackagingInfo BlockSize="1" UnassignedBanksPackageId="00000000-0000-0000-0000-000000000000" UnassignedStreamsPackageId="00000000-0000-0000-0000-000000000000" UnassignedExternalsPackageId="00000000-0000-0000-0000-000000000000" UnassignedLooseMediaPackageId="00000000-0000-0000-0000-000000000000">
     <Packages>
       <Package Id="4a0c26fa-17a2-4398-ad10-882f41b7ecd4" Name="wing42_boeing_247d.PC.PCK">
