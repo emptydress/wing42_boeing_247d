@@ -322,15 +322,13 @@
 														<ModifierInfo>
 															<Modifier Name="" ID="{6DEF55D9-25B8-427B-A915-9BEB45B941A4}">
 																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="3600"/>
-																	<Property Name="Min" Type="Real64" Value="-3600"/>
+																	<Property Name="Max" Type="Real64" Value="49.99"/>
+																	<Property Name="Min" Type="Real64" Value="-49.99"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
-												<Property Name="SeekType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">

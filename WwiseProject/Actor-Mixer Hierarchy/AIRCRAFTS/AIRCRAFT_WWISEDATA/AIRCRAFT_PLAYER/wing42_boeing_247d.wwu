@@ -2801,11 +2801,6 @@
 								<ActorMixer Name="Wobble_pump" ID="{20F36F7F-AB3C-4EB5-ACD9-46E5F698DFFF}" ShortID="253121102">
 									<PropertyList>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>12</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
