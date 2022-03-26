@@ -14,6 +14,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Vents" ID="{2D713224-CC1F-4D9B-9BB1-6C6A6F295875}" ShortID="474283146">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -56,13 +63,13 @@
 																		<XPos>-100</XPos>
 																		<YPos>100</YPos>
 																		<Flags>5</Flags>
-																		<SegmentShape>Log3</SegmentShape>
+																		<SegmentShape>Exp3</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>0</XPos>
 																		<YPos>-300</YPos>
 																		<Flags>0</Flags>
-																		<SegmentShape>Exp3</SegmentShape>
+																		<SegmentShape>Log3</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
@@ -77,6 +84,9 @@
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
 													<RTPCList>
 														<RTPC Name="" ID="{E006A311-4B92-4826-A0E1-215275300C75}" ShortID="716090294">
 															<ReferenceList>
@@ -390,13 +400,13 @@
 																		<XPos>-100</XPos>
 																		<YPos>100</YPos>
 																		<Flags>5</Flags>
-																		<SegmentShape>Log3</SegmentShape>
+																		<SegmentShape>Exp3</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>0</XPos>
 																		<YPos>-300</YPos>
 																		<Flags>0</Flags>
-																		<SegmentShape>Exp3</SegmentShape>
+																		<SegmentShape>Log3</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
@@ -411,6 +421,9 @@
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
 													<RTPCList>
 														<RTPC Name="" ID="{F7D651FF-698F-43BF-9978-C27EAED885E6}" ShortID="70578247">
 															<ReferenceList>
@@ -708,6 +721,9 @@
 										<RandomSequenceContainer Name="Vent_squeak_03" ID="{B1875054-9466-4F3F-A02B-0AD8AA68B019}" ShortID="728857112">
 											<PropertyList>
 												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>500</Value>
+													</ValueList>
 													<RTPCList>
 														<RTPC Name="" ID="{DEF39F33-4059-4147-9952-1CABCE7E5AF3}" ShortID="464773775">
 															<ReferenceList>
@@ -724,13 +740,13 @@
 																		<XPos>-100</XPos>
 																		<YPos>100</YPos>
 																		<Flags>5</Flags>
-																		<SegmentShape>Log3</SegmentShape>
+																		<SegmentShape>Exp3</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>0</XPos>
 																		<YPos>-300</YPos>
 																		<Flags>0</Flags>
-																		<SegmentShape>Exp3</SegmentShape>
+																		<SegmentShape>Log3</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
@@ -742,9 +758,21 @@
 														</RTPC>
 													</RTPCList>
 												</Property>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6A228564-1419-4DDD-97CD-AF723637B6CE}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
 													<RTPCList>
 														<RTPC Name="" ID="{1CD5C97A-3185-4AAB-859C-E81B00FD2780}" ShortID="56926380">
 															<ReferenceList>
@@ -789,96 +817,6 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="screech02" ID="{286665F9-493F-4007-A9DC-224D841D683C}" ShortID="1067887365">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="engine_screech02" ID="{A1BEAC8B-559E-4C61-AC8B-B3D0EBDFEC48}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech02.wav</AudioFile>
-														</AudioFileSource>
-														<AudioFileSource Name="engine_screech03" ID="{F49DA5E9-9BCA-4043-9BD4-5F11B2DD3C55}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech03.wav</AudioFile>
-														</AudioFileSource>
-														<AudioFileSource Name="engine_screech05" ID="{FB91105C-1589-498D-845C-E33F9141D09C}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech05.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="engine_screech02" ID="{A1BEAC8B-559E-4C61-AC8B-B3D0EBDFEC48}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="screech03" ID="{5480F9F1-B48F-49AF-9FF6-C2B9B3DE81A4}" ShortID="31446853">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="engine_screech02" ID="{69E14139-7D53-418F-9C30-B4EB6026B8C8}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech02.wav</AudioFile>
-														</AudioFileSource>
-														<AudioFileSource Name="engine_screech03" ID="{C038D74C-BCF4-40DA-A361-FA058217BCCD}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech03.wav</AudioFile>
-														</AudioFileSource>
-														<AudioFileSource Name="engine_screech05" ID="{F20744B9-2E06-48B7-AEFF-60D040F5F6E2}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech05.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="engine_screech03" ID="{C038D74C-BCF4-40DA-A361-FA058217BCCD}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
 												<Sound Name="screech05" ID="{3712EE82-3E91-4DDD-B6D9-AA74EFDDA3EB}" ShortID="580425811">
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -911,10 +849,12 @@
 														</AudioFileSource>
 														<AudioFileSource Name="engine_screech05" ID="{3BC93AC3-A02D-472B-9684-FC0A6804729E}">
 															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.196143215140634"/>
 																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.399688061041292"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>engine_screech05.wav</AudioFile>
@@ -1029,6 +969,11 @@
 									<PropertyList>
 										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1042,6 +987,9 @@
 										<RandomSequenceContainer Name="Vent_squeak_04" ID="{6EF8314B-DBF3-42CC-9970-058E38A87348}" ShortID="410509977">
 											<PropertyList>
 												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>500</Value>
+													</ValueList>
 													<RTPCList>
 														<RTPC Name="" ID="{6586EF36-1933-4F10-83FB-26F3A1827A78}" ShortID="250861228">
 															<ReferenceList>
@@ -1058,13 +1006,13 @@
 																		<XPos>-100</XPos>
 																		<YPos>100</YPos>
 																		<Flags>5</Flags>
-																		<SegmentShape>Log3</SegmentShape>
+																		<SegmentShape>Exp3</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>0</XPos>
 																		<YPos>-300</YPos>
 																		<Flags>0</Flags>
-																		<SegmentShape>Exp3</SegmentShape>
+																		<SegmentShape>Log3</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
@@ -1076,9 +1024,21 @@
 														</RTPC>
 													</RTPCList>
 												</Property>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5D56AB7D-0B65-4822-818B-1E7D2EF92F6B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
 													<RTPCList>
 														<RTPC Name="" ID="{7A0C0E08-C0D1-49AA-9A03-AD16E25ABCF6}" ShortID="762364820">
 															<ReferenceList>
@@ -1123,7 +1083,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="screech02" ID="{E858855A-A847-4238-82CD-008D825B3DA1}" ShortID="483126712">
+												<Sound Name="screech05" ID="{97676125-1EDC-48DD-96BF-3077272F194F}" ShortID="425784981">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -1133,129 +1093,21 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="engine_screech02" ID="{D0A56EC9-E60F-45E0-8A6A-3E74C8424341}">
+														<AudioFileSource Name="engine_screech05" ID="{871B0D08-5356-46CC-99DB-8E1E21F3CA79}">
 															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.196143215140634"/>
 																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech02.wav</AudioFile>
-														</AudioFileSource>
-														<AudioFileSource Name="engine_screech03" ID="{FEE52703-3199-4CF5-9DD7-F69C711A20DA}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech03.wav</AudioFile>
-														</AudioFileSource>
-														<AudioFileSource Name="engine_screech05" ID="{B8375121-E074-437E-8A3F-9552E984FF5C}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.399688061041292"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>engine_screech05.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="engine_screech02" ID="{D0A56EC9-E60F-45E0-8A6A-3E74C8424341}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="screech03" ID="{516D60A6-79C6-4B48-BD73-A8430448DD3C}" ShortID="827925746">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="engine_screech02" ID="{1BC43BD6-B8EF-4B9A-9956-3C737233DA76}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech02.wav</AudioFile>
-														</AudioFileSource>
-														<AudioFileSource Name="engine_screech03" ID="{7FCF5969-30D3-4EA7-B2F0-6914184F822F}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech03.wav</AudioFile>
-														</AudioFileSource>
-														<AudioFileSource Name="engine_screech05" ID="{1FC7FD36-ABA9-4171-B5DF-762D689BBAA8}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech05.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="engine_screech03" ID="{7FCF5969-30D3-4EA7-B2F0-6914184F822F}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="screech05" ID="{830BAB7A-4A02-4E2A-AB0C-21A46EE94598}" ShortID="897643714">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="engine_screech02" ID="{010FC2D9-CC5A-4C2F-8F78-44DBED010C1A}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech02.wav</AudioFile>
-														</AudioFileSource>
-														<AudioFileSource Name="engine_screech03" ID="{5FBE2F4E-0799-429C-A6FE-6743FE4F645F}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech03.wav</AudioFile>
-														</AudioFileSource>
-														<AudioFileSource Name="engine_screech05" ID="{89B4F334-F44C-4819-860A-CCB077201262}">
-															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>engine_screech05.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="engine_screech05" ID="{89B4F334-F44C-4819-860A-CCB077201262}" Platform="Linked"/>
+														<ActiveSource Name="engine_screech05" ID="{871B0D08-5356-46CC-99DB-8E1E21F3CA79}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -5521,7 +5373,7 @@
 										<ActiveSource Name="gyro0" ID="{79E28CA8-2EAB-4322-9D65-2E196A82A6B8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="gyro_dg_01" ID="{E14C6F30-B0FA-43CF-BB69-E88709943F7F}" ShortID="204864481">
+								<Sound Name="gyro_tb" ID="{E14C6F30-B0FA-43CF-BB69-E88709943F7F}" ShortID="204864481">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -5767,19 +5619,19 @@
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>49</YPos>
+																				<YPos>60</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>3.91608</XPos>
-																				<YPos>43</YPos>
+																				<YPos>54</YPos>
 																				<Flags>0</Flags>
 																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
-																				<YPos>20</YPos>
+																				<YPos>35</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -13624,6 +13476,9 @@
 															</ValueList>
 														</Property>
 														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{3993842C-EC1E-4E98-B8AB-B4EBE1BADAC1}" ShortID="354006268">
 																	<ReferenceList>
@@ -22137,7 +21992,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -22223,38 +22078,38 @@
 														</Property>
 														<Property Name="Lowpass" Type="int16">
 															<RTPCList>
-																<RTPC Name="" ID="{B5F3E29C-2AD9-4813-9C4C-FFE376389DF7}" ShortID="813380841">
+																<RTPC Name="" ID="{BB06CA51-F675-4C43-8528-4A2A67CE714E}" ShortID="362427987">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="WINDOW_1" ID="{96C44ACE-62AE-44D4-B92E-D68AB40EAA26}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{E8F50E76-D1CB-4520-B009-1AB170D78D77}">
+																	<Curve Name="" ID="{B37FE0AD-1FD6-4D95-9C04-C5AFABF9274B}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="65537"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>61</YPos>
+																				<YPos>60</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>10.38961</XPos>
-																				<YPos>51</YPos>
+																				<YPos>50</YPos>
 																				<Flags>0</Flags>
 																				<SegmentShape>Log1</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>20.61688</XPos>
-																				<YPos>42</YPos>
+																				<YPos>41</YPos>
 																				<Flags>0</Flags>
 																				<SegmentShape>SCurve</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
-																				<YPos>27</YPos>
+																				<YPos>35</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -22796,9 +22651,6 @@
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>4</Value>
-															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{502C64B0-2948-4C42-B0C4-10DB6185B661}" ShortID="922885630">
 																	<ReferenceList>
@@ -23296,34 +23148,28 @@
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
 														<Property Name="Highpass" Type="int16">
 															<RTPCList>
-																<RTPC Name="" ID="{86BEF3AA-EE05-4E5E-A3EF-F3424043822E}" ShortID="885455717">
+																<RTPC Name="" ID="{D1DED48C-BFA1-4BF2-B906-6CFC8933217F}" ShortID="700386653">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="WINDOW_2" ID="{0ADBA7D9-8A03-40E3-A931-434852C8F66E}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{68B02CD9-E064-418F-A665-A99EC20B4890}">
+																	<Curve Name="" ID="{C2379A8A-8655-4361-B159-4368C0FDCF1C}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="65537"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>17</YPos>
+																				<YPos>14</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>9.74026</XPos>
-																				<YPos>17</YPos>
+																				<XPos>6.49351</XPos>
+																				<YPos>6</YPos>
 																				<Flags>0</Flags>
-																				<SegmentShape>Exp2</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>60.06494</XPos>
-																				<YPos>12</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
+																				<SegmentShape>Exp3</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
@@ -23337,38 +23183,32 @@
 														</Property>
 														<Property Name="Lowpass" Type="int16">
 															<RTPCList>
-																<RTPC Name="" ID="{A18EE51C-3D91-4FCB-BB0F-C901F1898713}" ShortID="375264868">
+																<RTPC Name="" ID="{0284853C-EF0B-4940-9BFE-9A58BFD80AAF}" ShortID="530187315">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="WINDOW_2" ID="{0ADBA7D9-8A03-40E3-A931-434852C8F66E}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{6A6EFE93-9F4C-484A-9893-54DD3D9ED49F}">
+																	<Curve Name="" ID="{89A73FA3-D544-495F-A9D7-C10C66BDBD0D}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="65537"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>61</YPos>
+																				<YPos>60</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>10.38961</XPos>
-																				<YPos>51</YPos>
+																				<XPos>3.91608</XPos>
+																				<YPos>54</YPos>
 																				<Flags>0</Flags>
-																				<SegmentShape>Log1</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>20.61688</XPos>
-																				<YPos>42</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
+																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
-																				<YPos>27</YPos>
+																				<YPos>35</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -23915,9 +23755,6 @@
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>4</Value>
-															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{5DD71415-E63E-4906-95D0-634375F99F37}" ShortID="1053971871">
 																	<ReferenceList>
@@ -24596,34 +24433,28 @@
 													<PropertyList>
 														<Property Name="Highpass" Type="int16">
 															<RTPCList>
-																<RTPC Name="" ID="{7403C993-4BA9-411C-828F-A451DB9B9722}" ShortID="945236189">
+																<RTPC Name="" ID="{F05DF10A-3C3B-4B36-B5A1-3B137220AD1B}" ShortID="283762282">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="WINDOW_1" ID="{96C44ACE-62AE-44D4-B92E-D68AB40EAA26}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{BF57CC2D-DCB1-4648-AA62-F17D3255F5CF}">
+																	<Curve Name="" ID="{51B6146F-5E65-4E18-96CE-9A8D4026423A}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="65537"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>12</YPos>
+																				<YPos>14</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>9.74026</XPos>
-																				<YPos>12</YPos>
+																				<XPos>6.49351</XPos>
+																				<YPos>6</YPos>
 																				<Flags>0</Flags>
-																				<SegmentShape>Exp2</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>60.06494</XPos>
-																				<YPos>12</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
+																				<SegmentShape>Exp3</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
@@ -24637,38 +24468,32 @@
 														</Property>
 														<Property Name="Lowpass" Type="int16">
 															<RTPCList>
-																<RTPC Name="" ID="{FF9B0FDF-C058-479B-87AC-721B9B32CAC1}" ShortID="1042419577">
+																<RTPC Name="" ID="{FE349F24-8128-4742-BF5A-C56BD90EE2F2}" ShortID="847339337">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="WINDOW_1" ID="{96C44ACE-62AE-44D4-B92E-D68AB40EAA26}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{C89223F1-F40B-436B-9A6B-C355F8BE62DC}">
+																	<Curve Name="" ID="{BA519241-5671-4A59-AEDC-5E1E6C85D2B6}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="65537"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>56</YPos>
+																				<YPos>60</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>10.38961</XPos>
-																				<YPos>46</YPos>
+																				<XPos>3.91608</XPos>
+																				<YPos>54</YPos>
 																				<Flags>0</Flags>
-																				<SegmentShape>Log1</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>20.61688</XPos>
-																				<YPos>37</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
+																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
-																				<YPos>0</YPos>
+																				<YPos>35</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -24953,34 +24778,28 @@
 													<PropertyList>
 														<Property Name="Highpass" Type="int16">
 															<RTPCList>
-																<RTPC Name="" ID="{5ADB1A9B-5184-43BD-8478-4F4FC3A09F46}" ShortID="198722646">
+																<RTPC Name="" ID="{B63DB10D-9B4C-4CEA-9B42-98EEB5910C19}" ShortID="459621336">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="WINDOW_2" ID="{0ADBA7D9-8A03-40E3-A931-434852C8F66E}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{4B6ACD3D-6EF0-43CB-84F7-682256990B93}">
+																	<Curve Name="" ID="{38D17072-2AD6-44D9-9534-305CDC62AA91}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="65537"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>30</YPos>
+																				<YPos>14</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>9.74026</XPos>
-																				<YPos>30</YPos>
+																				<XPos>6.49351</XPos>
+																				<YPos>6</YPos>
 																				<Flags>0</Flags>
-																				<SegmentShape>Exp2</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>60.06494</XPos>
-																				<YPos>12</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
+																				<SegmentShape>Exp3</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
@@ -24994,38 +24813,32 @@
 														</Property>
 														<Property Name="Lowpass" Type="int16">
 															<RTPCList>
-																<RTPC Name="" ID="{3BB54324-853B-419D-BD7F-C082B1C3E387}" ShortID="635495742">
+																<RTPC Name="" ID="{3BD5E1D5-E548-4BCC-9062-EB7CFFE9531F}" ShortID="774038273">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
 																			<ObjectRef Name="WINDOW_2" ID="{0ADBA7D9-8A03-40E3-A931-434852C8F66E}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
-																	<Curve Name="" ID="{C7B11382-3D66-476B-84B5-07297C9D05DD}">
+																	<Curve Name="" ID="{9AC90480-79EE-404D-A69F-C5A67802F9D8}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="65537"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>74</YPos>
+																				<YPos>60</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>10.38961</XPos>
-																				<YPos>64</YPos>
+																				<XPos>3.91608</XPos>
+																				<YPos>54</YPos>
 																				<Flags>0</Flags>
-																				<SegmentShape>Log1</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>20.61688</XPos>
-																				<YPos>55</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
+																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
-																				<YPos>0</YPos>
+																				<YPos>35</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -26205,6 +26018,66 @@
 											</ReferenceList>
 											<ChildrenList>
 												<BlendContainer Name="Flywheel-outside" ID="{5EE42B3B-D59C-4700-A56E-C5E41EB6E305}" ShortID="802008099">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<RTPCList>
+																<RTPC Name="" ID="{8B4FEFD8-43A4-44D0-A785-F25BBBB81F90}" ShortID="357372283">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{62E1BAAC-16C0-4A48-B1D1-BC9FCC34E13F}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>15</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Exp2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{B2F89FF9-A45F-496D-A91A-799CA32A2AE9}" ShortID="67361932">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{5911E275-0EAA-43BB-B24C-A3D83B077D40}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-4.61825999999999</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Exp3</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>4</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -35873,6 +35746,66 @@
 											</ReferenceList>
 											<ChildrenList>
 												<BlendContainer Name="Flywheel-outside" ID="{F02DAAD2-EE48-431E-A064-D9471C0D7AE0}" ShortID="262532409">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<RTPCList>
+																<RTPC Name="" ID="{156256C0-EDA8-4A65-B76E-FF50DF9638F4}" ShortID="1052751056">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{8EBC1FF2-7344-47E8-8E39-636BC0C56BA5}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>15</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Exp2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{C3A5A977-94B5-40AE-B0D7-FF09FA0EE8F2}" ShortID="862764830">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{02838C88-875C-4C62-B9AA-D256E33FA4A5}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-4.61825999999999</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Exp3</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>4</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
@@ -46132,7 +46065,7 @@
 																<RTPC Name="" ID="{C033F482-F3C6-4DFD-8712-1C254A0CEDFA}" ShortID="600820238">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_2" ID="{0ADBA7D9-8A03-40E3-A931-434852C8F66E}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+																			<ObjectRef Name="WINDOW_1" ID="{96C44ACE-62AE-44D4-B92E-D68AB40EAA26}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<Curve Name="" ID="{05780148-5ABE-43DE-97E0-E3076153AEB5}">
@@ -46167,7 +46100,7 @@
 																<RTPC Name="" ID="{64FD40D9-A27B-474D-8E2E-31A536A46C87}" ShortID="299806778">
 																	<ReferenceList>
 																		<Reference Name="ControlInput">
-																			<ObjectRef Name="WINDOW_2" ID="{0ADBA7D9-8A03-40E3-A931-434852C8F66E}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+																			<ObjectRef Name="WINDOW_1" ID="{96C44ACE-62AE-44D4-B92E-D68AB40EAA26}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<Curve Name="" ID="{2F292C24-2935-4DB4-983B-7BD35C5E3B03}">
@@ -46177,19 +46110,19 @@
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>49</YPos>
+																				<YPos>60</YPos>
 																				<Flags>5</Flags>
 																				<SegmentShape>Log3</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>3.91608</XPos>
-																				<YPos>43</YPos>
+																				<YPos>54</YPos>
 																				<Flags>0</Flags>
 																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
 																			<Point>
 																				<XPos>100</XPos>
-																				<YPos>20</YPos>
+																				<YPos>35</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -46305,7 +46238,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-2</Value>
+																<Value>-6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -54034,6 +53967,9 @@
 															</ValueList>
 														</Property>
 														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{7144079C-3745-4268-B39B-ED8AFDD9A578}" ShortID="818747395">
 																	<ReferenceList>
@@ -62963,6 +62899,955 @@
 										<ItemRef Name="Rattles" ID="{47825C53-B2B6-457B-BCF7-52383FBBC223}"/>
 									</Playlist>
 								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Selectors" ID="{6F63108F-5CCA-49B0-81B0-D060FEABAA62}" ShortID="812450475">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Papa_bear_selector" ID="{5B015605-9C0A-4D7C-A7B0-D47B5B02D233}" ShortID="912279785">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>51</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4FF27B8C-C601-4F1A-B18F-D7D85F8555C0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-80"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E6E2721A-8698-4299-B022-C8BE1E7F9995}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-6"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Pb-On" ID="{5AEA9C7F-22A1-40CF-A63F-75FFE78D22C7}" ShortID="999648762">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{63BD1491-2A00-441B-8415-81710BD9948D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip off" ID="{3262F5D6-63A7-4ACA-97BE-D311D44AB9CD}" ShortID="406609604">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{AF588EBD-AF39-477A-8FBD-CE2B79045E20}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00531367888547507"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.17927675863193"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.75824657534248"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{AF588EBD-AF39-477A-8FBD-CE2B79045E20}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Pb-Off" ID="{38D771B7-CABF-41C0-827B-E6EFF4FDF26C}" ShortID="821113042">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{665C862E-FC8C-4C14-88D1-34CE152BC4AA}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{675D6AC8-06A7-4B33-9135-CE0C39A71024}">
+																<PropertyList>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip on" ID="{61CD4947-6B6D-4793-9C20-82ABC5C1EC28}" ShortID="892931586">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{EBC96533-8163-4359-8421-5D85F3D5728F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0216741794146778"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.41295789538307"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.96180821917809"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{EBC96533-8163-4359-8421-5D85F3D5728F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Pb-On_01" ID="{A505C795-73F8-4310-AA79-34A8BEB4AC1C}" ShortID="424592311">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{258178CF-3F39-442C-BB81-2A08740AB6AD}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip off" ID="{F6CC8970-2BDF-4637-AA42-6E49DB6C15D4}" ShortID="322262474">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{63CBDD66-204B-4404-BA8A-BC392031DD41}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00531367888547507"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.17927675863193"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.75824657534248"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{63CBDD66-204B-4404-BA8A-BC392031DD41}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Pb-Off_01" ID="{5DAAAA67-9D0D-4537-BE84-5D124717FA63}" ShortID="821816804">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{57D67583-238A-44A2-9062-6132E541D076}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip on" ID="{E02C5E46-1221-4AD9-A4A3-F3148F6F4CA0}" ShortID="782856386">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{87086CF1-3572-4108-BCD0-5F056C6B3850}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0216741794146778"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.41295789538307"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.96180821917809"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{87086CF1-3572-4108-BCD0-5F056C6B3850}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Mama_bear_selector" ID="{1374645F-C6A6-433A-B55F-B26C9DB3FEEB}" ShortID="793841040">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>51</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-100</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{68AF801B-0DF1-4B42-ABD5-65A618A1C53D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="MB-On" ID="{9E0ED326-03AB-41CE-9547-89A5DC687D9F}" ShortID="292904302">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A63A3580-272A-4545-8177-1D0640B37348}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip off" ID="{0DBB1ECC-0DEC-49E6-BA08-B7FD0C38F33D}" ShortID="417696519">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{CE610E49-02DD-4F27-A3C9-8BD3197B91D7}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00531367888547507"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.17927675863193"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.75824657534248"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{CE610E49-02DD-4F27-A3C9-8BD3197B91D7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="MB-Off" ID="{5FD4F1A2-FC53-4EDB-9AA3-CF4C6CD60129}" ShortID="767144430">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{33C0C147-AC0C-4361-8026-7B7A9B2E3AE2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip on" ID="{5EB91048-FA74-4840-96A6-D4D487EA40AF}" ShortID="1014373218">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{252677DD-764C-45BB-AF3E-730FB00B23AF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0216741794146778"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.41295789538307"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.96180821917809"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{252677DD-764C-45BB-AF3E-730FB00B23AF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="MB-On_01" ID="{91E9247D-B9D5-44FA-92B5-B2F7E72D2F29}" ShortID="449301576">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D81A678E-C7D5-4651-84CC-8C60A9661A56}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip off" ID="{3E148E60-F893-414A-8486-E6FAA2BA1497}" ShortID="617979970">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{63CC40FC-3E07-40DB-B9B3-58E268A0E271}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00531367888547507"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.17927675863193"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.75824657534248"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{63CC40FC-3E07-40DB-B9B3-58E268A0E271}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="MB-Off_01" ID="{BBDA4372-4B60-466B-95DC-1F7DA61131D9}" ShortID="787393780">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B08F2335-5A1F-4E46-B23D-1EEB321B903B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip on" ID="{C1C0778D-D3B3-4EB2-B273-A894131B25E9}" ShortID="302613455">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{0D3A1D70-32C9-4C03-A203-B65F68707036}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0216741794146778"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.41295789538307"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.96180821917809"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{0D3A1D70-32C9-4C03-A203-B65F68707036}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Baby_bear_selector" ID="{FE22FE57-9701-4BE7-8D0A-8636B34A4067}" ShortID="1032027948">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>51</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9B97338F-82D2-4008-B267-6F2A2CF7406F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C2182A62-98A0-4B38-B79C-180225EC1C7D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-6"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="BB-On" ID="{5903B600-A4C2-4298-9A4B-32FE9CA704D6}" ShortID="226638739">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A16022B4-4C4E-48A6-B196-696FD177C623}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip off" ID="{A267FB3A-C7E5-4D66-885C-F7835DC5E7DB}" ShortID="676904009">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{CBF1F232-1F1A-4F8D-8674-3E148C3C72FF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00531367888547507"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.17927675863193"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.75824657534248"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{CBF1F232-1F1A-4F8D-8674-3E148C3C72FF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="BB-Off" ID="{B96C0E6D-E9AB-498E-A80E-72140B23D20D}" ShortID="221716657">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E7CBEE4E-1FFF-4B7E-9823-9975C7BBDC78}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip on" ID="{99B51361-DFB8-4C68-B998-835ED07952FE}" ShortID="463161325">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{A22F4851-FB3E-492B-96B9-1C511DD57A7F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0216741794146778"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.41295789538307"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.96180821917809"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{A22F4851-FB3E-492B-96B9-1C511DD57A7F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="BB-Off_01" ID="{CDB53E54-F609-4949-A348-F34C555EE239}" ShortID="989304519">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D3ED4E22-96A8-4C8F-B74F-08CF7CD24C4E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip on" ID="{471859AA-F85D-4472-923B-4B4E4BAF81BC}" ShortID="537693006">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{0DD2D78F-74B4-4EF5-9364-A2E248D3A315}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0216741794146778"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.41295789538307"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.96180821917809"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{0DD2D78F-74B4-4EF5-9364-A2E248D3A315}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="BB-On_01" ID="{5DC86E93-38AF-4951-9F1B-8C23E0DF294D}" ShortID="710641967">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C783FA15-E65F-48BF-AA6D-82D4B61180CB}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Flip off" ID="{EFB2C892-59C4-44B3-87A5-7CE1723044BA}" ShortID="355039730">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SWITCH Miscellaneous No Name On Off" ID="{B7B09838-27AB-4CB0-9803-862B2F19791C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00531367888547507"/>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.17927675863193"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.75824657534248"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SWITCH Miscellaneous No Name On Off.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SWITCH Miscellaneous No Name On Off" ID="{B7B09838-27AB-4CB0-9803-862B2F19791C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Klaxon" ID="{109E7301-8153-4CFC-87CB-0A9C45820652}" ShortID="603943865">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>32</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="warning_signal" ID="{FBDED1F7-ACC4-4B5D-9884-62FCB82AC7CB}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Klaxon" ID="{F149B2EB-0D84-4A43-A25C-736CAA0D9736}" ShortID="411543143">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="aircraft_player_outside_5m" ID="{5286259E-8997-4349-A13E-8397AEA4CE09}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Klaxon" ID="{5AFBACC3-E9AB-4F5B-953C-7CB1F4EF0D0D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.536947446842292"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.92142958919055"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Klaxon.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Klaxon" ID="{5AFBACC3-E9AB-4F5B-953C-7CB1F4EF0D0D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

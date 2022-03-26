@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="wing42_boeing_247d" ID="{2EF879DE-5CFE-405A-AAF7-7767E43E03B1}">
 					<ObjectInclusionList>
+						<ObjectRef Name="wing42_boeing_247d" ID="{A03EE125-7E02-4298-9FC8-CFECE3877AD7}" WorkUnitID="{A03EE125-7E02-4298-9FC8-CFECE3877AD7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="wing42_boeing_247d" ID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

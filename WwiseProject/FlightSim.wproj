@@ -15032,6 +15032,9 @@
 						</PropertyList>
 					</WorkUnit>
 				</PhysicalFolder>
+				<PhysicalFolder Path="Events\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_AI">
+					<WorkUnit Name="AIRCRAFT_AI" ID="{573D3AFF-2850-4AB2-990A-2E32F4F62540}" PersistMode="Standalone"/>
+				</PhysicalFolder>
 				<PhysicalFolder Path="Events\AIRCRAFTS\AIRCRAFT_WWISEDATA\AIRCRAFT_PLAYER">
 					<WorkUnit Name="AIRCRAFT_PLAYER" ID="{85E008CC-4A02-4446-9850-B05744B53CB9}" PersistMode="Standalone"/>
 				</PhysicalFolder>
