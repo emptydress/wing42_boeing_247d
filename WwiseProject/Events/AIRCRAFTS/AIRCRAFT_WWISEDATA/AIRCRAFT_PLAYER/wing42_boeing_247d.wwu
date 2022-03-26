@@ -2894,7 +2894,45 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Klaxon" ID="{F149B2EB-0D84-4A43-A25C-736CAA0D9736}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="Klaxon_attack" ID="{F149B2EB-0D84-4A43-A25C-736CAA0D9736}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{54175AB1-490E-4793-B349-077C41CD4ED2}" ShortID="743891587">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Klaxon_sustain" ID="{F8E23694-29B6-4DE1-914E-6C1028C94BA4}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_klaxon_off" ID="{DB596EC7-334C-45E1-97E1-60D8D3E634DF}">
+							<ChildrenList>
+								<Action Name="" ID="{FECF0100-8A0E-421E-892C-261C4AF67982}" ShortID="1028662648">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Klaxon_sustain" ID="{F8E23694-29B6-4DE1-914E-6C1028C94BA4}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F7F06202-648D-41AE-B013-08F6E1F1D057}" ShortID="436630889">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Klaxon_release" ID="{A3C66CA8-5714-4794-A687-CC1544075FD8}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

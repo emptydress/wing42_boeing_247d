@@ -63794,9 +63794,19 @@
 						</ActorMixer>
 						<ActorMixer Name="Klaxon" ID="{109E7301-8153-4CFC-87CB-0A9C45820652}" ShortID="603943865">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>40</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>32</Value>
+										<Value>29</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>50</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
@@ -63814,9 +63824,289 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Klaxon" ID="{F149B2EB-0D84-4A43-A25C-736CAA0D9736}" ShortID="411543143">
+								<RandomSequenceContainer Name="Klaxon_sustain" ID="{F8E23694-29B6-4DE1-914E-6C1028C94BA4}" ShortID="292871228">
 									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.23</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Klaxon_01" ID="{E44D7F03-1E0F-4A25-9B9B-F9635F9461D2}" ShortID="609476575">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_5m" ID="{5286259E-8997-4349-A13E-8397AEA4CE09}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Klaxon" ID="{5CE8C027-436A-4FB2-B115-B5DC8E3DC449}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.24"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.36"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Klaxon.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Klaxon" ID="{5CE8C027-436A-4FB2-B115-B5DC8E3DC449}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Klaxon_02" ID="{7DB97B68-58C3-4A76-8777-B477A8B2AAF1}" ShortID="1071008679">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_5m" ID="{5286259E-8997-4349-A13E-8397AEA4CE09}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Klaxon" ID="{B38B9CE1-C85C-410C-B3F5-333B79D7A71B}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.36"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.48"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Klaxon.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Klaxon" ID="{B38B9CE1-C85C-410C-B3F5-333B79D7A71B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Klaxon_03" ID="{17538A23-6841-47A0-A5A1-71775FE355C8}" ShortID="104452952">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_5m" ID="{5286259E-8997-4349-A13E-8397AEA4CE09}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Klaxon" ID="{8A7418D7-19AF-482B-8A53-14470221E102}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.48"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.6"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Klaxon.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Klaxon" ID="{8A7418D7-19AF-482B-8A53-14470221E102}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Klaxon_04" ID="{5D6D5D85-FDEF-48C9-BDA5-BE0320D6634C}" ShortID="421523118">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_5m" ID="{5286259E-8997-4349-A13E-8397AEA4CE09}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Klaxon" ID="{9FE50C1B-9B45-43BE-8CFF-6D845BBCDF25}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.6"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.72"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Klaxon.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Klaxon" ID="{9FE50C1B-9B45-43BE-8CFF-6D845BBCDF25}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Klaxon_05" ID="{8BC23FE5-59F1-412F-A43A-7D73823942D0}" ShortID="654379151">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_5m" ID="{5286259E-8997-4349-A13E-8397AEA4CE09}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Klaxon" ID="{D39D9714-1336-411D-B4F6-12C6D7585F06}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.72"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.84"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Klaxon.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Klaxon" ID="{D39D9714-1336-411D-B4F6-12C6D7585F06}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Klaxon_06" ID="{EA4F3003-E146-4889-8E13-D4EDEAF0A431}" ShortID="287462173">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_5m" ID="{5286259E-8997-4349-A13E-8397AEA4CE09}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Klaxon" ID="{CE33D843-B1EE-4F2C-B24A-C032EA3B6F29}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.84"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.96"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Klaxon.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Klaxon" ID="{CE33D843-B1EE-4F2C-B24A-C032EA3B6F29}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Klaxon_07" ID="{278890EC-72EB-4962-9D85-0A953E376A7A}" ShortID="133453178">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_5m" ID="{5286259E-8997-4349-A13E-8397AEA4CE09}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Klaxon" ID="{293BBA7D-03AB-48C0-AE86-C066694B78FC}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.96"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.08"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Klaxon.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Klaxon" ID="{293BBA7D-03AB-48C0-AE86-C066694B78FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Klaxon_08" ID="{9075426E-75BB-421D-9217-4F1BC78793C0}" ShortID="723326667">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="aircraft_player_outside_5m" ID="{5286259E-8997-4349-A13E-8397AEA4CE09}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Klaxon" ID="{EA80D7F0-63C9-410B-8C98-D61F38886A45}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.08"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Klaxon.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Klaxon" ID="{EA80D7F0-63C9-410B-8C98-D61F38886A45}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Klaxon_attack" ID="{F149B2EB-0D84-4A43-A25C-736CAA0D9736}" ShortID="411543143">
+									<PropertyList>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -63833,12 +64123,11 @@
 									<ChildrenList>
 										<AudioFileSource Name="Klaxon" ID="{5AFBACC3-E9AB-4F5B-953C-7CB1F4EF0D0D}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.536947446842292"/>
 												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.92142958919055"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.24215277014456"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Klaxon.wav</AudioFile>
@@ -63846,6 +64135,44 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Klaxon" ID="{5AFBACC3-E9AB-4F5B-953C-7CB1F4EF0D0D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Klaxon_release" ID="{A3C66CA8-5714-4794-A687-CC1544075FD8}" ShortID="144574363">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.05</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="aircraft_player_outside_5m" ID="{5286259E-8997-4349-A13E-8397AEA4CE09}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Klaxon" ID="{6576AF16-ADAD-476D-99C9-4AE02F1C7DA9}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.245148616990111"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.917886474757467"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.92892"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Klaxon.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Klaxon" ID="{6576AF16-ADAD-476D-99C9-4AE02F1C7DA9}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

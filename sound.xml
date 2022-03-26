@@ -399,27 +399,32 @@
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Klaxon-->
-		<Sound WwiseData="True" NodeName="klaxon_gear_warning" SimVar="CIRCUIT ON" Units="Boolean" Index="35" WwiseEvent="klaxon">
+		<Sound WwiseData="True" NodeName="klaxon_gear_warning" SimVar="CIRCUIT ON" Units="Bool" Index="35" WwiseEvent="klaxon">
+			<Range LowerBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" NodeName="klaxon_gear_warning" SimVar="CIRCUIT ON" Units="Bool" Index="35" WwiseEvent="klaxon_off">
+			<Range UpperBound="0" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Feathering pumps-->
-		<Sound WwiseData="True" NodeName="crankcase_left" SimVar="CIRCUIT ON" Units="Boolean" Index="31" WwiseEvent="feathering_pump_left">
+		<Sound WwiseData="True" NodeName="crankcase_left" SimVar="CIRCUIT ON" Units="Bool" Index="31" WwiseEvent="feathering_pump_left">
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="crankcase_right" SimVar="CIRCUIT ON" Units="Boolean" Index="31" WwiseEvent="feathering_pump_right">
+		<Sound WwiseData="True" NodeName="crankcase_right" SimVar="CIRCUIT ON" Units="Bool" Index="31" WwiseEvent="feathering_pump_right">
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Vibrations-->
-		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="wobble_pump" LocalVar="RATTLE INTENSITY" WwiseEvent="Rattle_start" >
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="wobble_pump" LocalVar="RATTLE INTENSITY" WwiseEvent="rattle_start" >
 			<Range LowerBound="1" />
 			<WwiseRTPC Derived="False" LocalVar="RATTLE INTENSITY NORMALIZED" RTPCName="RATTLE_INTENSITY_NORMALIZED" />
 			<WwiseRTPC Derived="True"  LocalVar="RATTLE INTENSITY " RTPCName="RATTLE_INTENSITY_acceleration_PITCH_CONTROLLER" />
 			<WwiseRTPC Derived="True"  LocalVar="RATTLE INTENSITY" RTPCName="RATTLE_INTENSITY_derived_VOLUME_CONTROLLER" />
 		</Sound>
 
-		<Sound WwiseData="True" ViewPoint="Inside" Continuous="False" NodeName="wobble_pump" LocalVar="RATTLE INTENSITY" WwiseEvent="Rattle_stop" >
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="False" NodeName="wobble_pump" LocalVar="RATTLE INTENSITY" WwiseEvent="rattle_stop" >
 			<Range UpperBound="0" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -427,7 +432,7 @@
 		<!--Vents-->
 
 		<!--Cockpit vents-->
-		<Sound WwiseData="True" NodeName="cockpit_vent_1" LocalVar="VENT 1" WwiseEvent="vent_squeak_01" >
+		<Sound WwiseData="True" BreakOnStop="True" NodeName="cockpit_vent_1" LocalVar="VENT 1" WwiseEvent="vent_squeak_01" >
 			<WwiseRTPC Derived="True"  RTPCAttackTime=".3" RTPCReleaseTime=".5" LocalVar="VENT 1" RTPCName="VENT_1_acceleration_PITCH_CONTROLLER" />
 			<WwiseRTPC Derived="True"  RTPCAttackTime="1"  RTPCReleaseTime=".7" LocalVar="VENT 1" RTPCName="VENT_1_derived_VOLUME_CONTROLLER"  />
 		</Sound>
@@ -438,7 +443,7 @@
 			<WwiseRTPC Derived="True" RTPCAttackTime="1"  RTPCReleaseTime=".1" LocalVar="VENT 1" RTPCName="VENT_1_derived_VOLUME_CONTROLLER" />
 		</Sound> 
 
-		<Sound WwiseData="True" NodeName="cockpit_vent_2" LocalVar="VENT 2" WwiseEvent="vent_squeak_02" >
+		<Sound WwiseData="True" BreakOnStop="True" NodeName="cockpit_vent_2" LocalVar="VENT 2" WwiseEvent="vent_squeak_02" >
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 2" RTPCName="VENT_2_acceleration_PITCH_CONTROLLER" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".7" LocalVar="VENT 2" RTPCName="VENT_2_derived_VOLUME_CONTROLLER" />
 		</Sound>
@@ -450,7 +455,7 @@
 		</Sound>
 
 		<!--Cabin vents-->
-		<Sound WwiseData="True" NodeName="cabin_ac_1" LocalVar="VENT 3" WwiseEvent="vent_squeak_03" >
+		<Sound WwiseData="True" BreakOnStop="True" NodeName="cabin_ac_1" LocalVar="VENT 3" WwiseEvent="vent_squeak_03" >
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 3" RTPCName="VENT_3_acceleration_PITCH_CONTROLLER" />
 			<WwiseRTPC Derived="True" RTPCAttackTime="1"  RTPCReleaseTime=".7" LocalVar="VENT 3" RTPCName="VENT_3_derived_VOLUME_CONTROLLER" />
 		</Sound>
@@ -461,7 +466,7 @@
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="VENT 3" RTPCName="VENT_3_derived_VOLUME_CONTROLLER" />
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="cabin_ac_2" LocalVar="VENT 4" WwiseEvent="vent_squeak_04" >
+		<Sound WwiseData="True" BreakOnStop="True" NodeName="cabin_ac_2" LocalVar="VENT 4" WwiseEvent="vent_squeak_04" >
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 4" RTPCName="VENT_4_acceleration_PITCH_CONTROLLER" />
 			<WwiseRTPC Derived="True" RTPCAttackTime="1"  RTPCReleaseTime=".7" LocalVar="VENT 4" RTPCName="VENT_4_derived_VOLUME_CONTROLLER" />
 		</Sound>
@@ -624,13 +629,13 @@
 		</Sound>
 
 
-		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_light_on1">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_on1">
 		</Sound>
 
-		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_light_on2">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_on2">
 		</Sound>
 
-		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_light_off">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_off">
 		</Sound>
 
 
