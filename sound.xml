@@ -403,7 +403,7 @@
 			<Range LowerBound="1" />
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="klaxon_gear_warning" SimVar="CIRCUIT ON" Units="Bool" Index="35" WwiseEvent="klaxon_off">
+		<Sound WwiseData="True" Continuous="False" NodeName="klaxon_gear_warning" SimVar="CIRCUIT ON" Units="Bool" Index="35" WwiseEvent="klaxon_off">
 			<Range UpperBound="0" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->

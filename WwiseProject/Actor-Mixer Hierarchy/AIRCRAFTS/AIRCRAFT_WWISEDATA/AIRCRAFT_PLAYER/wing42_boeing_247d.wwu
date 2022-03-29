@@ -4644,6 +4644,9 @@
 								<ActorMixer Name="Noise" ID="{9B8CE9AE-AA84-4B47-AA27-BFDC87EDAE28}" ShortID="19004880">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{3703E121-EC2B-4271-BEA8-915D59D04062}" ShortID="351647099">
 													<ReferenceList>
@@ -5508,11 +5511,6 @@
 											</Curve>
 										</RTPC>
 									</RTPCList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -21127,7 +21125,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -24240,7 +24238,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -24357,9 +24355,6 @@
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>4</Value>
-															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{DCD66338-1379-461D-9073-459792CED0B8}" ShortID="562500300">
 																	<ReferenceList>
@@ -62577,6 +62572,56 @@
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{0B57A163-70A6-4736-BA3B-698A6813D805}" ShortID="49674656">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="RATTLE_INTENSITY" ID="{7EDCAA1F-03DC-48F8-BEA9-92C8082945ED}" WorkUnitID="{2068051E-EBFE-410B-AEB3-5801D1F016AB}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{41562645-F2E4-4634-9025-4C5C4F27D948}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-100</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-1</XPos>
+														<YPos>-0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-0</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -62690,7 +62735,7 @@
 												<ActiveSource Name="rattle0" ID="{001EF0B5-3BF8-44A0-9373-93C2874E3663}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<BlendContainer Name="Rattles" ID="{47825C53-B2B6-457B-BCF7-52383FBBC223}" ShortID="210520604">
+										<BlendContainer Name="Rattles_positve" ID="{47825C53-B2B6-457B-BCF7-52383FBBC223}" ShortID="210520604">
 											<PropertyList>
 												<Property Name="BlendBehavior" Type="int16" Value="1"/>
 											</PropertyList>
@@ -62717,7 +62762,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="rattle1" ID="{23FBC4E1-7F2A-4747-B068-750EE1A4F5B2}" ShortID="370224690">
+												<Sound Name="rattle1_plus" ID="{23FBC4E1-7F2A-4747-B068-750EE1A4F5B2}" ShortID="370224690">
 													<PropertyList>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 													</PropertyList>
@@ -62760,7 +62805,7 @@
 														<ActiveSource Name="rattle1" ID="{AE244567-6F72-4B3C-B222-E0D974C63AA1}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="rattle0" ID="{3E00914F-20E4-4A48-A3BE-8A09C9E23B74}" ShortID="382349211">
+												<Sound Name="rattle0_plus" ID="{3E00914F-20E4-4A48-A3BE-8A09C9E23B74}" ShortID="382349211">
 													<PropertyList>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 													</PropertyList>
@@ -62803,7 +62848,7 @@
 														<ActiveSource Name="rattle0" ID="{7D35CB1F-A116-4575-8D3F-AEC27102BEBC}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="rattle2" ID="{31F052AF-925F-42FA-91B0-DB022CBDA42D}" ShortID="957974706">
+												<Sound Name="rattle2_plus" ID="{31F052AF-925F-42FA-91B0-DB022CBDA42D}" ShortID="957974706">
 													<PropertyList>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 													</PropertyList>
@@ -62846,6 +62891,108 @@
 														<ActiveSource Name="rattle2" ID="{E4C8268B-C930-4799-A5A2-87B456320207}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
+												<Sound Name="rattle0_minus" ID="{9B98F9FF-7651-4E8D-96BF-4CBB0459377B}" ShortID="107113273">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="rattle0" ID="{65238A04-3C41-4C8A-A77D-3B34FACC825F}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="1.40834699169913"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.40834699169913"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>rattle0.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="rattle0" ID="{65238A04-3C41-4C8A-A77D-3B34FACC825F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="rattle1_minus" ID="{50A09C9B-43B3-4CF2-9BD5-46E73F0E36C1}" ShortID="346652825">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="rattle1" ID="{FCC33057-F398-420E-9573-1E06E482FA9B}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0.152242862435219"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.152242862435219"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>rattle1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="rattle1" ID="{FCC33057-F398-420E-9573-1E06E482FA9B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="rattle2_minus" ID="{E3A746BB-2FCF-4168-B1CF-F43FCA337BAD}" ShortID="460482797">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="aircraft_player_inside_3m" ID="{538CDAF5-4564-463A-A841-C73D21967E20}" WorkUnitID="{60292DF5-73DF-4CD4-B755-61C8D02B90BD}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72C899CE-308C-4CA7-87C0-8E1504B1D757}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8341C40-AF31-4D5B-9D65-E60D709F4609}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="rattle2" ID="{9D5997EF-EC1A-4523-8834-A9D2171E9692}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.32001856397854"/>
+																<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>rattle2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="rattle2" ID="{9D5997EF-EC1A-4523-8834-A9D2171E9692}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 											<BlendTrackList>
 												<BlendTrack Name="New Blend Track" ID="{1922D61D-FCAD-4790-804E-1BD542C9CBB4}" ShortID="764575224">
@@ -62859,30 +63006,61 @@
 													</ReferenceList>
 													<BlendTrackAssocList>
 														<BlendTrackAssoc>
-															<ItemRef Name="rattle0" ID="{3E00914F-20E4-4A48-A3BE-8A09C9E23B74}"/>
+															<ItemRef Name="rattle2_minus" ID="{E3A746BB-2FCF-4168-B1CF-F43FCA337BAD}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>-100</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>-49.5</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="rattle1_minus" ID="{50A09C9B-43B3-4CF2-9BD5-46E73F0E36C1}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>-66</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log3</LeftFadingSegmentShape>
+																<RightEdgePos>-16.5</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="rattle0_minus" ID="{9B98F9FF-7651-4E8D-96BF-4CBB0459377B}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>-33</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+																<RightEdgePos>-1.4210854715202E-14</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="rattle0_plus" ID="{3E00914F-20E4-4A48-A3BE-8A09C9E23B74}"/>
 															<CrossfadingInfo>
 																<LeftEdgePos>0</LeftEdgePos>
 																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>33.2024432809773</RightEdgePos>
+																<RightEdgePos>33</RightEdgePos>
 																<RightFadingMode>Automatic</RightFadingMode>
 																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
 															</CrossfadingInfo>
 														</BlendTrackAssoc>
 														<BlendTrackAssoc>
-															<ItemRef Name="rattle1" ID="{23FBC4E1-7F2A-4747-B068-750EE1A4F5B2}"/>
+															<ItemRef Name="rattle1_plus" ID="{23FBC4E1-7F2A-4747-B068-750EE1A4F5B2}"/>
 															<CrossfadingInfo>
-																<LeftEdgePos>16.5794066317627</LeftEdgePos>
+																<LeftEdgePos>16.5</LeftEdgePos>
 																<LeftFadingMode>Automatic</LeftFadingMode>
 																<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-																<RightEdgePos>72.9493891797558</RightEdgePos>
+																<RightEdgePos>65.9205933682373</RightEdgePos>
 																<RightFadingMode>Automatic</RightFadingMode>
-																<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+																<RightFadingSegmentShape>Exp3</RightFadingSegmentShape>
 															</CrossfadingInfo>
 														</BlendTrackAssoc>
 														<BlendTrackAssoc>
-															<ItemRef Name="rattle2" ID="{31F052AF-925F-42FA-91B0-DB022CBDA42D}"/>
+															<ItemRef Name="rattle2_plus" ID="{31F052AF-925F-42FA-91B0-DB022CBDA42D}"/>
 															<CrossfadingInfo>
-																<LeftEdgePos>52.6614310645724</LeftEdgePos>
+																<LeftEdgePos>49.5</LeftEdgePos>
 																<LeftFadingMode>Automatic</LeftFadingMode>
 																<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
 																<RightEdgePos>100</RightEdgePos>
@@ -62896,7 +63074,7 @@
 									</ChildrenList>
 									<Playlist>
 										<ItemRef Name="Rattle_start" ID="{019366D5-3A19-43D0-BE67-B6CC45C035FD}"/>
-										<ItemRef Name="Rattles" ID="{47825C53-B2B6-457B-BCF7-52383FBBC223}"/>
+										<ItemRef Name="Rattles_positve" ID="{47825C53-B2B6-457B-BCF7-52383FBBC223}"/>
 									</Playlist>
 								</RandomSequenceContainer>
 							</ChildrenList>
@@ -63807,11 +63985,6 @@
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>50</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

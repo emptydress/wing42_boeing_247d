@@ -523,6 +523,7 @@
 						<GameParameter Name="RATTLE_INTENSITY" ID="{7EDCAA1F-03DC-48F8-BEA9-92C8082945ED}">
 							<PropertyList>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Min" Type="Real64" Value="-100"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="RATTLE_INTENSITY_NORMALIZED" ID="{AF216AAF-EEEC-4C8D-8EFD-D69A07CCE920}">
