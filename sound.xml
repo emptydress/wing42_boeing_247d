@@ -145,12 +145,22 @@
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Backfires-->
-		<Sound WwiseData="True" ViewPoint="All" NodeName="fx_exhaust_left" LocalVar="FX PUFF1 1" WwiseEvent="backfire_left" >
+		<Sound WwiseData="True" ViewPoint="Outside" NodeName="fx_exhaust_left" LocalVar="FX PUFF1 1" WwiseEvent="backfire_left_ext" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
 			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
-		<Sound WwiseData="True" ViewPoint="All" NodeName="fx_exhaust_right" LocalVar="FX PUFF1 2" WwiseEvent="backfire_right" >
+		<Sound WwiseData="True" ViewPoint="Inside" NodeName="fx_exhaust_left" LocalVar="FX PUFF1 1" WwiseEvent="backfire_left_int" >
+			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
+			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
+		</Sound>
+
+		<Sound WwiseData="True" ViewPoint="Outside" NodeName="fx_exhaust_right" LocalVar="FX PUFF1 2" WwiseEvent="backfire_right_ext" >
+			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
+			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
+		</Sound>
+
+		<Sound WwiseData="True" ViewPoint="Inside" NodeName="fx_exhaust_right" LocalVar="FX PUFF1 2" WwiseEvent="backfire_right_int" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
 			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
@@ -309,12 +319,12 @@
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Windows-->
-		<Sound WwiseData="True" NodeName="node_left_window" LocalVar="WINDOW 1" WwiseEvent="window_left" >
+		<Sound WwiseData="True" NodeName="node_left_window" FadeOutType="2" FadeOutTime=".3" LocalVar="WINDOW 1" WwiseEvent="window_left" >
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="WINDOW 1" RTPCName="WINDOW_1_derived_VOLUME_CONTROLLER" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1_acceleration_PITCH_CONTROLLER" />
 		</Sound>
 
-		<Sound WwiseData="True" NodeName="node_right_window" LocalVar="WINDOW 2" WwiseEvent="window_right">
+		<Sound WwiseData="True" NodeName="node_right_window" FadeOutType="2" FadeOutTime=".3" LocalVar="WINDOW 2" WwiseEvent="window_right">
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="WINDOW 2" RTPCName="WINDOW_2_derived_VOLUME_CONTROLLER" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2_acceleration_PITCH_CONTROLLER" />
 		</Sound>
@@ -477,7 +487,6 @@
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="VENT 4" RTPCName="VENT_4_derived_VOLUME_CONTROLLER" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
-
 
 	</SimVarSounds>
 
@@ -824,12 +833,6 @@
 		</Sound>
 
 		<Sound WwiseData="True" NodeName="lever_manifold_pressure_gauge_selector" WwiseEvent="lever_manifold_pressure_gauge_right">
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="lever_fuel_gauge_selector" WwiseEvent="lever_fuel_gauge_selector_main">
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="lever_fuel_gauge_selector" WwiseEvent="lever_fuel_gauge_selector_aux">
 		</Sound>
 
 		<Sound WwiseData="True" NodeName="parking_break_lever" WwiseEvent="lever_parking_brake_on">
@@ -1299,6 +1302,15 @@
 		<Sound WwiseData="True" NodeName="wobble_pump" WwiseEvent="wobble_collision_bottom">
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
+
+		
+		<!--Fuel quantity gauge selector-->
+		<Sound WwiseData="True" NodeName="lever_fuel_gauge_selector" WwiseEvent="lever_fuel_gauge_selector_main">
+		</Sound>
+
+		<Sound WwiseData="True"NodeName="lever_fuel_gauge_selector" WwiseEvent="lever_fuel_gauge_selector_aux">
+		</Sound>
+		
 	</AnimationSounds>
 
 </SoundInfo>
