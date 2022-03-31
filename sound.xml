@@ -488,6 +488,9 @@
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
+		<!--Vent wind-->
+		<Sound WwiseData="True" Continuous="True" NodeName="cabin_ac_1" LocalVar="VENT 1" WwiseEvent="Vent_1_wind" />
+ 
 	</SimVarSounds>
 
  
@@ -638,13 +641,13 @@
 		</Sound>
 
 
-		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_on1">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_light_on1">
 		</Sound>
 
-		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_on2">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_light_on2">
 		</Sound>
 
-		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_lights_off">
+		<Sound WwiseData="True"  NodeName="switch_dome_lights" WwiseEvent="switch_dome_light_off">
 		</Sound>
 
 
