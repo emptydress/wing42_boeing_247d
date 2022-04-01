@@ -1,11 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<Project Version="7" InfoFilePath="GeneratedSoundBanks\Windows\SoundbanksInfo.xml" OutputDirectory="E:\Zak\Boeing_247d\Otmar_releases\1-Wing42-Boeing-247D-v.0.9.3\PackageSources\SimObjects\Airplanes\wing42-boeing-247d\sound">
+<Project Version="7" InfoFilePath="GeneratedSoundBanks\Windows\SoundbanksInfo.xml" OutputDirectory="E:\Zak\Boeing_247d\Workspace\wing42_boeing_247d\GeneratedSoundbanks">
   <ManualPackagingInfo BlockSize="1" UnassignedBanksPackageId="00000000-0000-0000-0000-000000000000" UnassignedStreamsPackageId="00000000-0000-0000-0000-000000000000" UnassignedExternalsPackageId="00000000-0000-0000-0000-000000000000" UnassignedLooseMediaPackageId="00000000-0000-0000-0000-000000000000">
     <Packages>
       <Package Id="4a0c26fa-17a2-4398-ad10-882f41b7ecd4" Name="wing42_boeing_247d.PC.PCK">
         <Items>
           <PackageContentItem Id="1230727645" Language="SFX" FileName="wing42_boeing_247d" InclusionMode="BankAndStreamsAndLooseMedia" />
           <PackageContentItem Id="1355168291" Language="SFX" FileName="Init" InclusionMode="BankAndStreamsAndLooseMedia" />
+        </Items>
+        <LayoutItems>
+          <ContentItemBase Id="0" Language="" FileName="" />
+        </LayoutItems>
+      </Package>
+      <Package Id="9a9a8a40-f413-4d81-9574-e3a2a6c1d955" Name="wing42_boeing_247d_ai.PC.PCK">
+        <Items>
+          <PackageContentItem Id="837240066" Language="SFX" FileName="wing42_boeing_247d_ai" InclusionMode="BankAndStreamsAndLooseMedia" />
         </Items>
         <LayoutItems>
           <ContentItemBase Id="0" Language="" FileName="" />

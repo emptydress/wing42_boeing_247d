@@ -864,7 +864,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -878,7 +878,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -892,7 +892,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -906,7 +906,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -920,7 +920,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -934,7 +934,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="directional_gyro" ID="{C0E549F9-BA86-4F23-A25A-6563870DB647}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="tot" ID="{C0E549F9-BA86-4F23-A25A-6563870DB647}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -948,7 +948,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="FALSE_HORIZON" ID="{4D12CD9A-AFE4-4E5C-94DF-3B21BC58611C}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="thot" ID="{4D12CD9A-AFE4-4E5C-94DF-3B21BC58611C}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -962,7 +962,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -976,7 +976,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -990,7 +990,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1004,7 +1004,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1018,7 +1018,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1032,7 +1032,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1046,7 +1046,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="tiiiiny" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="tweet" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1060,7 +1060,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="tiiiiny" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="tweet" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1074,7 +1074,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="tiiiiny" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="tweet" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1088,7 +1088,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="tiiiiny" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="tweet" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1102,7 +1102,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="tiiiiny" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="tweet" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1116,7 +1116,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="tiiiiny" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="tweet" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1130,7 +1130,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1144,7 +1144,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Main" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="teek" ID="{DC71F3E0-A5F3-41DC-9F88-1C5E5B67578F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1158,7 +1158,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="small-semi_hollow-taut" ID="{A616F9C1-D2D5-4A87-A95D-FC65471394C5}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="thote" ID="{A616F9C1-D2D5-4A87-A95D-FC65471394C5}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1172,7 +1172,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="thunk" ID="{6AEEFF7C-7479-4A86-BD40-3103CB36F6E5}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="thonk" ID="{6AEEFF7C-7479-4A86-BD40-3103CB36F6E5}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1186,7 +1186,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="tiiiiny" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="tweet" ID="{AF2BF729-642A-4E92-8127-8F867D07483D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -2513,6 +2513,62 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_wing42_boeing_247d_vent_1_wind" ID="{EE4F83C6-C2D8-48A3-96DC-59B6C5E8E477}">
+							<ChildrenList>
+								<Action Name="" ID="{02F96B95-206E-4048-AA84-2D69A6B7EB5F}" ShortID="864389673">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="wind_vent_1" ID="{CE601E08-0B78-4AD7-858E-A855DC5DCE4B}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_vent_2_wind" ID="{1C6BF5B8-D3CB-408F-86D2-E5B6F5B67DCE}">
+							<ChildrenList>
+								<Action Name="" ID="{CDBE99FC-EEB6-4E65-A154-8848B75FB267}" ShortID="236946283">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="wind_vent_2" ID="{8C8DAD4D-A924-4616-A888-4DC90C6BE723}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_vent_3_wind" ID="{E8180D6C-E42A-4BE0-A36D-DAD4CB2ADA33}">
+							<ChildrenList>
+								<Action Name="" ID="{9CC3063B-3557-4DF5-B30C-B586420A5A0A}" ShortID="926801696">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="wind_vent_3" ID="{690C7A0D-A3BC-4A38-8939-FAC3BB54FBC8}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_vent_4_wind" ID="{085FEB8A-317A-4333-9EBD-40EF5BB18F55}">
+							<ChildrenList>
+								<Action Name="" ID="{ECFF1F5E-EA4E-482B-924B-51731BBA002C}" ShortID="793648892">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="wind_vent_4" ID="{562CB2F1-AC0F-4C6A-AA74-7BAD688DBDA6}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Wobble_pump" ID="{99D834DA-2AD9-41C0-93F7-AF0234CA5F94}" ShortID="323144302">
@@ -2929,7 +2985,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="gyro_ah" ID="{87AC8819-97FD-4645-9303-99F19F93EF20}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="gyro_ah-attack" ID="{87AC8819-97FD-4645-9303-99F19F93EF20}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -2953,41 +3009,15 @@
 				</Folder>
 				<Folder Name="Vibrations" ID="{A3F97518-CB33-4977-9B26-32ADCB9DD830}" ShortID="833650661">
 					<ChildrenList>
-						<Event Name="Play_wing42_boeing_247d_rattle_start" ID="{3A33E6E5-9BD2-4C41-8DAD-CDE0F0BCF8C5}">
+						<Event Name="Play_wing42_boeing_247d_rattle" ID="{CBE012D6-D90E-49FA-BDFE-A207B021A834}">
 							<ChildrenList>
-								<Action Name="" ID="{EBFFA532-470E-4774-AEB2-C80400D1143A}" ShortID="736077677">
+								<Action Name="" ID="{656A5724-10AA-44C6-9A76-38E5DED91915}" ShortID="96292792">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Rattle_start" ID="{13BC404D-BC72-4C73-A017-9C6D54D5747B}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_wing42_boeing_247d_rattle_stop" ID="{938CBAC6-BFFE-4584-87A5-D2463B150E69}">
-							<ChildrenList>
-								<Action Name="" ID="{9C413BFF-C375-49EE-A010-DF6C8B908245}" ShortID="409758110">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Rattle_start" ID="{13BC404D-BC72-4C73-A017-9C6D54D5747B}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{4B4562B8-6E76-42F9-AB1B-0E589C32755A}" ShortID="467916948">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Rattle_stop" ID="{BF1CB0F8-5E4C-4B3F-9080-E9810E98B906}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="Rattles_positve" ID="{47825C53-B2B6-457B-BCF7-52383FBBC223}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -3121,7 +3151,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Mesh" ID="{5E9C70CC-42D9-4545-B1A7-3BA71B2473E2}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="Mesh_left" ID="{5E9C70CC-42D9-4545-B1A7-3BA71B2473E2}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -3135,7 +3165,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Mesh" ID="{5E9C70CC-42D9-4545-B1A7-3BA71B2473E2}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="Mesh_right" ID="{D2FCCB07-79F8-43F3-BE09-3870CC4AA97E}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -3175,7 +3205,38 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Wind" ID="{5ABEFD70-F4F3-4EDD-B5B6-18E9390894F0}" ShortID="93675812"/>
+				<Folder Name="Wind" ID="{5ABEFD70-F4F3-4EDD-B5B6-18E9390894F0}" ShortID="93675812">
+					<ChildrenList>
+						<Event Name="Play_wing42_boeing_247d_wind_window_left" ID="{8314A0DC-CF8F-4E93-BA83-81A61D668B65}">
+							<ChildrenList>
+								<Action Name="" ID="{3F476F6D-4761-44E4-AE5B-65AC4EE55505}" ShortID="877934296">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wind" ID="{59C40DDE-A3A3-4BB0-8001-D963A22F18AA}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_wind_window_right" ID="{520B2840-F217-490E-8F96-2DE5486D4631}">
+							<ChildrenList>
+								<Action Name="" ID="{C0D81932-F906-4713-9064-0FB7C105D516}" ShortID="787856243">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wind" ID="{59C40DDE-A3A3-4BB0-8001-D963A22F18AA}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

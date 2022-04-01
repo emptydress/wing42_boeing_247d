@@ -522,8 +522,11 @@
 					<ChildrenList>
 						<GameParameter Name="RATTLE_INTENSITY" ID="{7EDCAA1F-03DC-48F8-BEA9-92C8082945ED}">
 							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Min" Type="Real64" Value="-100"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="RATTLE_INTENSITY_NORMALIZED" ID="{AF216AAF-EEEC-4C8D-8EFD-D69A07CCE920}">
@@ -602,8 +605,8 @@
 					<ChildrenList>
 						<GameParameter Name="VENT_1_acceleration_PITCH_CONTROLLER" ID="{FB28EB03-87BA-4824-80EE-1E2B012D0555}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="0.4"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Min" Type="Real64" Value="-100"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
@@ -620,8 +623,8 @@
 						</GameParameter>
 						<GameParameter Name="VENT_2_acceleration_PITCH_CONTROLLER" ID="{7140BCF3-7B84-4167-9869-D6A529D0CB59}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="0.4"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Min" Type="Real64" Value="-100"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
@@ -647,8 +650,8 @@
 						</GameParameter>
 						<GameParameter Name="VENT_3_acceleration_PITCH_CONTROLLER" ID="{F44163C0-E9CC-48D5-9948-BF5C96500C45}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="0.4"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Min" Type="Real64" Value="-100"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
@@ -656,8 +659,8 @@
 						</GameParameter>
 						<GameParameter Name="VENT_4_acceleration_PITCH_CONTROLLER" ID="{4D453841-C37A-46AF-8058-06821D0189C6}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="0.4"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Min" Type="Real64" Value="-100"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
@@ -674,22 +677,34 @@
 						</GameParameter>
 						<GameParameter Name="VENT_1" ID="{4665F93C-BEA1-4F7A-9270-76CA61FCC737}">
 							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.2"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="VENT_2" ID="{DD41593B-5126-41C0-A3AC-17D5B3145FEC}">
 							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.2"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="VENT_3" ID="{310B4719-6E01-4E01-9895-C98DD4C38511}">
 							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.2"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="VENT_4" ID="{850D3621-E645-44C3-966E-C9E89A1929C6}">
 							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.2"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>
@@ -698,8 +713,6 @@
 					<ChildrenList>
 						<GameParameter Name="WINDOW_2" ID="{0ADBA7D9-8A03-40E3-A931-434852C8F66E}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 								<Property Name="SlewRateDown" Type="Real64" Value="0"/>
@@ -707,8 +720,6 @@
 						</GameParameter>
 						<GameParameter Name="WINDOW_1" ID="{96C44ACE-62AE-44D4-B92E-D68AB40EAA26}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 								<Property Name="SlewRateDown" Type="Real64" Value="0"/>
@@ -716,8 +727,8 @@
 						</GameParameter>
 						<GameParameter Name="WINDOW_1_derived_VOLUME_CONTROLLER" ID="{A1C0D951-AFEB-4976-B166-3E2648863233}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.2"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Min" Type="Real64" Value="-100"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
@@ -725,8 +736,8 @@
 						</GameParameter>
 						<GameParameter Name="WINDOW_1_acceleration_PITCH_CONTROLLER" ID="{64FF18CE-B01F-49BB-8A5A-79BCAFB0458E}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="0.5"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Min" Type="Real64" Value="-100"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
@@ -734,8 +745,8 @@
 						</GameParameter>
 						<GameParameter Name="WINDOW_2_derived_VOLUME_CONTROLLER" ID="{86A8C16F-D9DC-41A9-8FBE-6793166AA2ED}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.2"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Min" Type="Real64" Value="-100"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
@@ -743,8 +754,8 @@
 						</GameParameter>
 						<GameParameter Name="WINDOW_2_acceleration_PITCH_CONTROLLER" ID="{9ECC78C2-33B3-4BFA-BB5D-7E80B85A3D72}">
 							<PropertyList>
-								<Property Name="FilterTimeDown" Type="Real64" Value="0.5"/>
-								<Property Name="FilterTimeUp" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.3"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
 								<Property Name="InitialValue" Type="Real64" Value="0"/>
 								<Property Name="Min" Type="Real64" Value="-100"/>
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
@@ -924,6 +935,17 @@
 								</GameParameter>
 							</ChildrenList>
 						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Circuits" ID="{3B961878-C62D-4F91-9094-26E70147BF39}" ShortID="8186869">
+					<ChildrenList>
+						<GameParameter Name="ON_CIRCUIT_35" ID="{78AF5E4A-04C6-4EBE-81B5-C286AA4EAE52}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+								<Property Name="SlewRateUp" Type="Real64" Value="0.1"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BF4A990C-6EC2-47C1-8D34-7393EDBBDC54}" SchemaVersion="97">
 	<SoundBanks>
-		<WorkUnit Name="aircraft_ai" ID="{BF4A990C-6EC2-47C1-8D34-7393EDBBDC54}" PersistMode="Standalone"/>
+		<WorkUnit Name="aircraft_ai" ID="{BF4A990C-6EC2-47C1-8D34-7393EDBBDC54}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="wing42_boeing_247d_ai" ID="{EE58DA0F-9E1D-4FFE-B285-206FA0437C9F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="wing42_boeing_247d_ai" ID="{744DD23A-8A01-4761-ABA4-1B80EF066F38}" WorkUnitID="{744DD23A-8A01-4761-ABA4-1B80EF066F38}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

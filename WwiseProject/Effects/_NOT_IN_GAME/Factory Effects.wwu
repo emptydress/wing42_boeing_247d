@@ -352,7 +352,7 @@
 												<Property Name="OnOffBand1" Type="bool" Value="False"/>
 											</PropertyList>
 										</Effect>
-										<Effect Name="High_Freq_Cut_11" ID="{96D2A3E1-1EA0-4DBB-B303-3EA9035A484C}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+										<Effect Name="Selectors" ID="{96D2A3E1-1EA0-4DBB-B303-3EA9035A484C}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 											<PropertyList>
 												<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
 												<Property Name="FilterTypeBand2" Type="int32" Value="4"/>

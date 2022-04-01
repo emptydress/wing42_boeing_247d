@@ -23,7 +23,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Engine2_combustion-outside" ID="{D056C73B-C0FC-4C34-8186-3ADE36B34125}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Engine2_combustion_ai" ID="{91A10329-C34F-4FCC-B716-60A3F21364DE}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -37,7 +37,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Engine1_combustion" ID="{FBAC12FD-4738-4B45-85E1-72ED45C5E3DF}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Engine1_combustion_ai" ID="{CD3708BF-C7B6-4B08-BF51-9E5D5C5EBF61}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -51,7 +51,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="startup-outside" ID="{51B4D0A0-165A-46D0-B49D-B67AF139BECD}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Eng2_startup_ai" ID="{DD20CE5A-1E38-43FA-AF46-B84C00A38497}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -65,21 +65,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Propellor-outside" ID="{3C7704A7-B31D-40DA-A57B-815184A3BDE5}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_wing42_boeing_247d_ai_eng2_ai_startup_ext" ID="{8176AE4A-CD0F-45C6-9A24-96C482320126}">
-							<ChildrenList>
-								<Action Name="" ID="{D817C744-AD3D-4BCB-9D4E-C7F2F261E5F5}" ShortID="577280825">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="startup-outside" ID="{51B4D0A0-165A-46D0-B49D-B67AF139BECD}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Eng2_propellor_ai" ID="{19921509-8E99-4ADB-8F4E-15250497772A}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -95,21 +81,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="shutdown-outside" ID="{75D7B6BC-31F9-4E1F-B89B-2B75A6BC6F7E}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_wing42_boeing_247d_ai_eng1_startup_ext" ID="{AD29288D-A8ED-4AEE-9925-18DD0AED0FF2}">
-							<ChildrenList>
-								<Action Name="" ID="{5AF628FE-131F-4C45-A8CD-51937778CE33}" ShortID="209746421">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="startup-outside" ID="{F66DD5FD-894A-4197-AB04-6C82FD286CDC}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Eng2_shutdown_ai" ID="{F9C82D77-50E0-4E67-A08A-BB655C592208}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -124,7 +96,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="shutdown-outside" ID="{319F4854-A1F5-4ADD-BEEA-2A7ED190EEFB}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Eng1_shutdown_ai" ID="{3622A07C-B084-408F-B3E9-9B2BF896FD47}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -132,13 +104,13 @@
 						</Event>
 						<Event Name="Play_wing42_boeing_247d_ai_eng1_prop_ext" ID="{FB942D84-970F-49D8-A18B-184203FE0D24}">
 							<ChildrenList>
-								<Action Name="" ID="{D2279559-C380-468D-9170-D2233F1F0E52}" ShortID="8028570">
+								<Action Name="" ID="{C86173E7-BBAF-403F-8AC2-B77C544C2745}" ShortID="113917845">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Propellor-outside" ID="{A8C5C9D0-BC07-4E6C-B99C-4D4D54B40B30}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Eng1_propellor_ai" ID="{8654D971-FAD9-42E8-96A2-CC971F6827CD}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -152,7 +124,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="startup-outside" ID="{F66DD5FD-894A-4197-AB04-6C82FD286CDC}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Eng1_startup_ai" ID="{01BFCFDA-CF32-41DB-8015-5953759890AE}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -166,7 +138,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Backfire-eng1" ID="{36A9D26E-9AC9-4F5D-9436-43BC06E4F03A}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Backfire_left_ai" ID="{E5626952-44B3-4857-8B32-1F85342180C1}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -180,7 +152,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Backfire-eng2" ID="{75FAD5D8-219F-4D29-9067-D8988517F2F7}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Backfire_right_ai" ID="{9DD2ABB9-0405-49B7-A3A5-77A9E083448A}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -202,7 +174,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Flywheel_left" ID="{2D1CFB18-9B0F-424C-A993-3F86C7E5FFCB}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Flywheel_left" ID="{2D1CFB18-9B0F-424C-A993-3F86C7E5FFCB}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -216,7 +188,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Mesh" ID="{5E9C70CC-42D9-4545-B1A7-3BA71B2473E2}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Mesh_left_ai" ID="{A49167C6-C6EA-4ECB-BCCE-B7E203A0C52C}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -230,7 +202,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Mesh" ID="{5E9C70CC-42D9-4545-B1A7-3BA71B2473E2}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Mesh_right_ai" ID="{3F55D6EF-F5D8-4844-9B76-B2CE33C9FD94}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -244,7 +216,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Flywheel_right" ID="{C6BA6CF2-AE1E-40A3-9F1F-2FF2B38B342F}" WorkUnitID="{511DD694-44E7-4E18-8A2A-38F95E60C8F9}"/>
+											<ObjectRef Name="Flywheel_right" ID="{C6BA6CF2-AE1E-40A3-9F1F-2FF2B38B342F}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -41,10 +41,17 @@
 -->
 
 	<EngineSoundTransitions>
-		<Sound WwiseData="True" EngineIndex="1" StateFrom="Off" StateTo="On" WwiseEvent="eng1_startup" />
-		<Sound WwiseData="True" EngineIndex="2" StateFrom="Off" StateTo="On" WwiseEvent="eng2_startup" />
-		<Sound WwiseData="True" EngineIndex="1" StateFrom="On" StateTo="Off" WwiseEvent="eng1_shutdown" />
-		<Sound WwiseData="True" EngineIndex="2" StateFrom="On" StateTo="Off" WwiseEvent="eng2_shutdown" />
+		<Sound WwiseData="True" Viewpoint="Outside" EngineIndex="1" StateFrom="Off" StateTo="On" WwiseEvent="eng1_startup_ext" >		
+		<Sound WwiseData="True" Viewpoint="Inside"  EngineIndex="1" StateFrom="Off" StateTo="On" WwiseEvent="eng1_startup_int" />
+
+		<Sound WwiseData="True" Viewpoint="Outside" EngineIndex="1" StateFrom="On" StateTo="Off" WwiseEvent="eng1_shutdown_ext" />
+		<Sound WwiseData="True" Viewpoint="Inside" EngineIndex="1" StateFrom="On" StateTo="Off" WwiseEvent="eng1_shutdown_int" />
+
+		<Sound WwiseData="True" Viewpoint="Outside" EngineIndex="2" StateFrom="Off" StateTo="On" WwiseEvent="eng2_startup_ext" />
+		<Sound WwiseData="True" Viewpoint="Inside"  EngineIndex="2" StateFrom="Off" StateTo="On" WwiseEvent="eng2_startup_int" />
+
+		<Sound WwiseData="True" Viewpoint="Outside" EngineIndex="2" StateFrom="On" StateTo="Off" WwiseEvent="eng2_shutdown_ext" />
+		<Sound WwiseData="True" Viewpoint="Inside" EngineIndex="2" StateFrom="On" StateTo="Off" WwiseEvent="eng2_shutdown_int" />
 	</EngineSoundTransitions>
 
 	<AlwaysPlaySounds>
@@ -409,7 +416,7 @@
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Klaxon-->
-		<Sound WwiseData="True" NodeName="klaxon_gear_warning" SimVar="CIRCUIT ON" Units="Bool" Index="35" WwiseEvent="klaxon">
+		<Sound WwiseData="True" NodeName="klaxon_gear_warning" LocalVar="ON CIRCUIT 35" WwiseEvent="klaxon">
 			<Range LowerBound="1" />
 		</Sound>
 
@@ -441,7 +448,7 @@
 
 		<!--Vents-->
 
-		<!--Cockpit vents-->
+		<!--Cockpit vent squeaks-->
 		<Sound WwiseData="True" BreakOnStop="True" NodeName="cockpit_vent_1" LocalVar="VENT 1" WwiseEvent="vent_squeak_01" >
 			<WwiseRTPC Derived="True"  RTPCAttackTime=".3" RTPCReleaseTime=".5" LocalVar="VENT 1" RTPCName="VENT_1_acceleration_PITCH_CONTROLLER" />
 			<WwiseRTPC Derived="True"  RTPCAttackTime="1"  RTPCReleaseTime=".7" LocalVar="VENT 1" RTPCName="VENT_1_derived_VOLUME_CONTROLLER"  />
@@ -464,7 +471,7 @@
 			<WwiseRTPC Derived="True" RTPCAttackTime="1"  RTPCReleaseTime=".1" LocalVar="VENT 2" RTPCName="VENT_2_derived_VOLUME_CONTROLLER" />
 		</Sound>
 
-		<!--Cabin vents-->
+		<!--Cabin vent squeaks-->
 		<Sound WwiseData="True" BreakOnStop="True" NodeName="cabin_ac_1" LocalVar="VENT 3" WwiseEvent="vent_squeak_03" >
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 3" RTPCName="VENT_3_acceleration_PITCH_CONTROLLER" />
 			<WwiseRTPC Derived="True" RTPCAttackTime="1"  RTPCReleaseTime=".7" LocalVar="VENT 3" RTPCName="VENT_3_derived_VOLUME_CONTROLLER" />
@@ -488,8 +495,37 @@
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
+		<!--Cockpit wind-->
+		<Sound WwiseData="True" Continuous="True" NodeName="node_left_window" SimVar="AIRSPEED TRUE" Index="0" Units="knots" ConeHeading="90" WwiseEvent="wind_window_left" >
+			<WwiseRTPC Simvar="AIRSPEED TRUE" Units="knots" Index="0" RTPCName="SIMVAR_AIRSPEED_TRUE" />
+			<WwiseRTPC LocalVar="WINDOW 1" WwiseRTPC="WINDOW_1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="True" NodeName="node_right_window" SimVar="AIRSPEED TRUE" Index="0" Units="knots" ConeHeading="270" WwiseEvent="wind_window_right" >
+			<WwiseRTPC Simvar="AIRSPEED TRUE" Units="knots" Index="0" RTPCName="SIMVAR_AIRSPEED_TRUE" />
+			<WwiseRTPC LocalVar="WINDOW 2" WwiseRTPC="WINDOW_2" />
+		</Sound>
+
 		<!--Vent wind-->
-		<Sound WwiseData="True" Continuous="True" NodeName="cabin_ac_1" LocalVar="VENT 1" WwiseEvent="Vent_1_wind" />
+		<Sound WwiseData="True" Continuous="True" NodeName="cabin_ac_1" LocalVar="VENT 1" WwiseEvent="vent_1_wind" >
+			<WwiseRTPC LocalVar="VENT 1" WwiseRTPC="VENT_1" />
+			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="True" NodeName="cabin_ac_1" LocalVar="VENT 2" WwiseEvent="vent_2_wind" >
+			<WwiseRTPC LocalVar="VENT 2" WwiseRTPC="VENT_2" />
+			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+		</Sound>	
+
+		<Sound WwiseData="True" Continuous="True" NodeName="cabin_ac_1" LocalVar="VENT 3" WwiseEvent="vent_3_wind" >
+			<WwiseRTPC LocalVar="VENT 3" WwiseRTPC="VENT_3" />
+			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="True" NodeName="cabin_ac_1" LocalVar="VENT 4" WwiseEvent="vent_4_wind" >
+			<WwiseRTPC LocalVar="VENT 4" WwiseRTPC="VENT_4" />
+			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+		</Sound>	
  
 	</SimVarSounds>
 
