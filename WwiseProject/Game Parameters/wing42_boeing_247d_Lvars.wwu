@@ -766,6 +766,28 @@
 								<Property Name="RTPCRamping" Type="int16" Value="2"/>
 							</PropertyList>
 						</GameParameter>
+						<GameParameter Name="EMERGENCY_HATCH" ID="{73D399A4-EE95-48DE-A38D-55F488B35D0F}">
+							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="0.2"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="EMERGENCY_HATCH_HANDLE1" ID="{638EDB61-0A25-4907-9BAA-D14030A516C1}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="RTPCRamping" Type="int16" Value="1"/>
+								<Property Name="SlewRateDown" Type="Real64" Value="100"/>
+								<Property Name="SlewRateUp" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="EMERGENCY_HATCH_HANDLE2" ID="{24AD1FC2-E662-4C19-932F-B3CA8F65F152}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Fuses" ID="{359BDB4F-6A38-4639-88A5-C8EC6BCCE555}" ShortID="151147989">

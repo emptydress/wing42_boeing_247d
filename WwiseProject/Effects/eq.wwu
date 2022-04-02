@@ -7,13 +7,115 @@
 					<ChildrenList>
 						<Effect Name="eq_outdoor_aircraft_generic" ID="{38F16881-A281-4594-83DC-4644F7CDD03B}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 							<PropertyList>
-								<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+								<Property Name="FilterTypeBand1" Type="int32" Value="2"/>
 								<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-								<Property Name="FrequencyBand1" Type="Real32" Value="150"/>
+								<Property Name="FrequencyBand1" Type="Real32" Value="20"/>
 								<Property Name="FrequencyBand2" Type="Real32" Value="3000"/>
 								<Property Name="FrequencyBand3" Type="Real32" Value="8392"/>
-								<Property Name="GainBand2" Type="Real32" Value="-3"/>
+								<Property Name="GainBand2" Type="Real32" Value="-3.5"/>
 								<Property Name="QFactorBand2" Type="Real32" Value="2"/>
+							</PropertyList>
+						</Effect>
+						<Effect Name="Outside_engines" ID="{FA1E8E62-F81C-4AD3-95D4-25855AA2B7BF}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<PropertyList>
+								<Property Name="FrequencyBand1" Type="Real32" Value="361"/>
+								<Property Name="GainBand1" Type="Real32" Value="7.5">
+									<RTPCList>
+										<RTPC Name="" ID="{A93A5316-6744-4E93-A819-2F299CAC7F90}" ShortID="285903610">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{2607E164-BCBD-4D00-8E32-CE17EB203FAA}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-2.47139</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="GainBand2" Type="Real32" Value="1">
+									<RTPCList>
+										<RTPC Name="" ID="{30758C1B-5001-472F-A789-9492967AE294}" ShortID="108162224">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{DEB77153-C737-43AD-BF77-515CF86F427A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-2.47139</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="GainBand3" Type="Real32" Value="15.5">
+									<RTPCList>
+										<RTPC Name="" ID="{EAA7B2F6-42DC-46BF-B9C0-F1EB75969B36}" ShortID="320595447">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SIMVAR_CHASE_CAMERA_ZOOM" ID="{61F50F1B-5213-4695-8AF7-6F6E655255A1}" WorkUnitID="{160297A3-539B-416D-BB27-309DA15AE344}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{943C6B7C-7EEE-4F41-9B64-86678D4D5A0F}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-1.52965</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+						</Effect>
+						<Effect Name="External_wind_lowend" ID="{919FE79B-ABCF-4E3A-B341-185A2F7A2068}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<PropertyList>
+								<Property Name="FrequencyBand1" Type="Real32" Value="275"/>
+								<Property Name="FrequencyBand2" Type="Real32" Value="634"/>
+								<Property Name="FrequencyBand3" Type="Real32" Value="261"/>
+								<Property Name="GainBand1" Type="Real32" Value="4"/>
+								<Property Name="GainBand2" Type="Real32" Value="9.5"/>
+								<Property Name="GainBand3" Type="Real32" Value="9"/>
 							</PropertyList>
 						</Effect>
 					</ChildrenList>

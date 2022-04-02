@@ -3129,6 +3129,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_wing42_boeing_247d_wind_emergency_hatch" ID="{575260EE-E0BE-4CC8-A394-E6F6AB142DAD}">
+							<ChildrenList>
+								<Action Name="" ID="{E05972DC-7483-4F68-837D-06F631B4C725}" ShortID="272790383">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cockpit_wind_emergency_hatch" ID="{885D8331-F9D3-4187-8AD0-376663D0A8DF}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Gear" ID="{8A94A52E-2428-400F-A698-E32D382428A1}" ShortID="869267169">
