@@ -30,25 +30,21 @@
 
     <EngineSoundTransitions>
         <Sound WwiseData="True" Viewpoint="Outside" EngineIndex="1" StateFrom="Off" StateTo="On" WwiseEvent="eng1_startup_ext" />
-            <Sound WwiseData="True" Viewpoint="Inside" EngineIndex="1" StateFrom="Off" StateTo="On" WwiseEvent="eng1_startup_int" />
 
-            <Sound WwiseData="True" Viewpoint="Outside" EngineIndex="1" StateFrom="On" StateTo="Off" WwiseEvent="eng1_shutdown_ext" />
-            <Sound WwiseData="True" Viewpoint="Inside" EngineIndex="1" StateFrom="On" StateTo="Off" WwiseEvent="eng1_shutdown_int" />
+        <Sound WwiseData="True" Viewpoint="Outside" EngineIndex="1" StateFrom="On" StateTo="Off" WwiseEvent="eng1_shutdown_ext" />
 
-            <Sound WwiseData="True" Viewpoint="Outside" EngineIndex="2" StateFrom="Off" StateTo="On" WwiseEvent="eng2_startup_ext" />
-            <Sound WwiseData="True" Viewpoint="Inside" EngineIndex="2" StateFrom="Off" StateTo="On" WwiseEvent="eng2_startup_int" />
+        <Sound WwiseData="True" Viewpoint="Outside" EngineIndex="2" StateFrom="Off" StateTo="On" WwiseEvent="eng2_startup_ext" />
 
-            <Sound WwiseData="True" Viewpoint="Outside" EngineIndex="2" StateFrom="On" StateTo="Off" WwiseEvent="eng2_shutdown_ext" />
-            <Sound WwiseData="True" Viewpoint="Inside" EngineIndex="2" StateFrom="On" StateTo="Off" WwiseEvent="eng2_shutdown_int" />
+        <Sound WwiseData="True" Viewpoint="Outside" EngineIndex="2" StateFrom="On" StateTo="Off" WwiseEvent="eng2_shutdown_ext" />
     </EngineSoundTransitions>
 
     <EngineSoundPresets>
 
         <!--Engine 1-->
-        <Sound WwiseData="True" ConeHeading="180" EngineIndex="1" RPMMin="100" FadeOutType="2" FadeOutTime="1" RPMMin="350" WwiseEvent="Combustion" CustomSuffix="ext" />
+        <Sound WwiseData="True" ConeHeading="180" EngineIndex="1" FadeOutType="2" FadeOutTime="1" RPMMin="350" WwiseEvent="Combustion" CustomSuffix="ext" />
 
         <!--Engine 2-->
-        <Sound WwiseData="True" ConeHeading="180" EngineIndex="2" RPMMin="100" FadeOutType="2" FadeOutTime="1" RPMMin="350" WwiseEvent="Combustion" CustomSuffix="ext" />
+        <Sound WwiseData="True" ConeHeading="180" EngineIndex="2" FadeOutType="2" FadeOutTime="1" RPMMin="350" WwiseEvent="Combustion" CustomSuffix="ext" />
 
     </EngineSoundPresets>
 
@@ -80,7 +76,7 @@
             <Range LowerBound="1" />
             <WwiseRTPC LocalVar="FLYWHEEL RPM 2" RTPCName="FLYWHEEL_RPM_2" />
         </Sound>
-    
+
     </SimVarSounds>
 
 </SoundInfo>
