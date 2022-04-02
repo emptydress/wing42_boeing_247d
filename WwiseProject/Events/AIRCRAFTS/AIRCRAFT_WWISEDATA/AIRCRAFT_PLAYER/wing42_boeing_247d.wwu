@@ -78,7 +78,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_eng1_startup_int" ID="{945173E0-BBB9-4765-9B1F-209B1FED8592}"/>
 						<Event Name="Play_wing42_boeing_247d_backfire_left_int" ID="{C3C63EF7-F37E-4FCA-8565-CCE8349F5C90}">
 							<ChildrenList>
 								<Action Name="" ID="{D267C93C-6828-4392-B21E-FA2A35545ABC}" ShortID="623366320">
@@ -193,8 +192,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_eng2_startup_int" ID="{0ABEB329-81DB-47F3-AA3A-1301AE9ABEDB}"/>
-						<Event Name="Play_wing42_boeing_247d_eng2_startup_ext" ID="{E46078B0-0FFD-4448-9F51-FD12F9B8AA3D}"/>
 						<Event Name="Play_wing42_boeing_247d_eng2_shutdown_ext" ID="{039EDD76-DDCB-401F-80FA-10BDADD1D501}">
 							<ChildrenList>
 								<Action Name="" ID="{6C5A8F3A-9355-4055-8313-FABA830C1051}" ShortID="113226595">
@@ -211,7 +208,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_wing42_boeing_247d_eng1_startup_ext" ID="{C4ED16F8-20EB-4D4B-B2E6-F633A8D96BFD}"/>
 						<Event Name="Play_wing42_boeing_247d_eng1_shutdown_ext" ID="{FE960F7C-EBCF-4E17-846A-7E1CA52EF686}">
 							<ChildrenList>
 								<Action Name="" ID="{4B6171AB-2448-4927-8315-206943CF73E9}" ShortID="929208814">
@@ -948,7 +944,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="thot" ID="{4D12CD9A-AFE4-4E5C-94DF-3B21BC58611C}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="thort" ID="{A1D0EAFF-4D5C-4F35-9AD8-E70D8843C96A}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1172,7 +1168,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="thonk" ID="{6AEEFF7C-7479-4A86-BD40-3103CB36F6E5}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="thot" ID="{4D12CD9A-AFE4-4E5C-94DF-3B21BC58611C}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -2279,7 +2275,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Flip-Off" ID="{779F57BF-60CD-46D7-8E07-FA572661DFAA}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+															<ObjectRef Name="Pb-Off" ID="{38D771B7-CABF-41C0-827B-E6EFF4FDF26C}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -2293,7 +2289,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Flip-On" ID="{DC227BE4-075D-45FE-8FC3-1800F1F12C4B}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+															<ObjectRef Name="Pb-Off_03" ID="{8AD03EE7-1FA4-4D18-A850-AD835CC6E6CE}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -2307,7 +2303,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="MB-Off" ID="{5FD4F1A2-FC53-4EDB-9AA3-CF4C6CD60129}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+															<ObjectRef Name="BB-Off_03" ID="{59BDB877-85DC-4313-ABE3-2A9C8D6C1D68}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -2321,7 +2317,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="MB-Off_01" ID="{BBDA4372-4B60-466B-95DC-1F7DA61131D9}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+															<ObjectRef Name="BB-Off_02" ID="{A902771D-4C1B-440D-8E38-3B3A72AE820B}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -2333,66 +2329,6 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Cabin" ID="{2D31CFA4-7A75-4D35-A350-CCABDBB87C9B}" ShortID="997739339">
-					<ChildrenList>
-						<Event Name="Play_wing42_boeing_247d_vent_1" ID="{61463C63-D8E4-4D1D-8058-D2BC94DE1C02}">
-							<ChildrenList>
-								<Action Name="" ID="{6A76A0F2-4297-4941-98D1-F36606F2E434}" ShortID="861259322">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Vent_01" ID="{28D5A727-6E9F-47D0-99C9-CCEBE714FD0E}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_wing42_boeing_247d_vent_2" ID="{E82F7120-DCA2-4152-909B-0EA0B363056A}">
-							<ChildrenList>
-								<Action Name="" ID="{FDAE417D-EDA1-4834-97A2-0679C3A5CE96}" ShortID="633724405">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Vent_02" ID="{6BFC2821-C916-4289-8EA2-9EE82DE0367E}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_wing42_boeing_247d_vent_3" ID="{DFF75A0D-B7C6-4D24-8CC4-F655A921F535}">
-							<ChildrenList>
-								<Action Name="" ID="{C4A1F223-4FFD-4140-A1DD-143F74F0450C}" ShortID="193568628">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Vent_03" ID="{C30EEE79-A209-4577-BF30-F69B8B716184}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_wing42_boeing_247d_vent_4" ID="{5B2B1868-FCD3-418D-AE45-55491ED1D641}">
-							<ChildrenList>
-								<Action Name="" ID="{AB1D7777-B1A4-41CE-B395-0F097F2CCB42}" ShortID="989088093">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Vent_04" ID="{AC155E20-89DC-4D98-8445-5F47EE408BBB}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="Relay" ID="{E750E8A3-EA55-499A-9AF1-E76780B9CFD6}" ShortID="207054343">
 					<ChildrenList>
 						<Event Name="Play_wing42_boeing_247d_relay_cabin_warning_2" ID="{799058B3-FA47-4724-8ECB-EA768989F0C0}"/>
@@ -2401,62 +2337,6 @@
 				</Folder>
 				<Folder Name="Vents" ID="{5EFFED6B-178C-45A8-BB33-335BDBE929D1}" ShortID="1012386537">
 					<ChildrenList>
-						<Event Name="Play_wing42_boeing_247d_vent_shut_01" ID="{35D4DD23-A47C-4F2D-B443-04C06D6A63B5}">
-							<ChildrenList>
-								<Action Name="" ID="{4BA91CE5-7CD8-4363-A5E9-149C5AFCB035}" ShortID="1036009166">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Vent_shut_01" ID="{78FF1DA3-6EE6-4487-8D89-B4C8DA1148A6}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_wing42_boeing_247d_vent_shut_02" ID="{9C090495-AF2D-4374-B277-539ECBB4F0CD}">
-							<ChildrenList>
-								<Action Name="" ID="{8BEC1D44-85C7-431F-B0C0-14070D782B1C}" ShortID="443802987">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Vent_shut_02" ID="{F654AB1E-2722-49B6-8497-34EC015FF295}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_wing42_boeing_247d_vent_shut_03" ID="{8788EDFC-B515-425B-9BD3-F3FCDCBA1B43}">
-							<ChildrenList>
-								<Action Name="" ID="{5184BFC9-66DB-4C0E-9F30-4C182A35C992}" ShortID="1057883598">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Vent_shut_03" ID="{5994F1BA-83C6-4CD6-ADC9-672AC0F50607}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_wing42_boeing_247d_vent_shut_04" ID="{E503D679-41AB-4EC4-BF28-6DC7DD7AEE92}">
-							<ChildrenList>
-								<Action Name="" ID="{BF42E5C6-554D-4428-9CC6-3084891BE477}" ShortID="901442692">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Vent_shut_04" ID="{C5AB4CB6-9F2E-4998-95C8-B8D623ABE2C3}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_wing42_boeing_247d_vent_squeak_01" ID="{60C097AF-6ED0-4D52-8759-0B89FE253586}">
 							<ChildrenList>
 								<Action Name="" ID="{261F62C5-69F8-4787-8AD9-07B658F9F6D2}" ShortID="492528863">
@@ -2955,7 +2835,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Clock" ID="{7E9BD764-BC55-43B2-96A3-A6F2DBFA739D}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+									<ObjectRef Name="Tick_tock_motha_fucka" ID="{9F7C089C-E542-4952-8D6D-5F137B206F6A}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -3007,7 +2887,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Vibrations" ID="{A3F97518-CB33-4977-9B26-32ADCB9DD830}" ShortID="833650661">
+				<Folder Name="Rattle" ID="{A3F97518-CB33-4977-9B26-32ADCB9DD830}" ShortID="833650661">
 					<ChildrenList>
 						<Event Name="Play_wing42_boeing_247d_rattle" ID="{CBE012D6-D90E-49FA-BDFE-A207B021A834}">
 							<ChildrenList>
@@ -3215,7 +3095,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Wind" ID="{59C40DDE-A3A3-4BB0-8001-D963A22F18AA}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="External_wind" ID="{348F5B5F-B557-474A-A6E1-60FB76668958}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -3229,7 +3109,67 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Wind" ID="{59C40DDE-A3A3-4BB0-8001-D963A22F18AA}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+											<ObjectRef Name="Cockpit_wind_right" ID="{9C595E23-5D28-41C6-B74D-6513BB9102E8}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Gear" ID="{8A94A52E-2428-400F-A698-E32D382428A1}" ShortID="869267169">
+					<ChildrenList>
+						<Event Name="Play_wing42_boeing_247d_gear_motor_start_ext" ID="{FC1F4297-6FFC-4B54-BD89-AD201B652FDC}">
+							<ChildrenList>
+								<Action Name="" ID="{C5284091-82EC-417B-B80E-1CC91E6158C7}" ShortID="311152517">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gear_motor_ext" ID="{CB514690-A0EF-46DC-B3AA-FEFCB9278DC1}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_gear_motor_start_int" ID="{32CD31AA-4EED-427B-8476-417360778198}">
+							<ChildrenList>
+								<Action Name="" ID="{36125214-DE35-4157-AD18-3C2A593C0B70}" ShortID="435660220">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gear_motor_int" ID="{14EF21D7-AC4C-401D-AC1B-49E7BC0CE481}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_gear_motor_stop_ext" ID="{537665FA-DEA6-43A3-AAC3-FF3DED133F27}">
+							<ChildrenList>
+								<Action Name="" ID="{3FE8BB8E-C82F-4708-8561-A4A2BD761C53}" ShortID="567364405">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gear_motor-release" ID="{114784F3-BCB6-44EA-930F-D44852C3AD9E}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wing42_boeing_247d_gear_motor_stop_int" ID="{BF5BC69D-47B3-4615-9417-A8380B81CF88}">
+							<ChildrenList>
+								<Action Name="" ID="{13C45CE5-5F47-43B1-A55A-11077502E260}" ShortID="760528810">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gear_motor-release" ID="{A853517A-A25C-4056-858E-AECBA8D2FB22}" WorkUnitID="{CB9E88F3-C66E-4E04-8812-2CFB403E3597}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -13,10 +13,10 @@
     @                                                          @
     @                        by  Wing42                        @
     @                      www.wing42.com                      @
-    @                  tested with version 9.1                 @
+    @                  tested with version 9.6                 @
     @                                                          @
     @               Sound Design  by  Zak Spence               @
-    @                 emptydressmusic@gmail.com                @ 
+    @                 emptydressmusic@gmail.com                @
     @                                                          @
     @        Copyright (c) Wing42, All rights reserved.        @
     ************************************************************
@@ -35,141 +35,161 @@
 		<Parameter Name="Insulation_ExitOpen" Value="0"/>
 	</AcousticParameters>
 
+	<AlwaysPlaySounds>
+		<Sound WwiseData="True" ViewPoint="Inside" WwiseEvent="instrument_clock"/>
+
+	</AlwaysPlaySounds>
+
 <!--
   @*===================================================================================================*@
-  @*====================================* The Fruit of Prometheus *====================================*@ @*===================================================================================================*@
+  @*====================================* The Fruit of Prometheus *====================================*@ 
+  @*===================================================================================================*@
 -->
 
 	<EngineSoundTransitions>
-		<Sound WwiseData="True" Viewpoint="Outside" EngineIndex="1" StateFrom="Off" StateTo="On" WwiseEvent="eng1_startup_ext" >		
-		<Sound WwiseData="True" Viewpoint="Inside"  EngineIndex="1" StateFrom="Off" StateTo="On" WwiseEvent="eng1_startup_int" />
 
-		<Sound WwiseData="True" Viewpoint="Outside" EngineIndex="1" StateFrom="On" StateTo="Off" WwiseEvent="eng1_shutdown_ext" />
-		<Sound WwiseData="True" Viewpoint="Inside" EngineIndex="1" StateFrom="On" StateTo="Off" WwiseEvent="eng1_shutdown_int" />
+		<Sound WwiseData="True" Viewpoint="Outside" EngineIndex="1" StateFrom="Off" StateTo="On"   ConeHeading="180" WwiseEvent="eng1_combustion_start" CustomSuffix="ext" >
+			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
+		</Sound>
+		<Sound WwiseData="True" Viewpoint="Outside" EngineIndex="1" StateFrom="On"  StateTo="Off"  ConeHeading="180" WwiseEvent="eng1_shutdown"         CustomSuffix="ext">
+			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
+		</Sound>
+		<Sound WwiseData="True" Viewpoint="Inside"  EngineIndex="1" StateFrom="Off" StateTo="On"   ConeHeading="180" WwiseEvent="eng1_combustion_start" CustomSuffix="int">
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
+		</Sound>
+		<Sound WwiseData="True" Viewpoint="Inside"  EngineIndex="1" StateFrom="On"  StateTo="Off"  ConeHeading="180" WwiseEvent="eng1_shutdown"         CustomSuffix="int">
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
+		</Sound>
 
-		<Sound WwiseData="True" Viewpoint="Outside" EngineIndex="2" StateFrom="Off" StateTo="On" WwiseEvent="eng2_startup_ext" />
-		<Sound WwiseData="True" Viewpoint="Inside"  EngineIndex="2" StateFrom="Off" StateTo="On" WwiseEvent="eng2_startup_int" />
+		<Sound WwiseData="True" Viewpoint="Outside" EngineIndex="2" StateFrom="Off" StateTo="On"  ConeHeading="180"  WwiseEvent="eng2_combustion_start" CustomSuffix="ext">
+			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
+		</Sound>
+		<Sound WwiseData="True" Viewpoint="Outside" EngineIndex="2" StateFrom="On"  StateTo="Off" ConeHeading="180"  WwiseEvent="eng2_shutdown"         CustomSuffix="ext">
+			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
+		</Sound>
+		<Sound WwiseData="True" Viewpoint="Inside"  EngineIndex="2" StateFrom="Off" StateTo="On"  ConeHeading="180"  WwiseEvent="eng2_combustion_start" CustomSuffix="int">
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
+		</Sound>
+		<Sound WwiseData="True" Viewpoint="Inside"  EngineIndex="2" StateFrom="On"  StateTo="Off" ConeHeading="180"  WwiseEvent="eng2_shutdown"         CustomSuffix="int">
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
+		</Sound>
 
-		<Sound WwiseData="True" Viewpoint="Outside" EngineIndex="2" StateFrom="On" StateTo="Off" WwiseEvent="eng2_shutdown_ext" />
-		<Sound WwiseData="True" Viewpoint="Inside" EngineIndex="2" StateFrom="On" StateTo="Off" WwiseEvent="eng2_shutdown_int" />
 	</EngineSoundTransitions>
-
-	<AlwaysPlaySounds>
-		<Sound WwiseData="True" ViewPoint="Inside" WwiseEvent="instrument_clock"/>
-	</AlwaysPlaySounds>
 
 	<EngineSoundPresets>
 
 		<!--Engine 1-->
 		<!--Cockpit audio-->
-		<Sound WwiseData="True" ConeHeading="180" EngineIndex="1" FadeOutType="2" WwiseEvent="CombustionStart" CustomSuffix="int" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
-		</Sound>
-
-		<Sound WwiseData="True" ConeHeading="180" EngineIndex="1" RPMMin="100" FadeOutType="2" FadeOutTime="1" RPMMin="350" WwiseEvent="Combustion" CustomSuffix="int" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
-		</Sound>
-
-		<Sound WwiseData="True" ConeHeading="180" EngineIndex="1" FadeOutType="2" WwiseEvent="Shutdown" CustomSuffix="int" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
+		<Sound WwiseData="True" ViewPoint="Inside" ConeHeading="180" EngineIndex="1" RPMMin="100" FadeOutType="2" FadeOutTime="1" RPMMin="350" WwiseEvent="Combustion" CustomSuffix="int" >
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
 		<!--Chase cam audio-->
-		<Sound WwiseData="True" ConeHeading="180" EngineIndex="1" FadeOutType="2" WwiseEvent="CombustionStart" CustomSuffix="ext" >
+		<Sound WwiseData="True" ViewPoint="Outside" ConeHeading="180" EngineIndex="1" RPMMin="100" FadeOutType="2" FadeOutTime="1" RPMMin="350" WwiseEvent="Combustion" CustomSuffix="ext" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
-		</Sound>
-
-		<Sound WwiseData="True" ConeHeading="180" EngineIndex="1" RPMMin="100" FadeOutType="2" FadeOutTime="1" RPMMin="350" WwiseEvent="Combustion" CustomSuffix="ext" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
-		</Sound>
-
-		<Sound WwiseData="True" ConeHeading="180" EngineIndex="1" FadeOutType="2" WwiseEvent="Shutdown" CustomSuffix="ext" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
 		<!--Engine 2-->
 		<!--Cockpit audio-->
-		<Sound WwiseData="True" ConeHeading="180" EngineIndex="2" FadeOutType="2" WwiseEvent="CombustionStart" CustomSuffix="int" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
-		</Sound>
-
-		<Sound WwiseData="True" ConeHeading="180" EngineIndex="2" RPMMin="100" FadeOutType="2" FadeOutTime="1" RPMMin="350" WwiseEvent="Combustion" CustomSuffix="int" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
-		</Sound>
-
-		<Sound WwiseData="True" ConeHeading="180" EngineIndex="2" FadeOutType="2" WwiseEvent="Shutdown" CustomSuffix="int" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
+		<Sound WwiseData="True" ViewPoint="Inside" ConeHeading="180" EngineIndex="2" RPMMin="100" FadeOutType="2" FadeOutTime="1" RPMMin="350" WwiseEvent="Combustion" CustomSuffix="int" >
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 
 		<!--Chase cam audio-->
-		<Sound WwiseData="True" ConeHeading="180" EngineIndex="2" FadeOutType="2" WwiseEvent="CombustionStart" CustomSuffix="ext" >
+		<Sound WwiseData="True" ViewPoint="Outside" ConeHeading="180" EngineIndex="2" RPMMin="100" FadeOutType="2" FadeOutTime="1" RPMMin="350" WwiseEvent="Combustion" CustomSuffix="ext" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
-		</Sound>
-
-		<Sound WwiseData="True" ConeHeading="180" EngineIndex="2" RPMMin="100" FadeOutType="2" FadeOutTime="1" RPMMin="350" WwiseEvent="Combustion" CustomSuffix="ext" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
-		</Sound>
-
-		<Sound WwiseData="True" ConeHeading="180" EngineIndex="2" FadeOutType="2" WwiseEvent="Shutdown" CustomSuffix="ext" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 
 	</EngineSoundPresets>
 
 	<SimVarSounds>
 
+		<!--Cockpit wind-->
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" SimVar="AIRSPEED TRUE" Units="Knots" Index="0" NodeName="node_left_window" WwiseEvent="wind_window_left" >
+			<Range LowerBound="1" />
+			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" RTPCName="SIMVAR_AIRSPEED_TRUE" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" WwiseRTPC="WINDOW_1" />
+		</Sound>
+
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" SimVar="AIRSPEED TRUE" Units="Knots" Index="0" 
+		NodeName="node_right_window" WwiseEvent="wind_window_right" >
+			<Range LowerBound="1" />
+			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" RTPCName="SIMVAR_AIRSPEED_TRUE" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" WwiseRTPC="WINDOW_2" />
+		</Sound>
+
+		<!--Vent wind-->
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="cockpit_vent_1" SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseEvent="vent_1_wind" >
+			<Range LowerBound="1" />
+			<WwiseRTPC LocalVar="VENT 1" WwiseRTPC="VENT_1" />
+			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+		</Sound>
+
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="cockpit_vent_2" SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseEvent="vent_2_wind" >
+			<Range LowerBound="1" />
+			<WwiseRTPC LocalVar="VENT 2" WwiseRTPC="VENT_2" />
+			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+		</Sound>	
+
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="cabin_ac_1" SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseEvent="vent_3_wind" >
+			<Range LowerBound="1" />
+			<WwiseRTPC LocalVar="VENT 3" WwiseRTPC="VENT_3" />
+			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+		</Sound>
+
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="cabin_ac_2" SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseEvent="vent_4_wind" >
+			<Range LowerBound="1" />
+			<WwiseRTPC LocalVar="VENT 4" WwiseRTPC="VENT_4" />
+			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+		</Sound>	
+
+		<!--Rattles-->
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" LocalVar="RATTLE INTENSITY" FadeOutType="2" FadeOutTime="1" WwiseEvent="rattle" >
+			<WwiseRTPC LocalVar="RATTLE INTENSITY" RTPCName="RATTLE_INTENSITY" />
+			<WwiseRTPC Derived="True"  LocalVar="RATTLE INTENSITY" RTPCName="RATTLE_INTENSITY_acceleration_PITCH_CONTROLLER" />
+			<WwiseRTPC Derived="True"  LocalVar="RATTLE INTENSITY" RTPCName="RATTLE_INTENSITY_derived_VOLUME_CONTROLLER" />
+		</Sound>
+
 		<!--Propeller chop-->
 		<Sound WwiseData="True" ConeHeading="0" FadeOutType="2" FadeOutTime="0.2" ViewPoint="All" SimVar="GENERAL ENG RPM" Index="1" Units="RPM" WwiseEvent="eng1_prop" CustomSuffix="int" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 		<Sound WwiseData="True" ConeHeading="0" FadeOutType="2" FadeOutTime="0.2" ViewPoint="All" SimVar="GENERAL ENG RPM" Index="1" Units="RPM" WwiseEvent="eng1_prop" CustomSuffix="ext" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
 		<Sound WwiseData="True" ConeHeading="0" FadeOutType="2" FadeOutTime="0.2" ViewPoint="All" SimVar="GENERAL ENG RPM" Index="2" Units="RPM" WwiseEvent="eng2_prop" CustomSuffix="int" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 
 		<Sound WwiseData="True" ConeHeading="0" FadeOutType="2" FadeOutTime="0.2" ViewPoint="All" SimVar="GENERAL ENG RPM" Index="2" Units="RPM" WwiseEvent="eng2_prop" CustomSuffix="ext" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Backfires-->
 		<Sound WwiseData="True" ViewPoint="Outside" NodeName="fx_exhaust_left" LocalVar="FX PUFF1 1" WwiseEvent="backfire_left_ext" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
 		<Sound WwiseData="True" ViewPoint="Inside" NodeName="fx_exhaust_left" LocalVar="FX PUFF1 1" WwiseEvent="backfire_left_int" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
 		<Sound WwiseData="True" ViewPoint="Outside" NodeName="fx_exhaust_right" LocalVar="FX PUFF1 2" WwiseEvent="backfire_right_ext" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 
 		<Sound WwiseData="True" ViewPoint="Inside" NodeName="fx_exhaust_right" LocalVar="FX PUFF1 2" WwiseEvent="backfire_right_int" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -210,25 +230,25 @@
 		<Sound WwiseData="True" Continuous="True" ViewPoint="All" LocalVar="FLYWHEEL RPM 1" NodeName="mb_starter_crank_left" WwiseEvent="flywheel_windup_left" >
 			<Range LowerBound="1" />
 			<WwiseRTPC LocalVar="FLYWHEEL RPM 1" RTPCName="FLYWHEEL_RPM_1" />
-			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
 		<Sound WwiseData="True" Continuous="True" ViewPoint="All" LocalVar="FLYWHEEL RPM 2" NodeName="mb_starter_crank_right" WwiseEvent="flywheel_windup_right" >
 			<Range LowerBound="1" />
 			<WwiseRTPC LocalVar="FLYWHEEL RPM 2" RTPCName="FLYWHEEL_RPM_2" />
-			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 
 		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" LocalVar="FLYWHEEL CLUTCH 1" NodeName="mb_starter_crank_left" WwiseEvent="flywheel_clutch_left" >
 			<Range LowerBound="1" />
 			<WwiseRTPC LocalVar="FLYWHEEL RPM 1" RTPCName="FLYWHEEL_RPM_1" />
-			<WwiseRTPC LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
 		<Sound WwiseData="True" Continuous="False" ViewPoint="All" BreakOnStop="True" LocalVar="FLYWHEEL CLUTCH 2" NodeName="mb_starter_crank_right" WwiseEvent="flywheel_clutch_right">
 			<Range LowerBound="1" />
 			<WwiseRTPC LocalVar="FLYWHEEL RPM 2" RTPCName="FLYWHEEL_RPM_2" />
-			<WwiseRTPC LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -327,11 +347,13 @@
 
 		<!--Windows-->
 		<Sound WwiseData="True" NodeName="node_left_window" FadeOutType="2" FadeOutTime=".3" LocalVar="WINDOW 1" WwiseEvent="window_left" >
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="WINDOW 1" RTPCName="WINDOW_1_derived_VOLUME_CONTROLLER" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1_acceleration_PITCH_CONTROLLER" />
 		</Sound>
 
 		<Sound WwiseData="True" NodeName="node_right_window" FadeOutType="2" FadeOutTime=".3" LocalVar="WINDOW 2" WwiseEvent="window_right">
+			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="WINDOW 2" RTPCName="WINDOW_2_derived_VOLUME_CONTROLLER" />
 			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2_acceleration_PITCH_CONTROLLER" />
 		</Sound>
@@ -416,7 +438,7 @@
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Klaxon-->
-		<Sound WwiseData="True" NodeName="klaxon_gear_warning" LocalVar="ON CIRCUIT 35" WwiseEvent="klaxon">
+		<Sound WwiseData="True" Continuous="True" NodeName="klaxon_gear_warning" SimVar="CIRCUIT ON" Units="Bool" Index="35" WwiseEvent="klaxon">
 			<Range LowerBound="1" />
 		</Sound>
 
@@ -433,99 +455,262 @@
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
-		<!--Vibrations-->
-		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="wobble_pump" LocalVar="RATTLE INTENSITY" WwiseEvent="rattle_start" >
-			<Range LowerBound="1" />
-			<WwiseRTPC Derived="False" LocalVar="RATTLE INTENSITY NORMALIZED" RTPCName="RATTLE_INTENSITY_NORMALIZED" />
-			<WwiseRTPC Derived="True"  LocalVar="RATTLE INTENSITY " RTPCName="RATTLE_INTENSITY_acceleration_PITCH_CONTROLLER" />
-			<WwiseRTPC Derived="True"  LocalVar="RATTLE INTENSITY" RTPCName="RATTLE_INTENSITY_derived_VOLUME_CONTROLLER" />
-		</Sound>
-
-		<Sound WwiseData="True" ViewPoint="Inside" Continuous="False" NodeName="wobble_pump" LocalVar="RATTLE INTENSITY" WwiseEvent="rattle_stop" >
-			<Range UpperBound="0" />
-		</Sound>
-		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
-
 		<!--Vents-->
 
 		<!--Cockpit vent squeaks-->
 		<Sound WwiseData="True" BreakOnStop="True" NodeName="cockpit_vent_1" LocalVar="VENT 1" WwiseEvent="vent_squeak_01" >
-			<WwiseRTPC Derived="True"  RTPCAttackTime=".3" RTPCReleaseTime=".5" LocalVar="VENT 1" RTPCName="VENT_1_acceleration_PITCH_CONTROLLER" />
-			<WwiseRTPC Derived="True"  RTPCAttackTime="1"  RTPCReleaseTime=".7" LocalVar="VENT 1" RTPCName="VENT_1_derived_VOLUME_CONTROLLER"  />
+			<WwiseRTPC Derived="True"  RTPCAttackTime=".2"  RTPCReleaseTime=".2" LocalVar="VENT 1" RTPCName="VENT_1_acceleration_PITCH_CONTROLLER" />
+			<WwiseRTPC Derived="True"  RTPCAttackTime=".2"  RTPCReleaseTime=".2" LocalVar="VENT 1" RTPCName="VENT_1_derived_VOLUME_CONTROLLER"  />
 		</Sound>
-
-		<Sound WwiseData="True" Continuous="False" NodeName="cockpit_vent_1" LocalVar="VENT 1" WwiseEvent="vent_shut_01" >
-			<Range UpperBound="0" />
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 1" RTPCName="VENT_1_acceleration_PITCH_CONTROLLER" />
-			<WwiseRTPC Derived="True" RTPCAttackTime="1"  RTPCReleaseTime=".1" LocalVar="VENT 1" RTPCName="VENT_1_derived_VOLUME_CONTROLLER" />
-		</Sound> 
 
 		<Sound WwiseData="True" BreakOnStop="True" NodeName="cockpit_vent_2" LocalVar="VENT 2" WwiseEvent="vent_squeak_02" >
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 2" RTPCName="VENT_2_acceleration_PITCH_CONTROLLER" />
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".7" LocalVar="VENT 2" RTPCName="VENT_2_derived_VOLUME_CONTROLLER" />
-		</Sound>
-
-		<Sound WwiseData="True" Continuous="False" NodeName="cockpit_vent_2" LocalVar="VENT 2" WwiseEvent="vent_shut_02" >
-			<Range UpperBound="0" />
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 2" RTPCName="VENT_2_acceleration_PITCH_CONTROLLER" />
-			<WwiseRTPC Derived="True" RTPCAttackTime="1"  RTPCReleaseTime=".1" LocalVar="VENT 2" RTPCName="VENT_2_derived_VOLUME_CONTROLLER" />
+			<WwiseRTPC Derived="True" RTPCAttackTime=".2" RTPCReleaseTime=".2" LocalVar="VENT 2" RTPCName="VENT_2_acceleration_PITCH_CONTROLLER" />
+			<WwiseRTPC Derived="True" RTPCAttackTime=".2" RTPCReleaseTime=".2" LocalVar="VENT 2" RTPCName="VENT_2_derived_VOLUME_CONTROLLER" />
 		</Sound>
 
 		<!--Cabin vent squeaks-->
 		<Sound WwiseData="True" BreakOnStop="True" NodeName="cabin_ac_1" LocalVar="VENT 3" WwiseEvent="vent_squeak_03" >
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 3" RTPCName="VENT_3_acceleration_PITCH_CONTROLLER" />
-			<WwiseRTPC Derived="True" RTPCAttackTime="1"  RTPCReleaseTime=".7" LocalVar="VENT 3" RTPCName="VENT_3_derived_VOLUME_CONTROLLER" />
-		</Sound>
-
-		<Sound WwiseData="True" Continuous="False" NodeName="cabin_ac_1" LocalVar="VENT 3" WwiseEvent="vent_shut_03" >
-			<Range UpperBound="0" />
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 3" RTPCName="VENT_3_acceleration_PITCH_CONTROLLER" />
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="VENT 3" RTPCName="VENT_3_derived_VOLUME_CONTROLLER" />
+			<WwiseRTPC Derived="True" RTPCAttackTime=".2"  RTPCReleaseTime=".2" LocalVar="VENT 3" RTPCName="VENT_3_acceleration_PITCH_CONTROLLER" />
+			<WwiseRTPC Derived="True" RTPCAttackTime=".2"  RTPCReleaseTime=".2" LocalVar="VENT 3" RTPCName="VENT_3_derived_VOLUME_CONTROLLER" />
 		</Sound>
 
 		<Sound WwiseData="True" BreakOnStop="True" NodeName="cabin_ac_2" LocalVar="VENT 4" WwiseEvent="vent_squeak_04" >
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 4" RTPCName="VENT_4_acceleration_PITCH_CONTROLLER" />
-			<WwiseRTPC Derived="True" RTPCAttackTime="1"  RTPCReleaseTime=".7" LocalVar="VENT 4" RTPCName="VENT_4_derived_VOLUME_CONTROLLER" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="cabin_ac_2" LocalVar="VENT 4" WwiseEvent="vent_shut_04" >
-			<Range UpperBound="0" />
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".2" LocalVar="VENT 4" RTPCName="VENT_4_acceleration_PITCH_CONTROLLER" />
-			<WwiseRTPC Derived="True" RTPCAttackTime=".1" RTPCReleaseTime=".1" LocalVar="VENT 4" RTPCName="VENT_4_derived_VOLUME_CONTROLLER" />
+			<WwiseRTPC Derived="True" RTPCAttackTime=".2" RTPCReleaseTime=".2" LocalVar="VENT 4" RTPCName="VENT_4_acceleration_PITCH_CONTROLLER" />
+			<WwiseRTPC Derived="True" RTPCAttackTime="2"  RTPCReleaseTime=".2" LocalVar="VENT 4" RTPCName="VENT_4_derived_VOLUME_CONTROLLER" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
-		<!--Cockpit wind-->
-		<Sound WwiseData="True" Continuous="True" NodeName="node_left_window" SimVar="AIRSPEED TRUE" Index="0" Units="knots" ConeHeading="90" WwiseEvent="wind_window_left" >
-			<WwiseRTPC Simvar="AIRSPEED TRUE" Units="knots" Index="0" RTPCName="SIMVAR_AIRSPEED_TRUE" />
-			<WwiseRTPC LocalVar="WINDOW 1" WwiseRTPC="WINDOW_1" />
+		<Sound WwiseData="True" Continuous="True" SimVar="GEAR TOTAL PCT EXTENDED" Index="0" Units="Percent" Derived="True" FadeOutType="2" FadeOutTime=".2" WwiseEvent="gear_motor_start" CustomSuffix="ext">
+		</Sound>
+		<Sound WwiseData="True" Continuous="True" SimVar="GEAR TOTAL PCT EXTENDED" Index="0" Units="Percent" Derived="True" FadeOutType="2" FadeOutTime=".2" WwiseEvent="gear_motor_start" CustomSuffix="int">
 		</Sound>
 
-		<Sound WwiseData="True" Continuous="True" NodeName="node_right_window" SimVar="AIRSPEED TRUE" Index="0" Units="knots" ConeHeading="270" WwiseEvent="wind_window_right" >
-			<WwiseRTPC Simvar="AIRSPEED TRUE" Units="knots" Index="0" RTPCName="SIMVAR_AIRSPEED_TRUE" />
-			<WwiseRTPC LocalVar="WINDOW 2" WwiseRTPC="WINDOW_2" />
+		<Sound WwiseData="True" Continuous="False" SimVar="GEAR TOTAL PCT EXTENDED" Index="0" Units="Percent" Derived="True" WwiseEvent="gear_motor_stop" CustomSuffix="ext">
+			<Range UpperBound="0" />
+		</Sound>
+		<Sound WwiseData="True" Continuous="False" SimVar="GEAR TOTAL PCT EXTENDED" Index="0" Units="Percent" Derived="True" WwiseEvent="gear_motor_stop" CustomSuffix="int">
+			<Range UpperBound="0" />
 		</Sound>
 
-		<!--Vent wind-->
-		<Sound WwiseData="True" Continuous="True" NodeName="cabin_ac_1" LocalVar="VENT 1" WwiseEvent="vent_1_wind" >
-			<WwiseRTPC LocalVar="VENT 1" WwiseRTPC="VENT_1" />
-			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+		<!--FUSES-->
+		<!--Junction box j71-->
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE NAV LIGHT" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
 		</Sound>
 
-		<Sound WwiseData="True" Continuous="True" NodeName="cabin_ac_1" LocalVar="VENT 2" WwiseEvent="vent_2_wind" >
-			<WwiseRTPC LocalVar="VENT 2" WwiseRTPC="VENT_2" />
-			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
-		</Sound>	
-
-		<Sound WwiseData="True" Continuous="True" NodeName="cabin_ac_1" LocalVar="VENT 3" WwiseEvent="vent_3_wind" >
-			<WwiseRTPC LocalVar="VENT 3" WwiseRTPC="VENT_3" />
-			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE NAV LIGHT" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
 		</Sound>
 
-		<Sound WwiseData="True" Continuous="True" NodeName="cabin_ac_1" LocalVar="VENT 4" WwiseEvent="vent_4_wind" >
-			<WwiseRTPC LocalVar="VENT 4" WwiseRTPC="VENT_4" />
-			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
-		</Sound>	
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE LEFT LANDING LIGHT" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE LEFT LANDING LIGHT" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE RIGHT LANDING LIGHT" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE RIGHT LANDING LIGHT" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE COURTESY LIGHT" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE COURTESY LIGHT" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE ENG INSTR LIGHT" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE ENG INSTR LIGHT" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE NAV INSTR LIGHT" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE NAV INSTR LIGHT" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE MAP LIGHT" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE MAP LIGHT" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE COMPASS LIGHT" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE COMPASS LIGHT" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE GEAR MOTOR" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE GEAR MOTOR" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE PITOT HEAT" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE PITOT HEAT" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE FEATHERING PUMPS" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE FEATHERING PUMPS" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE GEAR WARNING" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE GEAR WARNING" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE CABIN LIGHTS" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE CABIN LIGHTS" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE DOME LIGHT" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE DOME LIGHT" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE STEWARDESS LIGHTS" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE STEWARDESS LIGHTS" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE READING LIGHTS" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE READING LIGHTS" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE GENERATOR" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE GENERATOR" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 1" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 1" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 2" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 2" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 3" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 3" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 4" WwiseEvent="fuse_remove" >
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 4" WwiseEvent="fuse_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+
+		<!--Radio fuses-->
+		<Sound WwiseData="True" Continuous="False" NodeName="fusebox_radio" LocalVar="FUSE AVIONICS" WwiseEvent="fuse_radio_remove">
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="fusebox_radio" LocalVar="FUSE AVIONICS" WwiseEvent="fuse_radio_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="fusebox_radio" LocalVar="FUSE RADIO RANGE" WwiseEvent="fuse_radio_remove">
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="fusebox_radio" LocalVar="FUSE RADIO RANGE" WwiseEvent="fuse_radio_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="fusebox_radio" LocalVar="FUSE RADIO VHF" WwiseEvent="fuse_radio_remove">
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="fusebox_radio" LocalVar="FUSE RADIO VHF" WwiseEvent="fuse_radio_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="fusebox_radio" LocalVar="FUSE DYNAMOTOR" WwiseEvent="fuse_radio_remove">
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="fusebox_radio" LocalVar="FUSE DYNAMOTOR" WwiseEvent="fuse_radio_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="fusebox_radio" LocalVar="FUSE RADIO EMPTY 1" WwiseEvent="fuse_radio_remove">
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="fusebox_radio" LocalVar="FUSE RADIO EMPTY 1" WwiseEvent="fuse_radio_insert">
+			<Range UpperBound="1" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="fusebox_radio" LocalVar="FUSE RADIO EMPTY 2" WwiseEvent="fuse_radio_remove">
+			<Range LowerBound="2" />
+		</Sound>
+
+		<Sound WwiseData="True" Continuous="False" NodeName="fusebox_radio" LocalVar="FUSE RADIO EMPTY 2" WwiseEvent="fuse_radio_insert">
+			<Range UpperBound="1" />
+		</Sound>
  
 	</SimVarSounds>
 
@@ -1114,225 +1299,6 @@
 
 		<Sound WwiseData="True" NodeName="ashtray_10" WwiseEvent="ashtray_10_close">
 		</Sound>
-
-		<!--Junction box j71-->
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE NAV LIGHT" WwiseEvent="fuse_remove" >
-			<Range UpperBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE NAV LIGHT" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE LEFT LANDING LIGHT" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE LEFT LANDING LIGHT" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE RIGHT LANDING LIGHT" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE RIGHT LANDING LIGHT" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE COURTESY LIGHT" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE COURTESY LIGHT" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE ENG INSTR LIGHT" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE ENG INSTR LIGHT" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE NAV INSTR LIGHT" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE NAV INSTR LIGHT" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE MAP LIGHT" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE MAP LIGHT" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE COMPASS LIGHT" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE COMPASS LIGHT" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE GEAR MOTOR" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE GEAR MOTOR" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE PITOT HEAT" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE PITOT HEAT" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE FEATHERING PUMPS" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE FEATHERING PUMPS" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE GEAR WARNING" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE GEAR WARNING" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE CABIN LIGHTS" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE CABIN LIGHTS" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE DOME LIGHT" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE DOME LIGHT" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE STEWARDESS LIGHTS" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE STEWARDESS LIGHTS" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE READING LIGHTS" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE READING LIGHTS" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE GENERATOR" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE GENERATOR" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 1" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 1" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 2" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 2" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 3" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 3" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 4" WwiseEvent="fuse_remove" >
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="junction-box-j71" LocalVar="FUSE EMPTY 4" WwiseEvent="fuse_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-
-		<!--Radio fLower-->
-		<Sound WwiseData="True" NodeName="fusebox_radio" LocalVar="FUSE AVIONICS" WwiseEvent="fuse_radio_remove">
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="fusebox_radio" LocalVar="FUSE AVIONICS" WwiseEvent="fuse_radio_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="fusebox_radio" LocalVar="FUSE RADIO RANGE" WwiseEvent="fuse_radio_remove">
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="fusebox_radio" LocalVar="FUSE RADIO RANGE" WwiseEvent="fuse_radio_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="fusebox_radio" LocalVar="FUSE RADIO VHF" WwiseEvent="fuse_radio_remove">
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="fusebox_radio" LocalVar="FUSE RADIO VHF" WwiseEvent="fuse_radio_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="fusebox_radio" LocalVar="FUSE DYNAMOTOR" WwiseEvent="fuse_radio_remove">
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="fusebox_radio" LocalVar="FUSE DYNAMOTOR" WwiseEvent="fuse_radio_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="fusebox_radio" LocalVar="FUSE RADIO EMPTY 1" WwiseEvent="fuse_radio_remove">
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="fusebox_radio" LocalVar="FUSE RADIO EMPTY 1" WwiseEvent="fuse_radio_insert">
-			<Range UpperBound="0" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="fusebox_radio" LocalVar="FUSE RADIO EMPTY 2" WwiseEvent="fuse_radio_remove">
-			<Range LowerBound="2" />
-		</Sound>
-
-		<Sound WwiseData="True" NodeName="fusebox_radio" LocalVar="FUSE RADIO EMPTY 2" WwiseEvent="fuse_radio_insert">
-			<Range UpperBound="0" />
-		</Sound>
 		
 		<!--Wobble pump-->
 		<Sound WwiseData="True" NodeName="wobble_pump" WwiseEvent="wobble_collision_top">
@@ -1347,7 +1313,7 @@
 		<Sound WwiseData="True" NodeName="lever_fuel_gauge_selector" WwiseEvent="lever_fuel_gauge_selector_main">
 		</Sound>
 
-		<Sound WwiseData="True"NodeName="lever_fuel_gauge_selector" WwiseEvent="lever_fuel_gauge_selector_aux">
+		<Sound WwiseData="True" NodeName="lever_fuel_gauge_selector" WwiseEvent="lever_fuel_gauge_selector_aux">
 		</Sound>
 		
 	</AnimationSounds>
