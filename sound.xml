@@ -105,42 +105,59 @@
 	<SimVarSounds>
 
 		<!--Cockpit wind-->
-		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" SimVar="AIRSPEED TRUE" Units="Knots" Index="0" NodeName="node_left_window" WwiseEvent="wind_window_left" >
-			<Range LowerBound="1" />
-			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" RTPCName="SIMVAR_AIRSPEED_TRUE" />
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" NodeName="node_left_window" WwiseEvent="wind_window_left" >
+			<Range LowerBound="1" UpperBound="1000" />
+			<Range LowerBound="-1000" UpperBound="-1" />
+			<WwiseRTPC SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" RTPCName="SIMVAR_RELATIVE_WIND_VELOCITY_BODY_Z" />
+			<WwiseRTPC SimVar="RELATIVE WIND VELOCITY BODY X" Units="Knots" Index="0" RTPCName="SIMVAR_RELATIVE_WIND_VELOCITY_BODY_X" />
 			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" WwiseRTPC="WINDOW_1" />
 		</Sound>
 
-		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" SimVar="AIRSPEED TRUE" Units="Knots" Index="0" 
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" 
 		NodeName="node_right_window" WwiseEvent="wind_window_right" >
-			<Range LowerBound="1" />
-			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" RTPCName="SIMVAR_AIRSPEED_TRUE" />
+			<Range LowerBound="1" UpperBound="1000" />
+			<Range LowerBound="-1000" UpperBound="-1" />
+			<WwiseRTPC SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" RTPCName="SIMVAR_RELATIVE_WIND_VELOCITY_BODY_Z" />
+			<WwiseRTPC SimVar="RELATIVE WIND VELOCITY BODY X" Units="Knots" Index="0" RTPCName="SIMVAR_RELATIVE_WIND_VELOCITY_BODY_X" />
 			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" WwiseRTPC="WINDOW_2" />
 		</Sound>
 
-		<!--Vent wind-->
-		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="cockpit_vent_1" SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseEvent="vent_1_wind" >
-			<Range LowerBound="1" />
-			<WwiseRTPC LocalVar="VENT 1" WwiseRTPC="VENT_1" />
-			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+		<!--External wind-->
+
+		<Sound WwiseData="True" ViewPoint="Outside" Continuous="True" SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" WwiseEvent="wind_external" >
+			<Range LowerBound="1" UpperBound="1000" />
+			<Range LowerBound="-1000" UpperBound="-1" />
+			<WwiseRTPC SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" RTPCName="SIMVAR_RELATIVE_WIND_VELOCITY_BODY_Z" />
+			<WwiseRTPC SimVar="RELATIVE WIND VELOCITY BODY X" Units="Knots" Index="0" RTPCName="SIMVAR_RELATIVE_WIND_VELOCITY_BODY_X" />
 		</Sound>
 
-		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="cockpit_vent_2" SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseEvent="vent_2_wind" >
-			<Range LowerBound="1" />
+		<!--Vent wind-->
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="cockpit_vent_1" SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" WwiseEvent="vent_1_wind" >
+			<Range LowerBound="1" UpperBound="1000" />
+			<Range LowerBound="-1000" UpperBound="-1" />
+			<WwiseRTPC LocalVar="VENT 1" WwiseRTPC="VENT_1" />
+			<WwiseRTPC SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" WwiseRTPC="SIMVAR_RELATIVE_WIND_VELOCITY_BODY_Z" />
+		</Sound>
+
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="cockpit_vent_2" SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" WwiseEvent="vent_2_wind" >
+			<Range LowerBound="1" UpperBound="1000" />
+			<Range LowerBound="-1000" UpperBound="-1" />
 			<WwiseRTPC LocalVar="VENT 2" WwiseRTPC="VENT_2" />
-			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+			<WwiseRTPC SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" WwiseRTPC="SIMVAR_RELATIVE_WIND_VELOCITY_BODY_Z" />
 		</Sound>	
 
-		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="cabin_ac_1" SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseEvent="vent_3_wind" >
-			<Range LowerBound="1" />
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="cabin_ac_1" SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" WwiseEvent="vent_3_wind" >
+			<Range LowerBound="1" UpperBound="1000" />
+			<Range LowerBound="-1000" UpperBound="-1" />
 			<WwiseRTPC LocalVar="VENT 3" WwiseRTPC="VENT_3" />
-			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+			<WwiseRTPC SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" WwiseRTPC="SIMVAR_RELATIVE_WIND_VELOCITY_BODY_Z" />
 		</Sound>
 
-		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="cabin_ac_2" SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseEvent="vent_4_wind" >
-			<Range LowerBound="1" />
+		<Sound WwiseData="True" ViewPoint="Inside" Continuous="True" NodeName="cabin_ac_2" SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" WwiseEvent="vent_4_wind" >
+			<Range LowerBound="1" UpperBound="1000" />
+			<Range LowerBound="-1000" UpperBound="-1" />
 			<WwiseRTPC LocalVar="VENT 4" WwiseRTPC="VENT_4" />
-			<WwiseRTPC SimVar="AIRSPEED TRUE" Units="Knots" Index="0" WwiseRTPC="SIMVAR_AIRSPEED_TRUE" />
+			<WwiseRTPC SimVar="RELATIVE WIND VELOCITY BODY Z" Units="Knots" Index="0" WwiseRTPC="SIMVAR_RELATIVE_WIND_VELOCITY_BODY_Z" />
 		</Sound>	
 
 		<!--Rattles-->

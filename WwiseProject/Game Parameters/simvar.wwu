@@ -779,6 +779,28 @@ Unit : Knots</Comment>
 								</GameParameter>
 							</ChildrenList>
 						</Folder>
+						<GameParameter Name="SIMVAR_RELATIVE_WIND_VELOCITY_BODY_Z" ID="{1779ADFB-2F81-479F-94BC-954C0F61602C}">
+							<Comment>Relative wind nose to tail. 
+Positive value coming from front
+Negative value coming from tail</Comment>
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1000"/>
+								<Property Name="Min" Type="Real64" Value="-1000"/>
+								<Property Name="SlewRateDown" Type="Real64" Value="20"/>
+								<Property Name="SlewRateUp" Type="Real64" Value="20"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SIMVAR_RELATIVE_WIND_VELOCITY_BODY_X" ID="{23CFCAD4-7CC0-4429-9B8E-08C670EC87A4}">
+							<Comment>Relative wind wing to wing
+Positive value coming from right wing
+Negative value coming from left wing</Comment>
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1000"/>
+								<Property Name="Min" Type="Real64" Value="-1000"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="flight_control_surfaces" ID="{293C2404-4EBA-4FC3-A4C7-760B3AFE71EC}" ShortID="168062559">
