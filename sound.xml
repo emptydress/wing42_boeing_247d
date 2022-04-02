@@ -161,44 +161,36 @@
 		</Sound>
 
 		<!--Propeller chop-->
-		<Sound WwiseData="True" ConeHeading="0" FadeOutType="2" FadeOutTime="0.2" ViewPoint="All" SimVar="GENERAL ENG RPM" Index="1" Units="RPM" WwiseEvent="eng1_prop" CustomSuffix="int" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
+		<Sound WwiseData="True" ConeHeading="0" FadeOutType="2" FadeOutTime="0.2" ViewPoint="Inside" SimVar="GENERAL ENG RPM" Index="1" Units="RPM" WwiseEvent="eng1_prop" CustomSuffix="int" >
 			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
-		<Sound WwiseData="True" ConeHeading="0" FadeOutType="2" FadeOutTime="0.2" ViewPoint="All" SimVar="GENERAL ENG RPM" Index="1" Units="RPM" WwiseEvent="eng1_prop" CustomSuffix="ext" >
+		<Sound WwiseData="True" ConeHeading="0" FadeOutType="2" FadeOutTime="0.2" ViewPoint="Outside" SimVar="GENERAL ENG RPM" Index="1" Units="RPM" WwiseEvent="eng1_prop" CustomSuffix="ext" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
-		<Sound WwiseData="True" ConeHeading="0" FadeOutType="2" FadeOutTime="0.2" ViewPoint="All" SimVar="GENERAL ENG RPM" Index="2" Units="RPM" WwiseEvent="eng2_prop" CustomSuffix="int" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
+		<Sound WwiseData="True" ConeHeading="0" FadeOutType="2" FadeOutTime="0.2" ViewPoint="Inside" SimVar="GENERAL ENG RPM" Index="2" Units="RPM" WwiseEvent="eng2_prop" CustomSuffix="int" >
 			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 
-		<Sound WwiseData="True" ConeHeading="0" FadeOutType="2" FadeOutTime="0.2" ViewPoint="All" SimVar="GENERAL ENG RPM" Index="2" Units="RPM" WwiseEvent="eng2_prop" CustomSuffix="ext" >
+		<Sound WwiseData="True" ConeHeading="0" FadeOutType="2" FadeOutTime="0.2" ViewPoint="Outside" SimVar="GENERAL ENG RPM" Index="2" Units="RPM" WwiseEvent="eng2_prop" CustomSuffix="ext" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
 		<!--Backfires-->
 		<Sound WwiseData="True" ViewPoint="Outside" NodeName="fx_exhaust_left" LocalVar="FX PUFF1 1" WwiseEvent="backfire_left_ext" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
 		<Sound WwiseData="True" ViewPoint="Inside" NodeName="fx_exhaust_left" LocalVar="FX PUFF1 1" WwiseEvent="backfire_left_int" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
 			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 1" RTPCName="WINDOW_1" />
 		</Sound>
 
 		<Sound WwiseData="True" ViewPoint="Outside" NodeName="fx_exhaust_right" LocalVar="FX PUFF1 2" WwiseEvent="backfire_right_ext" >
 			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
-			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 
 		<Sound WwiseData="True" ViewPoint="Inside" NodeName="fx_exhaust_right" LocalVar="FX PUFF1 2" WwiseEvent="backfire_right_int" >
-			<WwiseRTPC SimVar="CHASE CAMERA ZOOM" Units="Percent" Index="0" RTPCName="SIMVAR_CHASE_CAMERA_ZOOM" />
 			<WwiseRTPC RTPCAttackTime=".2" LocalVar="WINDOW 2" RTPCName="WINDOW_2" />
 		</Sound>
 		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->

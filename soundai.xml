@@ -76,6 +76,15 @@
             <Range LowerBound="1" />
             <WwiseRTPC LocalVar="FLYWHEEL RPM 2" RTPCName="FLYWHEEL_RPM_2" />
         </Sound>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <!--Backfires-->
+		<Sound WwiseData="True" ViewPoint="Outside" NodeName="fx_exhaust_left" LocalVar="FX PUFF1 1" WwiseEvent="backfire_left_ext" >
+		</Sound>
+
+		<Sound WwiseData="True" ViewPoint="Outside" NodeName="fx_exhaust_right" LocalVar="FX PUFF1 2" WwiseEvent="backfire_right_ext" >
+		</Sound>
+		<!--~~~~~~~~~~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~~~~~~~~~~-->
 
     </SimVarSounds>
 
